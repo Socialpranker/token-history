@@ -74,6 +74,7 @@
       <button class="btn" id="starsBtn" title="Overlay GitHub stars (dashed, right axis) for apps mapped in repos.json">★ stars overlay</button>
     </div>
     <canvas id="history" height="120"></canvas>
+    <div class="note" id="histNote" style="display:none"></div>
     <div class="badgebox" id="badgebox" style="display:none">
       README badge for the selected app:
       <code id="badgecode"></code>
@@ -211,7 +212,8 @@ function renderHistory(){
     datasets.push({ label: state.series[s]?.name || s,
       data: labels.map(d => map.get(d) ?? null),
       borderColor: PALETTE[i%PALETTE.length], backgroundColor: PALETTE[i%PALETTE.length],
-      spanGaps: true, pointRadius: labels.length>60?0:2, borderWidth: 2, tension: .25, yAxisID: 'y' });
+      spanGaps: true, pointRadius: labels.length>60?0:(labels.length<4?5:2),
+      borderWidth: 2, tension: .25, yAxisID: 'y' });
     if (state.stars) {
       const smap = new Map(pts.filter(p => p.length > 4 && p[4] != null).map(p => [p[0], p[4]]));
       if (smap.size) {
@@ -246,6 +248,13 @@ function renderHistory(){
       }
     }
   });
+  const note = $('#histNote');
+  if (labels.length > 0 && labels.length < 4 && !state.demo) {
+    note.textContent = `The archive is ${labels.length} snapshot${labels.length>1?'s':''} old — dots become lines as daily collection accumulates. Come back in a week.`;
+    note.style.display = 'block';
+  } else {
+    note.style.display = 'none';
+  }
 }
 
 function renderHype(){
