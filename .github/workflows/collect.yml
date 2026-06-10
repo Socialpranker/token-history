@@ -1,0 +1,65 @@
+name: collect
+
+on:
+  schedule:
+    # twice a day, off-peak minutes (UTC); the page shows a trailing-week window
+    - cron: "40 5 * * *"
+    - cron: "40 17 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Collect snapshot
+        run: node scripts/collect.mjs
+        env:
+          OVERTAKE_ISSUE_FILE: ${{ runner.temp }}/overtake-issue.md
+          DECLINE_ISSUE_FILE: ${{ runner.temp }}/decline-issue.md
+          GH_API_TOKEN: ${{ github.token }}
+
+      - name: Commit data
+        run: |
+          git config user.name "token-history-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data badges
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "data: $(date -u +%F) snapshot"
+            git push
+          fi
+
+      - name: Overtake alert issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          F="${{ runner.temp }}/overtake-issue.md"
+          if [ -s "$F" ]; then
+            TITLE="$(head -n 1 "$F" | sed 's/^# //')"
+            gh issue create --title "$TITLE" --body-file "$F" --label overtake || true
+          fi
+
+      - name: Decline alert issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          F="${{ runner.temp }}/decline-issue.md"
+          if [ -s "$F" ]; then
+            TITLE="$(head -n 1 "$F" | sed 's/^# //')"
+            gh issue create --title "$TITLE" --body-file "$F" --label decline || true
+          fi

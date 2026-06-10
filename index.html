@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>token-history — usage history for AI agents</title>
+<meta name="description" content="Stars measure attention. Tokens measure usage. Daily archive and compare charts for OpenRouter App & Agent Rankings.">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #0b0d10; --panel: #14181d; --border: #242a31; --text: #e6e9ec;
+    --muted: #8a949e; --accent: #5ab0f7;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 15px/1.5 ui-sans-serif, system-ui, -apple-system, sans-serif; }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 28px 18px 60px; }
+  h1 { font-size: 26px; margin: 0; letter-spacing: -0.5px; }
+  h1 .dim { color: var(--muted); font-weight: 400; }
+  .tagline { color: var(--muted); margin: 6px 0 22px; }
+  .banner { background: #2a2113; border: 1px solid #5a4a1a; color: #e8c468;
+            padding: 10px 14px; border-radius: 8px; margin-bottom: 18px; font-size: 14px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 18px; }
+  .chip { border: 1px solid var(--border); background: var(--panel); color: var(--muted);
+          border-radius: 999px; padding: 5px 12px; cursor: pointer; font-size: 13px;
+          transition: all .12s; user-select: none; }
+  .chip:hover { border-color: var(--accent); }
+  .chip.on { color: #0b0d10; font-weight: 600; }
+  .panel { background: var(--panel); border: 1px solid var(--border);
+           border-radius: 12px; padding: 18px; margin-bottom: 22px; }
+  .panel h2 { font-size: 15px; margin: 0 0 12px; color: var(--muted);
+              font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
+  .controls { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+  .btn { border: 1px solid var(--border); background: transparent; color: var(--muted);
+         border-radius: 6px; padding: 4px 10px; cursor: pointer; font-size: 13px; }
+  .btn.on { color: var(--text); border-color: var(--accent); }
+  canvas { width: 100% !important; }
+  .badgebox { margin-top: 14px; font-size: 13px; color: var(--muted); }
+  .badgebox code { display: block; background: #0b0d10; border: 1px solid var(--border);
+                   border-radius: 6px; padding: 8px 10px; margin-top: 6px;
+                   overflow-x: auto; white-space: nowrap; color: #b8c4ce; }
+  footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--border);
+           padding-top: 18px; margin-top: 10px; }
+  footer p { margin: 6px 0; }
+  a { color: var(--accent); text-decoration: none; }
+  table.hype { width: 100%; border-collapse: collapse; font-size: 14px; }
+  table.hype td, table.hype th { padding: 6px 8px; border-bottom: 1px solid var(--border); text-align: left; }
+  table.hype th { color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; }
+  table.hype td.num, table.hype th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .tag { font-size: 11px; border-radius: 4px; padding: 1px 6px; margin-left: 8px; vertical-align: middle; }
+  .tag.loud { background: #3a2430; color: #f78ab9; }
+  .tag.work { background: #1d3328; color: #7df0a8; }
+  .note { color: var(--muted); font-size: 13px; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>token-history <span class="dim">/ usage history for AI agents</span></h1>
+  <p class="tagline">The first agent leaderboard where lines can go down. Stars only ratchet up — tokens are paid for
+    weekly, or the curve falls. Daily archive of the
+    <a href="https://openrouter.ai/apps" rel="noopener">OpenRouter App &amp; Agent Rankings</a> — because nobody else keeps the history.</p>
+
+  <div id="banner" class="banner" style="display:none"></div>
+
+  <div class="chips" id="chips"></div>
+
+  <div class="panel">
+    <h2>History — tokens per trailing week</h2>
+    <div class="controls">
+      <button class="btn range on" data-d="30">30d</button>
+      <button class="btn range" data-d="90">90d</button>
+      <button class="btn range" data-d="0">All</button>
+      <button class="btn" id="logBtn">log scale</button>
+      <button class="btn" id="starsBtn" title="Overlay GitHub stars (dashed, right axis) for apps mapped in repos.json">★ stars overlay</button>
+    </div>
+    <canvas id="history" height="120"></canvas>
+    <div class="badgebox" id="badgebox" style="display:none">
+      README badge for the selected app:
+      <code id="badgecode"></code>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Latest ranking — <span id="latestDate"></span></h2>
+    <canvas id="latest" height="150"></canvas>
+  </div>
+
+  <div class="panel" id="hypePanel" style="display:none">
+    <h2>Hype gap — stars per billion weekly tokens</h2>
+    <table class="hype" id="hypeTable"></table>
+    <div class="note">Stars are cumulative attention; tokens are this week's paid usage. High ratio = loud
+      relative to current usage, low ratio = workhorse. Only apps mapped to a GitHub repo in
+      <code>repos.json</code> appear here.</div>
+  </div>
+
+  <div class="panel" id="depthPanel" style="display:none">
+    <h2>Depth — tokens per request</h2>
+    <canvas id="depth" height="150"></canvas>
+    <div class="note">Rough session-depth proxy: agentic tools burn tens of thousands of tokens per request,
+      chat-style apps far fewer. Computed from the same snapshot.</div>
+  </div>
+
+  <footer>
+    <p id="citation"></p>
+    <p><strong>Methodology.</strong> The rankings page shows trailing-week token totals; we snapshot it daily,
+       so curves are a 7-day window sampled every day. Token counts come from each provider's own tokenizer
+       and are not strictly comparable across providers.</p>
+    <p><strong>Bias.</strong> Only traffic routed through OpenRouter is visible. Apps that talk to providers
+       directly (e.g. subscription products) are undercounted. Treat this as a relative trend signal, not
+       absolute adoption.</p>
+    <p><a id="ghlink" href="https://github.com/Socialpranker/token-history">Data &amp; code on GitHub</a> · MIT</p>
+  </footer>
+</div>
+
+<script>
+const PALETTE = ['#5ab0f7','#f7775a','#7df0a8','#f5d76e','#c89bf7','#6ef0e0','#f78ab9','#a8b6f7','#9ef76e','#f7b35a'];
+const $ = (s) => document.querySelector(s);
+const state = { sel: [], range: 30, log: false, stars: false, index: null, series: {}, overtakes: [], demo: false };
+
+const DEMO_INDEX = { date: '2026-04-01 (sample)', updated: '2026-04-01T07:15:01Z',
+  citation: 'Source: OpenRouter (openrouter.ai/rankings), as of 2026-04-01.',
+  apps: [
+    { slug:'openclaw', name:'OpenClaw', tokens:894267675606, rank:1, requests:13327434 },
+    { slug:'kilo-code', name:'Kilo Code', tokens:312342267891, rank:2, requests:4419024 },
+    { slug:'cline', name:'Cline', tokens:126106825939, rank:3, requests:1361053 },
+    { slug:'claude-code', name:'Claude Code', tokens:125133266687, rank:4, requests:1792725 },
+    { slug:'descript', name:'Descript', tokens:45327746958, rank:5, requests:981694 },
+    { slug:'hermes-agent', name:'Hermes Agent', tokens:40732224847, rank:6, requests:749848 },
+    { slug:'janitor-ai', name:'Janitor AI', tokens:27605929185, rank:7, requests:2269429 },
+    { slug:'isekai-zero', name:'ISEKAI ZERO', tokens:26333850869, rank:8, requests:1709523 },
+    { slug:'roo-code', name:'Roo Code', tokens:18483431217, rank:9, requests:227440 },
+    { slug:'lemonade', name:'Lemonade', tokens:8291962438, rank:10, requests:401080 }
+  ]};
+
+function fmt(n){
+  if (!isFinite(n)) return '–';
+  const u = [['T',1e12],['B',1e9],['M',1e6],['K',1e3]];
+  for (const [s,d] of u) if (Math.abs(n) >= d) {
+    const v = n/d; return (v>=100?v.toFixed(0):v>=10?v.toFixed(1):v.toFixed(2)).replace(/\.0+$/,'') + s;
+  }
+  return String(n);
+}
+
+async function getJSON(url){ const r = await fetch(url, {cache:'no-store'}); if(!r.ok) throw new Error(url+' '+r.status); return r.json(); }
+
+function readHash(){
+  const h = decodeURIComponent(location.hash.replace(/^#/,'')).trim();
+  return h ? h.split('&').filter(Boolean) : [];
+}
+function writeHash(){ history.replaceState(null,'', state.sel.length ? '#'+state.sel.join('&') : location.pathname); }
+
+function renderChips(){
+  const box = $('#chips'); box.innerHTML = '';
+  state.index.apps.forEach((a) => {
+    const el = document.createElement('div');
+    el.className = 'chip' + (state.sel.includes(a.slug) ? ' on' : '');
+    el.textContent = `#${a.rank} ${a.name}`;
+    if (state.sel.includes(a.slug)) el.style.background = color(a.slug);
+    el.onclick = () => toggle(a.slug);
+    box.appendChild(el);
+  });
+}
+function color(slug){ const i = state.sel.indexOf(slug); return PALETTE[(i>=0?i:0) % PALETTE.length]; }
+async function toggle(slug){
+  if (state.sel.includes(slug)) state.sel = state.sel.filter(s=>s!==slug);
+  else { state.sel.push(slug); await loadSeries(slug); }
+  writeHash(); renderChips(); renderHistory(); renderBadge();
+}
+async function loadSeries(slug){
+  if (state.series[slug] || state.demo) return;
+  try { state.series[slug] = await getJSON(`data/series/${slug}.json`); }
+  catch { state.series[slug] = { slug, points: [] }; }
+}
+
+let historyChart, latestChart;
+
+const overtakeLines = {
+  id: 'overtakeLines',
+  afterDraw(chart){
+    const evs = state.overtakes.filter(e =>
+      state.sel.includes(e.winner.slug) && state.sel.includes(e.loser.slug) &&
+      chart.data.labels.includes(e.date));
+    if (!evs.length) return;
+    const { ctx, chartArea, scales } = chart;
+    ctx.save();
+    for (const e of evs){
+      const x = scales.x.getPixelForValue(e.date);
+      ctx.strokeStyle = 'rgba(245,215,110,.55)'; ctx.setLineDash([4,4]); ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(x, chartArea.top); ctx.lineTo(x, chartArea.bottom); ctx.stroke();
+      ctx.setLineDash([]); ctx.fillStyle = 'rgba(245,215,110,.9)';
+      ctx.font = '11px sans-serif'; ctx.textAlign = 'left';
+      ctx.fillText('⚡ '+e.winner.name+' → #'+e.winner.rank, x+4, chartArea.top+12);
+    }
+    ctx.restore();
+  }
+};
+
+function renderHistory(){
+  const ctx = $('#history');
+  const sel = state.sel;
+  const dates = new Set();
+  sel.forEach(s => (state.series[s]?.points||[]).forEach(p => dates.add(p[0])));
+  let labels = [...dates].sort();
+  if (state.range > 0) labels = labels.slice(-state.range);
+  const datasets = [];
+  let hasStars = false;
+  sel.forEach((s,i) => {
+    const pts = state.series[s]?.points || [];
+    const map = new Map(pts.map(p => [p[0], p[1]]));
+    datasets.push({ label: state.series[s]?.name || s,
+      data: labels.map(d => map.get(d) ?? null),
+      borderColor: PALETTE[i%PALETTE.length], backgroundColor: PALETTE[i%PALETTE.length],
+      spanGaps: true, pointRadius: labels.length>60?0:2, borderWidth: 2, tension: .25, yAxisID: 'y' });
+    if (state.stars) {
+      const smap = new Map(pts.filter(p => p.length > 4 && p[4] != null).map(p => [p[0], p[4]]));
+      if (smap.size) {
+        hasStars = true;
+        datasets.push({ label: (state.series[s]?.name || s) + ' ★',
+          data: labels.map(d => smap.get(d) ?? null),
+          borderColor: PALETTE[i%PALETTE.length], backgroundColor: 'transparent',
+          borderDash: [6,4], borderWidth: 1.5, pointRadius: 0, spanGaps: true, tension: .25, yAxisID: 'y1' });
+      }
+    }
+  });
+  if (historyChart) historyChart.destroy();
+  historyChart = new Chart(ctx, {
+    type: 'line',
+    data: { labels, datasets },
+    plugins: [overtakeLines],
+    options: {
+      animation: false, maintainAspectRatio: true, responsive: true,
+      interaction: { mode: 'index', intersect: false },
+      scales: {
+        x: { ticks: { color: '#8a949e', maxTicksLimit: 10 }, grid: { color: '#1b2026' } },
+        y: { type: state.log ? 'logarithmic' : 'linear',
+             ticks: { color: '#8a949e', callback: (v)=>fmt(v) }, grid: { color: '#1b2026' } },
+        ...(hasStars ? { y1: { position: 'right', type: 'linear',
+             ticks: { color: '#8a949e', callback: (v)=>fmt(v)+'★' }, grid: { drawOnChartArea: false } } } : {})
+      },
+      plugins: {
+        legend: { labels: { color: '#e6e9ec' } },
+        tooltip: { callbacks: { label: (c)=> c.dataset.yAxisID === 'y1'
+          ? `${c.dataset.label}: ${fmt(c.parsed.y)} stars`
+          : `${c.dataset.label}: ${fmt(c.parsed.y)} tokens/wk` } }
+      }
+    }
+  });
+}
+
+function renderHype(){
+  const panel = $('#hypePanel');
+  const rows = (state.index.apps || [])
+    .filter(a => a.stars && a.tokens > 0)
+    .map(a => ({ name: a.name, stars: a.stars, tokens: a.tokens,
+                 ratio: a.stars / (a.tokens / 1e9) }))
+    .sort((a,b) => b.ratio - a.ratio);
+  if (rows.length < 2) { panel.style.display = 'none'; return; }
+  panel.style.display = 'block';
+  const fmtRatio = (r) => r >= 100 ? r.toFixed(0) : r >= 10 ? r.toFixed(1) : r.toFixed(2);
+  $('#hypeTable').innerHTML =
+    '<tr><th>App</th><th class="num">Stars</th><th class="num">Tokens/wk</th><th class="num">★ per 1B tokens</th></tr>' +
+    rows.map((r,i) => {
+      const tag = i === 0 ? '<span class="tag loud">loudest</span>'
+        : i === rows.length-1 ? '<span class="tag work">workhorse</span>' : '';
+      return `<tr><td>${r.name}${tag}</td><td class="num">${fmt(r.stars)}</td>` +
+             `<td class="num">${fmt(r.tokens)}</td><td class="num">${fmtRatio(r.ratio)}</td></tr>`;
+    }).join('');
+}
+
+let depthChart;
+function renderDepth(){
+  const panel = $('#depthPanel');
+  const rows = (state.index.apps || [])
+    .map(a => ({ name: a.name, depth: a.tokens_per_request ??
+                 (a.requests > 0 ? Math.round(a.tokens / a.requests) : null) }))
+    .filter(a => a.depth != null)
+    .slice(0, 10);
+  if (rows.length < 3) { panel.style.display = 'none'; return; }
+  panel.style.display = 'block';
+  if (depthChart) depthChart.destroy();
+  depthChart = new Chart($('#depth'), {
+    type: 'bar',
+    data: { labels: rows.map(r=>r.name),
+      datasets: [{ data: rows.map(r=>r.depth), backgroundColor: '#7df0a8aa', borderColor: '#7df0a8', borderWidth: 1 }] },
+    options: {
+      indexAxis: 'y', animation: false, responsive: true,
+      scales: {
+        x: { ticks: { color: '#8a949e', callback: (v)=>fmt(v) }, grid: { color: '#1b2026' } },
+        y: { ticks: { color: '#e6e9ec' }, grid: { display: false } }
+      },
+      plugins: { legend: { display: false },
+        tooltip: { callbacks: { label: (c)=> `${fmt(c.parsed.x)} tokens/request` } } }
+    }
+  });
+}
+
+function renderLatest(){
+  const ctx = $('#latest');
+  const top = state.index.apps.slice(0, 10);
+  if (latestChart) latestChart.destroy();
+  latestChart = new Chart(ctx, {
+    type: 'bar',
+    data: { labels: top.map(a=>a.name),
+      datasets: [{ data: top.map(a=>a.tokens), backgroundColor: '#5ab0f7aa', borderColor: '#5ab0f7', borderWidth: 1 }] },
+    options: {
+      indexAxis: 'y', animation: false, responsive: true,
+      scales: {
+        x: { ticks: { color: '#8a949e', callback: (v)=>fmt(v) }, grid: { color: '#1b2026' } },
+        y: { ticks: { color: '#e6e9ec' }, grid: { display: false } }
+      },
+      plugins: { legend: { display: false },
+        tooltip: { callbacks: { label: (c)=> `${fmt(c.parsed.x)} tokens/wk` } } }
+    }
+  });
+  $('#latestDate').textContent = state.index.date || '';
+}
+
+function renderBadge(){
+  const box = $('#badgebox');
+  if (state.sel.length !== 1 || state.demo) { box.style.display = 'none'; return; }
+  const slug = state.sel[0];
+  const base = location.origin + location.pathname.replace(/index\.html$/,'').replace(/\/$/,'');
+  const url = `${base}/badges/${slug}.json`;
+  $('#badgecode').textContent =
+    `![tokens/week](https://img.shields.io/endpoint?url=${encodeURIComponent(url)})`;
+  box.style.display = 'block';
+}
+
+async function main(){
+  try {
+    state.index = await getJSON('data/index.json');
+    try { state.overtakes = await getJSON('data/overtakes.json'); } catch { state.overtakes = []; }
+  } catch {
+    state.demo = true;
+    state.index = DEMO_INDEX;
+    const b = $('#banner');
+    b.style.display = 'block';
+    b.textContent = 'Demo mode: showing a sample snapshot. The archive starts after the first collection run (Actions → collect → Run workflow).';
+  }
+  $('#citation').textContent = state.index.citation || '';
+  state.sel = readHash().filter(s => state.index.apps.some(a=>a.slug===s));
+  if (!state.sel.length) state.sel = state.index.apps.slice(0,3).map(a=>a.slug);
+  if (!state.demo) await Promise.all(state.sel.map(loadSeries));
+  renderChips(); renderHistory(); renderLatest(); renderBadge(); renderHype(); renderDepth();
+
+  document.querySelectorAll('.btn.range').forEach(b => b.onclick = () => {
+    document.querySelectorAll('.btn.range').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on'); state.range = Number(b.dataset.d); renderHistory();
+  });
+  $('#logBtn').onclick = () => { state.log = !state.log; $('#logBtn').classList.toggle('on'); renderHistory(); };
+  $('#starsBtn').onclick = () => { state.stars = !state.stars; $('#starsBtn').classList.toggle('on'); renderHistory(); };
+}
+main();
+</script>
+</body>
+</html>

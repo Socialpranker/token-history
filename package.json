@@ -1,0 +1,15 @@
+{
+  "name": "token-history",
+  "version": "0.1.0",
+  "description": "Daily archive + compare charts for OpenRouter App & Agent Rankings. Stars measure attention, tokens measure usage.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "collect": "node scripts/collect.mjs",
+    "selftest": "node scripts/selftest.mjs"
+  },
+  "license": "MIT"
+}
