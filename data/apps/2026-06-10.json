@@ -1,10 +1,10 @@
 {
  "meta": {
   "source_url": "https://openrouter.ai/api/frontend/rankings/apps",
-  "fetched_at": "2026-06-10T20:06:35.045Z",
+  "fetched_at": "2026-06-10T13:08:39.937Z",
   "window": "day",
   "extracted_via": "frontend-api",
-  "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-06-10T20:06:35.045Z."
+  "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-06-10T13:08:39.937Z."
  },
  "windows": {
   "day": [
@@ -155,8 +155,8 @@
    },
    {
     "rank": 17,
-    "name": "Ethoswarm",
-    "slug": "ethoswarm",
+    "name": "Ethoswarm - Agentic minds",
+    "slug": "ethoswarm-agentic-minds",
     "url": "https://www.amind.ai/",
     "description": null,
     "categories": [
@@ -182,7 +182,7 @@
    },
    {
     "rank": 20,
-    "name": "Mira",
+    "name": "Mira is the leading AI agent inside Telegram",
     "slug": "mira",
     "url": "https://mira.tg/",
     "description": "Mira is a Telegram-native AI assistant.",
@@ -275,8 +275,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 5870281033889,
-    "requests": 85150663,
+    "tokens": 5596377187361,
+    "requests": 81313167,
     "app_id": 3067167
    },
    {
@@ -289,8 +289,8 @@
      "cli-agent",
      "ide-extension"
     ],
-    "tokens": 1509920198911,
-    "requests": 20653759,
+    "tokens": 1427186254540,
+    "requests": 19414970,
     "app_id": 2262242
    },
    {
@@ -303,8 +303,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 1374733994713,
-    "requests": 26328375,
+    "tokens": 1308670480633,
+    "requests": 25146372,
     "app_id": 2725608
    },
    {
@@ -316,8 +316,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 773101128826,
-    "requests": 9800251,
+    "tokens": 732438177903,
+    "requests": 9321455,
     "app_id": 2627404
    },
    {
@@ -329,8 +329,8 @@
     "categories": [
      "video-gen"
     ],
-    "tokens": 520024992475,
-    "requests": 7614752,
+    "tokens": 489769524566,
+    "requests": 7167711,
     "app_id": 2308106
    },
    {
@@ -342,8 +342,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 450753964965,
-    "requests": 7286964,
+    "tokens": 425163012740,
+    "requests": 6791959,
     "app_id": 2853275
    },
    {
@@ -355,8 +355,8 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 353729151608,
-    "requests": 10325720,
+    "tokens": 341972461909,
+    "requests": 9968479,
     "app_id": 2637375
    },
    {
@@ -366,8 +366,8 @@
     "url": "https://pioneer.ai/",
     "description": "Inference API that improves with your traffic",
     "categories": [],
-    "tokens": 281297336090,
-    "requests": 3520796,
+    "tokens": 275381616162,
+    "requests": 3452265,
     "app_id": 3356965
    },
    {
@@ -379,8 +379,8 @@
     "categories": [
      "game"
     ],
-    "tokens": 234463208580,
-    "requests": 6902815,
+    "tokens": 227289890064,
+    "requests": 6513659,
     "app_id": 2699842
    },
    {
@@ -392,8 +392,8 @@
     "categories": [
      "roleplay"
     ],
-    "tokens": 232464482253,
-    "requests": 17148653,
+    "tokens": 223491422210,
+    "requests": 16491125,
     "app_id": 169155
    },
    {
@@ -406,22 +406,22 @@
      "ide-extension",
      "cli-agent"
     ],
-    "tokens": 195430356598,
-    "requests": 2177204,
+    "tokens": 184310760031,
+    "requests": 2053664,
     "app_id": 190604
    },
    {
     "rank": 17,
-    "name": "Ethoswarm",
-    "slug": "ethoswarm",
+    "name": "Ethoswarm - Agentic minds",
+    "slug": "ethoswarm-agentic-minds",
     "url": "https://www.amind.ai/",
     "description": null,
     "categories": [
      "roleplay",
      "personal-agent"
     ],
-    "tokens": 151309877794,
-    "requests": 1990915,
+    "tokens": 146058576980,
+    "requests": 1892512,
     "app_id": 3261377
    },
    {
@@ -433,8 +433,8 @@
     "categories": [
      "personal-agent"
     ],
-    "tokens": 150868880701,
-    "requests": 16574128,
+    "tokens": 142937703289,
+    "requests": 15610272,
     "app_id": 2755681
    },
    {
@@ -446,20 +446,31 @@
     "categories": [
      "personal-agent"
     ],
-    "tokens": 130247241704,
-    "requests": 11620606,
+    "tokens": 125969260107,
+    "requests": 11332954,
     "app_id": 3296290
    },
    {
     "rank": 21,
-    "name": "llmv:competitors",
-    "slug": "llmv-competitors",
+    "name": "llmv:sentiment",
+    "slug": "llmv-sentiment",
     "url": "https://llmvis.searchatlas.com/",
     "description": null,
     "categories": [],
-    "tokens": 110441741608,
-    "requests": 46214014,
+    "tokens": 109611373559,
+    "requests": 45849565,
     "app_id": 3744553
+   },
+   {
+    "rank": 22,
+    "name": "United States Department of War",
+    "slug": "united-states-department-of-war",
+    "url": "https://war.gov/",
+    "description": null,
+    "categories": [],
+    "tokens": 103679589947,
+    "requests": 3,
+    "app_id": 4031915
    },
    {
     "rank": 23,
@@ -470,8 +481,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 98197231171,
-    "requests": 2143509,
+    "tokens": 95874120428,
+    "requests": 2093582,
     "app_id": 189563
    },
    {
@@ -483,8 +494,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 96377997100,
-    "requests": 1127337,
+    "tokens": 93296954153,
+    "requests": 1085353,
     "app_id": 2668297
    },
    {
@@ -496,30 +507,19 @@
     "categories": [
      "roleplay"
     ],
-    "tokens": 68015384937,
-    "requests": 3962061,
+    "tokens": 65440980487,
+    "requests": 3811540,
     "app_id": 142576
    },
    {
     "rank": 27,
-    "name": "Zoo Code",
-    "slug": "zoo-code",
-    "url": "https://github.com/Zoo-Code-Org/Zoo-Code",
-    "description": null,
-    "categories": [],
-    "tokens": 64720392607,
-    "requests": 956216,
-    "app_id": 3906588
-   },
-   {
-    "rank": 28,
     "name": "HackerAI",
     "slug": "hackerai",
     "url": "https://hackerai.co/",
     "description": "A penetration testing agent that helps you find, validate, and report vulnerabilities with AI.",
     "categories": [],
-    "tokens": 64564286114,
-    "requests": 1596240,
+    "tokens": 61354548224,
+    "requests": 1519768,
     "app_id": 171054
    }
   ],
@@ -534,8 +534,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 16736558220968,
-    "requests": 257220603,
+    "tokens": 16462639748357,
+    "requests": 253382930,
     "app_id": 3067167
    },
    {
@@ -548,8 +548,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 5176759225907,
-    "requests": 105671951,
+    "tokens": 5110693656457,
+    "requests": 104489910,
     "app_id": 2725608
    },
    {
@@ -562,8 +562,8 @@
      "cli-agent",
      "ide-extension"
     ],
-    "tokens": 4914393475803,
-    "requests": 70257949,
+    "tokens": 4831655172663,
+    "requests": 69019082,
     "app_id": 2262242
    },
    {
@@ -575,8 +575,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 2093109803891,
-    "requests": 26477256,
+    "tokens": 2052444834480,
+    "requests": 25998436,
     "app_id": 2627404
    },
    {
@@ -588,8 +588,8 @@
     "categories": [
      "video-gen"
     ],
-    "tokens": 1866229994088,
-    "requests": 29627224,
+    "tokens": 1835973195050,
+    "requests": 29180169,
     "app_id": 2308106
    },
    {
@@ -601,8 +601,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 1415646379200,
-    "requests": 23773316,
+    "tokens": 1390054440195,
+    "requests": 23278284,
     "app_id": 2853275
    },
    {
@@ -614,25 +614,12 @@
     "categories": [
      "roleplay"
     ],
-    "tokens": 900779480195,
-    "requests": 68348376,
+    "tokens": 891806079954,
+    "requests": 67690824,
     "app_id": 169155
    },
    {
     "rank": 13,
-    "name": "Lemonade",
-    "slug": "lemonade",
-    "url": "https://lemonade.gg/",
-    "description": "The AI tool for Roblox games.",
-    "categories": [
-     "programming-app"
-    ],
-    "tokens": 833683430863,
-    "requests": 22864690,
-    "app_id": 2637375
-   },
-   {
-    "rank": 14,
     "name": "ISEKAI ZERO",
     "slug": "isekai-zero",
     "url": "https://www.isekai.world/",
@@ -640,9 +627,22 @@
     "categories": [
      "game"
     ],
-    "tokens": 831773108038,
-    "requests": 23343320,
+    "tokens": 824599141322,
+    "requests": 22954147,
     "app_id": 2699842
+   },
+   {
+    "rank": 14,
+    "name": "Lemonade",
+    "slug": "lemonade",
+    "url": "https://lemonade.gg/",
+    "description": "The AI tool for Roblox games.",
+    "categories": [
+     "programming-app"
+    ],
+    "tokens": 821926090422,
+    "requests": 22507431,
+    "app_id": 2637375
    },
    {
     "rank": 15,
@@ -654,8 +654,8 @@
      "ide-extension",
      "cli-agent"
     ],
-    "tokens": 677975455263,
-    "requests": 7775434,
+    "tokens": 666855055427,
+    "requests": 7651885,
     "app_id": 190604
    },
    {
@@ -665,8 +665,8 @@
     "url": "https://pioneer.ai/",
     "description": "Inference API that improves with your traffic",
     "categories": [],
-    "tokens": 606166458197,
-    "requests": 9215488,
+    "tokens": 600250561972,
+    "requests": 9146956,
     "app_id": 3356965
    },
    {
@@ -678,8 +678,8 @@
     "categories": [
      "cloud-agent"
     ],
-    "tokens": 596216396147,
-    "requests": 6255894,
+    "tokens": 593921487094,
+    "requests": 6228289,
     "app_id": 3747309
    },
    {
@@ -692,8 +692,8 @@
      "ide-extension",
      "cloud-agent"
     ],
-    "tokens": 481026043293,
-    "requests": 5353822,
+    "tokens": 477928054395,
+    "requests": 5323572,
     "app_id": 831074
    },
    {
@@ -705,12 +705,12 @@
     "categories": [
      "personal-agent"
     ],
-    "tokens": 466812610909,
-    "requests": 35390781,
+    "tokens": 462534359749,
+    "requests": 35103111,
     "app_id": 3296290
    },
    {
-    "rank": 22,
+    "rank": 24,
     "name": "Pieces.app: Ambient Artificial Memory",
     "slug": "pieces",
     "url": "https://pieces.app/",
@@ -718,8 +718,8 @@
     "categories": [
      "personal-agent"
     ],
-    "tokens": 306907822183,
-    "requests": 34037406,
+    "tokens": 298976421452,
+    "requests": 33073506,
     "app_id": 2755681
    },
    {
@@ -731,8 +731,8 @@
     "categories": [
      "roleplay"
     ],
-    "tokens": 255389161495,
-    "requests": 15310292,
+    "tokens": 252814621957,
+    "requests": 15159762,
     "app_id": 142576
    },
    {
@@ -744,8 +744,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 233877992249,
-    "requests": 5745705,
+    "tokens": 231554784946,
+    "requests": 5695776,
     "app_id": 189563
    },
    {
@@ -755,8 +755,8 @@
     "url": "https://afterquery.com/",
     "description": "Applied research lab for frontier models",
     "categories": [],
-    "tokens": 228384037983,
-    "requests": 18276815,
+    "tokens": 226935482109,
+    "requests": 17945124,
     "app_id": 2279192
    },
    {
@@ -766,8 +766,8 @@
     "url": "https://docs.langchain.com/",
     "description": "",
     "categories": [],
-    "tokens": 215762100340,
-    "requests": 27263252,
+    "tokens": 212574595061,
+    "requests": 26773390,
     "app_id": 2524738
    },
    {
@@ -779,8 +779,8 @@
     "categories": [
      "roleplay"
     ],
-    "tokens": 192265871537,
-    "requests": 54606559,
+    "tokens": 190110275280,
+    "requests": 54019223,
     "app_id": 2235067
    }
   ]

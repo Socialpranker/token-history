@@ -52,6 +52,17 @@
   .tag.loud { background: #3a2430; color: #f78ab9; }
   .tag.work { background: #1d3328; color: #7df0a8; }
   .note { color: var(--muted); font-size: 13px; margin-top: 10px; }
+  .ticker { display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: baseline;
+            background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+            padding: 12px 16px; margin-bottom: 16px; font-size: 14px; }
+  .ticker .big { font-size: 22px; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }
+  .ticker .lead { color: var(--text); font-weight: 600; }
+  .ticker .dim2 { color: var(--muted); }
+  .wm { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 28px; }
+  .wm .row { display: flex; justify-content: space-between; font-size: 14px; padding: 3px 0;
+             border-bottom: 1px solid #161b21; }
+  .wm .up { color: #7df0a8; } .wm .down { color: #f7775a; }
+  @media (max-width: 640px) { .wm { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -62,6 +73,8 @@
     <a href="https://openrouter.ai/apps" rel="noopener">OpenRouter App &amp; Agent Rankings</a> — because nobody else keeps the history.</p>
 
   <div id="banner" class="banner" style="display:none"></div>
+
+  <div class="ticker" id="ticker" style="display:none"></div>
 
   <div class="chips" id="chips"></div>
 
@@ -93,6 +106,12 @@
     <div class="note">Stars are cumulative attention; tokens are today's paid usage. High ratio = loud
       relative to current usage, low ratio = workhorse. Only apps mapped to a GitHub repo in
       <code>repos.json</code> appear here.</div>
+  </div>
+
+  <div class="panel" id="worldPanel" style="display:none">
+    <h2>World models — risers &amp; fallers (4-week token trend)</h2>
+    <div class="wm" id="worldGrid"></div>
+    <div class="note" id="worldNote"></div>
   </div>
 
   <div class="panel" id="depthPanel" style="display:none">
@@ -233,7 +252,8 @@ function renderHistory(){
     data: { labels, datasets },
     plugins: [overtakeLines],
     options: {
-      animation: false, maintainAspectRatio: true, responsive: true,
+      animation: { duration: 900, easing: 'easeOutCubic' },
+      maintainAspectRatio: true, responsive: true,
       interaction: { mode: 'index', intersect: false },
       scales: {
         x: { ticks: { color: '#8a949e', maxTicksLimit: 10 }, grid: { color: '#1b2026' } },
@@ -316,7 +336,7 @@ function renderLatest(){
     data: { labels: top.map(a=>a.name + arrow(a)),
       datasets: [{ data: top.map(a=>a.tokens), backgroundColor: '#5ab0f7aa', borderColor: '#5ab0f7', borderWidth: 1 }] },
     options: {
-      indexAxis: 'y', animation: false, responsive: true,
+      indexAxis: 'y', animation: { duration: 700, easing: 'easeOutCubic' }, responsive: true,
       scales: {
         x: { ticks: { color: '#8a949e', callback: (v)=>fmt(v) }, grid: { color: '#1b2026' } },
         y: { ticks: { color: '#e6e9ec' }, grid: { display: false } }
@@ -343,6 +363,44 @@ function renderBadge(){
   box.style.display = 'block';
 }
 
+function renderTicker(){
+  const apps = state.index.apps || [];
+  if (!apps.length) return;
+  const total = apps.reduce((s,a)=>s+(a.tokens||0),0);
+  const top = apps[0];
+  const t = $('#ticker');
+  t.style.display = 'flex';
+  t.innerHTML =
+    `<span><span class="big" id="tickerTotal">0</span> <span class="dim2">tokens/day · top-20 agents</span></span>` +
+    `<span><span class="lead">#1 ${top.name}</span> <span class="dim2">${fmt(top.tokens)}/day</span></span>` +
+    `<span class="dim2">${state.index.date || ''}</span>`;
+  const el = $('#tickerTotal');
+  const t0 = performance.now(), dur = 1100;
+  (function tick(now){
+    const p = Math.min(1,(now-t0)/dur), e = 1-Math.pow(1-p,3);
+    el.textContent = fmt(total*e);
+    if (p<1) requestAnimationFrame(tick); else el.textContent = fmt(total);
+  })(t0);
+}
+
+async function renderWorld(){
+  let tr;
+  try { tr = await getJSON('data/models/trends.json'); } catch { return; }
+  const panel = $('#worldPanel'); const grid = $('#worldGrid'); const note = $('#worldNote');
+  if (tr.warming_up || !(tr.risers||[]).length) {
+    panel.style.display = 'block';
+    grid.innerHTML = '';
+    note.textContent = `Archive is warming up: ${tr.days_covered||0}/35 days collected — `+
+      `4-week model trends appear as the archive grows. ${tr.note||''}`;
+    return;
+  }
+  panel.style.display = 'block';
+  const col = (items, cls, sign) => items.slice(0,6).map(m =>
+    `<div class="row"><span>${m.slug}</span><span class="${cls}">${sign}${Math.abs(m.pct_4w).toFixed(0)}%</span></div>`).join('');
+  grid.innerHTML = `<div>${col(tr.risers,'up','+')}</div><div>${col(tr.fallers,'down','−')}</div>`;
+  note.textContent = (tr.note||'') + ' Powers `agentburn drift` — your spend × these trends.';
+}
+
 async function main(){
   try {
     state.index = await getJSON('data/index.json');
@@ -359,6 +417,7 @@ async function main(){
   if (!state.sel.length) state.sel = state.index.apps.slice(0,3).map(a=>a.slug);
   if (!state.demo) await Promise.all(state.sel.map(loadSeries));
   renderChips(); renderHistory(); renderLatest(); renderBadge(); renderHype(); renderDepth();
+  renderTicker(); renderWorld();
 
   document.querySelectorAll('.btn.range').forEach(b => b.onclick = () => {
     document.querySelectorAll('.btn.range').forEach(x=>x.classList.remove('on'));
