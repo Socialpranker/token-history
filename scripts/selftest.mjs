@@ -416,4 +416,59 @@ test('lastDays filters events to the window', () => {
   assert.equal(lastDays(evs, '2026-06-10', 7).length, 1);
 });
 
+console.log('models layer:');
+import { buildTrends, normalizeFrontendModels, normalizeOfficialModels, normSlug } from './lib/models.mjs';
+
+test('normSlug strips :free and date suffixes', () => {
+  assert.equal(normSlug('qwen/qwen3.7-plus-20260602'), 'qwen/qwen3.7-plus');
+  assert.equal(normSlug('stepfun/step-3.5-flash:free'), 'stepfun/step-3.5-flash');
+});
+
+test('frontend models feed normalized (variants summed per date)', () => {
+  const feed = { data: [
+    { date: '2026-06-09 00:00:00', model_permaslug: 'a/x', variant: 'standard',
+      total_prompt_tokens: 100, total_completion_tokens: 50 },
+    { date: '2026-06-09 00:00:00', model_permaslug: 'a/x', variant: 'free',
+      total_prompt_tokens: 10, total_completion_tokens: 5 },
+    { date: '2026-06-08 00:00:00', model_permaslug: 'b/y', variant: 'standard',
+      total_prompt_tokens: 7, total_completion_tokens: 3 },
+  ]};
+  const out = normalizeFrontendModels(feed);
+  assert.equal(out['2026-06-09']['a/x'], 165);
+  assert.equal(out['2026-06-08']['b/y'], 10);
+  assert.throws(() => normalizeFrontendModels({ data: [{}] }), /no valid rows/);
+});
+
+test('official dataset normalized, `other` skipped', () => {
+  const out = normalizeOfficialModels({ data: [
+    { date: '2026-05-01', model_permaslug: 'a/x', total_tokens: '123' },
+    { date: '2026-05-01', model_permaslug: 'other', total_tokens: '999' },
+  ]});
+  assert.deepEqual(out, { '2026-05-01': { 'a/x': 123 } });
+});
+
+test('trends: warming_up below 35 days, pct/risers/fallers after', () => {
+  const mk = (days, slugVal) => {
+    const d = {};
+    for (let i = 0; i < days; i++) {
+      const date = new Date(Date.parse('2026-05-01') + i * 86400_000).toISOString().slice(0, 10);
+      d[date] = slugVal(i);
+    }
+    return d;
+  };
+  const warm = buildTrends(mk(5, () => ({ 'a/x': 2e9 })), 'now');
+  assert.equal(warm.warming_up, true);
+  assert.equal(warm.models['a/x'].pct_4w, null);
+
+  const full = buildTrends(mk(40, (i) => ({
+    'falls/hard': i < 20 ? 10e9 : 3e9,
+    'rises/fast': i < 20 ? 2e9 : 8e9,
+  })), 'now');
+  assert.equal(full.warming_up, false);
+  assert.ok(full.models['falls/hard'].pct_4w < -60);
+  assert.ok(full.models['rises/fast'].pct_4w > 200);
+  assert.equal(full.fallers[0].slug, 'falls/hard');
+  assert.equal(full.risers[0].slug, 'rises/fast');
+});
+
 console.log(`\nAll ${passed} tests passed.`);

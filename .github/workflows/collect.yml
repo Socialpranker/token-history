@@ -32,6 +32,7 @@ jobs:
           DECLINE_ISSUE_FILE: ${{ runner.temp }}/decline-issue.md
           DIGEST_ISSUE_FILE: ${{ runner.temp }}/digest-issue.md
           GH_API_TOKEN: ${{ github.token }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }} # optional: unlocks model history back to 2025
 
       - name: Commit data
         run: |

@@ -9,6 +9,7 @@ import path from 'node:path';
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { extractApps, normalizeApiPayload } from './lib/extract.mjs';
+import { buildTrends, normalizeFrontendModels, normalizeOfficialModels } from './lib/models.mjs';
 import { Store } from './lib/store.mjs';
 import { detectOvertakes, overtakeIssueMarkdown } from './lib/overtakes.mjs';
 import { detectDeclines, declineIssueMarkdown } from './lib/declines.mjs';
@@ -190,6 +191,46 @@ async function main() {
       updated: fetchedAt,
     })
   );
+
+  // --- models layer (powers `agentburn drift`); enhancement: fails soft ---
+  try {
+    const modelsDir = path.join(ROOT, 'data', 'models', 'daily');
+    fs.mkdirSync(modelsDir, { recursive: true });
+    const res = await fetchWithTimeout('https://openrouter.ai/api/frontend/rankings/models', 'application/json');
+    const byDate = normalizeFrontendModels(await res.json());
+    for (const [d, models] of Object.entries(byDate)) {
+      fs.writeFileSync(path.join(modelsDir, `${d}.json`), JSON.stringify(models) + '\n');
+    }
+    // optional deep history via the official dataset (any inference key)
+    const orKey = process.env.OPENROUTER_API_KEY;
+    if (orKey) {
+      const start = new Date(Date.now() - 130 * 86400_000).toISOString().slice(0, 10);
+      const off = await fetch(
+        `https://openrouter.ai/api/v1/datasets/rankings-daily?start_date=${start}`,
+        { headers: { authorization: `Bearer ${orKey}`, 'user-agent': UA } }
+      );
+      if (off.ok) {
+        const offDates = normalizeOfficialModels(await off.json());
+        for (const [d, models] of Object.entries(offDates)) {
+          fs.writeFileSync(path.join(modelsDir, `${d}.json`), JSON.stringify(models) + '\n');
+        }
+        console.log(`[token-history] official models dataset: ${Object.keys(offDates).length} days`);
+      } else {
+        console.warn(`[token-history] official dataset HTTP ${off.status} — frontend feed only`);
+      }
+    }
+    const daily = {};
+    for (const f of fs.readdirSync(modelsDir).filter((x) => x.endsWith('.json')).sort()) {
+      daily[f.slice(0, 10)] = JSON.parse(fs.readFileSync(path.join(modelsDir, f), 'utf8'));
+    }
+    fs.writeFileSync(
+      path.join(ROOT, 'data', 'models', 'trends.json'),
+      JSON.stringify(buildTrends(daily, fetchedAt), null, 1) + '\n'
+    );
+    console.log(`[token-history] models: ${Object.keys(daily).length} day(s) archived → trends.json`);
+  } catch (err) {
+    console.warn(`[token-history] models layer skipped: ${err.message}`);
+  }
 
   // --- weekly digest (Mondays, UTC) ---
   let digestMade = false;
