@@ -13,6 +13,9 @@ import { Store } from './lib/store.mjs';
 import { detectOvertakes, overtakeIssueMarkdown } from './lib/overtakes.mjs';
 import { detectDeclines, declineIssueMarkdown } from './lib/declines.mjs';
 import { fetchStarsMap } from './lib/stars.mjs';
+import { renderChartSVG, dayPoints } from './lib/svgchart.mjs';
+import { buildAtomFeed } from './lib/feed.mjs';
+import { digestDue, buildDigestMarkdown, lastDays } from './lib/digest.mjs';
 import { todayUTC, humanizeTokens } from './lib/util.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -34,6 +37,10 @@ async function fetchWithTimeout(url, accept) {
   } finally {
     clearTimeout(t);
   }
+}
+
+function shiftDate(date, days) {
+  return new Date(Date.parse(date) + days * 86_400_000).toISOString().slice(0, 10);
 }
 
 function readReposMap() {
@@ -105,6 +112,16 @@ async function main() {
   // overtake detection uses the previous snapshot, read BEFORE writing today's
   const prev = store.readPrevSnapshot(date);
 
+  // new entrants: slug has no series file yet (only meaningful once archive exists)
+  const knownSlugs = new Set(store.listSeriesSlugs());
+  const entrants =
+    store.snapshotDates().length >= 1 && knownSlugs.size > 0
+      ? seriesApps
+          .filter((a) => !knownSlugs.has(a.slug))
+          .map((a) => ({ date, slug: a.slug, name: a.name, tokens: a.tokens ?? a.week_tokens ?? 0 }))
+      : [];
+  if (entrants.length > 0) store.appendData('entrants', entrants);
+
   store.writeSnapshot(date, meta, windows);
   store.updateSeries(date, seriesApps);
   store.writeIndex(date, meta, indexApps);
@@ -137,12 +154,73 @@ async function main() {
     if (f) fs.writeFileSync(f, declineIssueMarkdown(declines, date) + '\n');
   }
 
+  // --- embeddable SVG charts (charts/<slug>.svg + charts/leaderboard.svg) ---
+  const chartsDir = path.join(ROOT, 'charts');
+  fs.mkdirSync(chartsDir, { recursive: true });
+  const branding = 'token-history · socialpranker.github.io/token-history';
+  for (const a of indexApps) {
+    const pts = dayPoints(store.readSeries(a.slug));
+    fs.writeFileSync(
+      path.join(chartsDir, `${a.slug}.svg`),
+      renderChartSVG({ title: `${a.name} — tokens per day`, series: [{ name: a.name, points: pts }], branding })
+    );
+  }
+  fs.writeFileSync(
+    path.join(chartsDir, 'leaderboard.svg'),
+    renderChartSVG({
+      title: 'Top agents — tokens per day',
+      series: indexApps.slice(0, 4).map((a) => ({ name: a.name, points: dayPoints(store.readSeries(a.slug)) })),
+      branding,
+    })
+  );
+
+  // --- Atom feed ---
+  const index = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'index.json'), 'utf8'));
+  fs.writeFileSync(
+    path.join(ROOT, 'feed.xml'),
+    buildAtomFeed({
+      siteUrl: 'https://socialpranker.github.io/token-history',
+      repoUrl: 'https://github.com/Socialpranker/token-history',
+      events: {
+        overtakes: store.readOvertakes(),
+        declines: store.readDeclines(),
+        entrants: store.readData('entrants', []),
+        digests: store.readData('digests', []),
+      },
+      updated: fetchedAt,
+    })
+  );
+
+  // --- weekly digest (Mondays, UTC) ---
+  let digestMade = false;
+  const lastDigest = store.readData('digest-last', {})?.date ?? null;
+  if (digestDue(date, lastDigest)) {
+    const oldDates = store.snapshotDates().filter((d) => d <= shiftDate(date, -6));
+    const oldSnap = oldDates.length ? store.readSnapshot(oldDates[oldDates.length - 1]) : null;
+    const md = buildDigestMarkdown({
+      date,
+      cur: windows,
+      oldWeek: oldSnap?.windows?.week ?? null,
+      events: {
+        overtakes: lastDays(store.readOvertakes(), date),
+        declines: lastDays(store.readDeclines(), date),
+        entrants: lastDays(store.readData('entrants', []), date),
+      },
+      indexApps: index.apps,
+    });
+    const f = process.env.DIGEST_ISSUE_FILE;
+    if (f) fs.writeFileSync(f, md + '\n');
+    store.writeData('digest-last', { date });
+    store.appendData('digests', [{ date }]);
+    digestMade = true;
+  }
+
   // --- summary ---
   const starred = indexApps.filter((a) => a.stars != null).length;
   console.log(
     `[token-history] ${date} via=${via} windows=${Object.keys(windows).join(',')} ` +
       `apps=${indexApps.length} stars=${starred}/${Object.keys(repos).length} ` +
-      `overtakes=${overtakes.length} declines=${declines.length}`
+      `overtakes=${overtakes.length} declines=${declines.length} entrants=${entrants.length} digest=${digestMade}`
   );
   for (const a of indexApps.slice(0, 5)) {
     const star = a.stars != null ? ` ★${humanizeTokens(a.stars)}` : '';

@@ -8,6 +8,8 @@ Token usage is the one public signal with a heartbeat: somebody pays for every t
 
 It went unnoticed because the data evaporates. OpenRouter publishes a live [App & Agent Rankings](https://openrouter.ai/apps) board — tokens actually burned per app — but there's **no historical API**: yesterday's leaderboard is gone forever. token-history archives it daily. The archive is the product.
 
+![Top agents by daily tokens](https://socialpranker.github.io/token-history/charts/leaderboard.svg)
+
 ## Who needs this
 
 - **Picking an agent?** npm-trends for agents: is the tool you're about to adopt growing — or quietly bleeding out? A trend, not a snapshot.
@@ -22,8 +24,12 @@ It went unnoticed because the data evaporates. OpenRouter publishes a live [App 
 - 🏷️ **README badges** — live `tokens/day` badge for your agent via shields.io — the one badge you can't buy
 - ⚡ **Overtake alerts** — a GitHub issue is filed automatically whenever one app passes another ("X just passed Y"). Watch this repo to get them by email.
 - 📉 **Decline alerts** — an issue when an app loses ≥40% of usage in ~30 days. The story star charts are structurally incapable of telling. (Arms itself once the archive is ~30 days old.)
-- 🔭 **Attention vs usage** — dashed GitHub-star overlay on the token chart for apps mapped in `repos.json`, plus a **Hype Gap** table (stars per billion weekly tokens: who's loud, who's a workhorse)
+- 🔭 **Attention vs usage** — dashed GitHub-star overlay on the token chart for apps mapped in `repos.json`, plus a **Hype Gap** table (stars per billion daily tokens: who's loud, who's a workhorse)
 - 🧪 **Depth metric** — tokens/request per app: agentic tools burn tens of thousands of tokens per request, chat apps don't
+- 🖼️ **Embeddable live SVG charts** — regenerated twice a day, served from Pages (see below)
+- 🚀 **Momentum** — `day×7 / week` from a single snapshot: who's running above (▲) or below (▼) their own weekly pace today
+- 📰 **Weekly digest** — Monday issue: gainers, losers, new top-20 entrants, overtakes, category shares. Watch the repo = subscribe.
+- 📡 **[Atom feed](https://socialpranker.github.io/token-history/feed.xml)** of all events (overtakes, declines, new entrants) — no account needed
 
 No server. No database. GitHub Actions snapshots the data twice a day and commits it here ([git scraping](https://simonwillison.net/2020/Oct/9/git-scraping/)). The archive *is* the repo — every day it runs, it becomes harder to replicate.
 
@@ -43,13 +49,15 @@ curl -s https://raw.githubusercontent.com/Socialpranker/token-history/main/data/
 
 `data/index.json` — current ranking + app list. `data/overtakes.json` — every detected overtake event.
 
-## Badge for your README
+## Badge & live chart for your README
 
 ```markdown
-![tokens/week](https://img.shields.io/endpoint?url=https%3A%2F%2Fsocialpranker.github.io%2Ftoken-history%2Fbadges%2Fopenclaw.json)
+![tokens/day](https://img.shields.io/endpoint?url=https%3A%2F%2Fsocialpranker.github.io%2Ftoken-history%2Fbadges%2Fopenclaw.json)
+
+![usage history](https://socialpranker.github.io/token-history/charts/openclaw.svg)
 ```
 
-Replace `openclaw` with your app's slug (lowercase name, `-` for spaces — see `data/index.json`).
+Replace `openclaw` with your app's slug (see `data/index.json`). Both update twice a day automatically — the chart is your app's real usage curve, not a screenshot.
 
 ## Run your own
 
@@ -67,6 +75,7 @@ Zero dependencies: Node 20+. `npm run selftest` runs the offline test suite (18 
 - Data comes from the JSON endpoint the rankings page itself fetches (`/api/frontend/rankings/apps`): **true daily token totals**, plus week and month windows — all three are archived in every snapshot. Series and badges use the day window; overtake/decline alerts use the stabler week window. This endpoint is undocumented and may change — the collector falls back to parsing the page HTML and **fails loudly** if both break. (For *models*, OpenRouter has an official [daily dataset API](https://openrouter.ai/docs/api/api-reference/datasets/get-rankings-daily) back to 2025-01-01; for **apps there is no documented API and no history** — that's the gap this repo fills.)
 - **Visibility bias:** only traffic routed through OpenRouter is counted. Apps calling providers directly (e.g. subscription products like Claude Code on Anthropic plans) are undercounted. This is a *relative trend signal*, not absolute adoption.
 - Token counts come from each provider's own tokenizer; rows from different providers are not strictly comparable.
+- **Momentum** (`day×7 / week`) compares today's pace with the app's own trailing week — it's a same-app, same-tokenizer ratio, but a single hot day (or a UTC-boundary artifact) can move it; treat ▲/▼ as a hint, not a verdict.
 - Data attribution, as required by OpenRouter: **"Source: OpenRouter (openrouter.ai/rankings)"** — kept in every snapshot's `meta.citation`.
 
 Not affiliated with OpenRouter. One data fetch per run, standard UA with contact link.

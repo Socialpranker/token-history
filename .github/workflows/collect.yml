@@ -30,13 +30,14 @@ jobs:
         env:
           OVERTAKE_ISSUE_FILE: ${{ runner.temp }}/overtake-issue.md
           DECLINE_ISSUE_FILE: ${{ runner.temp }}/decline-issue.md
+          DIGEST_ISSUE_FILE: ${{ runner.temp }}/digest-issue.md
           GH_API_TOKEN: ${{ github.token }}
 
       - name: Commit data
         run: |
           git config user.name "token-history-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data badges
+          git add data badges charts feed.xml
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
@@ -62,4 +63,14 @@ jobs:
           if [ -s "$F" ]; then
             TITLE="$(head -n 1 "$F" | sed 's/^# //')"
             gh issue create --title "$TITLE" --body-file "$F" --label decline || true
+          fi
+
+      - name: Weekly digest issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          F="${{ runner.temp }}/digest-issue.md"
+          if [ -s "$F" ]; then
+            TITLE="$(head -n 1 "$F" | sed 's/^# //')"
+            gh issue create --title "$TITLE" --body-file "$F" --label digest || true
           fi

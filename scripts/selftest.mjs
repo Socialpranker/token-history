@@ -11,6 +11,9 @@ import { extractApps, decodeNextFChunks, normalizeApiPayload } from './lib/extra
 import { Store } from './lib/store.mjs';
 import { detectOvertakes, overtakeIssueMarkdown } from './lib/overtakes.mjs';
 import { detectDeclines, declineIssueMarkdown } from './lib/declines.mjs';
+import { renderChartSVG, dayPoints } from './lib/svgchart.mjs';
+import { buildAtomFeed } from './lib/feed.mjs';
+import { digestDue, buildDigestMarkdown, lastDays } from './lib/digest.mjs';
 import { slugify, humanizeTokens } from './lib/util.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -319,6 +322,98 @@ test('no event on growth', () => {
     getSeries: (s) => series[s],
   });
   assert.equal(events.length, 0);
+});
+
+console.log('svg / feed / digest / momentum:');
+
+test('momentum lands in index.json as day×7/week', () => {
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'th-'));
+  const store = new Store(tmp);
+  const meta = { fetched_at: 'x', window: 'day', citation: 'c' };
+  store.writeIndex('2026-06-10', meta, [
+    { rank: 1, name: 'A', url: 'u', tokens: 814e9, requests: 1, categories: [], description: null, slug: 'a', week_tokens: 5596e9, week_rank: 1 },
+    { rank: 2, name: 'B', url: 'u', tokens: 10e9, requests: 1, categories: [], description: null, slug: 'b' },
+  ]);
+  const idx = JSON.parse(fs.readFileSync(path.join(tmp, 'data', 'index.json'), 'utf8'));
+  assert.equal(idx.apps[0].momentum, Number(((814e9 * 7) / 5596e9).toFixed(2))); // ≈1.02
+  assert.equal(idx.apps[1].momentum, null);
+  fs.rmSync(tmp, { recursive: true, force: true });
+});
+
+test('renderChartSVG produces valid-looking SVG with line, dots and branding', () => {
+  const svg = renderChartSVG({
+    title: 'OpenClaw — tokens per day',
+    series: [{ name: 'OpenClaw', points: [['2026-06-09', 190e9], ['2026-06-10', 186e9]] }],
+    branding: 'token-history · test',
+  });
+  assert.ok(svg.startsWith('<svg'));
+  assert.ok(svg.includes('polyline'));
+  assert.ok(svg.includes('circle')); // few points → dots
+  assert.ok(svg.includes('OpenClaw'));
+  assert.ok(svg.includes('token-history · test'));
+  assert.ok(svg.includes('Source: OpenRouter'));
+  assert.ok(!svg.includes('&&')); // crude unescaped-entity guard
+});
+
+test('dayPoints drops null slots', () => {
+  const pts = dayPoints({ points: [['d1', 5, 1, 1, null, 9, 1], ['d2', null, null, null, null, 8, 2]] });
+  assert.deepEqual(pts, [['d1', 5]]);
+});
+
+test('buildAtomFeed is well-formed and escapes entities', () => {
+  const xml = buildAtomFeed({
+    siteUrl: 'https://x.test/th',
+    repoUrl: 'https://github.com/x/th',
+    events: {
+      overtakes: [{ date: '2026-06-10', winner: { slug: 'a', name: 'A & B', rank: 1 }, loser: { slug: 'c', name: 'C', rank: 2 } }],
+      declines: [{ date: '2026-06-09', slug: 'd', name: 'D', drop_pct: 41, base_date: '2026-05-10' }],
+      entrants: [{ date: '2026-06-08', slug: 'e', name: 'E', tokens: 1e9 }],
+      digests: [{ date: '2026-06-08' }],
+    },
+    updated: '2026-06-10T00:00:00Z',
+  });
+  assert.ok(xml.startsWith('<?xml'));
+  assert.ok(xml.includes('A &amp; B'));
+  assert.equal((xml.match(/<entry>/g) || []).length, 4);
+  assert.ok(xml.indexOf('overtake-2026-06-10') < xml.indexOf('decline-2026-06-09')); // sorted desc by date
+});
+
+test('digestDue fires only on Mondays and only once', () => {
+  assert.equal(digestDue('2026-06-15', null), true); // Monday
+  assert.equal(digestDue('2026-06-15', '2026-06-15'), false); // already made
+  assert.equal(digestDue('2026-06-10', null), false); // Wednesday
+});
+
+test('buildDigestMarkdown: gainers, losers, entrants, categories', () => {
+  const cur = {
+    day: [{ slug: 'a', name: 'A', tokens: 100e9, categories: ['cli-agent'] }],
+    week: [
+      { slug: 'a', name: 'A', tokens: 700e9, categories: ['cli-agent'] },
+      { slug: 'b', name: 'B', tokens: 100e9, categories: ['roleplay'] },
+    ],
+  };
+  const oldWeek = [
+    { slug: 'a', name: 'A', tokens: 350e9 },
+    { slug: 'b', name: 'B', tokens: 200e9 },
+  ];
+  const md = buildDigestMarkdown({
+    date: '2026-06-15',
+    cur,
+    oldWeek,
+    events: { entrants: [{ date: '2026-06-14', name: 'N', tokens: 2e9 }], overtakes: [], declines: [] },
+    indexApps: [],
+  });
+  assert.ok(md.includes('#1 by weekly tokens: A'));
+  assert.ok(md.includes('A: +100%'));
+  assert.ok(md.includes('B: -50%'));
+  assert.ok(md.includes('New in the top-20'));
+  assert.ok(md.includes('cli-agent 88%')); // 700/800
+  assert.ok(md.includes('Source: OpenRouter'));
+});
+
+test('lastDays filters events to the window', () => {
+  const evs = [{ date: '2026-06-01' }, { date: '2026-06-09' }];
+  assert.equal(lastDays(evs, '2026-06-10', 7).length, 1);
 });
 
 console.log(`\nAll ${passed} tests passed.`);

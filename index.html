@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>token-history — usage history for AI agents</title>
 <meta name="description" content="Stars measure attention. Tokens measure usage. Daily archive and compare charts for OpenRouter App & Agent Rankings.">
+<link rel="alternate" type="application/atom+xml" title="token-history events" href="feed.xml">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
 <style>
   :root {
@@ -110,7 +111,8 @@
     <p><strong>Bias.</strong> Only traffic routed through OpenRouter is visible. Apps that talk to providers
        directly (e.g. subscription products) are undercounted. Treat this as a relative trend signal, not
        absolute adoption.</p>
-    <p><a id="ghlink" href="https://github.com/Socialpranker/token-history">Data &amp; code on GitHub</a> · MIT</p>
+    <p><a id="ghlink" href="https://github.com/Socialpranker/token-history">Data &amp; code on GitHub</a> ·
+       <a href="feed.xml">Atom feed</a> (overtakes, declines, new entrants) · MIT</p>
   </footer>
 </div>
 
@@ -307,10 +309,11 @@ function renderDepth(){
 function renderLatest(){
   const ctx = $('#latest');
   const top = state.index.apps.slice(0, 10).filter(a => a.tokens != null);
+  const arrow = (a) => a.momentum == null ? '' : a.momentum >= 1.15 ? ' ▲' : a.momentum <= 0.85 ? ' ▼' : '';
   if (latestChart) latestChart.destroy();
   latestChart = new Chart(ctx, {
     type: 'bar',
-    data: { labels: top.map(a=>a.name),
+    data: { labels: top.map(a=>a.name + arrow(a)),
       datasets: [{ data: top.map(a=>a.tokens), backgroundColor: '#5ab0f7aa', borderColor: '#5ab0f7', borderWidth: 1 }] },
     options: {
       indexAxis: 'y', animation: false, responsive: true,
@@ -319,10 +322,14 @@ function renderLatest(){
         y: { ticks: { color: '#e6e9ec' }, grid: { display: false } }
       },
       plugins: { legend: { display: false },
-        tooltip: { callbacks: { label: (c)=> `${fmt(c.parsed.x)} tokens/wk` } } }
+        tooltip: { callbacks: { label: (c)=> {
+          const a = top[c.dataIndex];
+          const m = a.momentum != null ? ` · pace ${a.momentum >= 1 ? '+' : ''}${Math.round((a.momentum-1)*100)}% vs weekly avg` : '';
+          return `${fmt(c.parsed.x)} tokens/day${m}`;
+        } } } }
     }
   });
-  $('#latestDate').textContent = state.index.date || '';
+  $('#latestDate').textContent = (state.index.date || '') + ' · ▲▼ = today’s pace vs weekly average';
 }
 
 function renderBadge(){

@@ -123,6 +123,10 @@ export class Store {
         repo: a.repo ?? null,
         week_tokens: a.week_tokens ?? null,
         week_rank: a.week_rank ?? null,
+        momentum:
+          a.week_tokens > 0 && Number.isFinite(a.tokens)
+            ? Number(((a.tokens * 7) / a.week_tokens).toFixed(2))
+            : null,
         categories: a.categories,
       })),
     });
@@ -164,5 +168,33 @@ export class Store {
     const all = this.#read(file, []);
     all.push(...events);
     this.#write(file, all.slice(-500)); // keep the file bounded
+  }
+
+  /** generic data/<name>.json accessors (entrants, digests, misc state) */
+  readData(name, fallback = null) {
+    return this.#read(path.join(this.dataDir, name + '.json'), fallback);
+  }
+
+  writeData(name, obj) {
+    this.#write(path.join(this.dataDir, name + '.json'), obj);
+  }
+
+  appendData(name, events) {
+    this.#appendEvents(name + '.json', events);
+  }
+
+  readOvertakes() {
+    return this.#read(path.join(this.dataDir, 'overtakes.json'), []);
+  }
+
+  listSeriesSlugs() {
+    try {
+      return fs
+        .readdirSync(this.seriesDir)
+        .filter((f) => f.endsWith('.json'))
+        .map((f) => f.slice(0, -5));
+    } catch {
+      return [];
+    }
   }
 }
