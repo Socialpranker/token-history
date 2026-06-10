@@ -7,7 +7,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { extractApps, decodeNextFChunks } from './lib/extract.mjs';
+import { extractApps, decodeNextFChunks, normalizeApiPayload } from './lib/extract.mjs';
 import { Store } from './lib/store.mjs';
 import { detectOvertakes, overtakeIssueMarkdown } from './lib/overtakes.mjs';
 import { detectDeclines, declineIssueMarkdown } from './lib/declines.mjs';
@@ -79,6 +79,28 @@ test('throws loudly on an empty page', () => {
   assert.throws(() => extractApps('<html><body>nothing here</body></html>'), /extractApps/);
 });
 
+console.log('api payload (real fixture):');
+
+test('normalizes day/week/month windows from the live API shape', () => {
+  const api = JSON.parse(
+    fs.readFileSync(path.join(HERE, '..', 'test', 'fixtures', 'apps-api.json'), 'utf8')
+  );
+  const windows = normalizeApiPayload(api);
+  assert.deepEqual(Object.keys(windows).sort(), ['day', 'month', 'week']);
+  assert.equal(windows.day.length, 20);
+  const top = windows.day[0];
+  assert.equal(top.name, 'Hermes Agent');
+  assert.equal(top.slug, 'hermes-agent');
+  assert.ok(Number.isFinite(top.tokens) && top.tokens > 1e9);
+  assert.ok(Number.isFinite(top.requests));
+  assert.ok(windows.week[0].tokens > windows.day[0].tokens); // week ⊇ day volumes
+});
+
+test('throws loudly on an unrecognized API shape', () => {
+  assert.throws(() => normalizeApiPayload({ data: { day: 'nope' } }), /normalizeApiPayload/);
+  assert.throws(() => normalizeApiPayload({}), /normalizeApiPayload/);
+});
+
 console.log('util:');
 
 test('slugify', () => {
@@ -103,9 +125,9 @@ test('snapshot + series are idempotent per date', () => {
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'th-'));
   const store = new Store(tmp);
   const apps = fixture.map((a) => ({ ...a, slug: store.resolveSlug(a.name, a.url) }));
-  const meta = { fetched_at: '2026-06-09T00:00:00Z', window: 'week', citation: 'x' };
+  const meta = { fetched_at: '2026-06-09T00:00:00Z', window: 'day', citation: 'x' };
 
-  store.writeSnapshot('2026-06-09', meta, apps);
+  store.writeSnapshot('2026-06-09', meta, { day: apps });
   store.updateSeries('2026-06-09', apps);
   store.updateSeries('2026-06-09', apps); // same date twice → still one point
   store.updateSeries('2026-06-10', apps);
@@ -116,6 +138,7 @@ test('snapshot + series are idempotent per date', () => {
   const series = JSON.parse(fs.readFileSync(path.join(tmp, 'data', 'series', 'openclaw.json'), 'utf8'));
   assert.equal(series.points.length, 2);
   assert.deepEqual(series.points[0][0], '2026-06-09');
+  assert.equal(series.points[0].length, 7); // fixed-width points
 
   const idx = JSON.parse(fs.readFileSync(path.join(tmp, 'data', 'index.json'), 'utf8'));
   assert.equal(idx.apps.length, 20);
@@ -124,9 +147,19 @@ test('snapshot + series are idempotent per date', () => {
   const badge = JSON.parse(fs.readFileSync(path.join(tmp, 'badges', 'openclaw.json'), 'utf8'));
   assert.equal(badge.schemaVersion, 1);
   assert.equal(badge.message, '894B');
+  assert.equal(badge.label, 'tokens · day');
 
   const prev = store.readPrevSnapshot('2026-06-10');
-  assert.equal(prev.apps[0].name, 'OpenClaw');
+  assert.equal(prev.windows.day[0].name, 'OpenClaw');
+  fs.rmSync(tmp, { recursive: true, force: true });
+});
+
+test('resolveSlug prefers a valid API slug, rejects a bad one', () => {
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'th-'));
+  const store = new Store(tmp);
+  assert.equal(store.resolveSlug('Hermes Agent', 'u', 'hermes-agent'), 'hermes-agent');
+  assert.equal(store.resolveSlug('Hermes Agent', 'u', 'Bad Slug!'), 'hermes-agent');
+  assert.equal(store.resolveSlug('Hermes Agent', 'u', null), 'hermes-agent');
   fs.rmSync(tmp, { recursive: true, force: true });
 });
 
@@ -191,16 +224,15 @@ test('newcomers (no prev entry) do not produce events', () => {
 
 console.log('stars & depth:');
 
-test('series point gets a 5th element only when stars are known', () => {
+test('series point: stars in slot 4, week tokens/rank in slots 5-6, nulls when unknown', () => {
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'th-'));
   const store = new Store(tmp);
-  const base = { rank: 1, name: 'OpenClaw', url: 'https://openclaw.ai/', tokens: 894e9, requests: 13327434, categories: [], description: null, slug: 'openclaw' };
-  store.updateSeries('2026-06-09', [{ ...base, stars: 377822 }]);
-  store.updateSeries('2026-06-10', [{ ...base }]); // stars unavailable that day
+  const base = { rank: 1, name: 'OpenClaw', url: 'https://openclaw.ai/', tokens: 186e9, requests: 2e6, categories: [], description: null, slug: 'openclaw' };
+  store.updateSeries('2026-06-09', [{ ...base, stars: 377822, week_tokens: 1308e9, week_rank: 5 }]);
+  store.updateSeries('2026-06-10', [{ ...base }]); // stars/week unavailable that day
   const s = JSON.parse(fs.readFileSync(path.join(tmp, 'data', 'series', 'openclaw.json'), 'utf8'));
-  assert.equal(s.points[0].length, 5);
-  assert.equal(s.points[0][4], 377822);
-  assert.equal(s.points[1].length, 4);
+  assert.deepEqual(s.points[0], ['2026-06-09', 186e9, 1, 2e6, 377822, 1308e9, 5]);
+  assert.deepEqual(s.points[1], ['2026-06-10', 186e9, 1, 2e6, null, null, null]);
   fs.rmSync(tmp, { recursive: true, force: true });
 });
 
@@ -219,7 +251,19 @@ test('index carries stars, repo and tokens_per_request', () => {
   assert.equal(idx.apps[0].tokens_per_request, Math.round(894267675606 / 13327434));
   assert.equal(idx.apps[1].stars, null);
   assert.equal(idx.apps[1].tokens_per_request, null);
+  assert.equal(idx.apps[1].week_tokens, null);
   fs.rmSync(tmp, { recursive: true, force: true });
+});
+
+test('week-window value (slot 5) is preferred for decline baselines', () => {
+  const series = { a: { slug: 'a', points: [['2026-05-10', 10e9, 1, 1, null, 100e9, 2]] } };
+  const events = detectDeclines({
+    apps: [{ slug: 'a', name: 'A', tokens: 50e9 }], // current week tokens
+    date: '2026-06-09',
+    getSeries: (s) => series[s],
+  });
+  assert.equal(events.length, 1);
+  assert.equal(events[0].drop_pct, 50); // vs 100B week baseline, not 10B day
 });
 
 console.log('declines:');

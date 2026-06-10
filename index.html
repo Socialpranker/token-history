@@ -65,7 +65,7 @@
   <div class="chips" id="chips"></div>
 
   <div class="panel">
-    <h2>History — tokens per trailing week</h2>
+    <h2>History — tokens per day</h2>
     <div class="controls">
       <button class="btn range on" data-d="30">30d</button>
       <button class="btn range" data-d="90">90d</button>
@@ -86,9 +86,9 @@
   </div>
 
   <div class="panel" id="hypePanel" style="display:none">
-    <h2>Hype gap — stars per billion weekly tokens</h2>
+    <h2>Hype gap — stars per billion daily tokens</h2>
     <table class="hype" id="hypeTable"></table>
-    <div class="note">Stars are cumulative attention; tokens are this week's paid usage. High ratio = loud
+    <div class="note">Stars are cumulative attention; tokens are today's paid usage. High ratio = loud
       relative to current usage, low ratio = workhorse. Only apps mapped to a GitHub repo in
       <code>repos.json</code> appear here.</div>
   </div>
@@ -102,9 +102,10 @@
 
   <footer>
     <p id="citation"></p>
-    <p><strong>Methodology.</strong> The rankings page shows trailing-week token totals; we snapshot it daily,
-       so curves are a 7-day window sampled every day. Token counts come from each provider's own tokenizer
-       and are not strictly comparable across providers.</p>
+    <p><strong>Methodology.</strong> Charts show the daily token window from OpenRouter's app rankings,
+       snapshotted twice a day (week and month windows are archived in each snapshot too; alerts use the
+       stabler week window). Token counts come from each provider's own tokenizer and are not strictly
+       comparable across providers.</p>
     <p><strong>Bias.</strong> Only traffic routed through OpenRouter is visible. Apps that talk to providers
        directly (e.g. subscription products) are undercounted. Treat this as a relative trend signal, not
        absolute adoption.</p>
@@ -241,7 +242,7 @@ function renderHistory(){
         legend: { labels: { color: '#e6e9ec' } },
         tooltip: { callbacks: { label: (c)=> c.dataset.yAxisID === 'y1'
           ? `${c.dataset.label}: ${fmt(c.parsed.y)} stars`
-          : `${c.dataset.label}: ${fmt(c.parsed.y)} tokens/wk` } }
+          : `${c.dataset.label}: ${fmt(c.parsed.y)} tokens/day` } }
       }
     }
   });
@@ -258,7 +259,7 @@ function renderHype(){
   panel.style.display = 'block';
   const fmtRatio = (r) => r >= 100 ? r.toFixed(0) : r >= 10 ? r.toFixed(1) : r.toFixed(2);
   $('#hypeTable').innerHTML =
-    '<tr><th>App</th><th class="num">Stars</th><th class="num">Tokens/wk</th><th class="num">★ per 1B tokens</th></tr>' +
+    '<tr><th>App</th><th class="num">Stars</th><th class="num">Tokens/day</th><th class="num">★ per 1B tokens</th></tr>' +
     rows.map((r,i) => {
       const tag = i === 0 ? '<span class="tag loud">loudest</span>'
         : i === rows.length-1 ? '<span class="tag work">workhorse</span>' : '';
@@ -296,7 +297,7 @@ function renderDepth(){
 
 function renderLatest(){
   const ctx = $('#latest');
-  const top = state.index.apps.slice(0, 10);
+  const top = state.index.apps.slice(0, 10).filter(a => a.tokens != null);
   if (latestChart) latestChart.destroy();
   latestChart = new Chart(ctx, {
     type: 'bar',

@@ -130,7 +130,50 @@ function coerceApp(item, i) {
 }
 
 /**
- * Main entry: HTML of openrouter.ai/rankings → { apps, via }.
+ * Primary source: the JSON the rankings page itself fetches —
+ * GET /api/frontend/rankings/apps → { data: { day: [...], week: [...], month: [...] } }
+ * Each row: { app_id, rank, total_tokens (string), total_requests, app: { slug,
+ * title, description, origin_url, main_url, categories, ... } }.
+ * Note: `rank` can be sparse (global rank; some apps are excluded from the
+ * public list), so we keep it as-is for display but the array order is by tokens.
+ *
+ * Returns { day?: apps[], week?: apps[], month?: apps[] } (only valid windows).
+ * Throws loudly when the shape is unrecognizable.
+ */
+export function normalizeApiPayload(json) {
+  const wins = json?.data;
+  if (!wins || typeof wins !== 'object') {
+    throw new Error('normalizeApiPayload: no `data` object in API response');
+  }
+  const out = {};
+  for (const [win, rows] of Object.entries(wins)) {
+    if (!Array.isArray(rows)) continue;
+    const apps = rows
+      .map((r, i) => ({
+        rank: Number.isFinite(Number(r?.rank)) ? Number(r.rank) : i + 1,
+        name: String(r?.app?.title ?? '').trim(),
+        slug: typeof r?.app?.slug === 'string' && r.app.slug ? r.app.slug : null,
+        url: r?.app?.origin_url || r?.app?.main_url || null,
+        description: typeof r?.app?.description === 'string' ? r.app.description : null,
+        categories: Array.isArray(r?.app?.categories) ? r.app.categories : [],
+        tokens: Number(r?.total_tokens),
+        requests: Number.isFinite(Number(r?.total_requests)) ? Number(r.total_requests) : null,
+        app_id: r?.app_id ?? r?.app?.id ?? null,
+      }))
+      .filter((a) => a.name && Number.isFinite(a.tokens));
+    if (apps.length >= 5) out[win] = apps;
+  }
+  if (Object.keys(out).length === 0) {
+    throw new Error(
+      'normalizeApiPayload: API responded but no valid ranking windows found — shape changed, update extract.mjs'
+    );
+  }
+  return out;
+}
+
+/**
+ * Fallback entry: HTML of openrouter.ai/rankings → { apps, via }.
+ * (The page stopped embedding data in mid-2026; kept in case it returns.)
  * Throws (loudly, with diagnostics) when nothing extractable is found.
  */
 export function extractApps(html) {

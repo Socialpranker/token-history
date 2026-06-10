@@ -35,7 +35,8 @@ export function detectDeclines({
     const base = series.points.filter((p) => Date.parse(p[0]) <= cutoff).pop();
     if (!base) continue; // archive younger than the window
 
-    const tokensThen = base[1];
+    // prefer the week-window value (slot 5) for stability; fall back to day (slot 1)
+    const tokensThen = base[5] ?? base[1];
     if (!Number.isFinite(tokensThen) || tokensThen < minTokensThen) continue;
     const dropPct = (1 - app.tokens / tokensThen) * 100;
     if (dropPct < minDropPct) continue;

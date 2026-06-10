@@ -1,0 +1,343 @@
+{
+ "updated": "2026-06-10T12:45:55.622Z",
+ "date": "2026-06-10",
+ "window": "day",
+ "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-06-10T12:45:55.622Z.",
+ "apps": [
+  {
+   "slug": "hermes-agent",
+   "name": "Hermes Agent",
+   "url": "https://hermes-agent.nousresearch.com/",
+   "rank": 1,
+   "tokens": 814319402335,
+   "tokens_display": "814B",
+   "requests": 11517275,
+   "tokens_per_request": 70704,
+   "stars": 189508,
+   "repo": "NousResearch/hermes-agent",
+   "week_tokens": 5596377187361,
+   "week_rank": 1,
+   "categories": [
+    "personal-agent",
+    "cli-agent"
+   ]
+  },
+  {
+   "slug": "kilo-code",
+   "name": "Kilo Code",
+   "url": "https://kilocode.ai/",
+   "rank": 4,
+   "tokens": 232497316298,
+   "tokens_display": "232B",
+   "requests": 3307743,
+   "tokens_per_request": 70289,
+   "stars": null,
+   "repo": null,
+   "week_tokens": 1427186254540,
+   "week_rank": 4,
+   "categories": [
+    "cli-agent",
+    "ide-extension"
+   ]
+  },
+  {
+   "slug": "openclaw",
+   "name": "OpenClaw",
+   "url": "https://openclaw.ai/",
+   "rank": 5,
+   "tokens": 186187108859,
+   "tokens_display": "186B",
+   "requests": 3473105,
+   "tokens_per_request": 53608,
+   "stars": 377922,
+   "repo": "openclaw/openclaw",
+   "week_tokens": 1308670480633,
+   "week_rank": 5,
+   "categories": [
+    "personal-agent",
+    "cli-agent"
+   ]
+  },
+  {
+   "slug": "claude-code",
+   "name": "Claude Code",
+   "url": "https://claude.ai/",
+   "rank": 7,
+   "tokens": 114718754760,
+   "tokens_display": "115B",
+   "requests": 1449420,
+   "tokens_per_request": 79148,
+   "stars": null,
+   "repo": null,
+   "week_tokens": 732438177903,
+   "week_rank": 7,
+   "categories": [
+    "cli-agent"
+   ]
+  },
+  {
+   "slug": "descript",
+   "name": "Descript",
+   "url": "https://descript.com/",
+   "rank": 8,
+   "tokens": 82414938585,
+   "tokens_display": "82.4B",
+   "requests": 1188211,
+   "tokens_per_request": 69361,
+   "stars": null,
+   "repo": null,
+   "week_tokens": 489769524566,
+   "week_rank": 8,
+   "categories": [
+    "video-gen"
+   ]
+  },
+  {
+   "slug": "pi",
+   "name": "pi",
+   "url": "https://pi.dev/",
+   "rank": 9,
+   "tokens": 71342903945,
+   "tokens_display": "71.3B",
+   "requests": 1095103,
+   "tokens_per_request": 65147,
+   "stars": null,
+   "repo": null,
+   "week_tokens": 425163012740,
+   "week_rank": 9,
+   "categories": [
+    "cli-agent"
+   ]
+  },
+  {
+   "slug": "lemonade",
+   "name": "Lemonade",
+   "url": "https://lemonade.gg/",
+   "rank": 12,
+   "tokens": 35645706588,
+   "tokens_display": "35.6B",
+   "requests": 1021897,
+   "tokens_per_request": 34882,
+   "stars": null,
+   "repo": null,
+   "week_tokens": 341972461909,
+   "week_rank": 12,
+   "categories": [
+    "programming-app"
+   ]
+  },
+  {
+   "slug": "isekai-zero",
+   "name": "ISEKAI ZERO",
+   "url": "https://www.isekai.world/",
+   "rank": 13,
+   "tokens": 33792718561,
+   "tokens_display": "33.8B",
+   "requests": 1464125,
+   "tokens_per_request": 23080,
+   "stars": null,
+   "repo": null,
+   "week_tokens": 227289890064,
+   "week_rank": 14,
+   "categories": [
+    "game"
+   ]
+  },
+  {
+   "slug": "pioneer-staging",
+   "name": "Pioneer (staging)",
+   "url": "https://pioneer.ai/",
+   "rank": 14,
+   "tokens": 28434752499,
+   "tokens_display": "28.4B",
+   "requests": 428078,
+   "tokens_per_request": 66424,
+   "stars": null,
+   "repo": null,
+   "week_tokens": null,
+   "week_rank": null,
+   "categories": []
+  },
+  {
+   "slug": "janitor-ai",
+   "name": "Janitor AI",
+   "url": "https://janitorai.com/",
+   "rank": 15,
+   "tokens": 28327229260,
+   "tokens_display": "28.3B",
+   "requests": 2120475,
+   "tokens_per_request": 13359,
+   "stars": null,
+   "repo": null,
+   "week_tokens": 223491422210,
+   "week_rank": 15,
+   "categories": [
+    "roleplay"
+   ]
+  },
+  {
+   "slug": "cline",
+   "name": "Cline",
+   "url": "https://cline.bot/",
+   "rank": 16,
+   "tokens": 28094350867,
+   "tokens_display": "28.1B",
+   "requests": 315164,
+   "tokens_per_request": 89142,
+   "stars": 63008,
+   "repo": "cline/cline",
+   "week_tokens": 184310760031,
+   "week_rank": 16,
+   "categories": [
+    "ide-extension",
+    "cli-agent"
+   ]
+  },
+  {
+   "slug": "ethoswarm-agentic-minds",
+   "name": "Ethoswarm - Agentic minds",
+   "url": "https://www.amind.ai/",
+   "rank": 17,
+   "tokens": 25664322240,
+   "tokens_display": "25.7B",
+   "requests": 328506,
+   "tokens_per_request": 78124,
+   "stars": null,
+   "repo": null,
+   "week_tokens": 146058576980,
+   "week_rank": 17,
+   "categories": [
+    "roleplay",
+    "personal-agent"
+   ]
+  },
+  {
+   "slug": "pieces",
+   "name": "Pieces.app: Ambient Artificial Memory",
+   "url": "https://pieces.app/",
+   "rank": 18,
+   "tokens": 22098908904,
+   "tokens_display": "22.1B",
+   "requests": 2476255,
+   "tokens_per_request": 8924,
+   "stars": null,
+   "repo": null,
+   "week_tokens": 142937703289,
+   "week_rank": 18,
+   "categories": [
+    "personal-agent"
+   ]
+  },
+  {
+   "slug": "mira",
+   "name": "Mira",
+   "url": "https://mira.tg/",
+   "rank": 20,
+   "tokens": 15891337216,
+   "tokens_display": "15.9B",
+   "requests": 1564304,
+   "tokens_per_request": 10159,
+   "stars": null,
+   "repo": null,
+   "week_tokens": 125969260107,
+   "week_rank": 20,
+   "categories": [
+    "personal-agent"
+   ]
+  },
+  {
+   "slug": "codex",
+   "name": "Codex",
+   "url": "https://openai.com/codex/",
+   "rank": 21,
+   "tokens": 15518604414,
+   "tokens_display": "15.5B",
+   "requests": 162580,
+   "tokens_per_request": 95452,
+   "stars": null,
+   "repo": null,
+   "week_tokens": 93296954153,
+   "week_rank": 24,
+   "categories": [
+    "cli-agent"
+   ]
+  },
+  {
+   "slug": "reprompt-ai",
+   "name": "Reprompt AI",
+   "url": "https://reprompt.ai/",
+   "rank": 22,
+   "tokens": 12361413065,
+   "tokens_display": "12.4B",
+   "requests": 1098256,
+   "tokens_per_request": 11255,
+   "stars": null,
+   "repo": null,
+   "week_tokens": null,
+   "week_rank": null,
+   "categories": []
+  },
+  {
+   "slug": "zoo-code",
+   "name": "Zoo Code",
+   "url": "https://github.com/Zoo-Code-Org/Zoo-Code",
+   "rank": 23,
+   "tokens": 9836126225,
+   "tokens_display": "9.84B",
+   "requests": 139836,
+   "tokens_per_request": 70340,
+   "stars": null,
+   "repo": null,
+   "week_tokens": null,
+   "week_rank": null,
+   "categories": []
+  },
+  {
+   "slug": "hackerai",
+   "name": "HackerAI",
+   "url": "https://hackerai.co/",
+   "rank": 24,
+   "tokens": 9577040843,
+   "tokens_display": "9.58B",
+   "requests": 216450,
+   "tokens_per_request": 44246,
+   "stars": null,
+   "repo": null,
+   "week_tokens": 61354548224,
+   "week_rank": 27,
+   "categories": []
+  },
+  {
+   "slug": "sillytavern",
+   "name": "SillyTavern",
+   "url": "https://sillytavern.app/",
+   "rank": 26,
+   "tokens": 9075668802,
+   "tokens_display": "9.08B",
+   "requests": 513427,
+   "tokens_per_request": 17677,
+   "stars": 29157,
+   "repo": "SillyTavern/SillyTavern",
+   "week_tokens": 65440980487,
+   "week_rank": 26,
+   "categories": [
+    "roleplay"
+   ]
+  },
+  {
+   "slug": "cursor",
+   "name": "Cursor",
+   "url": "https://cursor.com/",
+   "rank": 27,
+   "tokens": 8981223895,
+   "tokens_display": "8.98B",
+   "requests": 78364,
+   "tokens_per_request": 114609,
+   "stars": null,
+   "repo": null,
+   "week_tokens": null,
+   "week_rank": null,
+   "categories": []
+  }
+ ]
+}

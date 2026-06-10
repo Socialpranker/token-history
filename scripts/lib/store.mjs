@@ -1,7 +1,8 @@
 // Flat-file store: everything lives as JSON inside the git repo.
-// data/apps/YYYY-MM-DD.json   — full daily snapshot
-// data/series/<slug>.json     — per-app time series, points:
-//                               [date, tokens, rank, requests(, stars)]
+// data/apps/YYYY-MM-DD.json   — full daily snapshot (all ranking windows)
+// data/series/<slug>.json     — per-app time series, points (fixed 7 slots):
+//                               [date, day_tokens, day_rank, day_requests,
+//                                stars, week_tokens, week_rank]
 // data/index.json             — latest ranking + app list for the site
 // data/latest.json            — pointer to the newest snapshot
 // data/overtakes.json         — cumulative overtake events
@@ -37,8 +38,8 @@ export class Store {
   }
 
   /** slug, stable per (name,url); suffix on collision with a different url */
-  resolveSlug(name, url) {
-    let slug = slugify(name);
+  resolveSlug(name, url, preferred = null) {
+    let slug = preferred && /^[a-z0-9-]+$/.test(preferred) ? preferred : slugify(name);
     const file = path.join(this.seriesDir, slug + '.json');
     const existing = this.#read(file);
     if (existing && existing.url && url && existing.url !== url) {
@@ -73,8 +74,8 @@ export class Store {
     return this.#read(path.join(this.seriesDir, slug + '.json'));
   }
 
-  writeSnapshot(date, meta, apps) {
-    this.#write(path.join(this.appsDir, date + '.json'), { meta, apps });
+  writeSnapshot(date, meta, windows) {
+    this.#write(path.join(this.appsDir, date + '.json'), { meta, windows });
   }
 
   /** Append/replace the point for `date` in every app's series. Idempotent. */
@@ -85,8 +86,15 @@ export class Store {
       const series = this.#read(file, { slug, name: app.name, url: app.url, points: [] });
       series.name = app.name;
       series.url = app.url ?? series.url;
-      const point = [date, app.tokens, app.rank, app.requests];
-      if (app.stars != null) point.push(app.stars);
+      const point = [
+        date,
+        app.tokens ?? null,
+        app.rank ?? null,
+        app.requests ?? null,
+        app.stars ?? null,
+        app.week_tokens ?? null,
+        app.week_rank ?? null,
+      ];
       const i = series.points.findIndex((p) => p[0] === date);
       if (i >= 0) series.points[i] = point;
       else series.points.push(point);
@@ -113,6 +121,8 @@ export class Store {
           a.requests > 0 && Number.isFinite(a.tokens) ? Math.round(a.tokens / a.requests) : null,
         stars: a.stars ?? null,
         repo: a.repo ?? null,
+        week_tokens: a.week_tokens ?? null,
+        week_rank: a.week_rank ?? null,
         categories: a.categories,
       })),
     });
@@ -129,7 +139,7 @@ export class Store {
     for (const a of apps) {
       this.#write(path.join(this.badgesDir, a.slug + '.json'), {
         schemaVersion: 1,
-        label: 'tokens · week',
+        label: 'tokens · day',
         message: humanizeTokens(a.tokens),
         color: 'blue',
         cacheSeconds: 3600,
