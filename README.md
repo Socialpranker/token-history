@@ -6,6 +6,8 @@ Every public metric for AI agents is a ratchet. GitHub stars never decay. Downlo
 
 Token usage is the one public signal with a heartbeat: somebody pays for every token, every week, or the line falls. In May 2026, [Hermes Agent overtook OpenClaw](https://www.marktechpost.com/2026/05/10/openclaw-vs-hermes-agent-why-nous-researchs-self-improving-agent-now-leads-openrouters-global-rankings/) in real usage with **half the stars** — the star charts never moved, and the flip went mostly unnoticed for days.
 
+**In plain words:** the world now runs on AI "agents" — assistants that work around the clock. The only public scoreboard people check is GitHub stars, and stars can be bought and never go down. This site keeps the **daily history of which agents and models people actually use** (measured in paid tokens) — so you can see what's genuinely rising, what's quietly dying, prove it with a chart link, and get an alert the day the leaderboard flips.
+
 It went unnoticed because the data evaporates. OpenRouter publishes a live [App & Agent Rankings](https://openrouter.ai/apps) board — tokens actually burned per app — but there's **no historical API**: yesterday's leaderboard is gone forever. token-history archives it daily. The archive is the product.
 
 ![Top agents by daily tokens](https://socialpranker.github.io/token-history/charts/leaderboard.svg)
