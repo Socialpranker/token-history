@@ -5,20 +5,29 @@
 <line x1="64" y1="320" x2="784" y2="320" stroke="#1b2026" stroke-width="1"/>
 <text x="56" y="324" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">97.5B</text>
 <line x1="64" y1="228" x2="784" y2="228" stroke="#1b2026" stroke-width="1"/>
-<text x="56" y="232" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">353B</text>
-<line x1="64" y1="136.00000000000003" x2="784" y2="136.00000000000003" stroke="#1b2026" stroke-width="1"/>
-<text x="56" y="140.00000000000003" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">608B</text>
+<text x="56" y="232" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">366B</text>
+<line x1="64" y1="136" x2="784" y2="136" stroke="#1b2026" stroke-width="1"/>
+<text x="56" y="140" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">634B</text>
 <line x1="64" y1="44" x2="784" y2="44" stroke="#1b2026" stroke-width="1"/>
-<text x="56" y="48" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">863B</text>
-<text x="424" y="338" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">2026-06-10</text>
-<circle cx="424.0" cy="61.6" r="3.5" fill="#5ab0f7"/>
-<g font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12"><circle cx="68" cy="36" r="4" fill="#5ab0f7"/><text x="78" y="40" fill="#e6e9ec">Hermes Agent · 814B/day</text></g>
-<circle cx="424.0" cy="271.3" r="3.5" fill="#f7775a"/>
-<g font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12"><circle cx="238" cy="36" r="4" fill="#f7775a"/><text x="248" y="40" fill="#e6e9ec">Kilo Code · 232B/day</text></g>
-<circle cx="424.0" cy="288.0" r="3.5" fill="#7df0a8"/>
-<g font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12"><circle cx="408" cy="36" r="4" fill="#7df0a8"/><text x="418" y="40" fill="#e6e9ec">OpenClaw · 186B/day</text></g>
-<circle cx="424.0" cy="313.8" r="3.5" fill="#f5d76e"/>
-<g font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12"><circle cx="578" cy="36" r="4" fill="#f5d76e"/><text x="588" y="40" fill="#e6e9ec">Claude Code · 115B/day</text></g>
+<text x="56" y="48" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">902B</text>
+<text x="64" y="338" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">2026-06-10</text>
+<text x="784" y="338" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">2026-06-11</text>
+<polyline points="64.0,74.1 784.0,61.5" fill="none" stroke="#5ab0f7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="64.0" cy="74.1" r="3.5" fill="#5ab0f7"/>
+<circle cx="784.0" cy="61.5" r="3.5" fill="#5ab0f7"/>
+<g font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12"><circle cx="68" cy="36" r="4" fill="#5ab0f7"/><text x="78" y="40" fill="#e6e9ec">Hermes Agent · 851B/day</text></g>
+<polyline points="64.0,273.7 784.0,269.5" fill="none" stroke="#f7775a" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="64.0" cy="273.7" r="3.5" fill="#f7775a"/>
+<circle cx="784.0" cy="269.5" r="3.5" fill="#f7775a"/>
+<g font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12"><circle cx="238" cy="36" r="4" fill="#f7775a"/><text x="248" y="40" fill="#e6e9ec">Kilo Code · 245B/day</text></g>
+<polyline points="64.0,289.6 784.0,286.8" fill="none" stroke="#7df0a8" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="64.0" cy="289.6" r="3.5" fill="#7df0a8"/>
+<circle cx="784.0" cy="286.8" r="3.5" fill="#7df0a8"/>
+<g font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12"><circle cx="408" cy="36" r="4" fill="#7df0a8"/><text x="418" y="40" fill="#e6e9ec">OpenClaw · 194B/day</text></g>
+<polyline points="64.0,314.1 784.0,312.4" fill="none" stroke="#f5d76e" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="64.0" cy="314.1" r="3.5" fill="#f5d76e"/>
+<circle cx="784.0" cy="312.4" r="3.5" fill="#f5d76e"/>
+<g font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12"><circle cx="578" cy="36" r="4" fill="#f5d76e"/><text x="588" y="40" fill="#e6e9ec">Claude Code · 120B/day</text></g>
 <text x="64" y="350" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">token-history · socialpranker.github.io/token-history</text>
 <text x="784" y="350" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">Source: OpenRouter (openrouter.ai/rankings)</text>
 </svg>
