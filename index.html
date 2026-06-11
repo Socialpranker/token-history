@@ -3,9 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>token-history — usage history for AI agents</title>
-<meta name="description" content="Stars measure attention. Tokens measure usage. Daily archive and compare charts for OpenRouter App & Agent Rankings.">
+<title>token-history — which AI agents are actually used? Daily token usage history & compare charts</title>
+<meta name="description" content="See which AI agents people actually use over time: daily archive of OpenRouter App & Agent Rankings (tokens, not stars). Compare OpenClaw vs Hermes Agent, spot rising and dying agents, free JSON data, no key.">
+<link rel="canonical" href="https://socialpranker.github.io/token-history/">
 <link rel="alternate" type="application/atom+xml" title="token-history events" href="feed.xml">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"SoftwareApplication","name":"token-history","applicationCategory":"DeveloperApplication",
+  "operatingSystem":"Web","url":"https://socialpranker.github.io/token-history/",
+  "codeRepository":"https://github.com/Socialpranker/token-history",
+  "description":"Daily archive and compare charts of OpenRouter App & Agent Rankings — token usage history for AI agents, like star-history but for real usage.",
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"license":"https://opensource.org/licenses/MIT"},
+ {"@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"How can I see historical token usage of AI agents on OpenRouter?",
+   "acceptedAnswer":{"@type":"Answer","text":"OpenRouter's App & Agent Rankings page only shows the current day/week/month — there is no historical API for apps. token-history archives the rankings twice a day into plain JSON files on GitHub and renders compare charts, so you can track any agent's token usage over time."}},
+  {"@type":"Question","name":"Is an AI agent still actively used, or is it dying?",
+   "acceptedAnswer":{"@type":"Answer","text":"GitHub stars never go down, so a dead agent looks like a thriving one. Token usage is paid per week — if nobody uses an agent, its line falls. token-history charts daily tokens per agent and files automatic decline alerts when usage drops ≥40% in ~30 days."}},
+  {"@type":"Question","name":"How do I compare OpenClaw vs Hermes Agent usage?",
+   "acceptedAnswer":{"@type":"Answer","text":"Open https://socialpranker.github.io/token-history/#openclaw&hermes-agent — a shareable star-history-style URL that charts both agents' daily token usage from the archive."}},
+  {"@type":"Question","name":"Where can I get the data as JSON?",
+   "acceptedAnswer":{"@type":"Answer","text":"Raw GitHub URLs, no key: data/latest.json for the newest snapshot, data/apps/YYYY-MM-DD.json per day, data/series/<slug>.json per app. MIT-licensed code; data cited to OpenRouter."}}
+ ]}
+]}
+</script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
 <style>
   :root {
@@ -120,6 +140,28 @@
     <div class="note">Rough session-depth proxy: agentic tools burn tens of thousands of tokens per request,
       chat-style apps far fewer. Computed from the same snapshot.</div>
   </div>
+
+  <section class="panel" id="faq">
+    <h2>FAQ</h2>
+    <p><strong>How can I see historical token usage of AI agents on OpenRouter?</strong><br>
+       OpenRouter's <a href="https://openrouter.ai/apps">App &amp; Agent Rankings</a> show only the current
+       day/week/month — there is no historical API for apps. This site archives the rankings twice a day into
+       plain JSON files on GitHub and renders compare charts, so you can track any agent's usage over time.</p>
+    <p><strong>Is an AI agent still alive, or is it dying?</strong><br>
+       GitHub stars never go down, so a dead agent looks like a thriving one. Tokens are paid for every week —
+       if nobody uses an agent, its line falls. Decline alerts fire automatically at ≥40% drop in ~30 days.</p>
+    <p><strong>How do I compare two agents, e.g. OpenClaw vs Hermes Agent?</strong><br>
+       Shareable star-history-style URL:
+       <a href="https://socialpranker.github.io/token-history/#openclaw&amp;hermes-agent">…/token-history/#openclaw&amp;hermes-agent</a>.</p>
+    <p><strong>Where is the raw data?</strong><br>
+       No key, plain JSON on GitHub: <code>data/latest.json</code>, <code>data/apps/YYYY-MM-DD.json</code>,
+       <code>data/series/&lt;slug&gt;.json</code>. A live <code>tokens/day</code> badge and an SVG usage chart
+       are available for any listed app's README.</p>
+    <p><strong>Which models is the world moving to?</strong><br>
+       The models layer archives per-model token trends (<code>data/models/trends.json</code>) — 4-week risers
+       and fallers, used by the companion tool <a href="https://github.com/Socialpranker/agentburn">agentburn</a>
+       (<code>agentburn drift</code>) to compare your own spend against the world.</p>
+  </section>
 
   <footer>
     <p id="citation"></p>
