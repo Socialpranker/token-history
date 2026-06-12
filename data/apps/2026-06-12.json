@@ -1,10 +1,10 @@
 {
  "meta": {
   "source_url": "https://openrouter.ai/api/frontend/rankings/apps",
-  "fetched_at": "2026-06-12T09:46:23.433Z",
+  "fetched_at": "2026-06-12T19:33:05.041Z",
   "window": "day",
   "extracted_via": "frontend-api",
-  "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-06-12T09:46:23.433Z."
+  "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-06-12T19:33:05.041Z."
  },
  "windows": {
   "day": [
@@ -104,8 +104,8 @@
    },
    {
     "rank": 13,
-    "name": "Pioneer (development)",
-    "slug": "pioneer-development",
+    "name": "Pioneer (production)",
+    "slug": "pioneer-production",
     "url": "https://pioneer.ai/",
     "description": "Inference API that improves with your traffic",
     "categories": [],
@@ -195,7 +195,7 @@
    },
    {
     "rank": 22,
-    "name": "Mira is the leading AI agent inside Telegram",
+    "name": "Mira",
     "slug": "mira",
     "url": "https://mira.tg/",
     "description": "Mira is a Telegram-native AI assistant.",
@@ -279,8 +279,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 5699750269674,
-    "requests": 81316005,
+    "tokens": 6062915289427,
+    "requests": 86383628,
     "app_id": 3067167
    },
    {
@@ -293,8 +293,8 @@
      "cli-agent",
      "ide-extension"
     ],
-    "tokens": 1556718750781,
-    "requests": 23662716,
+    "tokens": 1690063396846,
+    "requests": 25773122,
     "app_id": 2262242
    },
    {
@@ -307,8 +307,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 1262378409970,
-    "requests": 23984317,
+    "tokens": 1343558115994,
+    "requests": 25499648,
     "app_id": 2725608
    },
    {
@@ -320,8 +320,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 804035870999,
-    "requests": 9978281,
+    "tokens": 881684058114,
+    "requests": 10899736,
     "app_id": 2627404
    },
    {
@@ -333,8 +333,8 @@
     "categories": [
      "video-gen"
     ],
-    "tokens": 499531987865,
-    "requests": 7115448,
+    "tokens": 531675886887,
+    "requests": 7565074,
     "app_id": 2308106
    },
    {
@@ -346,8 +346,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 485662672929,
-    "requests": 7718738,
+    "tokens": 505234847999,
+    "requests": 8069634,
     "app_id": 2853275
    },
    {
@@ -359,12 +359,23 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 307066013152,
-    "requests": 8880832,
+    "tokens": 320206415474,
+    "requests": 9312674,
     "app_id": 2637375
    },
    {
     "rank": 13,
+    "name": "Pioneer (development)",
+    "slug": "pioneer-development",
+    "url": "https://pioneer.ai/",
+    "description": "Inference API that improves with your traffic",
+    "categories": [],
+    "tokens": 243231847988,
+    "requests": 3207968,
+    "app_id": 3356965
+   },
+   {
+    "rank": 14,
     "name": "ISEKAI ZERO",
     "slug": "isekai-zero",
     "url": "https://www.isekai.world/",
@@ -372,20 +383,9 @@
     "categories": [
      "game"
     ],
-    "tokens": 226771327517,
-    "requests": 7731915,
+    "tokens": 238789402189,
+    "requests": 8036464,
     "app_id": 2699842
-   },
-   {
-    "rank": 14,
-    "name": "Pioneer (production)",
-    "slug": "pioneer-production",
-    "url": "https://pioneer.ai/",
-    "description": "Inference API that improves with your traffic",
-    "categories": [],
-    "tokens": 225514700337,
-    "requests": 3003306,
-    "app_id": 3356965
    },
    {
     "rank": 15,
@@ -396,8 +396,8 @@
     "categories": [
      "roleplay"
     ],
-    "tokens": 218056308453,
-    "requests": 16174547,
+    "tokens": 229788451389,
+    "requests": 17064354,
     "app_id": 169155
    },
    {
@@ -410,8 +410,8 @@
      "ide-extension",
      "cli-agent"
     ],
-    "tokens": 184932431192,
-    "requests": 2053722,
+    "tokens": 197760407328,
+    "requests": 2191506,
     "app_id": 190604
    },
    {
@@ -424,8 +424,8 @@
      "roleplay",
      "personal-agent"
     ],
-    "tokens": 147171061085,
-    "requests": 2128020,
+    "tokens": 155958591570,
+    "requests": 2292458,
     "app_id": 3261377
    },
    {
@@ -437,21 +437,21 @@
     "categories": [
      "personal-agent"
     ],
-    "tokens": 139724130026,
-    "requests": 15501797,
+    "tokens": 148869016013,
+    "requests": 16572690,
     "app_id": 2755681
    },
    {
     "rank": 20,
-    "name": "Mira is the leading AI agent inside Telegram",
+    "name": "Mira",
     "slug": "mira",
     "url": "https://mira.tg/",
     "description": "Mira is a Telegram-native AI assistant.",
     "categories": [
      "personal-agent"
     ],
-    "tokens": 111389435257,
-    "requests": 9643187,
+    "tokens": 120146208679,
+    "requests": 10105919,
     "app_id": 3296290
    },
    {
@@ -463,8 +463,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 97931451100,
-    "requests": 1202001,
+    "tokens": 102754007466,
+    "requests": 1270048,
     "app_id": 2668297
    },
    {
@@ -476,8 +476,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 81663872989,
-    "requests": 1727589,
+    "tokens": 85810211835,
+    "requests": 1814015,
     "app_id": 189563
    },
    {
@@ -489,42 +489,42 @@
     "categories": [
      "roleplay"
     ],
-    "tokens": 64847205344,
-    "requests": 3767341,
+    "tokens": 68207307317,
+    "requests": 3969221,
     "app_id": 142576
    },
    {
     "rank": 25,
-    "name": "llmv:competitors",
-    "slug": "llmv-competitors",
-    "url": "https://llmvis.searchatlas.com/",
-    "description": null,
-    "categories": [],
-    "tokens": 63787902599,
-    "requests": 26116942,
-    "app_id": 3744553
-   },
-   {
-    "rank": 26,
     "name": "HackerAI",
     "slug": "hackerai",
     "url": "https://hackerai.co/",
     "description": "A penetration testing agent that helps you find, validate, and report vulnerabilities with AI.",
     "categories": [],
-    "tokens": 63569122240,
-    "requests": 1500475,
+    "tokens": 67388461715,
+    "requests": 1611106,
     "app_id": 171054
    },
    {
-    "rank": 27,
+    "rank": 26,
     "name": "Zoo Code",
     "slug": "zoo-code",
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code",
     "description": null,
     "categories": [],
-    "tokens": 62004625966,
-    "requests": 886822,
+    "tokens": 67067391106,
+    "requests": 948808,
     "app_id": 3906588
+   },
+   {
+    "rank": 27,
+    "name": "llmv:competitors",
+    "slug": "llmv-competitors",
+    "url": "https://llmvis.searchatlas.com/",
+    "description": null,
+    "categories": [],
+    "tokens": 66764916512,
+    "requests": 27246957,
+    "app_id": 3744553
    }
   ],
   "month": [
@@ -538,8 +538,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 17475054136227,
-    "requests": 264444252,
+    "tokens": 17838215609614,
+    "requests": 269511830,
     "app_id": 3067167
    },
    {
@@ -552,8 +552,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 5048609592721,
-    "requests": 102736367,
+    "tokens": 5129788721160,
+    "requests": 104251687,
     "app_id": 2725608
    },
    {
@@ -566,8 +566,8 @@
      "cli-agent",
      "ide-extension"
     ],
-    "tokens": 4974220563981,
-    "requests": 72529538,
+    "tokens": 5107564035396,
+    "requests": 74639929,
     "app_id": 2262242
    },
    {
@@ -579,8 +579,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 2208341919156,
-    "requests": 27678468,
+    "tokens": 2285989348473,
+    "requests": 28599913,
     "app_id": 2627404
    },
    {
@@ -592,8 +592,8 @@
     "categories": [
      "video-gen"
     ],
-    "tokens": 1886499150201,
-    "requests": 29326369,
+    "tokens": 1918642660147,
+    "requests": 29775990,
     "app_id": 2308106
    },
    {
@@ -605,8 +605,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 1506426659283,
-    "requests": 25113004,
+    "tokens": 1525998583043,
+    "requests": 25463895,
     "app_id": 2853275
    },
    {
@@ -618,8 +618,8 @@
     "categories": [
      "roleplay"
     ],
-    "tokens": 891083225942,
-    "requests": 67422506,
+    "tokens": 902815096914,
+    "requests": 68312298,
     "app_id": 169155
    },
    {
@@ -631,8 +631,8 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 838837038785,
-    "requests": 23208946,
+    "tokens": 851977333432,
+    "requests": 23640785,
     "app_id": 2637375
    },
    {
@@ -644,8 +644,8 @@
     "categories": [
      "game"
     ],
-    "tokens": 827054689992,
-    "requests": 23279713,
+    "tokens": 839072647822,
+    "requests": 23584258,
     "app_id": 2699842
    },
    {
@@ -658,19 +658,19 @@
      "ide-extension",
      "cli-agent"
     ],
-    "tokens": 677379708438,
-    "requests": 7745331,
+    "tokens": 690207684574,
+    "requests": 7883115,
     "app_id": 190604
    },
    {
     "rank": 17,
-    "name": "Pioneer (production)",
-    "slug": "pioneer-production",
+    "name": "Pioneer (development)",
+    "slug": "pioneer-development",
     "url": "https://pioneer.ai/",
     "description": "Inference API that improves with your traffic",
     "categories": [],
-    "tokens": 653854400169,
-    "requests": 9502404,
+    "tokens": 671571325896,
+    "requests": 9707063,
     "app_id": 3356965
    },
    {
@@ -682,21 +682,21 @@
     "categories": [
      "cloud-agent"
     ],
-    "tokens": 598691875773,
-    "requests": 6282994,
+    "tokens": 599422996850,
+    "requests": 6290589,
     "app_id": 3747309
    },
    {
     "rank": 19,
-    "name": "Mira is the leading AI agent inside Telegram",
+    "name": "Mira",
     "slug": "mira",
     "url": "https://mira.tg/",
     "description": "Mira is a Telegram-native AI assistant.",
     "categories": [
      "personal-agent"
     ],
-    "tokens": 449367735669,
-    "requests": 34563678,
+    "tokens": 458124459540,
+    "requests": 35026406,
     "app_id": 3296290
    },
    {
@@ -709,8 +709,8 @@
      "ide-extension",
      "cloud-agent"
     ],
-    "tokens": 446663731925,
-    "requests": 4924705,
+    "tokens": 449751608719,
+    "requests": 4956790,
     "app_id": 831074
    },
    {
@@ -722,8 +722,8 @@
     "categories": [
      "personal-agent"
     ],
-    "tokens": 337494763247,
-    "requests": 37641249,
+    "tokens": 346639573475,
+    "requests": 38712128,
     "app_id": 2755681
    },
    {
@@ -735,8 +735,8 @@
     "categories": [
      "roleplay"
     ],
-    "tokens": 253570992099,
-    "requests": 15196223,
+    "tokens": 256931061249,
+    "requests": 15398099,
     "app_id": 142576
    },
    {
@@ -748,8 +748,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 238321310792,
-    "requests": 5833551,
+    "tokens": 242467649638,
+    "requests": 5919977,
     "app_id": 189563
    },
    {
@@ -759,8 +759,8 @@
     "url": "https://afterquery.com/",
     "description": "Applied research lab for frontier models",
     "categories": [],
-    "tokens": 235771684807,
-    "requests": 19970435,
+    "tokens": 237794565205,
+    "requests": 20433315,
     "app_id": 2279192
    },
    {
@@ -773,20 +773,22 @@
      "roleplay",
      "personal-agent"
     ],
-    "tokens": 214324536438,
-    "requests": 2987463,
+    "tokens": 223112066923,
+    "requests": 3151901,
     "app_id": 3261377
    },
    {
     "rank": 31,
-    "name": "LangChain",
-    "slug": "langchain",
-    "url": "https://docs.langchain.com/",
-    "description": "",
-    "categories": [],
-    "tokens": 210834949381,
-    "requests": 27585879,
-    "app_id": 2524738
+    "name": "Codex",
+    "slug": "codex",
+    "url": "https://openai.com/codex/",
+    "description": "A coding agent that helps you build and ship with AI",
+    "categories": [
+     "cli-agent"
+    ],
+    "tokens": 215209728073,
+    "requests": 2656509,
+    "app_id": 2668297
    }
   ]
  }

@@ -1,8 +1,8 @@
 {
- "updated": "2026-06-12T09:46:23.433Z",
+ "updated": "2026-06-12T19:33:05.041Z",
  "date": "2026-06-12",
  "window": "day",
- "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-06-12T09:46:23.433Z.",
+ "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-06-12T19:33:05.041Z.",
  "apps": [
   {
    "slug": "hermes-agent",
@@ -13,11 +13,11 @@
    "tokens_display": "884B",
    "requests": 11941218,
    "tokens_per_request": 74016,
-   "stars": 191456,
+   "stars": 191865,
    "repo": "NousResearch/hermes-agent",
-   "week_tokens": 5699750269674,
+   "week_tokens": 6062915289427,
    "week_rank": 1,
-   "momentum": 1.09,
+   "momentum": 1.02,
    "categories": [
     "personal-agent",
     "cli-agent"
@@ -34,9 +34,9 @@
    "tokens_per_request": 50762,
    "stars": null,
    "repo": null,
-   "week_tokens": 1556718750781,
+   "week_tokens": 1690063396846,
    "week_rank": 4,
-   "momentum": 1.2,
+   "momentum": 1.1,
    "categories": [
     "cli-agent",
     "ide-extension"
@@ -51,11 +51,11 @@
    "tokens_display": "192B",
    "requests": 3477876,
    "tokens_per_request": 55085,
-   "stars": 378307,
+   "stars": 378376,
    "repo": "openclaw/openclaw",
-   "week_tokens": 1262378409970,
+   "week_tokens": 1343558115994,
    "week_rank": 5,
-   "momentum": 1.06,
+   "momentum": 1,
    "categories": [
     "personal-agent",
     "cli-agent"
@@ -72,9 +72,9 @@
    "tokens_per_request": 85999,
    "stars": null,
    "repo": null,
-   "week_tokens": 804035870999,
+   "week_tokens": 881684058114,
    "week_rank": 7,
-   "momentum": 1.54,
+   "momentum": 1.4,
    "categories": [
     "cli-agent"
    ]
@@ -90,9 +90,9 @@
    "tokens_per_request": 61664,
    "stars": null,
    "repo": null,
-   "week_tokens": 485662672929,
+   "week_tokens": 505234847999,
    "week_rank": 9,
-   "momentum": 1.95,
+   "momentum": 1.88,
    "categories": [
     "cli-agent"
    ]
@@ -108,9 +108,9 @@
    "tokens_per_request": 70676,
    "stars": null,
    "repo": null,
-   "week_tokens": 499531987865,
+   "week_tokens": 531675886887,
    "week_rank": 8,
-   "momentum": 1.18,
+   "momentum": 1.1,
    "categories": [
     "video-gen"
    ]
@@ -126,16 +126,16 @@
    "tokens_per_request": 23588,
    "stars": null,
    "repo": null,
-   "week_tokens": 226771327517,
-   "week_rank": 13,
-   "momentum": 1.04,
+   "week_tokens": 238789402189,
+   "week_rank": 14,
+   "momentum": 0.99,
    "categories": [
     "game"
    ]
   },
   {
-   "slug": "pioneer-development",
-   "name": "Pioneer (development)",
+   "slug": "pioneer-production",
+   "name": "Pioneer (production)",
    "url": "https://pioneer.ai/",
    "rank": 13,
    "tokens": 32142021258,
@@ -160,9 +160,9 @@
    "tokens_per_request": 33429,
    "stars": null,
    "repo": null,
-   "week_tokens": 307066013152,
+   "week_tokens": 320206415474,
    "week_rank": 12,
-   "momentum": 0.72,
+   "momentum": 0.69,
    "categories": [
     "programming-app"
    ]
@@ -176,11 +176,11 @@
    "tokens_display": "29.9B",
    "requests": 323243,
    "tokens_per_request": 92390,
-   "stars": 63102,
+   "stars": 63131,
    "repo": "cline/cline",
-   "week_tokens": 184932431192,
+   "week_tokens": 197760407328,
    "week_rank": 16,
-   "momentum": 1.13,
+   "momentum": 1.06,
    "categories": [
     "ide-extension",
     "cli-agent"
@@ -197,9 +197,9 @@
    "tokens_per_request": 13310,
    "stars": null,
    "repo": null,
-   "week_tokens": 218056308453,
+   "week_tokens": 229788451389,
    "week_rank": 15,
-   "momentum": 0.95,
+   "momentum": 0.9,
    "categories": [
     "roleplay"
    ]
@@ -215,9 +215,9 @@
    "tokens_per_request": 8446,
    "stars": null,
    "repo": null,
-   "week_tokens": 139724130026,
+   "week_tokens": 148869016013,
    "week_rank": 19,
-   "momentum": 1.07,
+   "momentum": 1,
    "categories": [
     "personal-agent"
    ]
@@ -233,9 +233,9 @@
    "tokens_per_request": 52758,
    "stars": null,
    "repo": null,
-   "week_tokens": 147171061085,
+   "week_tokens": 155958591570,
    "week_rank": 18,
-   "momentum": 0.9,
+   "momentum": 0.84,
    "categories": [
     "roleplay",
     "personal-agent"
@@ -252,16 +252,16 @@
    "tokens_per_request": 71469,
    "stars": null,
    "repo": null,
-   "week_tokens": 97931451100,
+   "week_tokens": 102754007466,
    "week_rank": 21,
-   "momentum": 0.94,
+   "momentum": 0.89,
    "categories": [
     "cli-agent"
    ]
   },
   {
    "slug": "mira",
-   "name": "Mira is the leading AI agent inside Telegram",
+   "name": "Mira",
    "url": "https://mira.tg/",
    "rank": 22,
    "tokens": 12222224767,
@@ -270,9 +270,9 @@
    "tokens_per_request": 15199,
    "stars": null,
    "repo": null,
-   "week_tokens": 111389435257,
+   "week_tokens": 120146208679,
    "week_rank": 20,
-   "momentum": 0.77,
+   "momentum": 0.71,
    "categories": [
     "personal-agent"
    ]
@@ -306,9 +306,9 @@
    "tokens_per_request": 67115,
    "stars": null,
    "repo": null,
-   "week_tokens": 62004625966,
-   "week_rank": 27,
-   "momentum": 1.08,
+   "week_tokens": 67067391106,
+   "week_rank": 26,
+   "momentum": 1,
    "categories": []
   },
   {
@@ -322,9 +322,9 @@
    "tokens_per_request": 42882,
    "stars": null,
    "repo": null,
-   "week_tokens": 63569122240,
-   "week_rank": 26,
-   "momentum": 0.99,
+   "week_tokens": 67388461715,
+   "week_rank": 25,
+   "momentum": 0.93,
    "categories": []
   },
   {
@@ -336,11 +336,11 @@
    "tokens_display": "8.77B",
    "requests": 511907,
    "tokens_per_request": 17129,
-   "stars": 29251,
+   "stars": 29275,
    "repo": "SillyTavern/SillyTavern",
-   "week_tokens": 64847205344,
+   "week_tokens": 68207307317,
    "week_rank": 24,
-   "momentum": 0.95,
+   "momentum": 0.9,
    "categories": [
     "roleplay"
    ]
