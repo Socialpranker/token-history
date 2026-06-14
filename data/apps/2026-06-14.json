@@ -1,10 +1,10 @@
 {
  "meta": {
   "source_url": "https://openrouter.ai/api/frontend/rankings/apps",
-  "fetched_at": "2026-06-14T08:54:46.322Z",
+  "fetched_at": "2026-06-14T18:53:16.375Z",
   "window": "day",
   "extracted_via": "frontend-api",
-  "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-06-14T08:54:46.322Z."
+  "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-06-14T18:53:16.375Z."
  },
  "windows": {
   "day": [
@@ -104,8 +104,8 @@
    },
    {
     "rank": 12,
-    "name": "Pioneer (production)",
-    "slug": "pioneer-production",
+    "name": "Pioneer (development)",
+    "slug": "pioneer-development",
     "url": "https://pioneer.ai/",
     "description": "Inference API that improves with your traffic",
     "categories": [],
@@ -277,8 +277,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 5975833710354,
-    "requests": 83302108,
+    "tokens": 6293078685255,
+    "requests": 87621104,
     "app_id": 3067167
    },
    {
@@ -291,8 +291,8 @@
      "cli-agent",
      "ide-extension"
     ],
-    "tokens": 1744918122091,
-    "requests": 27395843,
+    "tokens": 1852173995100,
+    "requests": 29097912,
     "app_id": 2262242
    },
    {
@@ -305,8 +305,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 1305986134128,
-    "requests": 24537322,
+    "tokens": 1373917616715,
+    "requests": 25819312,
     "app_id": 2725608
    },
    {
@@ -318,8 +318,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 890133501970,
-    "requests": 10795721,
+    "tokens": 930651476431,
+    "requests": 11298865,
     "app_id": 2627404
    },
    {
@@ -331,8 +331,8 @@
     "categories": [
      "video-gen"
     ],
-    "tokens": 511055424789,
-    "requests": 7092940,
+    "tokens": 529235490397,
+    "requests": 7310562,
     "app_id": 2308106
    },
    {
@@ -344,8 +344,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 457571376331,
-    "requests": 7348187,
+    "tokens": 472184540503,
+    "requests": 7569120,
     "app_id": 2853275
    },
    {
@@ -357,19 +357,19 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 277487886233,
-    "requests": 8217274,
+    "tokens": 293858706740,
+    "requests": 8728134,
     "app_id": 2637375
    },
    {
     "rank": 13,
-    "name": "Pioneer (development)",
-    "slug": "pioneer-development",
+    "name": "Pioneer (production)",
+    "slug": "pioneer-production",
     "url": "https://pioneer.ai/",
     "description": "Inference API that improves with your traffic",
     "categories": [],
-    "tokens": 235893615259,
-    "requests": 3275668,
+    "tokens": 254325826824,
+    "requests": 3546778,
     "app_id": 3356965
    },
    {
@@ -381,8 +381,8 @@
     "categories": [
      "game"
     ],
-    "tokens": 232067340232,
-    "requests": 7951481,
+    "tokens": 244938910407,
+    "requests": 8253721,
     "app_id": 2699842
    },
    {
@@ -394,8 +394,8 @@
     "categories": [
      "roleplay"
     ],
-    "tokens": 219567351395,
-    "requests": 16382510,
+    "tokens": 231208974009,
+    "requests": 17248096,
     "app_id": 169155
    },
    {
@@ -408,8 +408,8 @@
      "ide-extension",
      "cli-agent"
     ],
-    "tokens": 194234440881,
-    "requests": 2123295,
+    "tokens": 205407330236,
+    "requests": 2237584,
     "app_id": 190604
    },
    {
@@ -422,8 +422,8 @@
      "roleplay",
      "personal-agent"
     ],
-    "tokens": 150774166358,
-    "requests": 2405271,
+    "tokens": 158286881257,
+    "requests": 2548827,
     "app_id": 3261377
    },
    {
@@ -435,8 +435,8 @@
     "categories": [
      "personal-agent"
     ],
-    "tokens": 137201475947,
-    "requests": 15504259,
+    "tokens": 142994647689,
+    "requests": 16115048,
     "app_id": 2755681
    },
    {
@@ -448,8 +448,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 130601864252,
-    "requests": 1742187,
+    "tokens": 133931218210,
+    "requests": 1792416,
     "app_id": 2668297
    },
    {
@@ -461,12 +461,23 @@
     "categories": [
      "personal-agent"
     ],
-    "tokens": 109187868705,
-    "requests": 8390351,
+    "tokens": 117069343796,
+    "requests": 8788473,
     "app_id": 3296290
    },
    {
     "rank": 23,
+    "name": "Zoo Code",
+    "slug": "zoo-code",
+    "url": "https://github.com/Zoo-Code-Org/Zoo-Code",
+    "description": null,
+    "categories": [],
+    "tokens": 69259582578,
+    "requests": 934824,
+    "app_id": 3906588
+   },
+   {
+    "rank": 24,
     "name": "SillyTavern",
     "slug": "sillytavern",
     "url": "https://sillytavern.app/",
@@ -474,20 +485,9 @@
     "categories": [
      "roleplay"
     ],
-    "tokens": 65817264898,
-    "requests": 3828377,
+    "tokens": 69161951922,
+    "requests": 4021732,
     "app_id": 142576
-   },
-   {
-    "rank": 24,
-    "name": "Zoo Code",
-    "slug": "zoo-code",
-    "url": "https://github.com/Zoo-Code-Org/Zoo-Code",
-    "description": null,
-    "categories": [],
-    "tokens": 65752023167,
-    "requests": 892682,
-    "app_id": 3906588
    },
    {
     "rank": 25,
@@ -496,8 +496,8 @@
     "url": "https://hackerai.co/",
     "description": "A penetration testing agent that helps you find, validate, and report vulnerabilities with AI.",
     "categories": [],
-    "tokens": 64421847604,
-    "requests": 1517053,
+    "tokens": 67844597329,
+    "requests": 1598593,
     "app_id": 171054
    },
    {
@@ -509,8 +509,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 60626081900,
-    "requests": 1197264,
+    "tokens": 61188969289,
+    "requests": 1211283,
     "app_id": 189563
    },
    {
@@ -520,8 +520,8 @@
     "url": "https://cursor.com/",
     "description": null,
     "categories": [],
-    "tokens": 57110085903,
-    "requests": 536404,
+    "tokens": 59907974207,
+    "requests": 560865,
     "app_id": 2237546
    }
   ],
@@ -536,8 +536,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 18409815628911,
-    "requests": 274478853,
+    "tokens": 18727064215320,
+    "requests": 278797945,
     "app_id": 3067167
    },
    {
@@ -550,8 +550,8 @@
      "cli-agent",
      "ide-extension"
     ],
-    "tokens": 5178970533579,
-    "requests": 75887487,
+    "tokens": 5286227158303,
+    "requests": 77589570,
     "app_id": 2262242
    },
    {
@@ -564,8 +564,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 5004988558524,
-    "requests": 101524619,
+    "tokens": 5072921168015,
+    "requests": 102806641,
     "app_id": 2725608
    },
    {
@@ -577,8 +577,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 2321787664984,
-    "requests": 28982640,
+    "tokens": 2362305919553,
+    "requests": 29485789,
     "app_id": 2627404
    },
    {
@@ -590,8 +590,8 @@
     "categories": [
      "video-gen"
     ],
-    "tokens": 1885388182661,
-    "requests": 28669006,
+    "tokens": 1903568382962,
+    "requests": 28886629,
     "app_id": 2308106
    },
    {
@@ -603,8 +603,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 1501308514775,
-    "requests": 24907656,
+    "tokens": 1515921706328,
+    "requests": 25128591,
     "app_id": 2853275
    },
    {
@@ -616,8 +616,8 @@
     "categories": [
      "roleplay"
     ],
-    "tokens": 898489506863,
-    "requests": 67848292,
+    "tokens": 910131262119,
+    "requests": 68713888,
     "app_id": 169155
    },
    {
@@ -629,8 +629,8 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 872698903846,
-    "requests": 24624871,
+    "tokens": 889069794600,
+    "requests": 25135734,
     "app_id": 2637375
    },
    {
@@ -642,19 +642,19 @@
     "categories": [
      "game"
     ],
-    "tokens": 839641282082,
-    "requests": 23357268,
+    "tokens": 852512991587,
+    "requests": 23659511,
     "app_id": 2699842
    },
    {
     "rank": 16,
-    "name": "Pioneer (development)",
-    "slug": "pioneer-development",
+    "name": "Pioneer (production)",
+    "slug": "pioneer-production",
     "url": "https://pioneer.ai/",
     "description": "Inference API that improves with your traffic",
     "categories": [],
-    "tokens": 734573161344,
-    "requests": 10624179,
+    "tokens": 753005657295,
+    "requests": 10895291,
     "app_id": 3356965
    },
    {
@@ -667,8 +667,8 @@
      "ide-extension",
      "cli-agent"
     ],
-    "tokens": 685409259081,
-    "requests": 7804618,
+    "tokens": 696582148436,
+    "requests": 7918907,
     "app_id": 190604
    },
    {
@@ -680,8 +680,8 @@
     "categories": [
      "cloud-agent"
     ],
-    "tokens": 601382858084,
-    "requests": 6313642,
+    "tokens": 601944595910,
+    "requests": 6319233,
     "app_id": 3747309
    },
    {
@@ -693,8 +693,8 @@
     "categories": [
      "personal-agent"
     ],
-    "tokens": 459191120009,
-    "requests": 34974664,
+    "tokens": 467072709950,
+    "requests": 35372789,
     "app_id": 3296290
    },
    {
@@ -707,8 +707,8 @@
      "ide-extension",
      "cloud-agent"
     ],
-    "tokens": 412608378728,
-    "requests": 4510376,
+    "tokens": 415458694220,
+    "requests": 4538553,
     "app_id": 831074
    },
    {
@@ -720,8 +720,8 @@
     "categories": [
      "personal-agent"
     ],
-    "tokens": 369210648698,
-    "requests": 41294094,
+    "tokens": 375003857794,
+    "requests": 41904887,
     "app_id": 2755681
    },
    {
@@ -733,25 +733,12 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 276692654327,
-    "requests": 3535734,
+    "tokens": 280023198049,
+    "requests": 3585967,
     "app_id": 2668297
    },
    {
     "rank": 27,
-    "name": "SillyTavern",
-    "slug": "sillytavern",
-    "url": "https://sillytavern.app/",
-    "description": "SillyTavern is the LLM frontend for power users, a chat interface that connects to any model and gives deep control through character creation, roleplay, and prompt customization.",
-    "categories": [
-     "roleplay"
-    ],
-    "tokens": 256262419588,
-    "requests": 15357012,
-    "app_id": 142576
-   },
-   {
-    "rank": 28,
     "name": "Ethoswarm",
     "slug": "ethoswarm",
     "url": "https://www.amind.ai/",
@@ -760,9 +747,22 @@
      "roleplay",
      "personal-agent"
     ],
-    "tokens": 254579113047,
-    "requests": 3756004,
+    "tokens": 262091899987,
+    "requests": 3899561,
     "app_id": 3261377
+   },
+   {
+    "rank": 28,
+    "name": "SillyTavern",
+    "slug": "sillytavern",
+    "url": "https://sillytavern.app/",
+    "description": "SillyTavern is the LLM frontend for power users, a chat interface that connects to any model and gives deep control through character creation, roleplay, and prompt customization.",
+    "categories": [
+     "roleplay"
+    ],
+    "tokens": 259607114963,
+    "requests": 15550368,
+    "app_id": 142576
    },
    {
     "rank": 29,
@@ -771,8 +771,8 @@
     "url": "https://afterquery.com/",
     "description": "Applied research lab for frontier models",
     "categories": [],
-    "tokens": 245635524133,
-    "requests": 22223154,
+    "tokens": 247497606024,
+    "requests": 22646073,
     "app_id": 2279192
    },
    {
@@ -784,8 +784,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 222885683057,
-    "requests": 5550195,
+    "tokens": 223448570446,
+    "requests": 5564214,
     "app_id": 189563
    }
   ]
