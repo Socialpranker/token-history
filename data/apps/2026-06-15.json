@@ -1,10 +1,10 @@
 {
  "meta": {
   "source_url": "https://openrouter.ai/api/frontend/rankings/apps",
-  "fetched_at": "2026-06-15T11:33:44.237Z",
+  "fetched_at": "2026-06-15T20:38:46.204Z",
   "window": "day",
   "extracted_via": "frontend-api",
-  "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-06-15T11:33:44.237Z."
+  "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-06-15T20:38:46.204Z."
  },
  "windows": {
   "day": [
@@ -182,7 +182,7 @@
    },
    {
     "rank": 19,
-    "name": "Mira",
+    "name": "Mira is the leading AI agent inside Telegram",
     "slug": "mira",
     "url": "https://mira.tg/",
     "description": "Mira is a Telegram-native AI assistant.",
@@ -279,8 +279,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 6185749923553,
-    "requests": 85611766,
+    "tokens": 6539734034129,
+    "requests": 90422762,
     "app_id": 3067167
    },
    {
@@ -293,8 +293,8 @@
      "cli-agent",
      "ide-extension"
     ],
-    "tokens": 1867393911848,
-    "requests": 30287987,
+    "tokens": 1984532659328,
+    "requests": 32358189,
     "app_id": 2262242
    },
    {
@@ -307,8 +307,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 1360452696566,
-    "requests": 25421919,
+    "tokens": 1439203057165,
+    "requests": 26841511,
     "app_id": 2725608
    },
    {
@@ -320,8 +320,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 942656742336,
-    "requests": 11393906,
+    "tokens": 1004318807356,
+    "requests": 12196476,
     "app_id": 2627404
    },
    {
@@ -333,8 +333,8 @@
     "categories": [
      "video-gen"
     ],
-    "tokens": 526893210747,
-    "requests": 7302337,
+    "tokens": 563923649899,
+    "requests": 7855274,
     "app_id": 2308106
    },
    {
@@ -346,8 +346,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 499959962169,
-    "requests": 8181710,
+    "tokens": 532562556534,
+    "requests": 8774931,
     "app_id": 2853275
    },
    {
@@ -359,8 +359,8 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 265550710208,
-    "requests": 7975729,
+    "tokens": 279979016801,
+    "requests": 8426345,
     "app_id": 2637375
    },
    {
@@ -370,8 +370,8 @@
     "url": "https://pioneer.ai/",
     "description": "Inference API that improves with your traffic",
     "categories": [],
-    "tokens": 253929168515,
-    "requests": 3609044,
+    "tokens": 268682883767,
+    "requests": 3939988,
     "app_id": 3356965
    },
    {
@@ -383,8 +383,8 @@
     "categories": [
      "game"
     ],
-    "tokens": 240950100855,
-    "requests": 8147391,
+    "tokens": 254273044126,
+    "requests": 8451256,
     "app_id": 2699842
    },
    {
@@ -396,12 +396,12 @@
     "categories": [
      "roleplay"
     ],
-    "tokens": 223666053640,
-    "requests": 16772624,
+    "tokens": 236067317202,
+    "requests": 17688833,
     "app_id": 169155
    },
    {
-    "rank": 16,
+    "rank": 17,
     "name": "Cline",
     "slug": "cline",
     "url": "https://cline.bot/",
@@ -410,8 +410,8 @@
      "ide-extension",
      "cli-agent"
     ],
-    "tokens": 202670103022,
-    "requests": 2199387,
+    "tokens": 216436898815,
+    "requests": 2344955,
     "app_id": 190604
    },
    {
@@ -424,8 +424,8 @@
      "roleplay",
      "personal-agent"
     ],
-    "tokens": 155918361479,
-    "requests": 2578761,
+    "tokens": 162862443495,
+    "requests": 2711359,
     "app_id": 3261377
    },
    {
@@ -437,8 +437,8 @@
     "categories": [
      "personal-agent"
     ],
-    "tokens": 142793680104,
-    "requests": 16110248,
+    "tokens": 153334201653,
+    "requests": 17303391,
     "app_id": 2755681
    },
    {
@@ -450,8 +450,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 133952231471,
-    "requests": 1800248,
+    "tokens": 148413470184,
+    "requests": 2018761,
     "app_id": 2668297
    },
    {
@@ -463,8 +463,8 @@
     "categories": [
      "personal-agent"
     ],
-    "tokens": 112541689094,
-    "requests": 7966207,
+    "tokens": 120776808297,
+    "requests": 8422732,
     "app_id": 3296290
    },
    {
@@ -474,8 +474,8 @@
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code",
     "description": null,
     "categories": [],
-    "tokens": 67596573547,
-    "requests": 923046,
+    "tokens": 72105044779,
+    "requests": 990985,
     "app_id": 3906588
    },
    {
@@ -487,8 +487,8 @@
     "categories": [
      "roleplay"
     ],
-    "tokens": 66713318223,
-    "requests": 3907728,
+    "tokens": 70378617397,
+    "requests": 4117532,
     "app_id": 142576
    },
    {
@@ -498,12 +498,23 @@
     "url": "https://hackerai.co/",
     "description": "A penetration testing agent that helps you find, validate, and report vulnerabilities with AI.",
     "categories": [],
-    "tokens": 65568493908,
-    "requests": 1531896,
+    "tokens": 70109189657,
+    "requests": 1629772,
     "app_id": 171054
    },
    {
     "rank": 26,
+    "name": "Cursor",
+    "slug": "cursor",
+    "url": "https://cursor.com/",
+    "description": null,
+    "categories": [],
+    "tokens": 64177248984,
+    "requests": 606921,
+    "app_id": 2237546
+   },
+   {
+    "rank": 27,
     "name": "OpenHands",
     "slug": "openhands",
     "url": "https://docs.all-hands.dev/",
@@ -511,20 +522,9 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 61557054295,
-    "requests": 1214140,
+    "tokens": 63618787967,
+    "requests": 1250776,
     "app_id": 189563
-   },
-   {
-    "rank": 27,
-    "name": "Cursor",
-    "slug": "cursor",
-    "url": "https://cursor.com/",
-    "description": null,
-    "categories": [],
-    "tokens": 60392872212,
-    "requests": 570178,
-    "app_id": 2237546
    }
   ],
   "month": [
@@ -538,8 +538,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 18930184625370,
-    "requests": 280813160,
+    "tokens": 19284174851799,
+    "requests": 285624240,
     "app_id": 3067167
    },
    {
@@ -552,8 +552,8 @@
      "cli-agent",
      "ide-extension"
     ],
-    "tokens": 5327289917120,
-    "requests": 78868404,
+    "tokens": 5444430615872,
+    "requests": 80938637,
     "app_id": 2262242
    },
    {
@@ -566,8 +566,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 5027705218822,
-    "requests": 101696074,
+    "tokens": 5106456483349,
+    "requests": 103115698,
     "app_id": 2725608
    },
    {
@@ -579,8 +579,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 2391315063833,
-    "requests": 29840692,
+    "tokens": 2452977865517,
+    "requests": 30643267,
     "app_id": 2627404
    },
    {
@@ -592,8 +592,8 @@
     "categories": [
      "video-gen"
     ],
-    "tokens": 1892618139078,
-    "requests": 28505364,
+    "tokens": 1929649692735,
+    "requests": 29058320,
     "app_id": 2308106
    },
    {
@@ -605,12 +605,12 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 1541143793696,
-    "requests": 25600687,
+    "tokens": 1573747538619,
+    "requests": 26193921,
     "app_id": 2853275
    },
    {
-    "rank": 12,
+    "rank": 13,
     "name": "Janitor AI",
     "slug": "janitor-ai",
     "url": "https://janitorai.com/",
@@ -618,8 +618,8 @@
     "categories": [
      "roleplay"
     ],
-    "tokens": 909506131200,
-    "requests": 68619537,
+    "tokens": 921907823447,
+    "requests": 69535771,
     "app_id": 169155
    },
    {
@@ -631,8 +631,8 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 891349171926,
-    "requests": 25471835,
+    "tokens": 905778065129,
+    "requests": 25922468,
     "app_id": 2637375
    },
    {
@@ -644,8 +644,8 @@
     "categories": [
      "game"
     ],
-    "tokens": 855612687467,
-    "requests": 23680464,
+    "tokens": 868935779296,
+    "requests": 23984336,
     "app_id": 2699842
    },
    {
@@ -655,8 +655,8 @@
     "url": "https://pioneer.ai/",
     "description": "Inference API that improves with your traffic",
     "categories": [],
-    "tokens": 782899849932,
-    "requests": 11305824,
+    "tokens": 797654170001,
+    "requests": 11636780,
     "app_id": 3356965
    },
    {
@@ -669,8 +669,8 @@
      "ide-extension",
      "cli-agent"
     ],
-    "tokens": 695739898567,
-    "requests": 7895239,
+    "tokens": 709506762260,
+    "requests": 8040809,
     "app_id": 190604
    },
    {
@@ -682,8 +682,8 @@
     "categories": [
      "cloud-agent"
     ],
-    "tokens": 603429619557,
-    "requests": 6333488,
+    "tokens": 604159653182,
+    "requests": 6339896,
     "app_id": 3747309
    },
    {
@@ -695,8 +695,8 @@
     "categories": [
      "personal-agent"
     ],
-    "tokens": 469548804871,
-    "requests": 35512989,
+    "tokens": 477784302511,
+    "requests": 35969533,
     "app_id": 3296290
    },
    {
@@ -709,8 +709,8 @@
      "ide-extension",
      "cloud-agent"
     ],
-    "tokens": 398200934729,
-    "requests": 4336886,
+    "tokens": 401866808872,
+    "requests": 4372256,
     "app_id": 831074
    },
    {
@@ -722,8 +722,8 @@
     "categories": [
      "personal-agent"
     ],
-    "tokens": 388450157343,
-    "requests": 43294435,
+    "tokens": 398990744367,
+    "requests": 44487590,
     "app_id": 2755681
    },
    {
@@ -735,8 +735,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 284550443300,
-    "requests": 3649145,
+    "tokens": 299011792031,
+    "requests": 3867659,
     "app_id": 2668297
    },
    {
@@ -749,8 +749,8 @@
      "roleplay",
      "personal-agent"
     ],
-    "tokens": 276643361500,
-    "requests": 4176233,
+    "tokens": 283587443516,
+    "requests": 4308831,
     "app_id": 3261377
    },
    {
@@ -762,8 +762,8 @@
     "categories": [
      "roleplay"
     ],
-    "tokens": 259100169156,
-    "requests": 15522651,
+    "tokens": 262765530458,
+    "requests": 15732462,
     "app_id": 142576
    },
    {
@@ -773,8 +773,8 @@
     "url": "https://afterquery.com/",
     "description": "Applied research lab for frontier models",
     "categories": [],
-    "tokens": 239750582773,
-    "requests": 23428693,
+    "tokens": 241563339451,
+    "requests": 23843063,
     "app_id": 2279192
    },
    {
@@ -786,8 +786,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 216581500617,
-    "requests": 5435899,
+    "tokens": 218643259616,
+    "requests": 5472536,
     "app_id": 189563
    }
   ]
