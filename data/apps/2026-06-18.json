@@ -1,10 +1,10 @@
 {
  "meta": {
   "source_url": "https://openrouter.ai/api/frontend/rankings/apps",
-  "fetched_at": "2026-06-18T09:57:37.071Z",
+  "fetched_at": "2026-06-18T19:52:05.877Z",
   "window": "day",
   "extracted_via": "frontend-api",
-  "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-06-18T09:57:37.071Z."
+  "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-06-18T19:52:05.877Z."
  },
  "windows": {
   "day": [
@@ -105,8 +105,8 @@
    },
    {
     "rank": 13,
-    "name": "Pioneer (production)",
-    "slug": "pioneer-production",
+    "name": "Pioneer (development)",
+    "slug": "pioneer-development",
     "url": "https://pioneer.ai/",
     "description": "Inference API that improves with your traffic",
     "categories": [],
@@ -129,7 +129,7 @@
    },
    {
     "rank": 15,
-    "name": "ISEKAI ZERO",
+    "name": "ISEKAI ZERO Benchmark",
     "slug": "isekai-zero",
     "url": "https://www.isekai.world/",
     "description": "AI adventures. Travel with your favorite characters",
@@ -168,7 +168,7 @@
    },
    {
     "rank": 19,
-    "name": "Mira is the leading AI agent inside Telegram",
+    "name": "Mira",
     "slug": "mira",
     "url": "https://mira.tg/",
     "description": "Mira is a Telegram-native AI assistant.",
@@ -275,8 +275,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 6154510575633,
-    "requests": 84372685,
+    "tokens": 6485216925450,
+    "requests": 88885412,
     "app_id": 3067167
    },
    {
@@ -289,8 +289,8 @@
      "cli-agent",
      "ide-extension"
     ],
-    "tokens": 1944445448636,
-    "requests": 33405813,
+    "tokens": 2057769268285,
+    "requests": 35029475,
     "app_id": 2262242
    },
    {
@@ -303,8 +303,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 1325862458640,
-    "requests": 24620951,
+    "tokens": 1391540406111,
+    "requests": 25872524,
     "app_id": 2725608
    },
    {
@@ -316,8 +316,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 1011117657751,
-    "requests": 12065273,
+    "tokens": 1070360106176,
+    "requests": 12759334,
     "app_id": 2627404
    },
    {
@@ -329,8 +329,8 @@
     "categories": [
      "video-gen"
     ],
-    "tokens": 532582034126,
-    "requests": 7312988,
+    "tokens": 567787406459,
+    "requests": 7837188,
     "app_id": 2308106
    },
    {
@@ -342,19 +342,19 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 519305143354,
-    "requests": 8546668,
+    "tokens": 552244437901,
+    "requests": 9042166,
     "app_id": 2853275
    },
    {
     "rank": 12,
-    "name": "Pioneer (production)",
-    "slug": "pioneer-production",
+    "name": "Pioneer (development)",
+    "slug": "pioneer-development",
     "url": "https://pioneer.ai/",
     "description": "Inference API that improves with your traffic",
     "categories": [],
-    "tokens": 276024020872,
-    "requests": 4874925,
+    "tokens": 289611375367,
+    "requests": 5241342,
     "app_id": 3356965
    },
    {
@@ -366,38 +366,12 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 248476264840,
-    "requests": 7666904,
+    "tokens": 260498386624,
+    "requests": 8048337,
     "app_id": 2637375
    },
    {
     "rank": 14,
-    "name": "ISEKAI ZERO",
-    "slug": "isekai-zero",
-    "url": "https://www.isekai.world/",
-    "description": "AI adventures. Travel with your favorite characters",
-    "categories": [
-     "game"
-    ],
-    "tokens": 243811949019,
-    "requests": 6546907,
-    "app_id": 2699842
-   },
-   {
-    "rank": 15,
-    "name": "Janitor AI",
-    "slug": "janitor-ai",
-    "url": "https://janitorai.com/",
-    "description": "Janitor AI is a chatbot platform where users create and chat with custom AI characters for interactive roleplay, storytelling, and immersive fiction.",
-    "categories": [
-     "roleplay"
-    ],
-    "tokens": 233333178927,
-    "requests": 17342566,
-    "app_id": 169155
-   },
-   {
-    "rank": 16,
     "name": "Cline",
     "slug": "cline",
     "url": "https://cline.bot/",
@@ -406,9 +380,35 @@
      "ide-extension",
      "cli-agent"
     ],
-    "tokens": 232456727847,
-    "requests": 2466132,
+    "tokens": 259360134021,
+    "requests": 2731729,
     "app_id": 190604
+   },
+   {
+    "rank": 15,
+    "name": "ISEKAI ZERO Benchmark",
+    "slug": "isekai-zero",
+    "url": "https://www.isekai.world/",
+    "description": "AI adventures. Travel with your favorite characters",
+    "categories": [
+     "game"
+    ],
+    "tokens": 255921311710,
+    "requests": 6824945,
+    "app_id": 2699842
+   },
+   {
+    "rank": 16,
+    "name": "Janitor AI",
+    "slug": "janitor-ai",
+    "url": "https://janitorai.com/",
+    "description": "Janitor AI is a chatbot platform where users create and chat with custom AI characters for interactive roleplay, storytelling, and immersive fiction.",
+    "categories": [
+     "roleplay"
+    ],
+    "tokens": 244820137834,
+    "requests": 18179072,
+    "app_id": 169155
    },
    {
     "rank": 17,
@@ -419,8 +419,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 154649912032,
-    "requests": 2343483,
+    "tokens": 157736547147,
+    "requests": 2388037,
     "app_id": 2668297
    },
    {
@@ -432,8 +432,8 @@
     "categories": [
      "personal-agent"
     ],
-    "tokens": 139424547719,
-    "requests": 15903504,
+    "tokens": 148688767552,
+    "requests": 17024796,
     "app_id": 2755681
    },
    {
@@ -446,8 +446,8 @@
      "roleplay",
      "personal-agent"
     ],
-    "tokens": 137493289198,
-    "requests": 2670108,
+    "tokens": 140959937724,
+    "requests": 2780798,
     "app_id": 3261377
    },
    {
@@ -459,8 +459,8 @@
     "categories": [
      "personal-agent"
     ],
-    "tokens": 116931305984,
-    "requests": 6659680,
+    "tokens": 124383778864,
+    "requests": 7040719,
     "app_id": 3296290
    },
    {
@@ -470,12 +470,23 @@
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code",
     "description": null,
     "categories": [],
-    "tokens": 67841841716,
-    "requests": 901500,
+    "tokens": 73427816736,
+    "requests": 972471,
     "app_id": 3906588
    },
    {
     "rank": 24,
+    "name": "HackerAI",
+    "slug": "hackerai",
+    "url": "https://hackerai.co/",
+    "description": "A penetration testing agent that helps you find, validate, and report vulnerabilities with AI.",
+    "categories": [],
+    "tokens": 71106785361,
+    "requests": 1614030,
+    "app_id": 171054
+   },
+   {
+    "rank": 25,
     "name": "SillyTavern",
     "slug": "sillytavern",
     "url": "https://sillytavern.app/",
@@ -483,20 +494,9 @@
     "categories": [
      "roleplay"
     ],
-    "tokens": 66902439704,
-    "requests": 3950446,
+    "tokens": 70069210815,
+    "requests": 4137988,
     "app_id": 142576
-   },
-   {
-    "rank": 25,
-    "name": "HackerAI",
-    "slug": "hackerai",
-    "url": "https://hackerai.co/",
-    "description": "A penetration testing agent that helps you find, validate, and report vulnerabilities with AI.",
-    "categories": [],
-    "tokens": 66806447737,
-    "requests": 1515632,
-    "app_id": 171054
    },
    {
     "rank": 26,
@@ -505,8 +505,8 @@
     "url": "https://cursor.com/",
     "description": null,
     "categories": [],
-    "tokens": 63341535311,
-    "requests": 575685,
+    "tokens": 69299203513,
+    "requests": 631434,
     "app_id": 2237546
    },
    {
@@ -516,8 +516,8 @@
     "url": "https://endpoint-proxy.local/",
     "description": null,
     "categories": [],
-    "tokens": 59322026167,
-    "requests": 1324535,
+    "tokens": 63461898828,
+    "requests": 1414452,
     "app_id": 2622911
    }
   ],
@@ -532,8 +532,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 20075899826663,
-    "requests": 294127930,
+    "tokens": 20406600162277,
+    "requests": 298640581,
     "app_id": 3067167
    },
    {
@@ -546,8 +546,8 @@
      "cli-agent",
      "ide-extension"
     ],
-    "tokens": 5651593750547,
-    "requests": 85579320,
+    "tokens": 5764914022259,
+    "requests": 87202949,
     "app_id": 2262242
    },
    {
@@ -560,8 +560,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 5075121053262,
-    "requests": 101478445,
+    "tokens": 5140797724575,
+    "requests": 102729997,
     "app_id": 2725608
    },
    {
@@ -573,8 +573,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 2674118231731,
-    "requests": 33198870,
+    "tokens": 2733359625297,
+    "requests": 33892922,
     "app_id": 2627404
    },
    {
@@ -586,8 +586,8 @@
     "categories": [
      "video-gen"
     ],
-    "tokens": 1999091663102,
-    "requests": 29758907,
+    "tokens": 2034296573469,
+    "requests": 30283101,
     "app_id": 2308106
    },
    {
@@ -599,8 +599,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 1620193158652,
-    "requests": 26777195,
+    "tokens": 1653130495717,
+    "requests": 27272667,
     "app_id": 2853275
    },
    {
@@ -612,8 +612,8 @@
     "categories": [
      "roleplay"
     ],
-    "tokens": 916590378315,
-    "requests": 68619320,
+    "tokens": 928077085154,
+    "requests": 69455811,
     "app_id": 169155
    },
    {
@@ -625,32 +625,32 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 899777191185,
-    "requests": 26710962,
+    "tokens": 911799131457,
+    "requests": 27092387,
     "app_id": 2637375
    },
    {
     "rank": 15,
-    "name": "ISEKAI ZERO",
+    "name": "ISEKAI ZERO Benchmark",
     "slug": "isekai-zero",
     "url": "https://www.isekai.world/",
     "description": "AI adventures. Travel with your favorite characters",
     "categories": [
      "game"
     ],
-    "tokens": 880540674233,
-    "requests": 23942670,
+    "tokens": 892649785353,
+    "requests": 24220704,
     "app_id": 2699842
    },
    {
     "rank": 16,
-    "name": "Pioneer (production)",
-    "slug": "pioneer-production",
+    "name": "Pioneer (development)",
+    "slug": "pioneer-development",
     "url": "https://pioneer.ai/",
     "description": "Inference API that improves with your traffic",
     "categories": [],
-    "tokens": 835536564183,
-    "requests": 12970006,
+    "tokens": 849123796095,
+    "requests": 13336417,
     "app_id": 3356965
    },
    {
@@ -663,8 +663,8 @@
      "ide-extension",
      "cli-agent"
     ],
-    "tokens": 751619890043,
-    "requests": 8422422,
+    "tokens": 778522433854,
+    "requests": 8688010,
     "app_id": 190604
    },
    {
@@ -676,8 +676,8 @@
     "categories": [
      "cloud-agent"
     ],
-    "tokens": 606725143950,
-    "requests": 6380926,
+    "tokens": 607401729271,
+    "requests": 6388457,
     "app_id": 3747309
    },
    {
@@ -689,8 +689,8 @@
     "categories": [
      "personal-agent"
     ],
-    "tokens": 489855009568,
-    "requests": 36569453,
+    "tokens": 497307383431,
+    "requests": 36950485,
     "app_id": 3296290
    },
    {
@@ -702,8 +702,8 @@
     "categories": [
      "personal-agent"
     ],
-    "tokens": 451006727171,
-    "requests": 50515099,
+    "tokens": 460270865769,
+    "requests": 51636374,
     "app_id": 2755681
    },
    {
@@ -716,8 +716,8 @@
      "ide-extension",
      "cloud-agent"
     ],
-    "tokens": 361931306426,
-    "requests": 3913831,
+    "tokens": 365312056877,
+    "requests": 3950501,
     "app_id": 831074
    },
    {
@@ -729,8 +729,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 345420202266,
-    "requests": 4643595,
+    "tokens": 348506837381,
+    "requests": 4688149,
     "app_id": 2668297
    },
    {
@@ -743,8 +743,8 @@
      "roleplay",
      "personal-agent"
     ],
-    "tokens": 326389841300,
-    "requests": 5194255,
+    "tokens": 329856489826,
+    "requests": 5304945,
     "app_id": 3261377
    },
    {
@@ -756,8 +756,8 @@
     "categories": [
      "roleplay"
     ],
-    "tokens": 262257423987,
-    "requests": 15636137,
+    "tokens": 265424175828,
+    "requests": 15823675,
     "app_id": 142576
    },
    {
@@ -769,8 +769,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 232806662906,
-    "requests": 5687107,
+    "tokens": 233606774562,
+    "requests": 5705908,
     "app_id": 189563
    },
    {
@@ -780,8 +780,8 @@
     "url": "https://docs.langchain.com/",
     "description": "",
     "categories": [],
-    "tokens": 210726978227,
-    "requests": 29361838,
+    "tokens": 215978805794,
+    "requests": 29824095,
     "app_id": 2524738
    }
   ]
