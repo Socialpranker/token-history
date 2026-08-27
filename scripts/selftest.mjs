@@ -418,6 +418,7 @@ test('lastDays filters events to the window', () => {
 
 console.log('models layer:');
 import { buildTrends, normalizeFrontendModels, normalizeOfficialModels, normSlug } from './lib/models.mjs';
+import { APPS_URLS, MODELS_URLS } from './lib/endpoints.mjs';
 
 test('normSlug strips :free and date suffixes', () => {
   assert.equal(normSlug('qwen/qwen3.7-plus-20260602'), 'qwen/qwen3.7-plus');
@@ -469,6 +470,16 @@ test('trends: warming_up below 35 days, pct/risers/fallers after', () => {
   assert.ok(full.models['rises/fast'].pct_4w > 200);
   assert.equal(full.fallers[0].slug, 'falls/hard');
   assert.equal(full.risers[0].slug, 'rises/fast');
+});
+
+test('rankings endpoints: versioned candidate first, legacy kept as fallback', () => {
+  // OpenRouter moved /api/frontend/rankings/* to /api/frontend/v1/rankings/*
+  // and the collector went quiet for two months. Order matters: the live one
+  // must be tried first, and the old one must stay as a fallback.
+  assert.ok(APPS_URLS.length >= 2 && MODELS_URLS.length >= 2);
+  assert.ok(APPS_URLS[0].includes('/frontend/v1/rankings/apps'), APPS_URLS[0]);
+  assert.ok(MODELS_URLS[0].includes('/frontend/v1/rankings/models'), MODELS_URLS[0]);
+  assert.ok(APPS_URLS.some((u) => !u.includes('/v1/')));
 });
 
 console.log(`\nAll ${passed} tests passed.`);

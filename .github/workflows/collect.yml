@@ -46,6 +46,35 @@ jobs:
             git push
           fi
 
+
+      # The collector failed silently for two months: the run went red twice a
+      # day and nobody was watching a red square. One open issue is louder, and
+      # it is opened once — not on every scheduled run.
+      - name: Open an issue when collection breaks
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          open_count=$(gh issue list --label collect-failure --state open --json number --jq 'length')
+          if [ "$open_count" != "0" ]; then
+            echo "an open collect-failure issue already exists; not filing another"
+            exit 0
+          fi
+          gh label create collect-failure --color b60205 \
+            --description "the daily collector could not fetch rankings" 2>/dev/null || true
+          gh issue create --label collect-failure \
+            --title "collect is failing — the archive has stopped" \
+            --body "The scheduled collector failed. Until it is fixed the archive stops growing and \
+          \`agentburn drift\` degrades to \"world: no data\".
+
+          Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+          Most likely cause, from experience: OpenRouter moved the rankings endpoint again. Check \
+          \`scripts/lib/endpoints.mjs\` — add the new URL as the first candidate. Reproduce locally with \
+          \`node scripts/collect.mjs\`.
+
+          Close this issue once a run goes green; it is filed only when none is open."
+
       - name: Overtake alert issue
         env:
           GH_TOKEN: ${{ github.token }}

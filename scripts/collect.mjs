@@ -18,10 +18,9 @@ import { renderChartSVG, dayPoints } from './lib/svgchart.mjs';
 import { buildAtomFeed } from './lib/feed.mjs';
 import { digestDue, buildDigestMarkdown, lastDays } from './lib/digest.mjs';
 import { todayUTC, humanizeTokens } from './lib/util.mjs';
+import { APPS_URLS, MODELS_URLS, PAGE_URL } from './lib/endpoints.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const API_URL = 'https://openrouter.ai/api/frontend/rankings/apps';
-const PAGE_URL = 'https://openrouter.ai/rankings';
 const UA = 'token-history-bot/0.1 (+https://github.com/Socialpranker/token-history)';
 
 async function fetchWithTimeout(url, accept) {
@@ -52,16 +51,28 @@ function readReposMap() {
   }
 }
 
+async function fetchFirstOk(urls, accept) {
+  const failures = [];
+  for (const url of urls) {
+    try {
+      return await fetchWithTimeout(url, accept);
+    } catch (err) {
+      failures.push(`${url} → ${err.message}`);
+    }
+  }
+  throw new Error(failures.join('; '));
+}
+
 async function fetchWindows() {
   try {
-    const res = await fetchWithTimeout(API_URL, 'application/json');
+    const res = await fetchFirstOk(APPS_URLS, 'application/json');
     const windows = normalizeApiPayload(await res.json());
-    return { windows, via: 'frontend-api' };
+    return { windows, via: 'frontend-api', sourceUrl: res.url || APPS_URLS[0] };
   } catch (err) {
     console.warn(`[collect] API source failed (${err.message}); falling back to page HTML`);
     const res = await fetchWithTimeout(PAGE_URL, 'text/html');
     const { apps, via } = extractApps(await res.text());
-    return { windows: { day: apps }, via: `html-fallback/${via}` };
+    return { windows: { day: apps }, via: `html-fallback/${via}`, sourceUrl: PAGE_URL };
   }
 }
 
@@ -70,7 +81,7 @@ async function main() {
   const fetchedAt = new Date().toISOString();
 
   // --- core: tokens (fatal on failure) ---
-  const { windows: rawWindows, via } = await fetchWindows();
+  const { windows: rawWindows, via, sourceUrl } = await fetchWindows();
 
   const store = new Store(ROOT);
   const withSlugs = (arr) =>
@@ -103,7 +114,7 @@ async function main() {
   const seriesApps = [...indexApps, ...weekOnly];
 
   const meta = {
-    source_url: API_URL,
+    source_url: sourceUrl, // the endpoint that actually answered, not the first guess
     fetched_at: fetchedAt,
     window: 'day', // primary window for series/badges; week+month archived in snapshot
     extracted_via: via,
@@ -196,7 +207,7 @@ async function main() {
   try {
     const modelsDir = path.join(ROOT, 'data', 'models', 'daily');
     fs.mkdirSync(modelsDir, { recursive: true });
-    const res = await fetchWithTimeout('https://openrouter.ai/api/frontend/rankings/models', 'application/json');
+    const res = await fetchFirstOk(MODELS_URLS, 'application/json');
     const byDate = normalizeFrontendModels(await res.json());
     for (const [d, models] of Object.entries(byDate)) {
       fs.writeFileSync(path.join(modelsDir, `${d}.json`), JSON.stringify(models) + '\n');
