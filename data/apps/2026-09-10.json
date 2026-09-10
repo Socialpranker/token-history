@@ -1,0 +1,791 @@
+{
+ "meta": {
+  "source_url": "https://openrouter.ai/api/frontend/v1/rankings/apps",
+  "fetched_at": "2026-09-10T10:01:29.205Z",
+  "window": "day",
+  "extracted_via": "frontend-api",
+  "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-09-10T10:01:29.205Z."
+ },
+ "windows": {
+  "day": [
+   {
+    "rank": 3,
+    "name": "Hermes Agent",
+    "slug": "hermes-agent",
+    "url": "https://hermes-agent.nousresearch.com/",
+    "description": "Hermes Agent is an open-source, self-improving AI agent by Nous Research that runs persistently with memory across sessions, and builds reusable skills from experience. It comes with 40+ built-in tools, including web search, browser automation, and vision, plus scheduled automations and subagents.",
+    "categories": [
+     "personal-agent",
+     "cli-agent"
+    ],
+    "tokens": 1543103751112,
+    "requests": 16001450,
+    "app_id": 3067167
+   },
+   {
+    "rank": 1,
+    "name": "Claude Code",
+    "slug": "claude-code-1wm0",
+    "url": "https://claude.ai/code",
+    "description": "Claude Code is Anthropic's agentic coding tool that reads your entire codebase, plans and executes changes across files, runs tests, and iterates on failures, all from natural language prompts.",
+    "categories": [
+     "cli-agent"
+    ],
+    "tokens": 1032859282025,
+    "requests": 7827676,
+    "app_id": 2627404
+   },
+   {
+    "rank": 6,
+    "name": "Cline",
+    "slug": "cline",
+    "url": "https://cline.bot/",
+    "description": "Cline is an open-source AI coding agent that lives inside your IDE, autonomously exploring your codebase, editing files, running terminal commands, and using browser automation.",
+    "categories": [
+     "ide-extension",
+     "cli-agent"
+    ],
+    "tokens": 416309908340,
+    "requests": 4139702,
+    "app_id": 190604
+   },
+   {
+    "rank": 7,
+    "name": "Kilo Code",
+    "slug": "kilo-code",
+    "url": "https://kilocode.ai/",
+    "description": "Kilo Code is an open-source AI coding agent that works across VS Code, JetBrains, and CLI to help developers ship code faster with agentic workflows.",
+    "categories": [
+     "cli-agent",
+     "ide-extension"
+    ],
+    "tokens": 373952543714,
+    "requests": 4947710,
+    "app_id": 2262242
+   },
+   {
+    "rank": 8,
+    "name": "pi",
+    "slug": "pi",
+    "url": "https://pi.dev/",
+    "description": "There are many coding agents, but this one is yours.",
+    "categories": [
+     "cli-agent"
+    ],
+    "tokens": 240851952223,
+    "requests": 2713166,
+    "app_id": 2853275
+   },
+   {
+    "rank": 9,
+    "name": "Oh-My-Pi",
+    "slug": "oh-my-pi",
+    "url": "https://omp.sh/",
+    "description": null,
+    "categories": [
+     "cli-agent"
+    ],
+    "tokens": 187588144901,
+    "requests": 1186405,
+    "app_id": 3682314
+   },
+   {
+    "rank": 10,
+    "name": "OpenClaw",
+    "slug": "openclaw",
+    "url": "https://openclaw.ai/",
+    "description": "OpenClaw is an open-source AI agent that connects to your messaging apps and takes real actions on your behalf, from running commands and browsing the web to managing files and sending emails.",
+    "categories": [
+     "personal-agent",
+     "cli-agent"
+    ],
+    "tokens": 173002712810,
+    "requests": 2498858,
+    "app_id": 2725608
+   },
+   {
+    "rank": 11,
+    "name": "Codex",
+    "slug": "codex",
+    "url": "https://openai.com/codex/",
+    "description": "A coding agent that helps you build and ship with AI",
+    "categories": [
+     "cli-agent"
+    ],
+    "tokens": 145533070063,
+    "requests": 1949352,
+    "app_id": 2668297
+   },
+   {
+    "rank": 12,
+    "name": "DeepSeek Harness",
+    "slug": "deepseek-harness",
+    "url": "https://github.com/deepseek-ai/deepseek-harness",
+    "description": null,
+    "categories": [],
+    "tokens": 119802756503,
+    "requests": 1038974,
+    "app_id": 4706207
+   },
+   {
+    "rank": 13,
+    "name": "Open WebUI",
+    "slug": "open-webui",
+    "url": "https://openwebui.com/",
+    "description": "Open WebUI is a self-hosted AI platform providing a chat interface for Large Language Models.",
+    "categories": [
+     "general-chat"
+    ],
+    "tokens": 103871229879,
+    "requests": 54617747,
+    "app_id": 184102
+   },
+   {
+    "rank": 14,
+    "name": "Freebuff",
+    "slug": "freebuff",
+    "url": "https://freebuff.com/",
+    "description": "Powerful coding models, funded by ads",
+    "categories": [],
+    "tokens": 98865247304,
+    "requests": 1210400,
+    "app_id": 4137556
+   },
+   {
+    "rank": 16,
+    "name": "Framer",
+    "slug": "framer",
+    "url": "https://www.framer.com/",
+    "description": "Create a professional website with Framer’s no-code AI website builder. Design freely, manage CMS content, optimize SEO, collaborate, and publish fast.",
+    "categories": [],
+    "tokens": 57615665144,
+    "requests": 530495,
+    "app_id": 3335353
+   },
+   {
+    "rank": 17,
+    "name": "HighLevel",
+    "slug": "highlevel",
+    "url": "https://www.gohighlevel.com/",
+    "description": null,
+    "categories": [],
+    "tokens": 51709324926,
+    "requests": 959633,
+    "app_id": 4580044
+   },
+   {
+    "rank": 18,
+    "name": "Descript",
+    "slug": "descript",
+    "url": "https://descript.com/",
+    "description": "AI Video & Podcast Editor",
+    "categories": [
+     "video-gen"
+    ],
+    "tokens": 48016555164,
+    "requests": 820055,
+    "app_id": 2308106
+   },
+   {
+    "rank": 20,
+    "name": "ISEKAI ZERO",
+    "slug": "isekai-zero",
+    "url": "https://www.isekai.world/",
+    "description": "AI adventures. Travel with your favorite characters",
+    "categories": [
+     "game"
+    ],
+    "tokens": 45439794490,
+    "requests": 1102291,
+    "app_id": 2699842
+   },
+   {
+    "rank": 21,
+    "name": "Hello Minds, powered by Ethoswarm",
+    "slug": "hello-minds-powered-by-ethoswarm",
+    "url": "https://www.hellominds.ai/",
+    "description": null,
+    "categories": [
+     "roleplay",
+     "personal-agent",
+     "creative-writing"
+    ],
+    "tokens": 43137431260,
+    "requests": 213451,
+    "app_id": 4132065
+   },
+   {
+    "rank": 22,
+    "name": "Portkey AI",
+    "slug": "portkey-ai",
+    "url": "https://portkey.ai/",
+    "description": "Control panel for AI apps",
+    "categories": [
+     "programming-app"
+    ],
+    "tokens": 37360953913,
+    "requests": 1314216,
+    "app_id": 169295
+   },
+   {
+    "rank": 23,
+    "name": "Lemonade",
+    "slug": "lemonade",
+    "url": "https://lemonade.gg/",
+    "description": "The AI tool for Roblox games.",
+    "categories": [
+     "programming-app"
+    ],
+    "tokens": 34700410925,
+    "requests": 851375,
+    "app_id": 2637375
+   },
+   {
+    "rank": 24,
+    "name": "OpenHands",
+    "slug": "openhands",
+    "url": "https://docs.all-hands.dev/",
+    "description": "AI coding agent that can run commands, browse the web, call APIs",
+    "categories": [
+     "cli-agent"
+    ],
+    "tokens": 33266284909,
+    "requests": 397742,
+    "app_id": 189563
+   },
+   {
+    "rank": 25,
+    "name": "Janitor AI",
+    "slug": "janitor-ai",
+    "url": "https://janitorai.com/",
+    "description": "Janitor AI is a chatbot platform where users create and chat with custom AI characters for interactive roleplay, storytelling, and immersive fiction.",
+    "categories": [
+     "roleplay"
+    ],
+    "tokens": 31134201739,
+    "requests": 1960355,
+    "app_id": 169155
+   }
+  ],
+  "week": [
+   {
+    "rank": 2,
+    "name": "Hermes Agent",
+    "slug": "hermes-agent",
+    "url": "https://hermes-agent.nousresearch.com/",
+    "description": "Hermes Agent is an open-source, self-improving AI agent by Nous Research that runs persistently with memory across sessions, and builds reusable skills from experience. It comes with 40+ built-in tools, including web search, browser automation, and vision, plus scheduled automations and subagents.",
+    "categories": [
+     "personal-agent",
+     "cli-agent"
+    ],
+    "tokens": 11226638864194,
+    "requests": 117958215,
+    "app_id": 3067167
+   },
+   {
+    "rank": 3,
+    "name": "Claude Code",
+    "slug": "claude-code-1wm0",
+    "url": "https://claude.ai/code",
+    "description": "Claude Code is Anthropic's agentic coding tool that reads your entire codebase, plans and executes changes across files, runs tests, and iterates on failures, all from natural language prompts.",
+    "categories": [
+     "cli-agent"
+    ],
+    "tokens": 5153747402000,
+    "requests": 47373516,
+    "app_id": 2627404
+   },
+   {
+    "rank": 6,
+    "name": "Kilo Code",
+    "slug": "kilo-code",
+    "url": "https://kilocode.ai/",
+    "description": "Kilo Code is an open-source AI coding agent that works across VS Code, JetBrains, and CLI to help developers ship code faster with agentic workflows.",
+    "categories": [
+     "cli-agent",
+     "ide-extension"
+    ],
+    "tokens": 2806535358073,
+    "requests": 35432610,
+    "app_id": 2262242
+   },
+   {
+    "rank": 7,
+    "name": "Cline",
+    "slug": "cline",
+    "url": "https://cline.bot/",
+    "description": "Cline is an open-source AI coding agent that lives inside your IDE, autonomously exploring your codebase, editing files, running terminal commands, and using browser automation.",
+    "categories": [
+     "ide-extension",
+     "cli-agent"
+    ],
+    "tokens": 2782153271502,
+    "requests": 27744153,
+    "app_id": 190604
+   },
+   {
+    "rank": 8,
+    "name": "pi",
+    "slug": "pi",
+    "url": "https://pi.dev/",
+    "description": "There are many coding agents, but this one is yours.",
+    "categories": [
+     "cli-agent"
+    ],
+    "tokens": 1655093516878,
+    "requests": 17781456,
+    "app_id": 2853275
+   },
+   {
+    "rank": 9,
+    "name": "Freebuff",
+    "slug": "freebuff",
+    "url": "https://freebuff.com/",
+    "description": "Powerful coding models, funded by ads",
+    "categories": [],
+    "tokens": 1401519119807,
+    "requests": 13378561,
+    "app_id": 4137556
+   },
+   {
+    "rank": 10,
+    "name": "Oh-My-Pi",
+    "slug": "oh-my-pi",
+    "url": "https://omp.sh/",
+    "description": null,
+    "categories": [
+     "cli-agent"
+    ],
+    "tokens": 1364633215226,
+    "requests": 8489834,
+    "app_id": 3682314
+   },
+   {
+    "rank": 11,
+    "name": "OpenClaw",
+    "slug": "openclaw",
+    "url": "https://openclaw.ai/",
+    "description": "OpenClaw is an open-source AI agent that connects to your messaging apps and takes real actions on your behalf, from running commands and browsing the web to managing files and sending emails.",
+    "categories": [
+     "personal-agent",
+     "cli-agent"
+    ],
+    "tokens": 1241469139098,
+    "requests": 18347025,
+    "app_id": 2725608
+   },
+   {
+    "rank": 12,
+    "name": "Codex",
+    "slug": "codex",
+    "url": "https://openai.com/codex/",
+    "description": "A coding agent that helps you build and ship with AI",
+    "categories": [
+     "cli-agent"
+    ],
+    "tokens": 1191915883367,
+    "requests": 15720207,
+    "app_id": 2668297
+   },
+   {
+    "rank": 13,
+    "name": "DeepSeek Harness",
+    "slug": "deepseek-harness",
+    "url": "https://github.com/deepseek-ai/deepseek-harness",
+    "description": null,
+    "categories": [],
+    "tokens": 793312012297,
+    "requests": 6621801,
+    "app_id": 4706207
+   },
+   {
+    "rank": 16,
+    "name": "Framer",
+    "slug": "framer",
+    "url": "https://www.framer.com/",
+    "description": "Create a professional website with Framer’s no-code AI website builder. Design freely, manage CMS content, optimize SEO, collaborate, and publish fast.",
+    "categories": [],
+    "tokens": 352708133324,
+    "requests": 2978253,
+    "app_id": 3335353
+   },
+   {
+    "rank": 17,
+    "name": "ISEKAI ZERO",
+    "slug": "isekai-zero",
+    "url": "https://www.isekai.world/",
+    "description": "AI adventures. Travel with your favorite characters",
+    "categories": [
+     "game"
+    ],
+    "tokens": 328551506630,
+    "requests": 7854100,
+    "app_id": 2699842
+   },
+   {
+    "rank": 18,
+    "name": "Portkey AI",
+    "slug": "portkey-ai",
+    "url": "https://portkey.ai/",
+    "description": "Control panel for AI apps",
+    "categories": [
+     "programming-app"
+    ],
+    "tokens": 323268601175,
+    "requests": 8210429,
+    "app_id": 169295
+   },
+   {
+    "rank": 19,
+    "name": "Hello Minds, powered by Ethoswarm",
+    "slug": "hello-minds-powered-by-ethoswarm",
+    "url": "https://www.hellominds.ai/",
+    "description": null,
+    "categories": [
+     "roleplay",
+     "personal-agent",
+     "creative-writing"
+    ],
+    "tokens": 318735735271,
+    "requests": 1604287,
+    "app_id": 4132065
+   },
+   {
+    "rank": 20,
+    "name": "HighLevel",
+    "slug": "highlevel",
+    "url": "https://www.gohighlevel.com/",
+    "description": null,
+    "categories": [],
+    "tokens": 314079361382,
+    "requests": 5987639,
+    "app_id": 4580044
+   },
+   {
+    "rank": 21,
+    "name": "Lemonade",
+    "slug": "lemonade",
+    "url": "https://lemonade.gg/",
+    "description": "The AI tool for Roblox games.",
+    "categories": [
+     "programming-app"
+    ],
+    "tokens": 287536498788,
+    "requests": 7222237,
+    "app_id": 2637375
+   },
+   {
+    "rank": 22,
+    "name": "Descript",
+    "slug": "descript",
+    "url": "https://descript.com/",
+    "description": "AI Video & Podcast Editor",
+    "categories": [
+     "video-gen"
+    ],
+    "tokens": 276803408031,
+    "requests": 4673797,
+    "app_id": 2308106
+   },
+   {
+    "rank": 23,
+    "name": "ZCode",
+    "slug": "zcode",
+    "url": "https://zcode.z.ai/",
+    "description": "ZCode combines the best AI agents with your existing tools so you can plan, code, review, and deploy without friction.",
+    "categories": [
+     "programming-app"
+    ],
+    "tokens": 268318625038,
+    "requests": 1563310,
+    "app_id": 2823243
+   },
+   {
+    "rank": 24,
+    "name": "OpenHands",
+    "slug": "openhands",
+    "url": "https://docs.all-hands.dev/",
+    "description": "AI coding agent that can run commands, browse the web, call APIs",
+    "categories": [
+     "cli-agent"
+    ],
+    "tokens": 261914971989,
+    "requests": 3704370,
+    "app_id": 189563
+   },
+   {
+    "rank": 25,
+    "name": "Open WebUI",
+    "slug": "open-webui",
+    "url": "https://openwebui.com/",
+    "description": "Open WebUI is a self-hosted AI platform providing a chat interface for Large Language Models.",
+    "categories": [
+     "general-chat"
+    ],
+    "tokens": 255331886814,
+    "requests": 109172826,
+    "app_id": 184102
+   }
+  ],
+  "month": [
+   {
+    "rank": 1,
+    "name": "Hermes Agent",
+    "slug": "hermes-agent",
+    "url": "https://hermes-agent.nousresearch.com/",
+    "description": "Hermes Agent is an open-source, self-improving AI agent by Nous Research that runs persistently with memory across sessions, and builds reusable skills from experience. It comes with 40+ built-in tools, including web search, browser automation, and vision, plus scheduled automations and subagents.",
+    "categories": [
+     "personal-agent",
+     "cli-agent"
+    ],
+    "tokens": 50624527907279,
+    "requests": 515716461,
+    "app_id": 3067167
+   },
+   {
+    "rank": 5,
+    "name": "Claude Code",
+    "slug": "claude-code-1wm0",
+    "url": "https://claude.ai/code",
+    "description": "Claude Code is Anthropic's agentic coding tool that reads your entire codebase, plans and executes changes across files, runs tests, and iterates on failures, all from natural language prompts.",
+    "categories": [
+     "cli-agent"
+    ],
+    "tokens": 17344489112994,
+    "requests": 166516071,
+    "app_id": 2627404
+   },
+   {
+    "rank": 6,
+    "name": "Kilo Code",
+    "slug": "kilo-code",
+    "url": "https://kilocode.ai/",
+    "description": "Kilo Code is an open-source AI coding agent that works across VS Code, JetBrains, and CLI to help developers ship code faster with agentic workflows.",
+    "categories": [
+     "cli-agent",
+     "ide-extension"
+    ],
+    "tokens": 10505241301033,
+    "requests": 131093220,
+    "app_id": 2262242
+   },
+   {
+    "rank": 7,
+    "name": "Freebuff",
+    "slug": "freebuff",
+    "url": "https://freebuff.com/",
+    "description": "Powerful coding models, funded by ads",
+    "categories": [],
+    "tokens": 9610903502233,
+    "requests": 79426683,
+    "app_id": 4137556
+   },
+   {
+    "rank": 8,
+    "name": "Cline",
+    "slug": "cline",
+    "url": "https://cline.bot/",
+    "description": "Cline is an open-source AI coding agent that lives inside your IDE, autonomously exploring your codebase, editing files, running terminal commands, and using browser automation.",
+    "categories": [
+     "ide-extension",
+     "cli-agent"
+    ],
+    "tokens": 9042846429558,
+    "requests": 87762224,
+    "app_id": 190604
+   },
+   {
+    "rank": 9,
+    "name": "pi",
+    "slug": "pi",
+    "url": "https://pi.dev/",
+    "description": "There are many coding agents, but this one is yours.",
+    "categories": [
+     "cli-agent"
+    ],
+    "tokens": 6453639864367,
+    "requests": 76576275,
+    "app_id": 2853275
+   },
+   {
+    "rank": 10,
+    "name": "Oh-My-Pi",
+    "slug": "oh-my-pi",
+    "url": "https://omp.sh/",
+    "description": null,
+    "categories": [
+     "cli-agent"
+    ],
+    "tokens": 5324278369065,
+    "requests": 36463899,
+    "app_id": 3682314
+   },
+   {
+    "rank": 11,
+    "name": "OpenClaw",
+    "slug": "openclaw",
+    "url": "https://openclaw.ai/",
+    "description": "OpenClaw is an open-source AI agent that connects to your messaging apps and takes real actions on your behalf, from running commands and browsing the web to managing files and sending emails.",
+    "categories": [
+     "personal-agent",
+     "cli-agent"
+    ],
+    "tokens": 4782409225939,
+    "requests": 76112245,
+    "app_id": 2725608
+   },
+   {
+    "rank": 12,
+    "name": "DeepSeek Harness",
+    "slug": "deepseek-harness",
+    "url": "https://github.com/deepseek-ai/deepseek-harness",
+    "description": null,
+    "categories": [],
+    "tokens": 4428601364215,
+    "requests": 34600999,
+    "app_id": 4706207
+   },
+   {
+    "rank": 13,
+    "name": "Codex",
+    "slug": "codex",
+    "url": "https://openai.com/codex/",
+    "description": "A coding agent that helps you build and ship with AI",
+    "categories": [
+     "cli-agent"
+    ],
+    "tokens": 3494544449630,
+    "requests": 49413416,
+    "app_id": 2668297
+   },
+   {
+    "rank": 15,
+    "name": "Framer",
+    "slug": "framer",
+    "url": "https://www.framer.com/",
+    "description": "Create a professional website with Framer’s no-code AI website builder. Design freely, manage CMS content, optimize SEO, collaborate, and publish fast.",
+    "categories": [],
+    "tokens": 2104824442013,
+    "requests": 16378815,
+    "app_id": 3335353
+   },
+   {
+    "rank": 18,
+    "name": "ZCode",
+    "slug": "zcode",
+    "url": "https://zcode.z.ai/",
+    "description": "ZCode combines the best AI agents with your existing tools so you can plan, code, review, and deploy without friction.",
+    "categories": [
+     "programming-app"
+    ],
+    "tokens": 1547740367179,
+    "requests": 8928786,
+    "app_id": 2823243
+   },
+   {
+    "rank": 19,
+    "name": "Nous Research API",
+    "slug": "nous-research-api",
+    "url": "https://api.nousresearch.com/",
+    "description": "Nous Research is an AI research team focused on advancing open-source AI.",
+    "categories": [
+     "general-chat"
+    ],
+    "tokens": 1501621618445,
+    "requests": 41121015,
+    "app_id": 2938662
+   },
+   {
+    "rank": 20,
+    "name": "ISEKAI ZERO",
+    "slug": "isekai-zero",
+    "url": "https://www.isekai.world/",
+    "description": "AI adventures. Travel with your favorite characters",
+    "categories": [
+     "game"
+    ],
+    "tokens": 1339356440587,
+    "requests": 39549387,
+    "app_id": 2699842
+   },
+   {
+    "rank": 21,
+    "name": "Hello Minds, powered by Ethoswarm",
+    "slug": "hello-minds-powered-by-ethoswarm",
+    "url": "https://www.hellominds.ai/",
+    "description": null,
+    "categories": [
+     "roleplay",
+     "personal-agent",
+     "creative-writing"
+    ],
+    "tokens": 1257145627249,
+    "requests": 6014494,
+    "app_id": 4132065
+   },
+   {
+    "rank": 22,
+    "name": "HighLevel",
+    "slug": "highlevel",
+    "url": "https://www.gohighlevel.com/",
+    "description": null,
+    "categories": [],
+    "tokens": 1227425466316,
+    "requests": 23864575,
+    "app_id": 4580044
+   },
+   {
+    "rank": 23,
+    "name": "Portkey AI",
+    "slug": "portkey-ai",
+    "url": "https://portkey.ai/",
+    "description": "Control panel for AI apps",
+    "categories": [
+     "programming-app"
+    ],
+    "tokens": 1140001282894,
+    "requests": 28017001,
+    "app_id": 169295
+   },
+   {
+    "rank": 24,
+    "name": "Descript",
+    "slug": "descript",
+    "url": "https://descript.com/",
+    "description": "AI Video & Podcast Editor",
+    "categories": [
+     "video-gen"
+    ],
+    "tokens": 1128012022762,
+    "requests": 19187977,
+    "app_id": 2308106
+   },
+   {
+    "rank": 25,
+    "name": "Lemonade",
+    "slug": "lemonade",
+    "url": "https://lemonade.gg/",
+    "description": "The AI tool for Roblox games.",
+    "categories": [
+     "programming-app"
+    ],
+    "tokens": 1107476946039,
+    "requests": 29050358,
+    "app_id": 2637375
+   },
+   {
+    "rank": 26,
+    "name": "Janitor AI",
+    "slug": "janitor-ai",
+    "url": "https://janitorai.com/",
+    "description": "Janitor AI is a chatbot platform where users create and chat with custom AI characters for interactive roleplay, storytelling, and immersive fiction.",
+    "categories": [
+     "roleplay"
+    ],
+    "tokens": 1034739189994,
+    "requests": 65546782,
+    "app_id": 169155
+   }
+  ]
+ }
+}
