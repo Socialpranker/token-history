@@ -1,8 +1,8 @@
 {
- "updated": "2026-09-11T09:59:24.704Z",
+ "updated": "2026-09-11T20:00:10.236Z",
  "date": "2026-09-11",
  "window": "day",
- "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-09-11T09:59:24.704Z.",
+ "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-09-11T20:00:10.236Z.",
  "apps": [
   {
    "slug": "hermes-agent",
@@ -13,11 +13,11 @@
    "tokens_display": "1.64T",
    "requests": 16622917,
    "tokens_per_request": 98542,
-   "stars": 244386,
+   "stars": 244555,
    "repo": "NousResearch/hermes-agent",
-   "week_tokens": 11275716665709,
+   "week_tokens": 12017639213289,
    "week_rank": 2,
-   "momentum": 1.02,
+   "momentum": 0.95,
    "categories": [
     "personal-agent",
     "cli-agent"
@@ -34,9 +34,9 @@
    "tokens_per_request": 103498,
    "stars": null,
    "repo": null,
-   "week_tokens": 5082726179580,
+   "week_tokens": 5360809901548,
    "week_rank": 3,
-   "momentum": 1.08,
+   "momentum": 1.03,
    "categories": [
     "cli-agent"
    ]
@@ -52,9 +52,9 @@
    "tokens_per_request": 76169,
    "stars": null,
    "repo": null,
-   "week_tokens": 2775926053571,
+   "week_tokens": 2990104364379,
    "week_rank": 7,
-   "momentum": 1.04,
+   "momentum": 0.96,
    "categories": [
     "cli-agent",
     "ide-extension"
@@ -69,11 +69,11 @@
    "tokens_display": "409B",
    "requests": 4250600,
    "tokens_per_request": 96211,
-   "stars": 67818,
+   "stars": 67849,
    "repo": "cline/cline",
-   "week_tokens": 2825845166707,
+   "week_tokens": 3042045758636,
    "week_rank": 6,
-   "momentum": 1.01,
+   "momentum": 0.94,
    "categories": [
     "ide-extension",
     "cli-agent"
@@ -90,9 +90,9 @@
    "tokens_per_request": 96640,
    "stars": null,
    "repo": null,
-   "week_tokens": 1685852110818,
+   "week_tokens": 1825209338192,
    "week_rank": 8,
-   "momentum": 1.19,
+   "momentum": 1.1,
    "categories": [
     "cli-agent"
    ]
@@ -108,9 +108,9 @@
    "tokens_per_request": 159448,
    "stars": null,
    "repo": null,
-   "week_tokens": 1403536989963,
+   "week_tokens": 1505259812500,
    "week_rank": 9,
-   "momentum": 1.1,
+   "momentum": 1.03,
    "categories": [
     "cli-agent"
    ]
@@ -126,9 +126,9 @@
    "tokens_per_request": 73428,
    "stars": null,
    "repo": null,
-   "week_tokens": 1129205256004,
+   "week_tokens": 1193681440430,
    "week_rank": 12,
-   "momentum": 1.34,
+   "momentum": 1.27,
    "categories": [
     "cli-agent"
    ]
@@ -142,11 +142,11 @@
    "tokens_display": "180B",
    "requests": 2624954,
    "tokens_per_request": 68599,
-   "stars": 389423,
+   "stars": 389459,
    "repo": "openclaw/openclaw",
-   "week_tokens": 1250296630724,
+   "week_tokens": 1327317098434,
    "week_rank": 10,
-   "momentum": 1.01,
+   "momentum": 0.95,
    "categories": [
     "personal-agent",
     "cli-agent"
@@ -163,9 +163,9 @@
    "tokens_per_request": 110341,
    "stars": null,
    "repo": null,
-   "week_tokens": 864830961114,
+   "week_tokens": 943188752009,
    "week_rank": 13,
-   "momentum": 1.36,
+   "momentum": 1.25,
    "categories": []
   },
   {
@@ -179,9 +179,9 @@
    "tokens_per_request": 87765,
    "stars": null,
    "repo": null,
-   "week_tokens": 1229798273540,
+   "week_tokens": 1263032873637,
    "week_rank": 11,
-   "momentum": 0.69,
+   "momentum": 0.67,
    "categories": []
   },
   {
@@ -193,11 +193,11 @@
    "tokens_display": "116B",
    "requests": 61891536,
    "tokens_per_request": 1879,
-   "stars": 151609,
+   "stars": 151660,
    "repo": "open-webui/open-webui",
-   "week_tokens": 359893812630,
+   "week_tokens": 419551650753,
    "week_rank": 16,
-   "momentum": 2.26,
+   "momentum": 1.94,
    "categories": [
     "general-chat"
    ]
@@ -213,9 +213,9 @@
    "tokens_per_request": 48013,
    "stars": null,
    "repo": null,
-   "week_tokens": 338513415409,
-   "week_rank": 19,
-   "momentum": 1.25,
+   "week_tokens": 360691584989,
+   "week_rank": 18,
+   "momentum": 1.17,
    "categories": [
     "programming-app"
    ]
@@ -231,9 +231,9 @@
    "tokens_per_request": 208674,
    "stars": null,
    "repo": null,
-   "week_tokens": 340043842806,
-   "week_rank": 18,
-   "momentum": 1.24,
+   "week_tokens": 357784308825,
+   "week_rank": 19,
+   "momentum": 1.18,
    "categories": [
     "roleplay",
     "personal-agent",
@@ -251,9 +251,9 @@
    "tokens_per_request": 110160,
    "stars": null,
    "repo": null,
-   "week_tokens": 348673896239,
+   "week_tokens": 373872389464,
    "week_rank": 17,
-   "momentum": 1.08,
+   "momentum": 1.01,
    "categories": []
   },
   {
@@ -267,9 +267,9 @@
    "tokens_per_request": 53091,
    "stars": null,
    "repo": null,
-   "week_tokens": 309323372883,
+   "week_tokens": 328591563544,
    "week_rank": 21,
-   "momentum": 1.13,
+   "momentum": 1.07,
    "categories": []
   },
   {
@@ -301,9 +301,9 @@
    "tokens_per_request": 57467,
    "stars": null,
    "repo": null,
-   "week_tokens": 278719644252,
+   "week_tokens": 297385642639,
    "week_rank": 23,
-   "momentum": 1.15,
+   "momentum": 1.08,
    "categories": [
     "video-gen"
    ]
@@ -319,9 +319,9 @@
    "tokens_per_request": 40561,
    "stars": null,
    "repo": null,
-   "week_tokens": 328771798660,
+   "week_tokens": 346704466611,
    "week_rank": 20,
-   "momentum": 0.97,
+   "momentum": 0.92,
    "categories": [
     "game"
    ]
