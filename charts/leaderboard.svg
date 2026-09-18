@@ -3,24 +3,26 @@
 <rect width="800" height="360" rx="10" fill="#0b0d10"/>
 <text x="64" y="26" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="16" font-weight="600" fill="#e6e9ec">Top agents — tokens per day</text>
 <line x1="64" y1="320" x2="784" y2="320" stroke="#1b2026" stroke-width="1"/>
-<text x="56" y="324" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">20.1B</text>
+<text x="56" y="324" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">116B</text>
 <line x1="64" y1="228" x2="784" y2="228" stroke="#1b2026" stroke-width="1"/>
-<text x="56" y="232" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">785B</text>
+<text x="56" y="232" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">848B</text>
 <line x1="64" y1="135.99999999999997" x2="784" y2="135.99999999999997" stroke="#1b2026" stroke-width="1"/>
-<text x="56" y="139.99999999999997" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">1.55T</text>
-<line x1="64" y1="44" x2="784" y2="44" stroke="#1b2026" stroke-width="1"/>
-<text x="56" y="48" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">2.31T</text>
+<text x="56" y="139.99999999999997" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">1.58T</text>
+<line x1="64" y1="44.00000000000006" x2="784" y2="44.00000000000006" stroke="#1b2026" stroke-width="1"/>
+<text x="56" y="48.00000000000006" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">2.31T</text>
 <text x="64" y="338" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">2026-06-10</text>
-<text x="424" y="338" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">2026-09-02</text>
-<text x="784" y="338" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">2026-09-17</text>
-<polyline points="64.0,224.4 88.0,220.0 112.0,216.1 136.0,219.2 160.0,228.6 184.0,223.1 208.0,219.5 232.0,221.1 256.0,222.4 280.0,59.8 304.0,123.4 328.0,122.2 352.0,136.5 376.0,124.1 400.0,119.2 424.0,129.2 448.0,131.5 472.0,132.2 496.0,131.7 520.0,145.7 544.0,156.4 568.0,129.3 592.0,139.3 616.0,136.7 640.0,125.3 664.0,123.0 688.0,146.1 712.0,151.6 736.0,133.7 760.0,128.3 784.0,116.4" fill="none" stroke="#5ab0f7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
-<g font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12"><circle cx="68" cy="36" r="4" fill="#5ab0f7"/><text x="78" y="40" fill="#e6e9ec">Hermes Agent · 1.71T/day</text></g>
-<polyline points="232.0,305.6 256.0,304.7 280.0,191.6 304.0,264.1 328.0,273.7 352.0,281.5 376.0,278.3 400.0,256.3 424.0,238.2 448.0,231.2 472.0,229.9 496.0,233.5 520.0,262.4 544.0,269.0 568.0,256.0 592.0,224.9 616.0,198.1 640.0,227.7 664.0,241.7 688.0,264.4 712.0,258.4 736.0,236.5 760.0,227.2 784.0,207.1" fill="none" stroke="#f7775a" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
-<g font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12"><circle cx="238" cy="36" r="4" fill="#f7775a"/><text x="248" y="40" fill="#e6e9ec">Claude Code · 959B/day</text></g>
-<polyline points="64.0,294.4 88.0,293.0 112.0,290.3 136.0,288.1 160.0,291.3 184.0,291.7 208.0,289.7 232.0,290.7 256.0,291.5 280.0,266.4 304.0,281.4 328.0,286.4 352.0,286.6 376.0,287.3 400.0,288.2 424.0,275.8 448.0,270.1 472.0,268.6 496.0,271.1 520.0,276.0 544.0,287.3 568.0,274.4 592.0,280.3 616.0,277.4 640.0,272.8 664.0,266.4 688.0,263.1 712.0,263.7 736.0,265.4 760.0,264.3 784.0,261.3" fill="none" stroke="#7df0a8" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
-<g font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12"><circle cx="408" cy="36" r="4" fill="#7df0a8"/><text x="418" y="40" fill="#e6e9ec">Kilo Code · 508B/day</text></g>
-<polyline points="64.0,319.0 88.0,318.8 112.0,318.8 136.0,319.1 160.0,319.6 184.0,319.2 208.0,319.1 232.0,318.6 256.0,316.4 280.0,286.8 304.0,292.0 328.0,279.9 352.0,283.9 376.0,280.7 400.0,274.5 424.0,276.7 448.0,276.4 472.0,277.3 496.0,278.4 520.0,281.5 544.0,280.6 568.0,275.6 592.0,273.8 616.0,272.3 640.0,273.2 664.0,268.0 688.0,274.0 712.0,275.9 736.0,273.4 760.0,273.7 784.0,273.1" fill="none" stroke="#f5d76e" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
-<g font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12"><circle cx="578" cy="36" r="4" fill="#f5d76e"/><text x="588" y="40" fill="#e6e9ec">Cline · 410B/day</text></g>
+<text x="435.61290322580646" y="338" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">2026-09-03</text>
+<text x="784" y="338" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">2026-09-18</text>
+<polyline points="64.0,232.3 87.2,227.7 110.5,223.5 133.7,226.9 156.9,236.6 180.1,230.9 203.4,227.1 226.6,228.8 249.8,230.2 273.0,60.4 296.3,126.8 319.5,125.6 342.7,140.5 365.9,127.6 389.2,122.5 412.4,132.9 435.6,135.3 458.8,136.1 482.1,135.6 505.3,150.2 528.5,161.2 551.7,133.0 575.0,143.4 598.2,140.8 621.4,128.8 644.6,126.4 667.9,150.5 691.1,156.3 714.3,137.6 737.5,131.9 760.8,119.5 784.0,111.1" fill="none" stroke="#5ab0f7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<g font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12"><circle cx="68" cy="36" r="4" fill="#5ab0f7"/><text x="78" y="40" fill="#e6e9ec">Hermes Agent · 1.78T/day</text></g>
+<polyline points="226.6,316.9 249.8,316.0 273.0,198.0 296.3,273.7 319.5,283.6 342.7,291.9 365.9,288.5 389.2,265.5 412.4,246.6 435.6,239.3 458.8,238.0 482.1,241.8 505.3,271.8 528.5,278.7 551.7,265.2 575.0,232.8 598.2,204.8 621.4,235.7 644.6,250.3 667.9,274.0 691.1,267.7 714.3,244.9 737.5,235.2 760.8,214.2 784.0,209.4" fill="none" stroke="#f7775a" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<g font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12"><circle cx="238" cy="36" r="4" fill="#f7775a"/><text x="248" y="40" fill="#e6e9ec">Claude Code · 996B/day</text></g>
+<polyline points="760.8,317.4 784.0,226.4" fill="none" stroke="#7df0a8" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="760.8" cy="317.4" r="3.5" fill="#7df0a8"/>
+<circle cx="784.0" cy="226.4" r="3.5" fill="#7df0a8"/>
+<g font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12"><circle cx="408" cy="36" r="4" fill="#7df0a8"/><text x="418" y="40" fill="#e6e9ec">draco-cascade-bench · 861B/day</text></g>
+<polyline points="64.0,305.3 87.2,303.8 110.5,301.0 133.7,298.7 156.9,302.0 180.1,302.4 203.4,300.4 226.6,301.4 249.8,302.2 273.0,276.1 296.3,291.7 319.5,297.0 342.7,297.2 365.9,297.8 389.2,298.8 412.4,285.9 435.6,279.9 458.8,278.4 482.1,281.0 505.3,286.1 528.5,297.9 551.7,284.4 575.0,290.5 598.2,287.6 621.4,282.8 644.6,276.0 667.9,272.6 691.1,273.2 714.3,275.0 737.5,273.9 760.8,270.8 784.0,261.3" fill="none" stroke="#f5d76e" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<g font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12"><circle cx="578" cy="36" r="4" fill="#f5d76e"/><text x="588" y="40" fill="#e6e9ec">Kilo Code · 583B/day</text></g>
 <text x="64" y="350" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">token-history · socialpranker.github.io/token-history</text>
 <text x="784" y="350" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#8a949e">Source: OpenRouter (openrouter.ai/rankings)</text>
 </svg>
