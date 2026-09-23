@@ -1,10 +1,10 @@
 {
  "meta": {
   "source_url": "https://openrouter.ai/api/frontend/v1/rankings/apps",
-  "fetched_at": "2026-09-23T10:16:08.394Z",
+  "fetched_at": "2026-09-23T20:40:09.040Z",
   "window": "day",
   "extracted_via": "frontend-api",
-  "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-09-23T10:16:08.394Z."
+  "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-09-23T20:40:09.040Z."
  },
  "windows": {
   "day": [
@@ -281,8 +281,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 11876591369547,
-    "requests": 120087621,
+    "tokens": 12560156388778,
+    "requests": 127107094,
     "app_id": 3067167
    },
    {
@@ -294,8 +294,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 6280184539749,
-    "requests": 68448842,
+    "tokens": 6705466873245,
+    "requests": 72829303,
     "app_id": 2627404
    },
    {
@@ -308,8 +308,8 @@
      "cli-agent",
      "ide-extension"
     ],
-    "tokens": 4054625739444,
-    "requests": 54593936,
+    "tokens": 4250598778015,
+    "requests": 57288582,
     "app_id": 2262242
    },
    {
@@ -322,8 +322,8 @@
      "ide-extension",
      "cli-agent"
     ],
-    "tokens": 3086975563817,
-    "requests": 30486387,
+    "tokens": 3288392600442,
+    "requests": 32436955,
     "app_id": 190604
    },
    {
@@ -335,8 +335,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 2637805023599,
-    "requests": 25560347,
+    "tokens": 2789667604352,
+    "requests": 27177539,
     "app_id": 2853275
    },
    {
@@ -348,8 +348,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 2036329964751,
-    "requests": 12139359,
+    "tokens": 2152954341618,
+    "requests": 12763132,
     "app_id": 3682314
    },
    {
@@ -361,8 +361,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 1446033183304,
-    "requests": 17503679,
+    "tokens": 1531386687095,
+    "requests": 18431287,
     "app_id": 2668297
    },
    {
@@ -375,8 +375,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 1341327501871,
-    "requests": 18575525,
+    "tokens": 1420483736044,
+    "requests": 19639405,
     "app_id": 2725608
    },
    {
@@ -386,8 +386,8 @@
     "url": "https://github.com/deepseek-ai/deepseek-harness",
     "description": null,
     "categories": [],
-    "tokens": 1163237343169,
-    "requests": 9105244,
+    "tokens": 1218670801475,
+    "requests": 9572925,
     "app_id": 4706207
    },
    {
@@ -397,8 +397,8 @@
     "url": "https://github.com/circuitandchisel/draco-cascade-bench",
     "description": null,
     "categories": [],
-    "tokens": 1001858746340,
-    "requests": 13532165,
+    "tokens": 1001919656241,
+    "requests": 13533052,
     "app_id": 4124659
    },
    {
@@ -410,12 +410,23 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 722831647467,
-    "requests": 6322985,
+    "tokens": 813280379563,
+    "requests": 6956477,
     "app_id": 189563
    },
    {
     "rank": 17,
+    "name": "Freebuff",
+    "slug": "freebuff",
+    "url": "https://freebuff.com/",
+    "description": "Powerful coding models, funded by ads",
+    "categories": [],
+    "tokens": 485506636641,
+    "requests": 7695634,
+    "app_id": 4137556
+   },
+   {
+    "rank": 18,
     "name": "ISEKAI ZERO",
     "slug": "isekai-zero",
     "url": "https://www.isekai.world/",
@@ -423,20 +434,9 @@
     "categories": [
      "game"
     ],
-    "tokens": 460194817560,
-    "requests": 9154433,
+    "tokens": 482785181411,
+    "requests": 9590646,
     "app_id": 2699842
-   },
-   {
-    "rank": 18,
-    "name": "Freebuff",
-    "slug": "freebuff",
-    "url": "https://freebuff.com/",
-    "description": "Powerful coding models, funded by ads",
-    "categories": [],
-    "tokens": 451661139793,
-    "requests": 7327289,
-    "app_id": 4137556
    },
    {
     "rank": 19,
@@ -449,8 +449,8 @@
      "personal-agent",
      "creative-writing"
     ],
-    "tokens": 426437927806,
-    "requests": 5546207,
+    "tokens": 451254974422,
+    "requests": 5792137,
     "app_id": 4132065
    },
    {
@@ -464,8 +464,8 @@
      "cli-agent",
      "cloud-agent"
     ],
-    "tokens": 391424185279,
-    "requests": 2634327,
+    "tokens": 414804093220,
+    "requests": 2833222,
     "app_id": 4780809
    },
    {
@@ -475,12 +475,23 @@
     "url": "https://www.gohighlevel.com/",
     "description": null,
     "categories": [],
-    "tokens": 369127461149,
-    "requests": 6414118,
+    "tokens": 390932399015,
+    "requests": 6818671,
     "app_id": 4580044
    },
    {
     "rank": 22,
+    "name": "Framer",
+    "slug": "framer",
+    "url": "https://www.framer.com/",
+    "description": "Create a professional website with Framer’s no-code AI website builder. Design freely, manage CMS content, optimize SEO, collaborate, and publish fast.",
+    "categories": [],
+    "tokens": 335686864166,
+    "requests": 3117958,
+    "app_id": 3335353
+   },
+   {
+    "rank": 23,
     "name": "Lemonade",
     "slug": "lemonade",
     "url": "https://lemonade.gg/",
@@ -488,20 +499,9 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 314340069506,
-    "requests": 7747079,
+    "tokens": 329206604452,
+    "requests": 8116812,
     "app_id": 2637375
-   },
-   {
-    "rank": 23,
-    "name": "Framer",
-    "slug": "framer",
-    "url": "https://www.framer.com/",
-    "description": "Create a professional website with Framer’s no-code AI website builder. Design freely, manage CMS content, optimize SEO, collaborate, and publish fast.",
-    "categories": [],
-    "tokens": 313632163899,
-    "requests": 2875901,
-    "app_id": 3335353
    },
    {
     "rank": 24,
@@ -512,8 +512,8 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 308895601059,
-    "requests": 2138052,
+    "tokens": 322101998995,
+    "requests": 2202141,
     "app_id": 2823243
    },
    {
@@ -526,8 +526,8 @@
      "programming-app",
      "cli-agent"
     ],
-    "tokens": 289833882608,
-    "requests": 2187852,
+    "tokens": 306856355953,
+    "requests": 2312544,
     "app_id": 2237546
    }
   ],
@@ -542,8 +542,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 50632657271813,
-    "requests": 514784026,
+    "tokens": 51316222291044,
+    "requests": 521803499,
     "app_id": 3067167
    },
    {
@@ -555,8 +555,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 21738405638184,
-    "requests": 221093492,
+    "tokens": 22163687971680,
+    "requests": 225473953,
     "app_id": 2627404
    },
    {
@@ -569,8 +569,8 @@
      "cli-agent",
      "ide-extension"
     ],
-    "tokens": 13318381177008,
-    "requests": 176533185,
+    "tokens": 13514354215579,
+    "requests": 179227831,
     "app_id": 2262242
    },
    {
@@ -583,8 +583,8 @@
      "ide-extension",
      "cli-agent"
     ],
-    "tokens": 11612490209157,
-    "requests": 115136368,
+    "tokens": 11813907245782,
+    "requests": 117086936,
     "app_id": 190604
    },
    {
@@ -596,8 +596,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 8448540632745,
-    "requests": 87199638,
+    "tokens": 8600403213498,
+    "requests": 88816830,
     "app_id": 2853275
    },
    {
@@ -607,8 +607,8 @@
     "url": "https://freebuff.com/",
     "description": "Powerful coding models, funded by ads",
     "categories": [],
-    "tokens": 7176693594358,
-    "requests": 64569157,
+    "tokens": 7210539091206,
+    "requests": 64937502,
     "app_id": 4137556
    },
    {
@@ -620,8 +620,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 6766629174963,
-    "requests": 42912643,
+    "tokens": 6883253551830,
+    "requests": 43536416,
     "app_id": 3682314
    },
    {
@@ -631,8 +631,8 @@
     "url": "https://github.com/deepseek-ai/deepseek-harness",
     "description": null,
     "categories": [],
-    "tokens": 5255549925499,
-    "requests": 41046612,
+    "tokens": 5310983383805,
+    "requests": 41514293,
     "app_id": 4706207
    },
    {
@@ -645,8 +645,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 5083560896592,
-    "requests": 75838913,
+    "tokens": 5162717130765,
+    "requests": 76902793,
     "app_id": 2725608
    },
    {
@@ -658,25 +658,12 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 5075556823532,
-    "requests": 66133444,
+    "tokens": 5160910327323,
+    "requests": 67061052,
     "app_id": 2668297
    },
    {
     "rank": 16,
-    "name": "ISEKAI ZERO",
-    "slug": "isekai-zero",
-    "url": "https://www.isekai.world/",
-    "description": "AI adventures. Travel with your favorite characters",
-    "categories": [
-     "game"
-    ],
-    "tokens": 1610320768753,
-    "requests": 42226283,
-    "app_id": 2699842
-   },
-   {
-    "rank": 17,
     "name": "OpenHands",
     "slug": "openhands",
     "url": "https://docs.all-hands.dev/",
@@ -684,9 +671,22 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 1606827668849,
-    "requests": 18251013,
+    "tokens": 1697276400945,
+    "requests": 18884505,
     "app_id": 189563
+   },
+   {
+    "rank": 17,
+    "name": "ISEKAI ZERO",
+    "slug": "isekai-zero",
+    "url": "https://www.isekai.world/",
+    "description": "AI adventures. Travel with your favorite characters",
+    "categories": [
+     "game"
+    ],
+    "tokens": 1632911132604,
+    "requests": 42662496,
+    "app_id": 2699842
    },
    {
     "rank": 18,
@@ -697,8 +697,8 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 1570333234375,
-    "requests": 9113830,
+    "tokens": 1583539632311,
+    "requests": 9177919,
     "app_id": 2823243
    },
    {
@@ -712,8 +712,8 @@
      "personal-agent",
      "creative-writing"
     ],
-    "tokens": 1505571198383,
-    "requests": 11069054,
+    "tokens": 1530388244999,
+    "requests": 11314984,
     "app_id": 4132065
    },
    {
@@ -723,8 +723,8 @@
     "url": "https://www.gohighlevel.com/",
     "description": null,
     "categories": [],
-    "tokens": 1486467539312,
-    "requests": 27761826,
+    "tokens": 1508272477178,
+    "requests": 28166379,
     "app_id": 4580044
    },
    {
@@ -734,8 +734,8 @@
     "url": "https://www.framer.com/",
     "description": "Create a professional website with Framer’s no-code AI website builder. Design freely, manage CMS content, optimize SEO, collaborate, and publish fast.",
     "categories": [],
-    "tokens": 1479174580407,
-    "requests": 12817752,
+    "tokens": 1501229280674,
+    "requests": 13059809,
     "app_id": 3335353
    },
    {
@@ -747,8 +747,8 @@
     "categories": [
      "general-chat"
     ],
-    "tokens": 1348270145451,
-    "requests": 41437547,
+    "tokens": 1360430470339,
+    "requests": 41802694,
     "app_id": 2938662
    },
    {
@@ -760,8 +760,8 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 1314466364988,
-    "requests": 32580230,
+    "tokens": 1327508586912,
+    "requests": 33082006,
     "app_id": 169295
    },
    {
@@ -773,8 +773,8 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 1102305187402,
-    "requests": 27536449,
+    "tokens": 1117171722348,
+    "requests": 27906182,
     "app_id": 2637375
    },
    {
@@ -787,8 +787,8 @@
      "programming-app",
      "cli-agent"
     ],
-    "tokens": 1093625136517,
-    "requests": 8081565,
+    "tokens": 1110647609862,
+    "requests": 8206257,
     "app_id": 2237546
    }
   ]
