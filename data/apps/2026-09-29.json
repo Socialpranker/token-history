@@ -1,10 +1,10 @@
 {
  "meta": {
   "source_url": "https://openrouter.ai/api/frontend/v1/rankings/apps",
-  "fetched_at": "2026-09-29T11:33:17.933Z",
+  "fetched_at": "2026-09-29T21:31:34.063Z",
   "window": "day",
   "extracted_via": "frontend-api",
-  "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-09-29T11:33:17.933Z."
+  "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-09-29T21:31:34.063Z."
  },
  "windows": {
   "day": [
@@ -282,8 +282,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 12950143870707,
-    "requests": 133870608,
+    "tokens": 13949488027872,
+    "requests": 143522312,
     "app_id": 3067167
    },
    {
@@ -295,8 +295,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 7428725817484,
-    "requests": 78012673,
+    "tokens": 7912231187472,
+    "requests": 82782517,
     "app_id": 2627404
    },
    {
@@ -309,8 +309,8 @@
      "ide-extension",
      "cli-agent"
     ],
-    "tokens": 5559775614025,
-    "requests": 39412260,
+    "tokens": 6098337268355,
+    "requests": 42621242,
     "app_id": 190604
    },
    {
@@ -323,8 +323,8 @@
      "cli-agent",
      "ide-extension"
     ],
-    "tokens": 5335805646637,
-    "requests": 66150438,
+    "tokens": 5847692354194,
+    "requests": 71234899,
     "app_id": 2262242
    },
    {
@@ -336,8 +336,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 3427719464265,
-    "requests": 30392693,
+    "tokens": 3653804526489,
+    "requests": 32476730,
     "app_id": 2853275
    },
    {
@@ -349,8 +349,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 2784738562614,
-    "requests": 15141152,
+    "tokens": 2996621336742,
+    "requests": 16374828,
     "app_id": 3682314
    },
    {
@@ -362,8 +362,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 2111899277392,
-    "requests": 22909396,
+    "tokens": 2263279088996,
+    "requests": 24526414,
     "app_id": 2668297
    },
    {
@@ -379,8 +379,8 @@
      "native-app-builder",
      "personal-agent"
     ],
-    "tokens": 1617866012746,
-    "requests": 17509378,
+    "tokens": 1788722044572,
+    "requests": 19470407,
     "app_id": 3909382
    },
    {
@@ -390,12 +390,23 @@
     "url": "https://github.com/deepseek-ai/deepseek-harness",
     "description": null,
     "categories": [],
-    "tokens": 1586364769676,
-    "requests": 10742936,
+    "tokens": 1691559347930,
+    "requests": 11401885,
     "app_id": 4706207
    },
    {
     "rank": 13,
+    "name": "Freebuff",
+    "slug": "freebuff",
+    "url": "https://freebuff.com/",
+    "description": "Powerful coding models, funded by ads",
+    "categories": [],
+    "tokens": 1549410738494,
+    "requests": 11452183,
+    "app_id": 4137556
+   },
+   {
+    "rank": 14,
     "name": "OpenClaw",
     "slug": "openclaw",
     "url": "https://openclaw.ai/",
@@ -404,20 +415,9 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 1438433919250,
-    "requests": 19209871,
+    "tokens": 1533606116018,
+    "requests": 20447567,
     "app_id": 2725608
-   },
-   {
-    "rank": 14,
-    "name": "Freebuff",
-    "slug": "freebuff",
-    "url": "https://freebuff.com/",
-    "description": "Powerful coding models, funded by ads",
-    "categories": [],
-    "tokens": 1428435527584,
-    "requests": 10613877,
-    "app_id": 4137556
    },
    {
     "rank": 15,
@@ -428,8 +428,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 883233474042,
-    "requests": 7600833,
+    "tokens": 913210610574,
+    "requests": 7928400,
     "app_id": 189563
    },
    {
@@ -441,8 +441,8 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 655096580845,
-    "requests": 3205860,
+    "tokens": 699848026923,
+    "requests": 3423032,
     "app_id": 2823243
    },
    {
@@ -454,8 +454,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 449338485699,
-    "requests": 3689632,
+    "tokens": 481826595264,
+    "requests": 3923472,
     "app_id": 3003505
    },
    {
@@ -467,8 +467,8 @@
     "categories": [
      "game"
     ],
-    "tokens": 444424573115,
-    "requests": 8310488,
+    "tokens": 471594352093,
+    "requests": 8806835,
     "app_id": 2699842
    },
    {
@@ -482,19 +482,19 @@
      "personal-agent",
      "creative-writing"
     ],
-    "tokens": 407413705140,
-    "requests": 4812030,
+    "tokens": 429986738137,
+    "requests": 4940030,
     "app_id": 4132065
    },
    {
-    "rank": 23,
+    "rank": 22,
     "name": "HighLevel",
     "slug": "highlevel",
     "url": "https://www.gohighlevel.com/",
     "description": null,
     "categories": [],
-    "tokens": 394964384769,
-    "requests": 7242598,
+    "tokens": 427413925280,
+    "requests": 7856489,
     "app_id": 4580044
    },
    {
@@ -506,8 +506,8 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 378670077016,
-    "requests": 7458925,
+    "tokens": 405971894191,
+    "requests": 7956725,
     "app_id": 2637375
    },
    {
@@ -521,8 +521,8 @@
      "cli-agent",
      "cloud-agent"
     ],
-    "tokens": 344953264037,
-    "requests": 2782704,
+    "tokens": 362580813592,
+    "requests": 2918909,
     "app_id": 4780809
    },
    {
@@ -534,8 +534,8 @@
     "categories": [
      "general-chat"
     ],
-    "tokens": 333810896369,
-    "requests": 9948322,
+    "tokens": 355987788685,
+    "requests": 11092287,
     "app_id": 2938662
    }
   ],
@@ -550,8 +550,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 49263888922513,
-    "requests": 506168607,
+    "tokens": 50263234231808,
+    "requests": 515820311,
     "app_id": 3067167
    },
    {
@@ -563,8 +563,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 23560654381657,
-    "requests": 242635467,
+    "tokens": 24044159400235,
+    "requests": 247405314,
     "app_id": 2627404
    },
    {
@@ -577,8 +577,8 @@
      "cli-agent",
      "ide-extension"
     ],
-    "tokens": 15592682183612,
-    "requests": 201736748,
+    "tokens": 16104571414804,
+    "requests": 206821219,
     "app_id": 2262242
    },
    {
@@ -591,8 +591,8 @@
      "ide-extension",
      "cli-agent"
     ],
-    "tokens": 14691943462936,
-    "requests": 130837610,
+    "tokens": 15230501453491,
+    "requests": 134046576,
     "app_id": 190604
    },
    {
@@ -604,8 +604,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 9583021869202,
-    "requests": 92775122,
+    "tokens": 9809105796695,
+    "requests": 94859161,
     "app_id": 2853275
    },
    {
@@ -617,8 +617,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 7559503362969,
-    "requests": 44684532,
+    "tokens": 7771385992668,
+    "requests": 45918209,
     "app_id": 3682314
    },
    {
@@ -630,8 +630,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 6004411600855,
-    "requests": 73651241,
+    "tokens": 6155791333846,
+    "requests": 75268262,
     "app_id": 2668297
    },
    {
@@ -641,8 +641,8 @@
     "url": "https://freebuff.com/",
     "description": "Powerful coding models, funded by ads",
     "categories": [],
-    "tokens": 5502163778676,
-    "requests": 50417303,
+    "tokens": 5623137958212,
+    "requests": 51255604,
     "app_id": 4137556
    },
    {
@@ -655,8 +655,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 5341865128341,
-    "requests": 76256635,
+    "tokens": 5437037732970,
+    "requests": 77494329,
     "app_id": 2725608
    },
    {
@@ -666,8 +666,8 @@
     "url": "https://github.com/deepseek-ai/deepseek-harness",
     "description": null,
     "categories": [],
-    "tokens": 4709142683882,
-    "requests": 35146650,
+    "tokens": 4814336836512,
+    "requests": 35805594,
     "app_id": 4706207
    },
    {
@@ -679,8 +679,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 1974262860773,
-    "requests": 20505875,
+    "tokens": 2004240210052,
+    "requests": 20833444,
     "app_id": 189563
    },
    {
@@ -696,8 +696,8 @@
      "native-app-builder",
      "personal-agent"
     ],
-    "tokens": 1729468021250,
-    "requests": 18854948,
+    "tokens": 1900323803010,
+    "requests": 20815973,
     "app_id": 3909382
    },
    {
@@ -709,12 +709,25 @@
     "categories": [
      "game"
     ],
-    "tokens": 1640922583109,
-    "requests": 37165680,
+    "tokens": 1668092362087,
+    "requests": 37662027,
     "app_id": 2699842
    },
    {
     "rank": 19,
+    "name": "ZCode",
+    "slug": "zcode",
+    "url": "https://zcode.z.ai/",
+    "description": "ZCode combines the best AI agents with your existing tools so you can plan, code, review, and deploy without friction.",
+    "categories": [
+     "programming-app"
+    ],
+    "tokens": 1562658221774,
+    "requests": 8680687,
+    "app_id": 2823243
+   },
+   {
+    "rank": 20,
     "name": "Hello Minds, powered by Ethoswarm",
     "slug": "hello-minds-powered-by-ethoswarm",
     "url": "https://www.hellominds.ai/",
@@ -724,22 +737,9 @@
      "personal-agent",
      "creative-writing"
     ],
-    "tokens": 1535876144236,
-    "requests": 12019449,
+    "tokens": 1558449177233,
+    "requests": 12147449,
     "app_id": 4132065
-   },
-   {
-    "rank": 20,
-    "name": "ZCode",
-    "slug": "zcode",
-    "url": "https://zcode.z.ai/",
-    "description": "ZCode combines the best AI agents with your existing tools so you can plan, code, review, and deploy without friction.",
-    "categories": [
-     "programming-app"
-    ],
-    "tokens": 1517906650786,
-    "requests": 8463514,
-    "app_id": 2823243
    },
    {
     "rank": 21,
@@ -748,8 +748,8 @@
     "url": "https://www.gohighlevel.com/",
     "description": null,
     "categories": [],
-    "tokens": 1481744500646,
-    "requests": 27048151,
+    "tokens": 1514193954583,
+    "requests": 27662039,
     "app_id": 4580044
    },
    {
@@ -759,8 +759,8 @@
     "url": "https://www.framer.com/",
     "description": "Create a professional website with Framer’s no-code AI website builder. Design freely, manage CMS content, optimize SEO, collaborate, and publish fast.",
     "categories": [],
-    "tokens": 1388517379952,
-    "requests": 12291300,
+    "tokens": 1405848301756,
+    "requests": 12501015,
     "app_id": 3335353
    },
    {
@@ -772,8 +772,8 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 1332868401912,
-    "requests": 31309810,
+    "tokens": 1360170242480,
+    "requests": 31807611,
     "app_id": 2637375
    },
    {
@@ -785,8 +785,8 @@
     "categories": [
      "general-chat"
     ],
-    "tokens": 1129966088364,
-    "requests": 40311718,
+    "tokens": 1152142970921,
+    "requests": 41455681,
     "app_id": 2938662
    },
    {
@@ -798,8 +798,8 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 1114660418280,
-    "requests": 33045503,
+    "tokens": 1127195187092,
+    "requests": 33946268,
     "app_id": 169295
    }
   ]
