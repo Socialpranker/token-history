@@ -1,10 +1,10 @@
 {
  "meta": {
   "source_url": "https://openrouter.ai/api/frontend/v1/rankings/apps",
-  "fetched_at": "2026-10-21T10:34:07.214Z",
+  "fetched_at": "2026-10-21T20:52:21.400Z",
   "window": "day",
   "extracted_via": "frontend-api",
-  "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-10-21T10:34:07.214Z."
+  "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-10-21T20:52:21.400Z."
  },
  "windows": {
   "day": [
@@ -222,10 +222,10 @@
    },
    {
     "rank": 23,
-    "name": "Aura.agent2.verification_observation_agent",
-    "slug": "aura-agent2-verification-observation-agent",
+    "name": "Aura",
+    "slug": "aura",
     "url": "https://geniusplugin.vercel.app/",
-    "description": null,
+    "description": "AI  for game developers. Aura builds, tests, and verifies. Trusted by thousands of game studios, from AAA to indie developers. Supports Unreal engine and Unity.",
     "categories": [
      "ide-extension",
      "programming-app"
@@ -288,8 +288,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 12101824476422,
-    "requests": 111345584,
+    "tokens": 13036379199509,
+    "requests": 119259167,
     "app_id": 3067167
    },
    {
@@ -301,8 +301,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 11852706973026,
-    "requests": 96822312,
+    "tokens": 12713156290114,
+    "requests": 103535519,
     "app_id": 2627404
    },
    {
@@ -315,8 +315,8 @@
      "cli-agent",
      "ide-extension"
     ],
-    "tokens": 6296670920787,
-    "requests": 62811202,
+    "tokens": 6901069520141,
+    "requests": 67029738,
     "app_id": 2262242
    },
    {
@@ -328,8 +328,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 3425435973729,
-    "requests": 35032307,
+    "tokens": 3708212343651,
+    "requests": 37524159,
     "app_id": 2853275
    },
    {
@@ -342,8 +342,8 @@
      "ide-extension",
      "cli-agent"
     ],
-    "tokens": 3097134322569,
-    "requests": 32648457,
+    "tokens": 3190372026117,
+    "requests": 33519669,
     "app_id": 190604
    },
    {
@@ -353,8 +353,8 @@
     "url": "https://freebuff.com/",
     "description": "Powerful coding models, funded by ads",
     "categories": [],
-    "tokens": 2492336877302,
-    "requests": 19614139,
+    "tokens": 2632416302180,
+    "requests": 20792489,
     "app_id": 4137556
    },
    {
@@ -364,8 +364,8 @@
     "url": "https://github.com/deepseek-ai/deepseek-harness",
     "description": null,
     "categories": [],
-    "tokens": 2238997044394,
-    "requests": 12645021,
+    "tokens": 2494494286904,
+    "requests": 14059538,
     "app_id": 4706207
    },
    {
@@ -377,8 +377,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 2170984122422,
-    "requests": 13323820,
+    "tokens": 2393330107490,
+    "requests": 14600837,
     "app_id": 3682314
    },
    {
@@ -391,8 +391,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 1885384577765,
-    "requests": 19712333,
+    "tokens": 2005343355700,
+    "requests": 20893423,
     "app_id": 2725608
    },
    {
@@ -404,12 +404,12 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 1394907132580,
-    "requests": 21131094,
+    "tokens": 1523516280444,
+    "requests": 22747240,
     "app_id": 2668297
    },
    {
-    "rank": 14,
+    "rank": 15,
     "name": "Proto Agent",
     "slug": "proto-agent",
     "url": "https://proto.erp.ai/",
@@ -421,8 +421,8 @@
      "programming-app",
      "native-app-builder"
     ],
-    "tokens": 1256826188566,
-    "requests": 3945073,
+    "tokens": 1283193864901,
+    "requests": 4258481,
     "app_id": 4725308
    },
    {
@@ -434,8 +434,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 1015849625192,
-    "requests": 7376600,
+    "tokens": 1090814819531,
+    "requests": 7873085,
     "app_id": 3003505
    },
    {
@@ -449,8 +449,8 @@
      "personal-agent",
      "creative-writing"
     ],
-    "tokens": 624151092126,
-    "requests": 6823101,
+    "tokens": 661840376085,
+    "requests": 7176978,
     "app_id": 4132065
    },
    {
@@ -462,8 +462,8 @@
     "categories": [
      "game"
     ],
-    "tokens": 539196546660,
-    "requests": 8958626,
+    "tokens": 568081507792,
+    "requests": 9669659,
     "app_id": 2699842
    },
    {
@@ -475,31 +475,31 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 533940899826,
-    "requests": 6128210,
+    "tokens": 567617778985,
+    "requests": 6463944,
     "app_id": 189563
    },
    {
     "rank": 22,
-    "name": "Scammer Get Scammed",
-    "slug": "scammer-get-scammed",
-    "url": "https://kolkata-workers.jataterworldwide.com/",
-    "description": null,
-    "categories": [],
-    "tokens": 462795007988,
-    "requests": 143808720,
-    "app_id": 4940645
-   },
-   {
-    "rank": 23,
     "name": "HighLevel",
     "slug": "highlevel",
     "url": "https://www.gohighlevel.com/",
     "description": null,
     "categories": [],
-    "tokens": 455734160460,
-    "requests": 8117253,
+    "tokens": 487518831665,
+    "requests": 8691318,
     "app_id": 4580044
+   },
+   {
+    "rank": 23,
+    "name": "Scammer Get Scammed",
+    "slug": "scammer-get-scammed",
+    "url": "https://kolkata-workers.jataterworldwide.com/",
+    "description": null,
+    "categories": [],
+    "tokens": 478742267449,
+    "requests": 148572374,
+    "app_id": 4940645
    },
    {
     "rank": 24,
@@ -510,8 +510,8 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 383590173784,
-    "requests": 1604337,
+    "tokens": 467091240361,
+    "requests": 1913499,
     "app_id": 2823243
    },
    {
@@ -523,22 +523,22 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 379524916267,
-    "requests": 6699838,
+    "tokens": 400887669563,
+    "requests": 7078644,
     "app_id": 2637375
    },
    {
     "rank": 26,
-    "name": "Aura.agent2.behavior_tree_agent",
-    "slug": "aura-agent2-behavior-tree-agent",
+    "name": "Aura",
+    "slug": "aura",
     "url": "https://geniusplugin.vercel.app/",
-    "description": null,
+    "description": "AI  for game developers. Aura builds, tests, and verifies. Trusted by thousands of game studios, from AAA to indie developers. Supports Unreal engine and Unity.",
     "categories": [
      "ide-extension",
      "programming-app"
     ],
-    "tokens": 355131911657,
-    "requests": 3123900,
+    "tokens": 382410046563,
+    "requests": 3365662,
     "app_id": 4749832
    }
   ],
@@ -553,8 +553,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 53412637485803,
-    "requests": 509247812,
+    "tokens": 54347158175844,
+    "requests": 517161142,
     "app_id": 3067167
    },
    {
@@ -566,8 +566,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 38713721712638,
-    "requests": 352994368,
+    "tokens": 39574143551005,
+    "requests": 359707371,
     "app_id": 2627404
    },
    {
@@ -580,8 +580,8 @@
      "cli-agent",
      "ide-extension"
     ],
-    "tokens": 25758684359527,
-    "requests": 281347436,
+    "tokens": 26363057923457,
+    "requests": 285565781,
     "app_id": 2262242
    },
    {
@@ -594,8 +594,8 @@
      "ide-extension",
      "cli-agent"
     ],
-    "tokens": 20190229751341,
-    "requests": 165131104,
+    "tokens": 20283465331274,
+    "requests": 166002306,
     "app_id": 190604
    },
    {
@@ -607,8 +607,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 13513594071665,
-    "requests": 128029101,
+    "tokens": 13796363666470,
+    "requests": 130520865,
     "app_id": 2853275
    },
    {
@@ -620,8 +620,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 11733615903919,
-    "requests": 150308615,
+    "tokens": 11862221094579,
+    "requests": 151924710,
     "app_id": 2668297
    },
    {
@@ -631,8 +631,8 @@
     "url": "https://freebuff.com/",
     "description": "Powerful coding models, funded by ads",
     "categories": [],
-    "tokens": 10981265307088,
-    "requests": 79960585,
+    "tokens": 11121339658801,
+    "requests": 81138892,
     "app_id": 4137556
    },
    {
@@ -644,8 +644,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 10820891486814,
-    "requests": 71721467,
+    "tokens": 11043228105767,
+    "requests": 72998436,
     "app_id": 3682314
    },
    {
@@ -658,8 +658,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 7593020421490,
-    "requests": 84724183,
+    "tokens": 7712976190277,
+    "requests": 85905241,
     "app_id": 2725608
    },
    {
@@ -669,8 +669,8 @@
     "url": "https://github.com/deepseek-ai/deepseek-harness",
     "description": null,
     "categories": [],
-    "tokens": 7031800134470,
-    "requests": 43882894,
+    "tokens": 7287290469505,
+    "requests": 45297378,
     "app_id": 4706207
    },
    {
@@ -686,8 +686,8 @@
      "native-app-builder",
      "personal-agent"
     ],
-    "tokens": 4165286303733,
-    "requests": 46470236,
+    "tokens": 4165344758203,
+    "requests": 46471815,
     "app_id": 3909382
    },
    {
@@ -699,8 +699,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 3454347109037,
-    "requests": 35640757,
+    "tokens": 3488023941288,
+    "requests": 35976485,
     "app_id": 189563
    },
    {
@@ -712,8 +712,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 2659699430963,
-    "requests": 21050787,
+    "tokens": 2734663028062,
+    "requests": 21547259,
     "app_id": 3003505
    },
    {
@@ -729,8 +729,8 @@
      "programming-app",
      "native-app-builder"
     ],
-    "tokens": 2355938691616,
-    "requests": 6982208,
+    "tokens": 2382305790539,
+    "requests": 7295608,
     "app_id": 4725308
    },
    {
@@ -742,8 +742,8 @@
     "categories": [
      "game"
     ],
-    "tokens": 2173668169045,
-    "requests": 37975114,
+    "tokens": 2202552536664,
+    "requests": 38686133,
     "app_id": 2699842
    },
    {
@@ -755,8 +755,8 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 1994029043663,
-    "requests": 9593881,
+    "tokens": 2077527189872,
+    "requests": 9903033,
     "app_id": 2823243
    },
    {
@@ -770,8 +770,8 @@
      "personal-agent",
      "creative-writing"
     ],
-    "tokens": 1983487758479,
-    "requests": 20270146,
+    "tokens": 2021175646277,
+    "requests": 20624018,
     "app_id": 4132065
    },
    {
@@ -783,8 +783,8 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 1796291708666,
-    "requests": 32315209,
+    "tokens": 1817653961664,
+    "requests": 32694006,
     "app_id": 2637375
    },
    {
@@ -794,8 +794,8 @@
     "url": "https://www.gohighlevel.com/",
     "description": null,
     "categories": [],
-    "tokens": 1750203797189,
-    "requests": 31892463,
+    "tokens": 1781987779376,
+    "requests": 32466517,
     "app_id": 4580044
    },
    {
@@ -807,8 +807,8 @@
     "categories": [
      "general-chat"
     ],
-    "tokens": 1289786698099,
-    "requests": 47818263,
+    "tokens": 1308752676600,
+    "requests": 48231541,
     "app_id": 2938662
    }
   ]
