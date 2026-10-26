@@ -1,10 +1,10 @@
 {
  "meta": {
   "source_url": "https://openrouter.ai/api/frontend/v1/rankings/apps",
-  "fetched_at": "2026-10-26T11:31:25.750Z",
+  "fetched_at": "2026-10-26T21:50:37.745Z",
   "window": "day",
   "extracted_via": "frontend-api",
-  "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-10-26T11:31:25.750Z."
+  "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-10-26T21:50:37.745Z."
  },
  "windows": {
   "day": [
@@ -272,19 +272,6 @@
   ],
   "week": [
    {
-    "rank": 2,
-    "name": "Claude Code",
-    "slug": "claude-code-1wm0",
-    "url": "https://claude.ai/code",
-    "description": "Claude Code is Anthropic's agentic coding tool that reads your entire codebase, plans and executes changes across files, runs tests, and iterates on failures, all from natural language prompts.",
-    "categories": [
-     "cli-agent"
-    ],
-    "tokens": 13190227443257,
-    "requests": 112131019,
-    "app_id": 2627404
-   },
-   {
     "rank": 4,
     "name": "Hermes Agent",
     "slug": "hermes-agent",
@@ -294,9 +281,22 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 13102437869759,
-    "requests": 118237002,
+    "tokens": 13993685949042,
+    "requests": 126347891,
     "app_id": 3067167
+   },
+   {
+    "rank": 2,
+    "name": "Claude Code",
+    "slug": "claude-code-1wm0",
+    "url": "https://claude.ai/code",
+    "description": "Claude Code is Anthropic's agentic coding tool that reads your entire codebase, plans and executes changes across files, runs tests, and iterates on failures, all from natural language prompts.",
+    "categories": [
+     "cli-agent"
+    ],
+    "tokens": 13896727446441,
+    "requests": 119135154,
+    "app_id": 2627404
    },
    {
     "rank": 5,
@@ -308,8 +308,8 @@
      "cli-agent",
      "ide-extension"
     ],
-    "tokens": 6557859877322,
-    "requests": 58299309,
+    "tokens": 6860214575765,
+    "requests": 61357705,
     "app_id": 2262242
    },
    {
@@ -321,8 +321,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 5943948387384,
-    "requests": 47677647,
+    "tokens": 6175094556684,
+    "requests": 49743193,
     "app_id": 2853275
    },
    {
@@ -332,8 +332,8 @@
     "url": "https://github.com/deepseek-ai/deepseek-harness",
     "description": null,
     "categories": [],
-    "tokens": 2969109249464,
-    "requests": 16623903,
+    "tokens": 3080545762083,
+    "requests": 17349421,
     "app_id": 4706207
    },
    {
@@ -345,8 +345,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 2630791143001,
-    "requests": 15831491,
+    "tokens": 2765635711278,
+    "requests": 16745182,
     "app_id": 3682314
    },
    {
@@ -358,8 +358,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 2165932030543,
-    "requests": 28217601,
+    "tokens": 2265469638639,
+    "requests": 29566066,
     "app_id": 2668297
    },
    {
@@ -369,8 +369,8 @@
     "url": "https://freebuff.com/",
     "description": "Powerful coding models, funded by ads",
     "categories": [],
-    "tokens": 2048968283686,
-    "requests": 16948415,
+    "tokens": 2159358028407,
+    "requests": 17860469,
     "app_id": 4137556
    },
    {
@@ -383,12 +383,25 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 1635735428899,
-    "requests": 18352465,
+    "tokens": 1766441009382,
+    "requests": 19715747,
     "app_id": 2725608
    },
    {
     "rank": 13,
+    "name": "Strix",
+    "slug": "strix",
+    "url": "https://strix.ai/",
+    "description": null,
+    "categories": [
+     "cli-agent"
+    ],
+    "tokens": 1699113772841,
+    "requests": 11808398,
+    "app_id": 3003505
+   },
+   {
+    "rank": 14,
     "name": "Cline",
     "slug": "cline",
     "url": "https://cline.bot/",
@@ -397,22 +410,9 @@
      "ide-extension",
      "cli-agent"
     ],
-    "tokens": 1627305454596,
-    "requests": 19815280,
+    "tokens": 1696988216074,
+    "requests": 21123837,
     "app_id": 190604
-   },
-   {
-    "rank": 14,
-    "name": "Strix",
-    "slug": "strix",
-    "url": "https://strix.ai/",
-    "description": null,
-    "categories": [
-     "cli-agent"
-    ],
-    "tokens": 1603656288324,
-    "requests": 11055285,
-    "app_id": 3003505
    },
    {
     "rank": 16,
@@ -427,8 +427,8 @@
      "programming-app",
      "native-app-builder"
     ],
-    "tokens": 956181441278,
-    "requests": 5924270,
+    "tokens": 981238708573,
+    "requests": 6232513,
     "app_id": 4725308
    },
    {
@@ -442,8 +442,8 @@
      "personal-agent",
      "creative-writing"
     ],
-    "tokens": 668910494618,
-    "requests": 7474469,
+    "tokens": 711812657532,
+    "requests": 8210478,
     "app_id": 4132065
    },
    {
@@ -455,8 +455,8 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 616144773278,
-    "requests": 2372163,
+    "tokens": 633419901488,
+    "requests": 2441787,
     "app_id": 2823243
    },
    {
@@ -468,8 +468,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 535720956075,
-    "requests": 5844811,
+    "tokens": 569730805660,
+    "requests": 6220165,
     "app_id": 189563
    },
    {
@@ -481,8 +481,8 @@
     "categories": [
      "game"
     ],
-    "tokens": 517199429703,
-    "requests": 9062095,
+    "tokens": 548927347311,
+    "requests": 9548400,
     "app_id": 2699842
    },
    {
@@ -495,8 +495,8 @@
      "ide-extension",
      "programming-app"
     ],
-    "tokens": 469519733215,
-    "requests": 4236002,
+    "tokens": 496834220615,
+    "requests": 4488230,
     "app_id": 4749832
    },
    {
@@ -506,8 +506,8 @@
     "url": "https://www.gohighlevel.com/",
     "description": null,
     "categories": [],
-    "tokens": 431573561507,
-    "requests": 7568605,
+    "tokens": 462295159344,
+    "requests": 8083026,
     "app_id": 4580044
    },
    {
@@ -521,8 +521,8 @@
      "cli-agent",
      "cloud-agent"
     ],
-    "tokens": 402710786971,
-    "requests": 2254491,
+    "tokens": 436964962577,
+    "requests": 2456306,
     "app_id": 4780809
    },
    {
@@ -534,8 +534,8 @@
     "categories": [
      "general-chat"
     ],
-    "tokens": 402523560024,
-    "requests": 8996142,
+    "tokens": 433900965960,
+    "requests": 9608989,
     "app_id": 2938662
    }
   ],
@@ -550,8 +550,8 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 53745102248618,
-    "requests": 501183744,
+    "tokens": 54636356329131,
+    "requests": 509294681,
     "app_id": 3067167
    },
    {
@@ -563,8 +563,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 41585812020070,
-    "requests": 365180940,
+    "tokens": 42292317421345,
+    "requests": 372185133,
     "app_id": 2627404
    },
    {
@@ -577,8 +577,8 @@
      "cli-agent",
      "ide-extension"
     ],
-    "tokens": 26470756989930,
-    "requests": 276434202,
+    "tokens": 26773113531171,
+    "requests": 279492612,
     "app_id": 2262242
    },
    {
@@ -591,8 +591,8 @@
      "ide-extension",
      "cli-agent"
     ],
-    "tokens": 18104414833087,
-    "requests": 151342947,
+    "tokens": 18174098443083,
+    "requests": 152651525,
     "app_id": 190604
    },
    {
@@ -604,8 +604,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 15934324021825,
-    "requests": 141392747,
+    "tokens": 16165474981591,
+    "requests": 143458324,
     "app_id": 2853275
    },
    {
@@ -617,8 +617,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 12041120410597,
-    "requests": 155925980,
+    "tokens": 12140659514859,
+    "requests": 157274459,
     "app_id": 2668297
    },
    {
@@ -628,8 +628,8 @@
     "url": "https://freebuff.com/",
     "description": "Powerful coding models, funded by ads",
     "categories": [],
-    "tokens": 11657007104027,
-    "requests": 85069189,
+    "tokens": 11767397563012,
+    "requests": 85981250,
     "app_id": 4137556
    },
    {
@@ -641,8 +641,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 10794119567803,
-    "requests": 72597092,
+    "tokens": 10928967456956,
+    "requests": 73510800,
     "app_id": 3682314
    },
    {
@@ -652,8 +652,8 @@
     "url": "https://github.com/deepseek-ai/deepseek-harness",
     "description": null,
     "categories": [],
-    "tokens": 7894864887947,
-    "requests": 47282276,
+    "tokens": 8006302836248,
+    "requests": 48007802,
     "app_id": 4706207
    },
    {
@@ -666,12 +666,25 @@
      "personal-agent",
      "cli-agent"
     ],
-    "tokens": 7687385628094,
-    "requests": 83250158,
+    "tokens": 7818092206603,
+    "requests": 84613449,
     "app_id": 2725608
    },
    {
     "rank": 14,
+    "name": "Strix",
+    "slug": "strix",
+    "url": "https://strix.ai/",
+    "description": null,
+    "categories": [
+     "cli-agent"
+    ],
+    "tokens": 3681059726844,
+    "requests": 27788664,
+    "app_id": 3003505
+   },
+   {
+    "rank": 15,
     "name": "Command Code",
     "slug": "command-code",
     "url": "https://commandcode.ai/",
@@ -683,22 +696,9 @@
      "native-app-builder",
      "personal-agent"
     ],
-    "tokens": 3605378783874,
-    "requests": 43039834,
+    "tokens": 3605614810384,
+    "requests": 43042819,
     "app_id": 3909382
-   },
-   {
-    "rank": 15,
-    "name": "Strix",
-    "slug": "strix",
-    "url": "https://strix.ai/",
-    "description": null,
-    "categories": [
-     "cli-agent"
-    ],
-    "tokens": 3585601437239,
-    "requests": 27035546,
-    "app_id": 3003505
    },
    {
     "rank": 18,
@@ -709,8 +709,8 @@
     "categories": [
      "cli-agent"
     ],
-    "tokens": 2979022011896,
-    "requests": 32739237,
+    "tokens": 3013032344567,
+    "requests": 33114599,
     "app_id": 189563
    },
    {
@@ -726,8 +726,8 @@
      "programming-app",
      "native-app-builder"
     ],
-    "tokens": 2645215962409,
-    "requests": 10231976,
+    "tokens": 2670273469278,
+    "requests": 10540222,
     "app_id": 4725308
    },
    {
@@ -739,8 +739,8 @@
     "categories": [
      "game"
     ],
-    "tokens": 2223610084496,
-    "requests": 38381675,
+    "tokens": 2255338784874,
+    "requests": 38867992,
     "app_id": 2699842
    },
    {
@@ -754,8 +754,8 @@
      "personal-agent",
      "creative-writing"
     ],
-    "tokens": 2172525392881,
-    "requests": 21072323,
+    "tokens": 2215428088007,
+    "requests": 21808338,
     "app_id": 4132065
    },
    {
@@ -767,8 +767,8 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 2007929735320,
-    "requests": 9295541,
+    "tokens": 2025205058929,
+    "requests": 9365166,
     "app_id": 2823243
    },
    {
@@ -780,8 +780,8 @@
     "categories": [
      "programming-app"
     ],
-    "tokens": 1823427435328,
-    "requests": 31860840,
+    "tokens": 1845083944815,
+    "requests": 32242347,
     "app_id": 2637375
    },
    {
@@ -791,8 +791,8 @@
     "url": "https://www.gohighlevel.com/",
     "description": null,
     "categories": [],
-    "tokens": 1741305266529,
-    "requests": 31411644,
+    "tokens": 1772027041632,
+    "requests": 31926069,
     "app_id": 4580044
    },
    {
@@ -804,8 +804,8 @@
     "categories": [
      "general-chat"
     ],
-    "tokens": 1377160809194,
-    "requests": 48649788,
+    "tokens": 1408538352130,
+    "requests": 49262638,
     "app_id": 2938662
    }
   ]
