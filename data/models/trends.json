@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-10T13:45:01.837Z",
+ "as_of": "2026-11-10T22:30:31.522Z",
  "days_covered": 94,
  "first_date": "2026-06-03",
  "last_date": "2026-11-09",
@@ -116,9 +116,9 @@
    "days": 4
   },
   "nvidia/nemotron-3-ultra-550b-a55b-20260604": {
-   "t7": 31875287266,
-   "pct_4w": -99.5,
-   "last": 31875287266,
+   "t7": 3192273846621,
+   "pct_4w": -53.8,
+   "last": 3192273846621,
    "days": 5
   },
   "nvidia/nemotron-3.5-content-safety-20260604": {
@@ -2558,9 +2558,9 @@
    "days": 2
   },
   "anthropic/claude-haiku-5.5-20261007": {
-   "t7": 2708732993858,
+   "t7": 2708922743280,
    "pct_4w": 144.4,
-   "last": 2708732993858,
+   "last": 2708922743280,
    "days": 2
   },
   "mistralai/mistral-large-4-0-20261006": {
@@ -2948,9 +2948,9 @@
    "days": 2
   },
   "deepseek/deepseek-v4.1-flash-20260910": {
-   "t7": 17535498742586,
+   "t7": 17535499236058,
    "pct_4w": -57.2,
-   "last": 17535498742586,
+   "last": 17535499236058,
    "days": 2
   },
   "meta/muse-spark-1.3-contributor-20260902": {
@@ -2960,9 +2960,9 @@
    "days": 2
   },
   "nvidia/nemotron-3.5-lightning-20260807": {
-   "t7": 28244706045,
-   "pct_4w": -97,
-   "last": 28244706045,
+   "t7": 1177549169125,
+   "pct_4w": 24,
+   "last": 1177549169125,
    "days": 2
   },
   "upstage/solar-pro4-20260810": {
@@ -3056,9 +3056,9 @@
    "days": 2
   },
   "z-ai/glm-5.3-flash-20260826": {
-   "t7": 12147992660965,
+   "t7": 12147995139393,
    "pct_4w": -0.7,
-   "last": 12147992660965,
+   "last": 12147995139393,
    "days": 2
   },
   "aion-labs/aion-3.0-mini-20260707": {
@@ -3128,9 +3128,9 @@
    "days": 2
   },
   "openai/gpt-6-luna-20260922": {
-   "t7": 7160803486478,
+   "t7": 7160965014594,
    "pct_4w": 0.7,
-   "last": 7160803486478,
+   "last": 7160965014594,
    "days": 2
   },
   "bytedance-seed/seed-2-1-turbo-20260810": {
@@ -3680,9 +3680,9 @@
    "days": 1
   },
   "deepseek/deepseek-v4.1-flash-20261017": {
-   "t7": 55448940924602,
+   "t7": 55448947254285,
    "pct_4w": null,
-   "last": 55448940924602,
+   "last": 55448947254285,
    "days": 1
   },
   "google/gemini-omni-1.2-flash-20261105": {
@@ -3919,22 +3919,10 @@
    "last": 230588,
    "days": 1
   },
-  "nvidia/nemotron-3.5-lightning-20260807:free": {
-   "t7": 1149304463080,
-   "pct_4w": null,
-   "last": 1149304463080,
-   "days": 1
-  },
   "nvidia/nemotron-3.5-rerank-8b-20261021": {
    "t7": 1051651146,
    "pct_4w": null,
    "last": 1051651146,
-   "days": 1
-  },
-  "nvidia/nemotron-3-ultra-550b-a55b-20260604:free": {
-   "t7": 3160398559355,
-   "pct_4w": null,
-   "last": 3160398559355,
    "days": 1
   },
   "liquid/d1-ultra-20261015": {
@@ -4088,11 +4076,6 @@
  ],
  "fallers": [
   {
-   "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-   "pct_4w": -99.5,
-   "t7": 31875287266
-  },
-  {
    "slug": "nvidia/nemotron-3-super-120b-a12b-20230311",
    "pct_4w": -98.1,
    "t7": 11913312708
@@ -4106,11 +4089,6 @@
    "slug": "xiaomi/mimo-v2.5-20260422",
    "pct_4w": -97.1,
    "t7": 18530629118
-  },
-  {
-   "slug": "nvidia/nemotron-3.5-lightning-20260807",
-   "pct_4w": -97,
-   "t7": 28244706045
   },
   {
    "slug": "xiaomi/mimo-v2.5-pro-20260422",
@@ -4136,6 +4114,16 @@
    "slug": "xiaomi/mimo-v2.6-pro-ultraspeed-20260921",
    "pct_4w": -82.1,
    "t7": 24045784010
+  },
+  {
+   "slug": "openai/gpt-5-nano-2025-08-07",
+   "pct_4w": -80.8,
+   "t7": 36188985020
+  },
+  {
+   "slug": "openai/gpt-5.6-sol-20260709",
+   "pct_4w": -78.7,
+   "t7": 333775174737
   }
  ]
 }
