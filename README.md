@@ -1,3 +1,5 @@
+<img src="assets/logo.svg" width="96" height="96" alt="token-history logo">
+
 # token-history
 
 > **The first AI-agent leaderboard where lines can go down.**
