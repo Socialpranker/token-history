@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T01:03:11.600Z",
+ "updated": "2026-11-17T14:52:51.136Z",
  "date": "2026-11-17",
  "window": "day",
- "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-11-17T01:03:11.600Z.",
+ "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-11-17T14:52:51.136Z.",
  "apps": [
   {
    "slug": "hermes-agent",
@@ -13,11 +13,11 @@
    "tokens_display": "1.97T",
    "requests": 16822773,
    "tokens_per_request": 117122,
-   "stars": 263921,
+   "stars": 264108,
    "repo": "NousResearch/hermes-agent",
-   "week_tokens": 13066999738359,
+   "week_tokens": 14372678996548,
    "week_rank": 3,
-   "momentum": 1.06,
+   "momentum": 0.96,
    "categories": [
     "personal-agent",
     "cli-agent"
@@ -34,9 +34,9 @@
    "tokens_per_request": 102376,
    "stars": null,
    "repo": null,
-   "week_tokens": 11088259988361,
+   "week_tokens": 12078753231088,
    "week_rank": 4,
-   "momentum": 1.03,
+   "momentum": 0.94,
    "categories": [
     "cli-agent"
    ]
@@ -52,9 +52,9 @@
    "tokens_per_request": 111283,
    "stars": null,
    "repo": null,
-   "week_tokens": 7409735960877,
+   "week_tokens": 8047441749575,
    "week_rank": 5,
-   "momentum": 1.15,
+   "momentum": 1.05,
    "categories": [
     "cli-agent",
     "ide-extension"
@@ -65,15 +65,15 @@
    "name": "pi",
    "url": "https://pi.dev/",
    "rank": 6,
-   "tokens": 644889050925,
+   "tokens": 644889092182,
    "tokens_display": "645B",
-   "requests": 6578087,
+   "requests": 6578088,
    "tokens_per_request": 98036,
    "stars": null,
    "repo": null,
-   "week_tokens": 4095872774541,
+   "week_tokens": 4498001998146,
    "week_rank": 6,
-   "momentum": 1.1,
+   "momentum": 1,
    "categories": [
     "cli-agent"
    ]
@@ -89,9 +89,9 @@
    "tokens_per_request": 102063,
    "stars": null,
    "repo": null,
-   "week_tokens": 2620564265439,
+   "week_tokens": 2785003899716,
    "week_rank": 8,
-   "momentum": 1.21,
+   "momentum": 1.13,
    "categories": [
     "cli-agent"
    ]
@@ -101,15 +101,15 @@
    "name": "DeepSeek Harness",
    "url": "https://github.com/deepseek-ai/deepseek-harness",
    "rank": 8,
-   "tokens": 352503631930,
+   "tokens": 352503758325,
    "tokens_display": "353B",
-   "requests": 2092946,
+   "requests": 2092947,
    "tokens_per_request": 168425,
    "stars": null,
    "repo": null,
-   "week_tokens": 2360802332150,
+   "week_tokens": 2526954227435,
    "week_rank": 10,
-   "momentum": 1.05,
+   "momentum": 0.98,
    "categories": []
   },
   {
@@ -123,9 +123,9 @@
    "tokens_per_request": 157507,
    "stars": null,
    "repo": null,
-   "week_tokens": 2101489600180,
+   "week_tokens": 2262881060630,
    "week_rank": 11,
-   "momentum": 1.05,
+   "momentum": 0.98,
    "categories": [
     "cli-agent"
    ]
@@ -141,9 +141,9 @@
    "tokens_per_request": 61662,
    "stars": null,
    "repo": null,
-   "week_tokens": 3353206685280,
+   "week_tokens": 3604155657027,
    "week_rank": 7,
-   "momentum": 0.63,
+   "momentum": 0.58,
    "categories": [
     "cli-agent"
    ]
@@ -159,9 +159,9 @@
    "tokens_per_request": 34820,
    "stars": null,
    "repo": null,
-   "week_tokens": 1663000991045,
+   "week_tokens": 1805118982529,
    "week_rank": 13,
-   "momentum": 1.16,
+   "momentum": 1.06,
    "categories": []
   },
   {
@@ -173,11 +173,11 @@
    "tokens_display": "265B",
    "requests": 2771281,
    "tokens_per_request": 95483,
-   "stars": 394601,
+   "stars": 394637,
    "repo": "openclaw/openclaw",
-   "week_tokens": 2466848222040,
+   "week_tokens": 2592735117048,
    "week_rank": 9,
-   "momentum": 0.75,
+   "momentum": 0.71,
    "categories": [
     "personal-agent",
     "cli-agent"
@@ -192,11 +192,11 @@
    "tokens_display": "139B",
    "requests": 1219071,
    "tokens_per_request": 114356,
-   "stars": 93610,
+   "stars": 93645,
    "repo": "All-Hands-AI/OpenHands",
-   "week_tokens": 1029401370499,
+   "week_tokens": 1095471059558,
    "week_rank": 15,
-   "momentum": 0.95,
+   "momentum": 0.89,
    "categories": [
     "cli-agent"
    ]
@@ -212,9 +212,9 @@
    "tokens_per_request": 71873,
    "stars": null,
    "repo": null,
-   "week_tokens": 716024085792,
+   "week_tokens": 771912393351,
    "week_rank": 19,
-   "momentum": 1.16,
+   "momentum": 1.08,
    "categories": [
     "game"
    ]
@@ -230,9 +230,9 @@
    "tokens_per_request": 172989,
    "stars": null,
    "repo": null,
-   "week_tokens": 506932576564,
+   "week_tokens": 549553332280,
    "week_rank": 24,
-   "momentum": 1.23,
+   "momentum": 1.13,
    "categories": []
   },
   {
@@ -246,9 +246,9 @@
    "tokens_per_request": 103784,
    "stars": null,
    "repo": null,
-   "week_tokens": 604856743268,
+   "week_tokens": 637913630585,
    "week_rank": 21,
-   "momentum": 1.01,
+   "momentum": 0.95,
    "categories": []
   },
   {
@@ -262,9 +262,9 @@
    "tokens_per_request": 59396,
    "stars": null,
    "repo": null,
-   "week_tokens": 497253780451,
-   "week_rank": 25,
-   "momentum": 1.07,
+   "week_tokens": 527221833969,
+   "week_rank": 26,
+   "momentum": 1.01,
    "categories": []
   },
   {
@@ -278,9 +278,9 @@
    "tokens_per_request": 72088,
    "stars": null,
    "repo": null,
-   "week_tokens": 544294957303,
+   "week_tokens": 578170249495,
    "week_rank": 23,
-   "momentum": 0.9,
+   "momentum": 0.85,
    "categories": [
     "roleplay",
     "personal-agent",
@@ -296,11 +296,11 @@
    "tokens_display": "65.8B",
    "requests": 551270,
    "tokens_per_request": 119368,
-   "stars": 71692,
+   "stars": 71708,
    "repo": "cline/cline",
-   "week_tokens": 405798921228,
+   "week_tokens": 441936955935,
    "week_rank": 28,
-   "momentum": 1.14,
+   "momentum": 1.04,
    "categories": [
     "ide-extension",
     "cli-agent"
@@ -317,9 +317,9 @@
    "tokens_per_request": 60844,
    "stars": null,
    "repo": null,
-   "week_tokens": 389364620072,
+   "week_tokens": 415000966311,
    "week_rank": 29,
-   "momentum": 1.12,
+   "momentum": 1.05,
    "categories": [
     "video-gen"
    ]
