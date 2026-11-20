@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-20T14:20:36.863Z",
+ "as_of": "2026-11-20T23:19:08.230Z",
  "days_covered": 104,
  "first_date": "2026-06-03",
  "last_date": "2026-11-19",
@@ -980,10 +980,10 @@
    "days": 4
   },
   "perplexity/pplx-embed-v1-0.6b": {
-   "t7": 7996075,
+   "t7": null,
    "pct_4w": null,
-   "last": 7996075,
-   "days": 4
+   "last": null,
+   "days": 3
   },
   "recraft/recraft-v4.1-pro-vector-20260514": {
    "t7": 4971481,
@@ -2120,10 +2120,10 @@
    "days": 4
   },
   "Qwen/Qwen3-Embedding-8B": {
-   "t7": 220665,
+   "t7": null,
    "pct_4w": null,
-   "last": 220665,
-   "days": 4
+   "last": null,
+   "days": 3
   },
   "amazon/nova-premier-v1": {
    "t7": null,
@@ -2282,10 +2282,10 @@
    "days": 3
   },
   "text-embedding-3-large": {
-   "t7": 915547,
-   "pct_4w": 103.9,
-   "last": 915547,
-   "days": 6
+   "t7": null,
+   "pct_4w": null,
+   "last": null,
+   "days": 5
   },
   "BAAI/bge-base-en-v1.5": {
    "t7": null,
@@ -2366,10 +2366,10 @@
    "days": 1
   },
   "openai/gpt-realtime-2.1": {
-   "t7": 910,
+   "t7": null,
    "pct_4w": null,
    "last": null,
-   "days": 5
+   "days": 4
   },
   "openai/gpt-5.6-terra-pro-20260709": {
    "t7": 2211402101,
@@ -2486,10 +2486,10 @@
    "days": 4
   },
   "voyageai/voyage-code-4": {
-   "t7": 160055,
+   "t7": null,
    "pct_4w": null,
-   "last": 160055,
-   "days": 2
+   "last": null,
+   "days": 1
   },
   "cosine/lumen-outpost-20260828": {
    "t7": null,
@@ -2528,10 +2528,10 @@
    "days": 3
   },
   "intfloat/multilingual-e5-large": {
-   "t7": 25450,
-   "pct_4w": 230,
-   "last": 25450,
-   "days": 3
+   "t7": null,
+   "pct_4w": null,
+   "last": null,
+   "days": 2
   },
   "stealth/space-bunny-alpha": {
    "t7": null,
@@ -2684,10 +2684,10 @@
    "days": 2
   },
   "nvidia/nemotron-3-embed-1b": {
-   "t7": 9114,
+   "t7": null,
    "pct_4w": null,
-   "last": 9114,
-   "days": 2
+   "last": null,
+   "days": 1
   },
   "cloudflare/clef-flash": {
    "t7": 29274240100,
@@ -3128,9 +3128,9 @@
    "days": 2
   },
   "openai/gpt-6-luna-20260922": {
-   "t7": 8957909818000,
+   "t7": 8957913722514,
    "pct_4w": null,
-   "last": 8957909818000,
+   "last": 8957913722514,
    "days": 2
   },
   "bytedance-seed/seed-2-1-turbo-20260810": {
@@ -3554,10 +3554,10 @@
    "days": 1
   },
   "qwen3-embedding-8b": {
-   "t7": 998433,
+   "t7": null,
    "pct_4w": null,
    "last": null,
-   "days": 3
+   "days": 2
   },
   "minimax/minimax-m3.1-flash-20261019": {
    "t7": 3915757751459,
@@ -3618,24 +3618,6 @@
    "pct_4w": null,
    "last": null,
    "days": 2
-  },
-  "mongodb/voyage-4": {
-   "t7": 611,
-   "pct_4w": null,
-   "last": null,
-   "days": 1
-  },
-  "mongodb/voyage-4-lite": {
-   "t7": 423,
-   "pct_4w": null,
-   "last": null,
-   "days": 1
-  },
-  "nvidia/nemotron-3.5-embed-1b": {
-   "t7": 15072,
-   "pct_4w": null,
-   "last": null,
-   "days": 1
   },
   "tencent/hy4-flash-20261116": {
    "t7": 69273358650121,
@@ -4049,12 +4031,6 @@
    "t7": 2542996651,
    "pct_4w": null,
    "last": 2542996651,
-   "days": 1
-  },
-  "voyageai/voyage-4": {
-   "t7": 1242370,
-   "pct_4w": null,
-   "last": 1242370,
    "days": 1
   },
   "qwen/qwen-image-2.1-pro-20261016": {
