@@ -1,8 +1,8 @@
 {
- "as_of": "2026-11-21T22:21:03.064Z",
- "days_covered": 105,
+ "as_of": "2026-11-22T13:35:16.430Z",
+ "days_covered": 106,
  "first_date": "2026-06-03",
- "last_date": "2026-11-20",
+ "last_date": "2026-11-21",
  "warming_up": false,
  "citation": "Source: OpenRouter (openrouter.ai/rankings).",
  "note": "World usage = tokens routed through OpenRouter; provider tokenizers differ; trends, not absolutes.",
@@ -38,21 +38,21 @@
    "days": 1
   },
   "sourceful/riverflow-v2.5-fast-20260605": {
-   "t7": 6141514,
+   "t7": 6322207,
    "pct_4w": null,
-   "last": 6141514,
+   "last": 6322207,
    "days": 5
   },
   "sourceful/riverflow-v2.5-pro-20260605": {
-   "t7": 16750638,
+   "t7": 13803034,
    "pct_4w": null,
-   "last": 16750638,
+   "last": 13803034,
    "days": 5
   },
   "z-ai/glm-5v-turbo-20260401": {
-   "t7": 943668067,
+   "t7": 918421184,
    "pct_4w": null,
-   "last": 943668067,
+   "last": 918421184,
    "days": 3
   },
   "z-ai/glm-4-32b-0414": {
@@ -62,15 +62,15 @@
    "days": 1
   },
   "z-ai/glm-4.5-air": {
-   "t7": 3039985783,
+   "t7": 3476742813,
    "pct_4w": null,
-   "last": 3039985783,
+   "last": 3476742813,
    "days": 5
   },
   "moonshotai/kimi-k2.6-20260420": {
-   "t7": 92880225064,
+   "t7": 90094111014,
    "pct_4w": null,
-   "last": 92880225064,
+   "last": 90094111014,
    "days": 5
   },
   "mistralai/devstral-small-2507": {
@@ -86,69 +86,69 @@
    "days": 3
   },
   "anthropic/claude-5-fable-20260609": {
-   "t7": 14288083432,
+   "t7": 15125309728,
    "pct_4w": null,
-   "last": 14287000680,
-   "days": 10
+   "last": 15125309728,
+   "days": 9
   },
   "moonshotai/kimi-k2.7-code-20260612": {
-   "t7": 70596121630,
+   "t7": 67927424649,
    "pct_4w": null,
-   "last": 70596121630,
+   "last": 67927424649,
    "days": 5
   },
   "nvidia/llama-nemotron-rerank-vl-1b-v2": {
-   "t7": 342214881,
+   "t7": 195024907,
    "pct_4w": null,
    "last": null,
    "days": 4
   },
   "sentence-transformers/multi-qa-mpnet-base-dot-v1-20251117": {
-   "t7": 4945106,
+   "t7": 4602911,
    "pct_4w": null,
-   "last": 4945106,
+   "last": 4602911,
    "days": 4
   },
   "perceptron/perceptron-mk1-20260512": {
-   "t7": 62744527,
+   "t7": 80192101,
    "pct_4w": null,
-   "last": 62744527,
+   "last": 80192101,
    "days": 4
   },
   "nvidia/nemotron-3-ultra-550b-a55b-20260604": {
-   "t7": 3620922253031,
+   "t7": 3773964781502,
    "pct_4w": null,
-   "last": 3620922253031,
+   "last": 3773964781502,
    "days": 5
   },
   "nvidia/nemotron-3.5-content-safety-20260604": {
-   "t7": 91885567,
+   "t7": 77883095,
    "pct_4w": null,
-   "last": 91885567,
+   "last": 77883095,
    "days": 4
   },
   "sesame/csm-1b": {
-   "t7": 63793,
+   "t7": 27637,
    "pct_4w": null,
-   "last": 63793,
+   "last": 27637,
    "days": 4
   },
   "bytedance/ui-tars-1.5-7b": {
-   "t7": 247346005,
+   "t7": 250153211,
    "pct_4w": null,
-   "last": 247346005,
+   "last": 250153211,
    "days": 4
   },
   "qwen/qwen3.7-plus-20260602": {
-   "t7": 41237440729,
+   "t7": 39809126641,
    "pct_4w": null,
-   "last": 41237440729,
+   "last": 39809126641,
    "days": 4
   },
   "openai/gpt-audio": {
-   "t7": 119599337,
+   "t7": 115548694,
    "pct_4w": null,
-   "last": 119599337,
+   "last": 115548694,
    "days": 4
   },
   "ibm-granite/granite-4.1-8b-20260429": {
@@ -158,13 +158,13 @@
    "days": 3
   },
   "openai/gpt-5.2-codex-20260114": {
-   "t7": 637136892,
+   "t7": 692970165,
    "pct_4w": null,
-   "last": 637136892,
+   "last": 692970165,
    "days": 4
   },
   "tencent/hunyuan-a13b-instruct": {
-   "t7": 103491295,
+   "t7": 32634502,
    "pct_4w": null,
    "last": null,
    "days": 4
@@ -176,9 +176,9 @@
    "days": 2
   },
   "bytedance-seed/seed-2.0-lite-20260309": {
-   "t7": 3912270238,
+   "t7": 3612721162,
    "pct_4w": null,
-   "last": 3912270238,
+   "last": 3612721162,
    "days": 4
   },
   "inclusionai/ling-2.6-flash-20260421": {
@@ -188,15 +188,15 @@
    "days": 3
   },
   "google/gemini-embedding-2": {
-   "t7": 20854667005,
+   "t7": 22693525500,
    "pct_4w": null,
-   "last": 20854667005,
+   "last": 22693525500,
    "days": 4
   },
   "relace/relace-search-20251208": {
-   "t7": 16692388,
+   "t7": 16138858,
    "pct_4w": null,
-   "last": 16692388,
+   "last": 16138858,
    "days": 4
   },
   "deepseek/deepseek-r1-distill-llama-70b": {
@@ -206,27 +206,27 @@
    "days": 3
   },
   "perplexity/pplx-embed-v1-0.6B": {
-   "t7": 21794487385,
+   "t7": 22472403028,
    "pct_4w": null,
-   "last": 21794487385,
+   "last": 22472403028,
    "days": 4
   },
   "mistralai/codestral-embed-2505": {
-   "t7": 675094150,
+   "t7": 675175010,
    "pct_4w": null,
-   "last": 675094150,
+   "last": 675175010,
    "days": 4
   },
   "mistralai/mistral-medium-3.1": {
-   "t7": 2742883445,
+   "t7": 2012207647,
    "pct_4w": null,
-   "last": 2742883445,
+   "last": 2012207647,
    "days": 4
   },
   "minimax/minimax-m3-20260531": {
-   "t7": 563070478430,
+   "t7": 555560626483,
    "pct_4w": null,
-   "last": 563070478430,
+   "last": 555560626483,
    "days": 6
   },
   "upstage/solar-pro-3": {
@@ -236,27 +236,27 @@
    "days": 4
   },
   "microsoft/phi-4": {
-   "t7": 926459052,
+   "t7": 887946889,
    "pct_4w": null,
-   "last": 926459052,
+   "last": 887946889,
    "days": 4
   },
   "qwen/qwen3-30b-a3b-instruct-2507": {
-   "t7": 27680302303,
+   "t7": 25997733786,
    "pct_4w": null,
-   "last": 27680302303,
+   "last": 25997733786,
    "days": 4
   },
   "google/gemini-embedding-001": {
-   "t7": 11219990112,
+   "t7": 10111317784,
    "pct_4w": null,
-   "last": 11219990072,
+   "last": 10111317744,
    "days": 5
   },
   "sentence-transformers/all-mpnet-base-v2-20251117": {
-   "t7": 1082609828,
+   "t7": 1058691643,
    "pct_4w": null,
-   "last": 1082609828,
+   "last": 1058691643,
    "days": 4
   },
   "qwen/qwen3-8b-04-28": {
@@ -266,27 +266,27 @@
    "days": 3
   },
   "z-ai/glm-4.6-20251208": {
-   "t7": 1904384105,
+   "t7": 2015790707,
    "pct_4w": null,
-   "last": 1904384105,
+   "last": 2015790707,
    "days": 4
   },
   "google/gemini-3-pro-image-preview-20251120": {
-   "t7": 620340264,
+   "t7": 593564573,
    "pct_4w": null,
-   "last": 620340264,
+   "last": 593564573,
    "days": 4
   },
   "perplexity/sonar-pro-search": {
-   "t7": 653072944,
+   "t7": 663753886,
    "pct_4w": null,
-   "last": 653072944,
+   "last": 663753886,
    "days": 4
   },
   "openai/gpt-4o-mini-transcribe": {
-   "t7": 514531852,
+   "t7": 494140171,
    "pct_4w": null,
-   "last": 514531852,
+   "last": 494140171,
    "days": 4
   },
   "poolside/laguna-xs.2-20260421": {
@@ -296,9 +296,9 @@
    "days": 2
   },
   "qwen/qwen3-embedding-4b": {
-   "t7": 27739533659,
+   "t7": 29366971177,
    "pct_4w": null,
-   "last": 27739533659,
+   "last": 29366971177,
    "days": 4
   },
   "openai/gpt-4o-mini-search-preview-2025-03-11": {
@@ -314,9 +314,9 @@
    "days": 3
   },
   "openai/gpt-4o-mini-2024-07-18": {
-   "t7": 9464604948,
+   "t7": 8786479910,
    "pct_4w": null,
-   "last": 9464604948,
+   "last": 8786479910,
    "days": 4
   },
   "sao10k/l3.1-70b-hanami-x1": {
@@ -326,9 +326,9 @@
    "days": 2
   },
   "hexgrad/kokoro-82m": {
-   "t7": 36953237,
+   "t7": 37037416,
    "pct_4w": null,
-   "last": 36953237,
+   "last": 37037416,
    "days": 4
   },
   "inclusionai/ling-2.6-1t-20260423": {
@@ -344,57 +344,57 @@
    "days": 2
   },
   "z-ai/glm-5.1-20260406": {
-   "t7": 20431725736,
+   "t7": 19424086736,
    "pct_4w": null,
-   "last": 20431725736,
+   "last": 19424086736,
    "days": 4
   },
   "z-ai/glm-4.5v": {
-   "t7": 442582029,
+   "t7": 135918884,
    "pct_4w": null,
-   "last": 442582029,
+   "last": 135918884,
    "days": 4
   },
   "google/gemini-3.1-flash-image-preview-20260226": {
-   "t7": 612640983,
+   "t7": 634946292,
    "pct_4w": null,
-   "last": 612640983,
+   "last": 634946292,
    "days": 4
   },
   "openai/o3-2025-04-16": {
-   "t7": 454728134,
+   "t7": 511380028,
    "pct_4w": null,
-   "last": 454728134,
+   "last": 511380028,
    "days": 7
   },
   "google/gemma-2-27b-it": {
-   "t7": 34506190,
+   "t7": 31596899,
    "pct_4w": null,
-   "last": 34506190,
+   "last": 31596899,
    "days": 4
   },
   "mistralai/mistral-embed-2312": {
-   "t7": 5055297480,
+   "t7": 4897263596,
    "pct_4w": null,
-   "last": 5055297480,
+   "last": 4897263596,
    "days": 4
   },
   "nvidia/llama-nemotron-embed-vl-1b-v2-20260224": {
-   "t7": 216522617,
+   "t7": 143824720,
    "pct_4w": null,
    "last": null,
    "days": 4
   },
   "tencent/hy3-preview-20260421": {
-   "t7": 2814342502,
+   "t7": 2455555912,
    "pct_4w": null,
-   "last": 2814342502,
+   "last": null,
    "days": 4
   },
   "openai/gpt-5-nano-2025-08-07": {
-   "t7": 75018750232,
+   "t7": 73527652246,
    "pct_4w": null,
-   "last": 75018750232,
+   "last": 73527652246,
    "days": 4
   },
   "openai/o3-deep-research-2025-06-26": {
@@ -404,57 +404,57 @@
    "days": 2
   },
   "anthropic/claude-4.7-opus-20260416": {
-   "t7": 18961788451,
+   "t7": 19091781472,
    "pct_4w": null,
-   "last": 18961788451,
+   "last": 19091781472,
    "days": 7
   },
   "google/gemma-4-31b-it-20260402": {
-   "t7": 517081340525,
+   "t7": 517968544113,
    "pct_4w": null,
-   "last": 517081340525,
+   "last": 517968544113,
    "days": 5
   },
   "x-ai/grok-4.20-multi-agent-20260309": {
-   "t7": 1040322273,
+   "t7": 1013730486,
    "pct_4w": null,
-   "last": 1040322273,
+   "last": 1013730486,
    "days": 4
   },
   "openai/gpt-5-mini-2025-08-07": {
-   "t7": 81336789173,
+   "t7": 81154930883,
    "pct_4w": null,
-   "last": 81336740261,
+   "last": 81154881971,
    "days": 10
   },
   "morph/morph-v3-fast": {
-   "t7": 80386419,
+   "t7": 76426314,
    "pct_4w": null,
-   "last": 80023896,
+   "last": 76409724,
    "days": 5
   },
   "openai/gpt-5.2-pro-20251211": {
-   "t7": 13113498,
+   "t7": 12246960,
    "pct_4w": null,
-   "last": 13113498,
+   "last": 12246960,
    "days": 6
   },
   "microsoft/mai-voice-2": {
-   "t7": 3194708,
+   "t7": 3195837,
    "pct_4w": null,
-   "last": 3194708,
+   "last": 3195837,
    "days": 4
   },
   "amazon/nova-micro-v1": {
-   "t7": 15634409831,
+   "t7": 15791360939,
    "pct_4w": null,
-   "last": 15634409831,
+   "last": 15791360939,
    "days": 4
   },
   "x-ai/grok-voice-tts-1.0": {
-   "t7": 9781981,
+   "t7": 9824208,
    "pct_4w": null,
-   "last": 9781981,
+   "last": 9824208,
    "days": 4
   },
   "deepcogito/cogito-v2.1-671b-20251118": {
@@ -470,9 +470,9 @@
    "days": 2
   },
   "deepseek/deepseek-v4-flash-20260423": {
-   "t7": 1959855929901,
+   "t7": 1963640031660,
    "pct_4w": null,
-   "last": 1959855929901,
+   "last": 1963640031660,
    "days": 4
   },
   "nousresearch/hermes-3-llama-3.1-405b": {
@@ -482,9 +482,9 @@
    "days": 4
   },
   "google/gemma-3-12b-it": {
-   "t7": 11444734655,
+   "t7": 11266654732,
    "pct_4w": null,
-   "last": 11444734655,
+   "last": 11266654732,
    "days": 4
   },
   "poolside/laguna-m.1-20260312": {
@@ -494,21 +494,21 @@
    "days": 2
   },
   "mancer/weaver": {
-   "t7": 18631410,
+   "t7": 16896571,
    "pct_4w": null,
-   "last": 18631410,
+   "last": 16896571,
    "days": 4
   },
   "sourceful/riverflow-v2-fast-20260130": {
-   "t7": 9815551,
+   "t7": 10284762,
    "pct_4w": null,
-   "last": 9815551,
+   "last": 10284762,
    "days": 4
   },
   "meta-llama/llama-3.2-3b-instruct": {
-   "t7": 953937433,
+   "t7": 679154356,
    "pct_4w": null,
-   "last": 953937433,
+   "last": 679154356,
    "days": 4
   },
   "aion-labs/aion-1.0": {
@@ -518,57 +518,57 @@
    "days": 2
   },
   "qwen/qwen3-32b-04-28": {
-   "t7": 23214400426,
+   "t7": 22749542629,
    "pct_4w": null,
-   "last": 23214400426,
+   "last": 22749542629,
    "days": 4
   },
   "qwen/qwen3.6-27b-20260422": {
-   "t7": 12103234219,
+   "t7": 11911596336,
    "pct_4w": null,
-   "last": 12103234219,
+   "last": 11911596336,
    "days": 4
   },
   "xiaomi/mimo-v2.5-20260422": {
-   "t7": 23625713051,
+   "t7": 23787280995,
    "pct_4w": null,
-   "last": 23625713051,
+   "last": 23787280995,
    "days": 4
   },
   "mistralai/mistral-small-24b-instruct-2501": {
-   "t7": 5440943349,
+   "t7": 5081958688,
    "pct_4w": null,
-   "last": 5440943349,
+   "last": 5081958688,
    "days": 4
   },
   "x-ai/grok-4.20-20260309": {
-   "t7": 21388726274,
+   "t7": 21307980393,
    "pct_4w": null,
-   "last": 21388726274,
+   "last": 21307980393,
    "days": 4
   },
   "qwen/qwen3-coder-480b-a35b-07-25": {
-   "t7": 9381344729,
+   "t7": 8891865452,
    "pct_4w": null,
-   "last": 9381344729,
+   "last": 8891865452,
    "days": 4
   },
   "cohere/command-r-plus-08-2024": {
-   "t7": 19421061,
+   "t7": 10780335,
    "pct_4w": null,
-   "last": 19421061,
+   "last": 10780335,
    "days": 4
   },
   "deepseek/deepseek-v4-pro-20260423": {
-   "t7": 590182461668,
+   "t7": 594688539594,
    "pct_4w": null,
-   "last": 590182461668,
+   "last": 594688539594,
    "days": 4
   },
   "openai/gpt-4o-2024-05-13": {
-   "t7": 96300318,
+   "t7": 93643596,
    "pct_4w": null,
-   "last": 96300318,
+   "last": 93643596,
    "days": 4
   },
   "qwen/qwen-2.5-7b-instruct": {
@@ -578,27 +578,27 @@
    "days": 4
   },
   "intfloat/e5-base-v2-20251117": {
-   "t7": 8132032,
+   "t7": 7189455,
    "pct_4w": null,
-   "last": 8132032,
+   "last": 7189455,
    "days": 4
   },
   "nvidia/nemotron-3-nano-30b-a3b": {
-   "t7": 14818824124,
+   "t7": 14683967928,
    "pct_4w": null,
-   "last": 14818824124,
+   "last": 14683967928,
    "days": 5
   },
   "qwen/qwen3.6-35b-a3b-20260415": {
-   "t7": 331542745687,
+   "t7": 390335282218,
    "pct_4w": null,
-   "last": 331542745687,
+   "last": 390335282218,
    "days": 4
   },
   "qwen/qwen3-vl-30b-a3b-instruct": {
-   "t7": 11254118446,
+   "t7": 10822216992,
    "pct_4w": null,
-   "last": 11254118446,
+   "last": 10822216992,
    "days": 4
   },
   "qwen/qwen3-vl-8b-thinking": {
@@ -608,39 +608,39 @@
    "days": 3
   },
   "anthropic/claude-4.8-opus-20260528": {
-   "t7": 110283240642,
+   "t7": 117067767887,
    "pct_4w": null,
-   "last": 110282415695,
-   "days": 9
+   "last": 117067767887,
+   "days": 8
   },
   "black-forest-labs/flux.2-max": {
-   "t7": 39293106,
+   "t7": 39121939,
    "pct_4w": null,
-   "last": 39293106,
+   "last": 39121939,
    "days": 4
   },
   "openai/gpt-5.4-mini-20260317": {
-   "t7": 74939024525,
+   "t7": 72040864937,
    "pct_4w": null,
-   "last": 74939024525,
+   "last": 72040864937,
    "days": 6
   },
   "openai/gpt-4o-2024-08-06": {
-   "t7": 2088427843,
+   "t7": 2150950570,
    "pct_4w": null,
-   "last": 2088427843,
+   "last": 2150950570,
    "days": 4
   },
   "sourceful/riverflow-v2-pro-20260130": {
-   "t7": 1167551,
+   "t7": 1453136,
    "pct_4w": null,
-   "last": 1167551,
+   "last": 1453136,
    "days": 4
   },
   "openai/gpt-5.3-codex-20260224": {
-   "t7": 8145347768,
+   "t7": 7937666064,
    "pct_4w": null,
-   "last": 8145347768,
+   "last": 7937666064,
    "days": 4
   },
   "microsoft/phi-4-mini-instruct": {
@@ -650,45 +650,45 @@
    "days": 2
   },
   "mistralai/voxtral-small-24b-2507": {
-   "t7": 115807560,
+   "t7": 114733417,
    "pct_4w": null,
-   "last": 115807560,
+   "last": 114733417,
    "days": 4
   },
   "z-ai/glm-4.6": {
-   "t7": 13605719956,
+   "t7": 13975705021,
    "pct_4w": null,
-   "last": 13605719956,
+   "last": 13975705021,
    "days": 4
   },
   "stepfun/step-3.7-flash-20260528": {
-   "t7": 14187819137,
+   "t7": 14729167008,
    "pct_4w": null,
-   "last": 14187819137,
+   "last": 14729167008,
    "days": 4
   },
   "recraft/recraft-v4-pro-20260413": {
-   "t7": 1125477,
+   "t7": 1118225,
    "pct_4w": null,
-   "last": 1125477,
+   "last": 1118225,
    "days": 4
   },
   "recraft/recraft-v4.1-vector-20260514": {
-   "t7": 29624518,
+   "t7": 30432805,
    "pct_4w": null,
-   "last": 29624518,
+   "last": 30432805,
    "days": 4
   },
   "amazon/nova-pro-v1": {
-   "t7": 180473760,
+   "t7": 186908624,
    "pct_4w": null,
-   "last": 180473760,
+   "last": 186908624,
    "days": 4
   },
   "meta-llama/llama-4-maverick-17b-128e-instruct": {
-   "t7": 10235739011,
+   "t7": 10529294982,
    "pct_4w": null,
-   "last": 10235739011,
+   "last": 10529294982,
    "days": 4
   },
   "openai/gpt-4o-search-preview-2025-03-11": {
@@ -698,33 +698,33 @@
    "days": 2
   },
   "anthropic/claude-4.6-sonnet-20260217": {
-   "t7": 184360808160,
+   "t7": 185041304596,
    "pct_4w": null,
-   "last": 184360808160,
+   "last": 185041304596,
    "days": 7
   },
   "qwen/qwen2.5-vl-72b-instruct": {
-   "t7": 1802038496,
+   "t7": 1813567650,
    "pct_4w": null,
-   "last": 1802038496,
+   "last": 1813567650,
    "days": 4
   },
   "openai/gpt-4.1-mini-2025-04-14": {
-   "t7": 80869227889,
+   "t7": 79791418815,
    "pct_4w": null,
-   "last": 80869112184,
-   "days": 8
+   "last": 79791418815,
+   "days": 7
   },
   "openai/gpt-oss-20b": {
-   "t7": 182111487260,
+   "t7": 180335939234,
    "pct_4w": null,
-   "last": 182111487260,
+   "last": 180335939234,
    "days": 6
   },
   "amazon/nova-2-lite-v1": {
-   "t7": 8041276570,
+   "t7": 8035889906,
    "pct_4w": null,
-   "last": 8041276570,
+   "last": 8035889906,
    "days": 4
   },
   "qwen/qwen-plus-2025-07-28": {
@@ -740,9 +740,9 @@
    "days": 2
   },
   "qwen/qwen3-coder-flash": {
-   "t7": 2187841345,
+   "t7": 2544314270,
    "pct_4w": null,
-   "last": 2187841345,
+   "last": 2544314270,
    "days": 4
   },
   "openai/o4-mini-2025-04-16": {
@@ -752,63 +752,63 @@
    "days": 7
   },
   "perplexity/sonar": {
-   "t7": 2775318816,
+   "t7": 2779570054,
    "pct_4w": null,
-   "last": 2775318816,
+   "last": 2779570054,
    "days": 4
   },
   "moonshotai/kimi-k2.5-0127": {
-   "t7": 23560323134,
+   "t7": 22375758324,
    "pct_4w": null,
-   "last": 23560323134,
+   "last": 22375758324,
    "days": 4
   },
   "openai/text-embedding-3-large": {
-   "t7": 25352926337,
+   "t7": 24843951023,
    "pct_4w": null,
-   "last": 25352926067,
+   "last": 24843950753,
    "days": 8
   },
   "rekaai/reka-edge-2603": {
-   "t7": 286838206,
+   "t7": 296310112,
    "pct_4w": null,
-   "last": 286838206,
+   "last": 296310112,
    "days": 4
   },
   "openai/gpt-5-image": {
-   "t7": 8860474,
+   "t7": 8904005,
    "pct_4w": null,
-   "last": 8860474,
+   "last": 8904005,
    "days": 4
   },
   "mistralai/mistral-saba-2502": {
-   "t7": 47565835,
+   "t7": 55132415,
    "pct_4w": null,
-   "last": 47565835,
+   "last": 55132415,
    "days": 4
   },
   "openai/gpt-5.1-codex-mini-20251113": {
-   "t7": 593460035,
+   "t7": 577041267,
    "pct_4w": null,
-   "last": 593460035,
+   "last": 577041267,
    "days": 4
   },
   "openai/gpt-5.2-20251211": {
-   "t7": 20434920081,
+   "t7": 19992455536,
    "pct_4w": null,
-   "last": 20434920081,
+   "last": 19992455536,
    "days": 7
   },
   "recraft/recraft-v4.1-20260514": {
-   "t7": 23053780,
+   "t7": 23731907,
    "pct_4w": null,
-   "last": 23053780,
+   "last": 23731907,
    "days": 4
   },
   "relace/relace-apply-3": {
-   "t7": 21196477,
+   "t7": 21793956,
    "pct_4w": null,
-   "last": 21196477,
+   "last": 21793956,
    "days": 4
   },
   "openai/o4-mini-high-2025-04-16": {
@@ -824,21 +824,21 @@
    "days": 3
   },
   "openai/gpt-oss-120b": {
-   "t7": 416994455984,
+   "t7": 405660045039,
    "pct_4w": null,
-   "last": 416994455984,
+   "last": 405660045039,
    "days": 4
   },
   "mistralai/voxtral-mini-transcribe-2602": {
-   "t7": 24432564,
+   "t7": 23341729,
    "pct_4w": null,
-   "last": 24432564,
+   "last": 23341729,
    "days": 4
   },
   "openai/gpt-5.4-20260305": {
-   "t7": 41672468745,
+   "t7": 39395355599,
    "pct_4w": null,
-   "last": 41672468745,
+   "last": 39395355599,
    "days": 7
   },
   "bytedance-seed/seed-1.6-flash-20250625": {
@@ -848,39 +848,39 @@
    "days": 4
   },
   "qwen/qwen3.5-9b-20260310": {
-   "t7": 88431876690,
+   "t7": 79868811770,
    "pct_4w": null,
-   "last": 88431876690,
+   "last": 79868811770,
    "days": 5
   },
   "amazon/nova-lite-v1": {
-   "t7": 949012311,
+   "t7": 946347735,
    "pct_4w": null,
-   "last": 949012311,
+   "last": 946347735,
    "days": 4
   },
   "thedrummer/skyfall-36b-v2": {
-   "t7": 308165322,
+   "t7": 297943417,
    "pct_4w": null,
-   "last": 308165322,
+   "last": 297943417,
    "days": 4
   },
   "qwen/qwen3.5-397b-a17b-20260216": {
-   "t7": 24912847222,
+   "t7": 23187988436,
    "pct_4w": null,
-   "last": 24912847222,
+   "last": 23187988436,
    "days": 4
   },
   "microsoft/mai-image-2.5": {
-   "t7": 14202510,
+   "t7": 13650277,
    "pct_4w": null,
-   "last": 14202510,
+   "last": 13650277,
    "days": 4
   },
   "openai/gpt-5.4-nano-20260317": {
-   "t7": 95621912207,
+   "t7": 96951807924,
    "pct_4w": null,
-   "last": 95621912207,
+   "last": 96951807924,
    "days": 7
   },
   "baidu/ernie-4.5-vl-424b-a47b": {
@@ -890,15 +890,15 @@
    "days": 3
   },
   "baai/bge-base-en-v1.5-20251117": {
-   "t7": 688684695,
+   "t7": 724705755,
    "pct_4w": null,
-   "last": 688684695,
+   "last": 724705755,
    "days": 4
   },
   "bytedance-seed/seed-2.0-mini-20260224": {
-   "t7": 4110538203,
+   "t7": 3937678446,
    "pct_4w": null,
-   "last": 4110538203,
+   "last": 3937678446,
    "days": 4
   },
   "qwen/qwen3-max": {
@@ -920,39 +920,39 @@
    "days": 4
   },
   "meta-llama/llama-3.3-70b-instruct": {
-   "t7": 27937745993,
+   "t7": 28530142440,
    "pct_4w": null,
-   "last": 27937745993,
+   "last": 28530142440,
    "days": 4
   },
   "qwen/qwen3-30b-a3b-04-28": {
-   "t7": 3499637029,
+   "t7": 3164334244,
    "pct_4w": null,
-   "last": 3499637029,
+   "last": 3164334244,
    "days": 4
   },
   "anthropic/claude-4.5-opus-20251124": {
-   "t7": 9046008935,
+   "t7": 9299274903,
    "pct_4w": null,
-   "last": 9046008935,
+   "last": 9299274903,
    "days": 7
   },
   "deepseek/deepseek-chat-v3-0324": {
-   "t7": 20496487887,
+   "t7": 20051004899,
    "pct_4w": null,
-   "last": 20496487887,
+   "last": 20051004899,
    "days": 4
   },
   "openai/gpt-4.1-2025-04-14": {
-   "t7": 39184284138,
+   "t7": 38753507128,
    "pct_4w": null,
-   "last": 39184284138,
+   "last": 38753507128,
    "days": 7
   },
   "anthracite-org/magnum-v4-72b": {
-   "t7": 162550616,
+   "t7": 162958562,
    "pct_4w": null,
-   "last": 162550616,
+   "last": 162958562,
    "days": 4
   },
   "prime-intellect/intellect-3-20251126": {
@@ -962,21 +962,21 @@
    "days": 2
   },
   "qwen/qwen3.5-122b-a10b-20260224": {
-   "t7": 6546237388,
+   "t7": 6183245107,
    "pct_4w": null,
-   "last": 6546237388,
+   "last": 6183245107,
    "days": 4
   },
   "anthropic/claude-4.5-sonnet-20250929": {
-   "t7": 52454376232,
+   "t7": 51810731940,
    "pct_4w": null,
-   "last": 52381214622,
+   "last": 51764708284,
    "days": 7
   },
   "deepseek/deepseek-v3.1-terminus": {
-   "t7": 4530992477,
+   "t7": 4384282433,
    "pct_4w": null,
-   "last": 4530992477,
+   "last": 4384282433,
    "days": 4
   },
   "perplexity/pplx-embed-v1-0.6b": {
@@ -986,87 +986,87 @@
    "days": 3
   },
   "recraft/recraft-v4.1-pro-vector-20260514": {
-   "t7": 5041061,
+   "t7": 5040883,
    "pct_4w": null,
-   "last": 5041061,
+   "last": 5040883,
    "days": 4
   },
   "openai/gpt-4o-transcribe": {
-   "t7": 84419951,
+   "t7": 88215896,
    "pct_4w": null,
-   "last": 84419951,
+   "last": 88215896,
    "days": 4
   },
   "undi95/remm-slerp-l2-13b": {
-   "t7": 138628105,
+   "t7": 136922941,
    "pct_4w": null,
-   "last": 138628105,
+   "last": 136922941,
    "days": 4
   },
   "google/gemini-2.5-flash-lite": {
-   "t7": 285796137817,
-   "pct_4w": 9420.5,
-   "last": 285796137817,
+   "t7": 287829033430,
+   "pct_4w": 9488.2,
+   "last": 287829033430,
    "days": 5
   },
   "anthropic/claude-4.5-haiku-20251001": {
-   "t7": 127843539642,
+   "t7": 124562693058,
    "pct_4w": null,
-   "last": 127843539642,
+   "last": 124562693058,
    "days": 8
   },
   "qwen/qwen3-coder-30b-a3b-instruct": {
-   "t7": 5911028612,
+   "t7": 6156512458,
    "pct_4w": null,
-   "last": 5911028612,
+   "last": 6156512458,
    "days": 4
   },
   "moonshotai/kimi-k2": {
-   "t7": 32847381829,
+   "t7": 32826724355,
    "pct_4w": null,
-   "last": 32847381829,
+   "last": 32826724355,
    "days": 4
   },
   "morph/morph-v3-large": {
-   "t7": 59144614,
+   "t7": 59181768,
    "pct_4w": null,
-   "last": 59144614,
-   "days": 4
+   "last": 59047278,
+   "days": 5
   },
   "google/gemma-4-26b-a4b-it-20260403": {
-   "t7": 637546451317,
+   "t7": 644758088047,
    "pct_4w": null,
-   "last": 637546451317,
+   "last": 644758088047,
    "days": 4
   },
   "aion-labs/aion-2.0-20260223": {
-   "t7": 1152035954,
+   "t7": 1123293599,
    "pct_4w": null,
-   "last": 1152035954,
+   "last": 1123293599,
    "days": 4
   },
   "venice/uncensored": {
-   "t7": 1662457558,
+   "t7": 1706201903,
    "pct_4w": null,
-   "last": 1662457558,
+   "last": 1706201903,
    "days": 4
   },
   "google/gemini-3.1-pro-preview-customtools-20260219": {
-   "t7": 567302174,
+   "t7": 536107264,
    "pct_4w": null,
-   "last": 567302174,
+   "last": 536107264,
    "days": 4
   },
   "black-forest-labs/flux.2-pro": {
-   "t7": 342702351,
+   "t7": 333086520,
    "pct_4w": null,
-   "last": 342702351,
+   "last": 333086520,
    "days": 4
   },
   "mistralai/mistral-nemo": {
-   "t7": 377797547233,
+   "t7": 382680720080,
    "pct_4w": null,
-   "last": 377797547233,
+   "last": 382680720080,
    "days": 4
   },
   "x-ai/grok-imagine-image-quality-20260512": {
@@ -1076,9 +1076,9 @@
    "days": 4
   },
   "google/gemini-3.1-pro-preview-20260219": {
-   "t7": 97143587932,
+   "t7": 91891624049,
    "pct_4w": null,
-   "last": 97143587932,
+   "last": 91891624049,
    "days": 4
   },
   "nousresearch/hermes-4-70b": {
@@ -1088,51 +1088,51 @@
    "days": 3
   },
   "deepseek/deepseek-chat-v3": {
-   "t7": 18756148574,
+   "t7": 18872772843,
    "pct_4w": null,
-   "last": 18756148574,
+   "last": 18872772843,
    "days": 4
   },
   "thedrummer/unslopnemo-12b": {
-   "t7": 601394629,
+   "t7": 614629823,
    "pct_4w": null,
-   "last": 601394629,
+   "last": 614629823,
    "days": 4
   },
   "deepseek/deepseek-v3.2-20251201": {
-   "t7": 307947516016,
+   "t7": 309137310853,
    "pct_4w": null,
-   "last": 307947516016,
+   "last": 309137310853,
    "days": 4
   },
   "openai/gpt-5.4-image-2-20260421": {
-   "t7": 1022064672,
+   "t7": 1036525988,
    "pct_4w": null,
-   "last": 1022064672,
+   "last": 1036525988,
    "days": 4
   },
   "sentence-transformers/all-minilm-l6-v2-20251117": {
-   "t7": 425102543,
+   "t7": 423456552,
    "pct_4w": null,
-   "last": 425102543,
+   "last": 423456552,
    "days": 4
   },
   "openai/gpt-5.4-pro-20260305": {
-   "t7": 64304840,
+   "t7": 64709048,
    "pct_4w": null,
-   "last": 64304840,
+   "last": 64709048,
    "days": 5
   },
   "mistralai/codestral-2508": {
-   "t7": 589136423,
-   "pct_4w": null,
-   "last": 589136423,
+   "t7": 612934060,
+   "pct_4w": 11274.4,
+   "last": 612934060,
    "days": 9
   },
   "google/gemini-2.5-flash-image": {
-   "t7": 1301635989,
+   "t7": 1297159471,
    "pct_4w": null,
-   "last": 1301635989,
+   "last": 1297159471,
    "days": 4
   },
   "openai/gpt-5.1-chat-20251113": {
@@ -1142,15 +1142,15 @@
    "days": 2
   },
   "openai/gpt-4o": {
-   "t7": 9360353726,
+   "t7": 9474069214,
    "pct_4w": null,
-   "last": 9360353726,
+   "last": 9474069214,
    "days": 9
   },
   "perplexity/sonar-reasoning-pro": {
-   "t7": 143245165,
+   "t7": 144635595,
    "pct_4w": null,
-   "last": 143245165,
+   "last": 144635595,
    "days": 4
   },
   "minimax/minimax-m2": {
@@ -1160,21 +1160,21 @@
    "days": 4
   },
   "recraft/recraft-v4.1-utility-20260514": {
-   "t7": 1926402,
+   "t7": 1798971,
    "pct_4w": null,
-   "last": 1926402,
+   "last": 1798971,
    "days": 4
   },
   "google/gemini-3.1-flash-tts-preview": {
-   "t7": 189650411,
+   "t7": 186254399,
    "pct_4w": null,
-   "last": 189650411,
+   "last": 186254399,
    "days": 4
   },
   "google/gemini-3.1-flash-lite-20260507": {
-   "t7": 530869385761,
+   "t7": 529114127468,
    "pct_4w": null,
-   "last": 530869385761,
+   "last": 529114127468,
    "days": 4
   },
   "nvidia/nemotron-nano-12b-v2-vl": {
@@ -1184,15 +1184,15 @@
    "days": 3
   },
   "google/gemini-2.5-flash": {
-   "t7": 252452853342,
-   "pct_4w": 1510076.1,
-   "last": 252452853342,
+   "t7": 251934278595,
+   "pct_4w": 1506974,
+   "last": 251934278595,
    "days": 5
   },
   "nvidia/nemotron-3-super-120b-a12b-20230311": {
-   "t7": 21386832984,
+   "t7": 21398010941,
    "pct_4w": null,
-   "last": 21386832984,
+   "last": 21398010941,
    "days": 4
   },
   "nvidia/nemotron-nano-9b-v2": {
@@ -1208,27 +1208,27 @@
    "days": 2
   },
   "deepseek/deepseek-chat-v3.1": {
-   "t7": 52525348065,
+   "t7": 52231493133,
    "pct_4w": null,
-   "last": 52525348065,
+   "last": 52231493133,
    "days": 4
   },
   "qwen/qwen3.5-27b-20260224": {
-   "t7": 12605317983,
+   "t7": 12395521401,
    "pct_4w": null,
-   "last": 12605317983,
+   "last": 12395521401,
    "days": 4
   },
   "mistralai/mistral-large-2407": {
-   "t7": 243589301,
+   "t7": 244050133,
    "pct_4w": null,
-   "last": 243589301,
+   "last": 244050133,
    "days": 4
   },
   "openai/gpt-5.1-codex-max-20251204": {
-   "t7": 304964069,
+   "t7": 331435190,
    "pct_4w": null,
-   "last": 304964069,
+   "last": 331435190,
    "days": 4
   },
   "deepseek/deepseek-r1": {
@@ -1238,9 +1238,9 @@
    "days": 4
   },
   "google/gemini-3-flash-preview-20251217": {
-   "t7": 664278661537,
+   "t7": 651841726342,
    "pct_4w": null,
-   "last": 664278661537,
+   "last": 651841726342,
    "days": 4
   },
   "openai/gpt-5-codex": {
@@ -1256,15 +1256,15 @@
    "days": 2
   },
   "openai/text-embedding-3-small": {
-   "t7": 134895257000,
+   "t7": 133388015337,
    "pct_4w": null,
-   "last": 134895257000,
-   "days": 4
+   "last": 133387972073,
+   "days": 5
   },
   "openai/gpt-oss-safeguard-20b": {
-   "t7": 6259020814,
+   "t7": 6965971155,
    "pct_4w": null,
-   "last": 6259020814,
+   "last": 6965971155,
    "days": 4
   },
   "openai/gpt-5.2-chat-20251211": {
@@ -1274,27 +1274,27 @@
    "days": 4
   },
   "google/gemma-3-4b-it": {
-   "t7": 4773201186,
+   "t7": 4627702388,
    "pct_4w": null,
-   "last": 4773201186,
+   "last": 4627702388,
    "days": 4
   },
   "openai/gpt-5.1-20251113": {
-   "t7": 35120770580,
+   "t7": 33761332660,
    "pct_4w": null,
-   "last": 35120770580,
+   "last": 33761332660,
    "days": 7
   },
   "meta-llama/llama-4-scout-17b-16e-instruct": {
-   "t7": 6648695298,
+   "t7": 6592757882,
    "pct_4w": null,
-   "last": 6648695298,
+   "last": 6592757882,
    "days": 4
   },
   "anthropic/claude-4.1-opus-20250805": {
-   "t7": 1203228114,
+   "t7": 1204712341,
    "pct_4w": null,
-   "last": 1203228114,
+   "last": 1204712341,
    "days": 4
   },
   "google/gemma-3n-e4b-it": {
@@ -1304,57 +1304,57 @@
    "days": 3
   },
   "cohere/command-r-08-2024": {
-   "t7": 130154131,
+   "t7": 132129441,
    "pct_4w": null,
-   "last": 130154131,
+   "last": 132129441,
    "days": 4
   },
   "recraft/recraft-v4-20260413": {
-   "t7": 4989844,
+   "t7": 4747809,
    "pct_4w": null,
-   "last": 4989844,
+   "last": 4747809,
    "days": 4
   },
   "openai/gpt-5.5-20260423": {
-   "t7": 30947539193,
+   "t7": 30194899422,
    "pct_4w": null,
-   "last": 30946410464,
-   "days": 9
+   "last": 30194899422,
+   "days": 8
   },
   "z-ai/glm-5-20260211": {
-   "t7": 38804038089,
+   "t7": 38249867415,
    "pct_4w": null,
-   "last": 38804038089,
+   "last": 38249867415,
    "days": 4
   },
   "qwen/qwen3-next-80b-a3b-instruct-2509": {
-   "t7": 6058167206,
+   "t7": 6254929778,
    "pct_4w": null,
-   "last": 6058167206,
+   "last": 6254929778,
    "days": 4
   },
   "x-ai/grok-4.3-20260430": {
-   "t7": 40849998438,
+   "t7": 39986139101,
    "pct_4w": null,
-   "last": 40849998438,
+   "last": 39986139101,
    "days": 4
   },
   "mistralai/mistral-small-3.2-24b-instruct-2506": {
-   "t7": 26092113714,
+   "t7": 26332586986,
    "pct_4w": null,
-   "last": 26092113714,
+   "last": 26332586986,
    "days": 4
   },
   "thedrummer/cydonia-24b-v4.1": {
-   "t7": 1995651062,
+   "t7": 1972713262,
    "pct_4w": null,
-   "last": 1995651062,
+   "last": 1972713262,
    "days": 4
   },
   "black-forest-labs/flux.2-klein-4b": {
-   "t7": 311178436,
+   "t7": 306195714,
    "pct_4w": null,
-   "last": 311178436,
+   "last": 306195714,
    "days": 4
   },
   "liquid/lfm-2-24b-a2b-20260224": {
@@ -1364,15 +1364,15 @@
    "days": 2
   },
   "google/gemma-3-27b-it": {
-   "t7": 17919789742,
+   "t7": 17985418417,
    "pct_4w": null,
-   "last": 17919789742,
+   "last": 17985418417,
    "days": 4
   },
   "qwen/qwen3.7-max-20260520": {
-   "t7": 7500463261,
+   "t7": 7351887236,
    "pct_4w": null,
-   "last": 7500463261,
+   "last": 7351887236,
    "days": 4
   },
   "sourceful/riverflow-v2-standard-preview": {
@@ -1388,9 +1388,9 @@
    "days": 4
   },
   "qwen/qwen-2.5-72b-instruct": {
-   "t7": 1999646654,
+   "t7": 2035530797,
    "pct_4w": null,
-   "last": 1999646654,
+   "last": 2035530797,
    "days": 4
   },
   "liquid/lfm-2.5-1.2b-instruct-20260120": {
@@ -1400,9 +1400,9 @@
    "days": 2
   },
   "qwen/qwen3-coder-next-2025-02-03": {
-   "t7": 31121467857,
+   "t7": 32538836880,
    "pct_4w": null,
-   "last": 31121467857,
+   "last": 32538836880,
    "days": 4
   },
   "meta-llama/llama-3-70b-instruct": {
@@ -1412,15 +1412,15 @@
    "days": 2
   },
   "google/gemini-3.1-flash-lite-preview-20260303": {
-   "t7": 89272710257,
+   "t7": 87979321947,
    "pct_4w": null,
-   "last": 89272710257,
+   "last": 87979321947,
    "days": 4
   },
   "qwen/qwen3.5-plus-20260420": {
-   "t7": 1346622832,
+   "t7": 837553435,
    "pct_4w": null,
-   "last": 1346622832,
+   "last": 837553435,
    "days": 4
   },
   "anthropic/claude-3-5-haiku": {
@@ -1430,9 +1430,9 @@
    "days": 2
   },
   "openai/gpt-5-pro-2025-10-06": {
-   "t7": 1979393,
+   "t7": 2875412,
    "pct_4w": null,
-   "last": 1979393,
+   "last": 2875412,
    "days": 6
   },
   "liquid/lfm-2.5-1.2b-thinking-20260120": {
@@ -1442,15 +1442,15 @@
    "days": 2
   },
   "mistralai/ministral-3b-2512": {
-   "t7": 6152591989,
+   "t7": 6097070151,
    "pct_4w": null,
-   "last": 6152591989,
+   "last": 6097070151,
    "days": 4
   },
   "deepseek/deepseek-r1-0528": {
-   "t7": 9559234134,
+   "t7": 9379229946,
    "pct_4w": null,
-   "last": 9559234134,
+   "last": 9379229946,
    "days": 4
   },
   "openai/gpt-3.5-turbo": {
@@ -1472,45 +1472,45 @@
    "days": 4
   },
   "intfloat/e5-large-v2-20251117": {
-   "t7": 118730358,
+   "t7": 150207655,
    "pct_4w": null,
-   "last": 118730358,
+   "last": 150207655,
    "days": 4
   },
   "meta-llama/llama-guard-4-12b": {
-   "t7": 2474177676,
+   "t7": 2566386258,
    "pct_4w": null,
-   "last": 2474177676,
+   "last": 2566386258,
    "days": 4
   },
   "bytedance-seed/seedream-4.5-20251203": {
-   "t7": 1141803389,
+   "t7": 1112599912,
    "pct_4w": null,
-   "last": 1141803389,
+   "last": 1112599912,
    "days": 4
   },
   "google/gemini-2.5-pro": {
-   "t7": 30496775608,
-   "pct_4w": 101076313.9,
-   "last": 30496775608,
+   "t7": 30407995539,
+   "pct_4w": 100782067.4,
+   "last": 30407995539,
    "days": 5
   },
   "mistralai/mixtral-8x22b-instruct": {
-   "t7": 134688370,
+   "t7": 135394596,
    "pct_4w": null,
-   "last": 134688370,
+   "last": 135394596,
    "days": 4
   },
   "google/gemini-3.5-flash-20260519": {
-   "t7": 74427384548,
+   "t7": 70867824362,
    "pct_4w": null,
-   "last": 74427384548,
+   "last": 70867824362,
    "days": 4
   },
   "openai/gpt-audio-mini": {
-   "t7": 458667331,
+   "t7": 407595646,
    "pct_4w": null,
-   "last": 458667331,
+   "last": 407595646,
    "days": 4
   },
   "minimax/minimax-m2-her-20260123": {
@@ -1532,15 +1532,15 @@
    "days": 3
   },
   "moonshotai/kimi-k2-thinking-20251106": {
-   "t7": 1352303461,
+   "t7": 1233850507,
    "pct_4w": null,
-   "last": 1352303461,
+   "last": 1233850507,
    "days": 4
   },
   "qwen/qwen3.5-flash-20260224": {
-   "t7": 33268392781,
+   "t7": 34307492610,
    "pct_4w": null,
-   "last": 33268392781,
+   "last": 34307492610,
    "days": 4
   },
   "inclusionai/ring-2.6-1t-20260508": {
@@ -1550,9 +1550,9 @@
    "days": 3
   },
   "recraft/recraft-v4-pro-vector-20260514": {
-   "t7": 1023406,
+   "t7": 1078758,
    "pct_4w": null,
-   "last": 1023406,
+   "last": 1078758,
    "days": 4
   },
   "zyphra/zonos-v0.1-hybrid": {
@@ -1574,9 +1574,9 @@
    "days": 3
   },
   "openai/text-embedding-ada-002": {
-   "t7": 1916472263,
+   "t7": 1877315709,
    "pct_4w": null,
-   "last": 1916472263,
+   "last": 1877315709,
    "days": 4
   },
   "qwen/qwen3.6-max-preview-20260420": {
@@ -1592,9 +1592,9 @@
    "days": 2
   },
   "openai/gpt-4o-2024-11-20": {
-   "t7": 1205084182,
+   "t7": 1296205186,
    "pct_4w": null,
-   "last": 1205084182,
+   "last": 1296205186,
    "days": 4
   },
   "google/gemini-2.5-flash-lite-preview-09-2025": {
@@ -1610,15 +1610,15 @@
    "days": 4
   },
   "openai/gpt-4.1-nano-2025-04-14": {
-   "t7": 10607702619,
+   "t7": 10617642547,
    "pct_4w": null,
-   "last": 10607702619,
+   "last": 10617642547,
    "days": 7
   },
   "perplexity/sonar-deep-research": {
-   "t7": 101954356,
+   "t7": 89126330,
    "pct_4w": null,
-   "last": 101954356,
+   "last": 89126330,
    "days": 4
   },
   "qwen/qwen3-235b-a22b-04-28": {
@@ -1634,15 +1634,15 @@
    "days": 2
   },
   "meta-llama/llama-3.2-1b-instruct": {
-   "t7": 202761250,
+   "t7": 194013444,
    "pct_4w": null,
    "last": null,
    "days": 4
   },
   "intfloat/multilingual-e5-large-20251117": {
-   "t7": 1481129800,
+   "t7": 1574610081,
    "pct_4w": null,
-   "last": 1481129800,
+   "last": 1574610081,
    "days": 4
   },
   "openai/o1-pro": {
@@ -1652,15 +1652,15 @@
    "days": 5
   },
   "mistralai/voxtral-mini-tts-2603": {
-   "t7": 365504,
+   "t7": 339953,
    "pct_4w": null,
-   "last": 365504,
+   "last": 339953,
    "days": 4
   },
   "mistralai/mistral-large-2512": {
-   "t7": 3034305759,
+   "t7": 3088151895,
    "pct_4w": null,
-   "last": 3034305759,
+   "last": 3088151895,
    "days": 7
   },
   "openai/gpt-5-chat-2025-08-07": {
@@ -1670,9 +1670,9 @@
    "days": 2
   },
   "sao10k/l3-lunaris-8b": {
-   "t7": 4824836886,
+   "t7": 4725256906,
    "pct_4w": null,
-   "last": 4824836886,
+   "last": 4725256906,
    "days": 4
   },
   "openai/gpt-4-turbo": {
@@ -1682,9 +1682,9 @@
    "days": 6
   },
   "nousresearch/hermes-4-405b": {
-   "t7": 1120980602,
+   "t7": 1098453624,
    "pct_4w": null,
-   "last": 1120980602,
+   "last": 1098453624,
    "days": 4
   },
   "meta-llama/llama-3.2-11b-vision-instruct": {
@@ -1694,21 +1694,21 @@
    "days": 2
   },
   "anthropic/claude-4.6-opus-20260205": {
-   "t7": 83347700668,
+   "t7": 80409932761,
    "pct_4w": null,
-   "last": 83347512711,
-   "days": 10
+   "last": 80409932761,
+   "days": 9
   },
   "black-forest-labs/flux.2-flex": {
-   "t7": 19908727,
+   "t7": 19887845,
    "pct_4w": null,
-   "last": 19908727,
+   "last": 19887845,
    "days": 4
   },
   "qwen/qwen3.6-flash": {
-   "t7": 10105913341,
+   "t7": 9786294307,
    "pct_4w": null,
-   "last": 10105913341,
+   "last": 9786294307,
    "days": 4
   },
   "qwen/qwen3-next-80b-a3b-thinking-2509": {
@@ -1718,51 +1718,51 @@
    "days": 4
   },
   "qwen/qwen3-vl-235b-a22b-instruct": {
-   "t7": 30756338276,
+   "t7": 30943658502,
    "pct_4w": null,
-   "last": 30756338276,
+   "last": 30943658502,
    "days": 4
   },
   "stepfun/step-3.5-flash": {
-   "t7": 390799990,
+   "t7": 147926667,
    "pct_4w": null,
    "last": null,
    "days": 4
   },
   "recraft/recraft-v4.1-utility-pro-20260514": {
-   "t7": 1161670,
+   "t7": 1190296,
    "pct_4w": null,
-   "last": 1161670,
+   "last": 1190296,
    "days": 4
   },
   "perplexity/sonar-pro": {
-   "t7": 1027317521,
+   "t7": 1022640967,
    "pct_4w": null,
-   "last": 1027317521,
+   "last": 1022640967,
    "days": 4
   },
   "openai/gpt-4o-mini": {
-   "t7": 181352438421,
+   "t7": 182257199161,
    "pct_4w": null,
-   "last": 180467685470,
+   "last": 181372446210,
    "days": 11
   },
   "qwen/qwen3-embedding-8b": {
-   "t7": 202393036577,
+   "t7": 207820603265,
    "pct_4w": null,
-   "last": 202393036577,
+   "last": 207820603265,
    "days": 4
   },
   "aion-labs/aion-rp-llama-3.1-8b": {
-   "t7": 16568357,
+   "t7": 15605978,
    "pct_4w": null,
-   "last": 16568357,
+   "last": 15605978,
    "days": 4
   },
   "minimax/minimax-m2.5-20260211": {
-   "t7": 7297331780,
+   "t7": 8893621179,
    "pct_4w": null,
-   "last": 7297331780,
+   "last": 8893621179,
    "days": 4
   },
   "nousresearch/hermes-3-llama-3.1-70b": {
@@ -1772,21 +1772,21 @@
    "days": 4
   },
   "qwen/qwen-plus-2025-01-25": {
-   "t7": 1508644466,
+   "t7": 1437519588,
    "pct_4w": null,
-   "last": 1508644466,
+   "last": 1437519588,
    "days": 4
   },
   "qwen/qwen3.5-35b-a3b-20260224": {
-   "t7": 50365176218,
+   "t7": 48055387099,
    "pct_4w": null,
-   "last": 50365176218,
+   "last": 48055387099,
    "days": 4
   },
   "mistralai/ministral-14b-2512": {
-   "t7": 4247816465,
+   "t7": 4198470712,
    "pct_4w": null,
-   "last": 4247816465,
+   "last": 4198470712,
    "days": 4
   },
   "anthropic/claude-4-opus-20250522": {
@@ -1796,9 +1796,9 @@
    "days": 3
   },
   "moonshotai/kimi-k2-0905": {
-   "t7": 3263237405,
+   "t7": 3124885169,
    "pct_4w": null,
-   "last": 3263237405,
+   "last": 3124885169,
    "days": 4
   },
   "anthropic/claude-3-haiku": {
@@ -1808,27 +1808,27 @@
    "days": 3
   },
   "z-ai/glm-4.7-20251222": {
-   "t7": 35878521971,
+   "t7": 36344312224,
    "pct_4w": null,
-   "last": 35878521971,
+   "last": 36344312224,
    "days": 4
   },
   "qwen/qwen3-vl-8b-instruct": {
-   "t7": 6358590645,
+   "t7": 6661802414,
    "pct_4w": null,
-   "last": 6358590645,
+   "last": 6661802414,
    "days": 4
   },
   "sentence-transformers/all-minilm-l12-v2-20251117": {
-   "t7": 28105509,
+   "t7": 27889425,
    "pct_4w": null,
-   "last": 28105509,
+   "last": 27889425,
    "days": 4
   },
   "mistralai/ministral-8b-2512": {
-   "t7": 4762259269,
-   "pct_4w": 73787617.2,
-   "last": 4762259269,
+   "t7": 5024404305,
+   "pct_4w": 77849362.4,
+   "last": 5024404305,
    "days": 6
   },
   "anthropic/claude-4.8-opus-fast-20260528": {
@@ -1844,39 +1844,39 @@
    "days": 4
   },
   "gryphe/mythomax-l2-13b": {
-   "t7": 627233749,
+   "t7": 633192185,
    "pct_4w": null,
-   "last": 627233749,
+   "last": 633192185,
    "days": 4
   },
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning-20260428": {
-   "t7": 105857123028,
+   "t7": 117086604117,
    "pct_4w": null,
-   "last": 105857123028,
+   "last": 117086604117,
    "days": 4
   },
   "mistralai/mistral-small-2603": {
-   "t7": 26080258480,
+   "t7": 25751069694,
    "pct_4w": null,
-   "last": 26080258480,
+   "last": 25751069694,
    "days": 7
   },
   "deepseek/deepseek-v3.2-exp": {
-   "t7": 12170129221,
+   "t7": 11992850642,
    "pct_4w": null,
-   "last": 12170129221,
+   "last": 11992850642,
    "days": 4
   },
   "z-ai/glm-4.7-flash-20260119": {
-   "t7": 8802135378,
+   "t7": 9374317589,
    "pct_4w": null,
-   "last": 8802135378,
+   "last": 9374317589,
    "days": 4
   },
   "google/gemini-embedding-2-preview": {
-   "t7": 2955093373,
+   "t7": 3241208884,
    "pct_4w": null,
-   "last": 2955093373,
+   "last": 3241208884,
    "days": 4
   },
   "anthropic/claude-4-sonnet-20250522": {
@@ -1886,15 +1886,15 @@
    "days": 4
   },
   "z-ai/glm-4.5": {
-   "t7": 1151817058,
+   "t7": 1172449253,
    "pct_4w": null,
-   "last": 1151817058,
+   "last": 1172449253,
    "days": 4
   },
   "openai/gpt-5.1-codex-20251113": {
-   "t7": 1594116461,
+   "t7": 1496405810,
    "pct_4w": null,
-   "last": 1594116461,
+   "last": 1496405810,
    "days": 4
   },
   "anthropic/claude-4.6-opus-fast-20260407": {
@@ -1904,15 +1904,15 @@
    "days": 2
   },
   "openai/o3-pro-2025-06-10": {
-   "t7": 4322338,
+   "t7": 4416491,
    "pct_4w": null,
-   "last": 4322338,
+   "last": 4416491,
    "days": 5
   },
   "mistralai/mistral-small-3.1-24b-instruct-2503": {
-   "t7": 124596823,
+   "t7": 145094782,
    "pct_4w": null,
-   "last": 124596823,
+   "last": 145094782,
    "days": 4
   },
   "minimax/minimax-m1": {
@@ -1922,9 +1922,9 @@
    "days": 4
   },
   "openai/gpt-chat-latest-20260505": {
-   "t7": 1786505625,
+   "t7": 1697710050,
    "pct_4w": null,
-   "last": 1786505625,
+   "last": 1697710050,
    "days": 4
   },
   "arcee-ai/trinity-large-thinking": {
@@ -1934,27 +1934,27 @@
    "days": 4
   },
   "openai/gpt-5.5-pro-20260423": {
-   "t7": 210933337,
+   "t7": 201629352,
    "pct_4w": null,
-   "last": 210933337,
+   "last": 201629352,
    "days": 7
   },
   "mistralai/devstral-2512": {
-   "t7": 2849487951,
+   "t7": 2554173455,
    "pct_4w": null,
-   "last": 2849487951,
+   "last": 2554173455,
    "days": 4
   },
   "mistralai/mistral-large": {
-   "t7": 268982302,
+   "t7": 295481025,
    "pct_4w": null,
-   "last": 268982302,
+   "last": 295481025,
    "days": 4
   },
   "qwen/qwen3-235b-a22b-thinking-2507": {
-   "t7": 2035641755,
+   "t7": 2026059575,
    "pct_4w": null,
-   "last": 2035641755,
+   "last": 2026059575,
    "days": 4
   },
   "sourceful/riverflow-v2-max-preview": {
@@ -1964,57 +1964,57 @@
    "days": 2
   },
   "writer/palmyra-x5-20250428": {
-   "t7": 76026530,
+   "t7": 74787445,
    "pct_4w": null,
-   "last": 76026530,
+   "last": 74787445,
    "days": 4
   },
   "rekaai/reka-flash-3": {
-   "t7": 19449584,
+   "t7": 24264306,
    "pct_4w": null,
-   "last": 19449584,
+   "last": 24264306,
    "days": 4
   },
   "qwen/qwen3-235b-a22b-07-25": {
-   "t7": 53700291640,
+   "t7": 54058419512,
    "pct_4w": null,
-   "last": 53700291640,
+   "last": 54058419512,
    "days": 4
   },
   "baai/bge-m3-20251117": {
-   "t7": 55975022559,
+   "t7": 54220154389,
    "pct_4w": null,
-   "last": 55975022559,
+   "last": 54220154389,
    "days": 4
   },
   "sao10k/l3.1-euryale-70b": {
-   "t7": 504815760,
+   "t7": 504928298,
    "pct_4w": null,
-   "last": 504815760,
+   "last": 504928298,
    "days": 4
   },
   "qwen/qwen3-14b-04-28": {
-   "t7": 5372595899,
+   "t7": 5436358199,
    "pct_4w": null,
-   "last": 5372595899,
+   "last": 5436358199,
    "days": 4
   },
   "recraft/recraft-v3-20260413": {
-   "t7": 2031386,
+   "t7": 2149935,
    "pct_4w": null,
-   "last": 2031386,
+   "last": 2149935,
    "days": 4
   },
   "minimax/minimax-m2.7-20260318": {
-   "t7": 31454375327,
+   "t7": 18374691359,
    "pct_4w": null,
-   "last": 31454375327,
+   "last": 18374691359,
    "days": 5
   },
   "mistralai/mistral-medium-3": {
-   "t7": 224535475,
+   "t7": 201560116,
    "pct_4w": null,
-   "last": 224535475,
+   "last": null,
    "days": 4
   },
   "meta-llama/llama-3-8b-instruct": {
@@ -2024,9 +2024,9 @@
    "days": 2
   },
   "meta-llama/llama-3.1-70b-instruct": {
-   "t7": 761260521,
+   "t7": 694607711,
    "pct_4w": null,
-   "last": 761260521,
+   "last": 694607711,
    "days": 4
   },
   "ibm-granite/granite-4.0-h-micro": {
@@ -2036,9 +2036,9 @@
    "days": 4
   },
   "cohere/command-r7b-12-2024": {
-   "t7": 205148172,
+   "t7": 246314129,
    "pct_4w": null,
-   "last": 205148172,
+   "last": 246314129,
    "days": 4
   },
   "anthropic/claude-4.7-opus-fast-20260512": {
@@ -2048,33 +2048,33 @@
    "days": 2
   },
   "openai/gpt-5-2025-08-07": {
-   "t7": 6801427765,
+   "t7": 6529920871,
    "pct_4w": null,
-   "last": 6801427765,
+   "last": 6529920871,
    "days": 7
   },
   "cohere/command-a-03-2025": {
-   "t7": 69683565,
+   "t7": 66673347,
    "pct_4w": null,
-   "last": 69683565,
+   "last": 66673347,
    "days": 4
   },
   "recraft/recraft-v4-vector-20260514": {
-   "t7": 3178798,
+   "t7": 3195863,
    "pct_4w": null,
-   "last": 3178798,
+   "last": 3195863,
    "days": 4
   },
   "openai/gpt-5-image-mini": {
-   "t7": 368485823,
+   "t7": 365886823,
    "pct_4w": null,
-   "last": 368485823,
+   "last": 365886823,
    "days": 4
   },
   "meta-llama/llama-3.1-8b-instruct": {
-   "t7": 33019402890,
+   "t7": 33230579910,
    "pct_4w": null,
-   "last": 33019402890,
+   "last": 33230579910,
    "days": 4
   },
   "aion-labs/aion-1.0-mini": {
@@ -2084,9 +2084,9 @@
    "days": 2
   },
   "z-ai/glm-5-turbo-20260315": {
-   "t7": 3480066700,
+   "t7": 3680924805,
    "pct_4w": null,
-   "last": 3480066700,
+   "last": 3680924805,
    "days": 4
   },
   "deepseek/deepseek-r1-distill-qwen-32b": {
@@ -2096,9 +2096,9 @@
    "days": 2
   },
   "xiaomi/mimo-v2.5-pro-20260422": {
-   "t7": 15523906941,
+   "t7": 15202494724,
    "pct_4w": null,
-   "last": 15523906941,
+   "last": 15202494724,
    "days": 4
   },
   "kwaipilot/kat-coder-pro-v2-20260327": {
@@ -2108,15 +2108,15 @@
    "days": 3
   },
   "baai/bge-large-en-v1.5-20251117": {
-   "t7": 428882713,
+   "t7": 434526397,
    "pct_4w": null,
-   "last": 428882713,
+   "last": 434526397,
    "days": 4
   },
   "qwen/qwen3.5-plus-20260216": {
-   "t7": 2425375096,
+   "t7": 2221375242,
    "pct_4w": null,
-   "last": 2425375096,
+   "last": 2221375242,
    "days": 4
   },
   "Qwen/Qwen3-Embedding-8B": {
@@ -2132,9 +2132,9 @@
    "days": 3
   },
   "qwen/qwen3.6-plus-04-02": {
-   "t7": 10766947923,
+   "t7": 10929783154,
    "pct_4w": null,
-   "last": 10766947923,
+   "last": 10929783154,
    "days": 4
   },
   "nvidia/llama-3.3-nemotron-super-49b-v1.5": {
@@ -2144,33 +2144,33 @@
    "days": 2
   },
   "openai/gpt-3.5-turbo-16k": {
-   "t7": 23806179,
+   "t7": 21171123,
    "pct_4w": null,
-   "last": 23806179,
+   "last": 21171123,
    "days": 4
   },
   "openai/gpt-4": {
-   "t7": 34354716,
+   "t7": 35165189,
    "pct_4w": null,
-   "last": 34354716,
+   "last": 35165189,
    "days": 4
   },
   "thenlper/gte-base-20251117": {
-   "t7": 38049334,
+   "t7": 40908751,
    "pct_4w": null,
-   "last": 38049334,
+   "last": 40908751,
    "days": 4
   },
   "thenlper/gte-large-20251117": {
-   "t7": 3392465,
+   "t7": 6728628,
    "pct_4w": null,
-   "last": 3392465,
+   "last": 6728628,
    "days": 4
   },
   "mistralai/mistral-medium-3.5-20260430": {
-   "t7": 3517275580,
-   "pct_4w": null,
-   "last": 3517275580,
+   "t7": 3483666076,
+   "pct_4w": 165792.3,
+   "last": 3483666076,
    "days": 5
   },
   "ai21/jamba-large-1.7": {
@@ -2180,13 +2180,13 @@
    "days": 2
   },
   "recraft/recraft-v4.1-pro-20260514": {
-   "t7": 6212353,
+   "t7": 7090709,
    "pct_4w": null,
-   "last": 6212353,
+   "last": 7090709,
    "days": 4
   },
   "x-ai/grok-build-0.1-20260520": {
-   "t7": 2873597190,
+   "t7": 2232247070,
    "pct_4w": null,
    "last": null,
    "days": 4
@@ -2198,13 +2198,13 @@
    "days": 2
   },
   "perplexity/pplx-embed-v1-4B": {
-   "t7": 2900550488,
+   "t7": 3429713663,
    "pct_4w": null,
-   "last": 2900550488,
+   "last": 3429713663,
    "days": 4
   },
   "qwen/qwen3-vl-30b-a3b-thinking": {
-   "t7": 26272020,
+   "t7": 6174821,
    "pct_4w": null,
    "last": null,
    "days": 4
@@ -2216,21 +2216,21 @@
    "days": 6
   },
   "canopylabs/orpheus-3b-0.1-ft": {
-   "t7": 271237,
+   "t7": 232302,
    "pct_4w": null,
-   "last": 271237,
+   "last": 232302,
    "days": 4
   },
   "google/lyria-3-pro-preview-20260330": {
-   "t7": 28855964,
+   "t7": 29866229,
    "pct_4w": null,
-   "last": 28855964,
+   "last": 29866229,
    "days": 4
   },
   "google/lyria-3-clip-preview-20260330": {
-   "t7": 6606776,
+   "t7": 6702061,
    "pct_4w": null,
-   "last": 6606776,
+   "last": 6702061,
    "days": 4
   },
   "essentialai/rnj-1-instruct": {
@@ -2246,21 +2246,21 @@
    "days": 3
   },
   "qwen/qwen-2.5-coder-32b-instruct": {
-   "t7": 51740768,
+   "t7": 47017303,
    "pct_4w": null,
-   "last": 51740768,
+   "last": 47017303,
    "days": 4
   },
   "sentence-transformers/paraphrase-minilm-l6-v2-20251117": {
-   "t7": 1785962,
+   "t7": 1445856,
    "pct_4w": null,
-   "last": 1785962,
+   "last": 1445856,
    "days": 4
   },
   "openai/gpt-3.5-turbo-0613": {
-   "t7": 73069359,
+   "t7": 58941198,
    "pct_4w": null,
-   "last": 73069359,
+   "last": 58941198,
    "days": 4
   },
   "text-embedding-3-small": {
@@ -2270,15 +2270,15 @@
    "days": 5
   },
   "z-ai/glm-5.2-20260616": {
-   "t7": 918256153309,
+   "t7": 906779257943,
    "pct_4w": null,
-   "last": 918256153309,
+   "last": 906779257943,
    "days": 7
   },
   "cohere/north-mini-code-20260617": {
-   "t7": 162932069367,
+   "t7": 137705866693,
    "pct_4w": null,
-   "last": 162932069367,
+   "last": null,
    "days": 3
   },
   "text-embedding-3-large": {
@@ -2300,9 +2300,9 @@
    "days": 1
   },
   "qwen/qwen3-reranker-0.6b": {
-   "t7": 250962552,
+   "t7": 236180925,
    "pct_4w": null,
-   "last": 250962552,
+   "last": 236180925,
    "days": 2
   },
   "stealth/ox-alpha": {
@@ -2372,9 +2372,9 @@
    "days": 4
   },
   "openai/gpt-5.6-terra-pro-20260709": {
-   "t7": 2299761029,
+   "t7": 2343131881,
    "pct_4w": null,
-   "last": 2299720468,
+   "last": 2343091320,
    "days": 6
   },
   "xiaomi/mimo-x-flash-preview-20260914": {
@@ -2390,21 +2390,21 @@
    "days": 1
   },
   "thinkingmachines/inkling-small-20260730": {
-   "t7": 5383518150,
+   "t7": 4899475701,
    "pct_4w": null,
-   "last": 5383518150,
-   "days": 5
+   "last": 4899294458,
+   "days": 6
   },
   "meta/muse-glimmer-30b-20260810": {
-   "t7": 53075604530,
+   "t7": 51511852868,
    "pct_4w": null,
-   "last": 53075578882,
+   "last": 51511827220,
    "days": 5
   },
   "thinkingmachines/inkling-20260715": {
-   "t7": 10328936286,
+   "t7": 10591743551,
    "pct_4w": null,
-   "last": 10328936286,
+   "last": 10591743551,
    "days": 5
   },
   "stealth/union-alpha": {
@@ -2420,27 +2420,27 @@
    "days": 1
   },
   "deepseek/deepseek-v4-flash-20260731": {
-   "t7": 2679662977828,
+   "t7": 2571627598783,
    "pct_4w": null,
-   "last": 2679662977828,
+   "last": 2571627598783,
    "days": 4
   },
   "deepseek/deepseek-v4-flash-vision-exp-20260821": {
-   "t7": 59560270219,
+   "t7": 60277155927,
    "pct_4w": null,
-   "last": 59560270219,
+   "last": 60277155927,
    "days": 3
   },
   "qwen/qwen3.8-2.4t-a95b-20260812": {
-   "t7": 32323617227,
+   "t7": 40373805634,
    "pct_4w": null,
-   "last": 32323617227,
+   "last": 40373805634,
    "days": 3
   },
   "deepseek/deepseek-v4-pro-20260813": {
-   "t7": 728999290678,
+   "t7": 734494973697,
    "pct_4w": null,
-   "last": 728999290678,
+   "last": 734494973697,
    "days": 3
   },
   "upstage/solar-jev-20260923": {
@@ -2450,33 +2450,33 @@
    "days": 1
   },
   "inclusionai/ling-3.0-flash-vl-20260910": {
-   "t7": 2796355772,
+   "t7": 2972035860,
    "pct_4w": null,
-   "last": 2796355772,
+   "last": 2972035860,
    "days": 3
   },
   "qwen/qwen3.8-27b-20260814": {
-   "t7": 792825466894,
+   "t7": 800470029777,
    "pct_4w": null,
-   "last": 792825466894,
+   "last": 800470029777,
    "days": 4
   },
   "tencent/hy3-20260706": {
-   "t7": 414871704634,
+   "t7": 193438201141,
    "pct_4w": null,
-   "last": 414871704634,
+   "last": 193438201141,
    "days": 3
   },
   "nex-agi/nex-n2.5-mini-20260908": {
-   "t7": 5308173470,
+   "t7": 5970397127,
    "pct_4w": null,
-   "last": 5308173470,
+   "last": 5970397127,
    "days": 3
   },
   "nex-agi/nex-n2.5-pro-20260907": {
-   "t7": 425502145,
+   "t7": 463115860,
    "pct_4w": null,
-   "last": 425502145,
+   "last": 463115860,
    "days": 3
   },
   "inclusionai/ling-3.0-flash-fin-20260827": {
@@ -2504,27 +2504,27 @@
    "days": 4
   },
   "scaledown/classify-1-20260928": {
-   "t7": 1572672657,
+   "t7": 1943213736,
    "pct_4w": null,
-   "last": 1572672657,
+   "last": 1943213736,
    "days": 3
   },
   "scaledown/extract-20260928": {
-   "t7": 784873821,
+   "t7": 849679184,
    "pct_4w": null,
-   "last": 784873821,
+   "last": 849679184,
    "days": 2
   },
   "scaledown/summarize-20260928": {
-   "t7": 27916585335,
+   "t7": 28734294236,
    "pct_4w": null,
-   "last": 27916585335,
+   "last": 28734294236,
    "days": 2
   },
   "deepgram/flux-tts-20260812": {
-   "t7": 106074,
+   "t7": 70517,
    "pct_4w": null,
-   "last": 106074,
+   "last": 70517,
    "days": 3
   },
   "intfloat/multilingual-e5-large": {
@@ -2552,21 +2552,21 @@
    "days": 4
   },
   "stepfun/step-5-preview-20261008": {
-   "t7": 4800292258439,
+   "t7": 3841924878469,
    "pct_4w": null,
-   "last": 4800292258439,
+   "last": 3841924878469,
    "days": 2
   },
   "anthropic/claude-haiku-5.5-20261007": {
-   "t7": 2812442998962,
+   "t7": 2882006776159,
    "pct_4w": null,
-   "last": 2812442998962,
+   "last": 2882006776159,
    "days": 2
   },
   "mistralai/mistral-large-4-0-20261006": {
-   "t7": 120812540702,
+   "t7": 114082232852,
    "pct_4w": null,
-   "last": 120812540702,
+   "last": 114082232852,
    "days": 2
   },
   "perplexity/pplx-decider-v1.1-27b-20261006": {
@@ -2576,111 +2576,111 @@
    "days": 2
   },
   "openai/gpt-6-luna-decisions-20261006": {
-   "t7": 87507974349,
+   "t7": 79384490444,
    "pct_4w": null,
-   "last": 87507974349,
+   "last": 79384490444,
    "days": 2
   },
   "nace-ai/drex-v1.5-20261009": {
-   "t7": 24757655182,
+   "t7": 24878957422,
    "pct_4w": null,
-   "last": 24757655182,
+   "last": 24878957422,
    "days": 2
   },
   "microsoft/microsoft-decision-1-20261009": {
-   "t7": 31594709532,
+   "t7": 24257385387,
    "pct_4w": null,
-   "last": 31594709532,
+   "last": 24257385387,
    "days": 2
   },
   "upstage/solar-decide-flash-20261008": {
-   "t7": 1425154038,
+   "t7": 980482427,
    "pct_4w": null,
-   "last": 1425154038,
+   "last": 980482427,
    "days": 2
   },
   "openai/gpt-6.1-sol-20260929": {
-   "t7": 2721256336136,
+   "t7": 2567772593550,
    "pct_4w": null,
-   "last": 2721256336136,
+   "last": 2567772593550,
    "days": 2
   },
   "google/gemini-nano-banana-2.1-20261006": {
-   "t7": 5387413193,
+   "t7": 5372675191,
    "pct_4w": null,
-   "last": 5387413193,
+   "last": 5372675191,
    "days": 2
   },
   "tencent/hy-image-v3.5-preview-20260922": {
-   "t7": 1865494912,
+   "t7": 1812051085,
    "pct_4w": null,
-   "last": 1865494912,
+   "last": 1812051085,
    "days": 2
   },
   "cloudflare/clef-omni-20261009": {
-   "t7": 2391884447,
+   "t7": 2751015279,
    "pct_4w": null,
-   "last": 2391884447,
+   "last": 2751015279,
    "days": 2
   },
   "openai/gpt-6.1-sol-pro-20260929": {
-   "t7": 36810427610,
+   "t7": 33206882505,
    "pct_4w": null,
-   "last": 36810427610,
+   "last": 33206882505,
    "days": 2
   },
   "elevenlabs/eleven-v4-20260930": {
-   "t7": 46595120,
+   "t7": 46799048,
    "pct_4w": null,
-   "last": 46595120,
+   "last": 46799048,
    "days": 2
   },
   "elevenlabs/eleven-v4-turbo-20260930": {
-   "t7": 35697648,
+   "t7": 35249790,
    "pct_4w": null,
-   "last": 35697648,
+   "last": 35249790,
    "days": 2
   },
   "elevenlabs/eleven-turbo-v2.5-20260930": {
-   "t7": 365418,
+   "t7": 327065,
    "pct_4w": null,
-   "last": 365418,
+   "last": 327065,
    "days": 2
   },
   "elevenlabs/eleven-flash-v2.5-20260930": {
-   "t7": 20438869,
+   "t7": 18091709,
    "pct_4w": null,
-   "last": 20438869,
+   "last": 18091709,
    "days": 2
   },
   "elevenlabs/eleven-v3-20260930": {
-   "t7": 15425427,
+   "t7": 14006361,
    "pct_4w": null,
-   "last": 15425427,
+   "last": 14006361,
    "days": 2
   },
   "elevenlabs/eleven-multilingual-v2-20260930": {
-   "t7": 2326185,
+   "t7": 2269802,
    "pct_4w": null,
-   "last": 2326185,
+   "last": 2269802,
    "days": 2
   },
   "elevenlabs/eleven-v3-conversational-20260930": {
-   "t7": 305098,
+   "t7": 288910,
    "pct_4w": null,
-   "last": 305098,
+   "last": 288910,
    "days": 2
   },
   "elevenlabs/eleven-flash-v2-20260930": {
-   "t7": 14407,
+   "t7": 13123,
    "pct_4w": null,
-   "last": 14407,
+   "last": 13123,
    "days": 2
   },
   "elevenlabs/eleven-turbo-v2-20260930": {
-   "t7": 28326,
+   "t7": 42115,
    "pct_4w": null,
-   "last": 28326,
+   "last": 42115,
    "days": 2
   },
   "nvidia/nemotron-3-embed-1b": {
@@ -2690,63 +2690,63 @@
    "days": 1
   },
   "cloudflare/clef-flash": {
-   "t7": 26557452284,
+   "t7": 25488482860,
    "pct_4w": null,
-   "last": 26557452284,
+   "last": 25488482860,
    "days": 2
   },
   "cloudflare/clef": {
-   "t7": 12243330513,
+   "t7": 12648443405,
    "pct_4w": null,
-   "last": 12243330513,
+   "last": 12648443405,
    "days": 2
   },
   "google/gemini-3.7-flash-20260813": {
-   "t7": 330224619030,
+   "t7": 318820335099,
    "pct_4w": null,
-   "last": 330224619030,
+   "last": 318820335099,
    "days": 2
   },
   "openai/gpt-5.6-sol-pro-20260709": {
-   "t7": 16111688716,
+   "t7": 14894902009,
    "pct_4w": null,
-   "last": 16111687156,
+   "last": 14894900449,
    "days": 3
   },
   "bytedance-seed/seedream-5-0-flash-20261001": {
-   "t7": 4112973378,
+   "t7": 3569051348,
    "pct_4w": null,
-   "last": 4112973378,
+   "last": 3569051348,
    "days": 2
   },
   "openai/gpt-6-sol-pro-20260922": {
-   "t7": 2704430070,
+   "t7": 2570864051,
    "pct_4w": null,
-   "last": 2696700036,
+   "last": 2563134017,
    "days": 3
   },
   "moonshotai/kimi-k3-20260715": {
-   "t7": 1047224860212,
+   "t7": 997009382369,
    "pct_4w": null,
-   "last": 1047224860212,
+   "last": 997009382369,
    "days": 2
   },
   "google/gemini-3.5-flash-lite-20260721": {
-   "t7": 272847161121,
+   "t7": 276106003716,
    "pct_4w": null,
-   "last": 272847161121,
+   "last": 276106003716,
    "days": 2
   },
   "sakana/fugu-ultra-v2-20260911": {
-   "t7": 132041186,
+   "t7": 124631375,
    "pct_4w": null,
-   "last": 132041186,
+   "last": 124631375,
    "days": 2
   },
   "inclusionai/ling-3.1-flash-20261002": {
-   "t7": 65933795498,
+   "t7": 65595754638,
    "pct_4w": null,
-   "last": 65933795498,
+   "last": 65595754638,
    "days": 2
   },
   "apodex/apodex-1.1-mini-20261001": {
@@ -2756,87 +2756,87 @@
    "days": 3
   },
   "black-forest-labs/flux-3-image-20261001": {
-   "t7": 163366819,
+   "t7": 167126778,
    "pct_4w": null,
-   "last": 163366819,
+   "last": 167126778,
    "days": 2
   },
   "liquid/d1-20260930": {
-   "t7": 25854950148,
+   "t7": 15980878420,
    "pct_4w": null,
-   "last": 25854950148,
+   "last": null,
    "days": 2
   },
   "voyageai/voyage-code-4-20260812": {
-   "t7": 724244359,
+   "t7": 721332755,
    "pct_4w": null,
-   "last": 724244359,
+   "last": 721332755,
    "days": 2
   },
   "anthropic/claude-sonnet-5.5-20260928": {
-   "t7": 2881597817958,
+   "t7": 2840317576899,
    "pct_4w": null,
-   "last": 2881597817958,
+   "last": 2840317576899,
    "days": 2
   },
   "google/gemini-3.8-flash-20260902": {
-   "t7": 1672513966684,
+   "t7": 1662333226675,
    "pct_4w": null,
-   "last": 1672513966684,
+   "last": 1662333226675,
    "days": 2
   },
   "dots-studio/dots-3-note-preview-20260813": {
-   "t7": 957767504337,
+   "t7": 876279818576,
    "pct_4w": null,
-   "last": 957767504337,
+   "last": 876279818576,
    "days": 2
   },
   "microsoft/mai-voice-2.1-20261001": {
-   "t7": 2184118,
+   "t7": 1811476,
    "pct_4w": null,
-   "last": 2184118,
+   "last": 1811476,
    "days": 2
   },
   "openai/gpt-5.6-terra-20260709": {
-   "t7": 107394241128,
+   "t7": 110300959074,
    "pct_4w": null,
-   "last": 107394241128,
+   "last": 110300959074,
    "days": 2
   },
   "openai/gpt-5.6-luna-20260709": {
-   "t7": 1801065526026,
+   "t7": 1663977365944,
    "pct_4w": null,
-   "last": 1801065526026,
+   "last": 1663977365944,
    "days": 2
   },
   "anthropic/claude-opus-5.5-20260921": {
-   "t7": 7262250855263,
+   "t7": 7074042536086,
    "pct_4w": null,
-   "last": 7262250855263,
+   "last": 7074042536086,
    "days": 2
   },
   "upstage/solar-mini4-20260922": {
-   "t7": 1313260785936,
+   "t7": 1249495995039,
    "pct_4w": null,
-   "last": 1313260785936,
+   "last": 1249495995039,
    "days": 2
   },
   "anthropic/claude-opus-5-20260723": {
-   "t7": 148407516679,
+   "t7": 141611633473,
    "pct_4w": null,
-   "last": 148407516679,
+   "last": 141611633473,
    "days": 2
   },
   "voyageai/rerank-3-lite-20260930": {
-   "t7": 18669892986,
+   "t7": 18674889907,
    "pct_4w": null,
-   "last": 18669892986,
+   "last": 18674889907,
    "days": 2
   },
   "microsoft/mai-voice-2.1-flash-20261001": {
-   "t7": 4028898,
+   "t7": 4098720,
    "pct_4w": null,
-   "last": 4028898,
+   "last": 4098720,
    "days": 2
   },
   "poolside/laguna-xs-2.1-20260625": {
@@ -2846,231 +2846,231 @@
    "days": 2
   },
   "voyageai/rerank-3-20260930": {
-   "t7": 16390597320,
+   "t7": 16246723135,
    "pct_4w": null,
-   "last": 16390597320,
+   "last": 16246723135,
    "days": 2
   },
   "togethercomputer/tev1-4b-experimental-20260923": {
-   "t7": 692500965,
+   "t7": 646431084,
    "pct_4w": null,
-   "last": 692500965,
+   "last": 646431084,
    "days": 2
   },
   "z-ai/glm-5.3-20260816": {
-   "t7": 3390572780008,
+   "t7": 3444643858418,
    "pct_4w": null,
-   "last": 3390572780008,
+   "last": 3444643858418,
    "days": 2
   },
   "xiaomi/mimo-v2.6-pro-ultraspeed-20260921": {
-   "t7": 7138375515,
+   "t7": 7559388077,
    "pct_4w": null,
-   "last": 7138375515,
+   "last": 7559388077,
    "days": 2
   },
   "tencent/hy-mt2-30b-a3b-20260521": {
-   "t7": 1399279264,
+   "t7": 1391889653,
    "pct_4w": null,
-   "last": 1399279264,
+   "last": 1391889653,
    "days": 2
   },
   "x-ai/grok-4.7-20260916": {
-   "t7": 428497134889,
+   "t7": 362019843436,
    "pct_4w": null,
-   "last": 428497134889,
+   "last": 362019843436,
    "days": 2
   },
   "recraft/recraft-v4.1-flash-20260923": {
-   "t7": 333207025,
+   "t7": 306863168,
    "pct_4w": null,
-   "last": 333207025,
+   "last": 306863168,
    "days": 2
   },
   "microsoft/mai-image-2.6-20260904": {
-   "t7": 53495513,
+   "t7": 52518284,
    "pct_4w": null,
-   "last": 53495513,
+   "last": 52518284,
    "days": 2
   },
   "qwen/qwen-image-3-20260805": {
-   "t7": 70869349,
+   "t7": 67951096,
    "pct_4w": null,
-   "last": 70869349,
+   "last": 67951096,
    "days": 2
   },
   "openai/gpt-5.6-sol-20260709": {
-   "t7": 127997953352,
+   "t7": 117877084746,
    "pct_4w": null,
-   "last": 127997953352,
+   "last": 117877084746,
    "days": 2
   },
   "meta/muse-spark-1.3-20260902": {
-   "t7": 89540893028,
+   "t7": 84190105303,
    "pct_4w": null,
-   "last": 89540893028,
+   "last": 84190105303,
    "days": 2
   },
   "sakana/namazu-20260811": {
-   "t7": 39150801,
+   "t7": 39721013,
    "pct_4w": null,
-   "last": 39150801,
+   "last": 39721013,
    "days": 2
   },
   "z-ai/glm-5.3-prime-20260921": {
-   "t7": 25662275737,
+   "t7": 26573790398,
    "pct_4w": null,
-   "last": 25662275737,
+   "last": 26573790398,
    "days": 2
   },
   "voyageai/voyage-4-large-20260727": {
-   "t7": 12223885422,
+   "t7": 7641819782,
    "pct_4w": null,
-   "last": 12223885422,
+   "last": 7641819782,
    "days": 2
   },
   "microsoft/mai-image-2.5-pro-20260723": {
-   "t7": 4639488,
+   "t7": 4495409,
    "pct_4w": null,
-   "last": 4639488,
+   "last": 4495409,
    "days": 2
   },
   "sakana/fugu-max-20260911": {
-   "t7": 252682209,
+   "t7": 291072864,
    "pct_4w": null,
-   "last": 252682209,
+   "last": 291072864,
    "days": 2
   },
   "krea/krea-2-medium-20260720": {
-   "t7": 15737763,
+   "t7": 12162452,
    "pct_4w": null,
-   "last": 15737763,
+   "last": 12162452,
    "days": 2
   },
   "deepseek/deepseek-v4.1-flash-20260910": {
-   "t7": 15649232878848,
+   "t7": 15340018130590,
    "pct_4w": null,
-   "last": 15649232878848,
+   "last": 15340018130590,
    "days": 2
   },
   "meta/muse-spark-1.3-contributor-20260902": {
-   "t7": 3051990977688,
+   "t7": 3110798975235,
    "pct_4w": null,
-   "last": 3051990977688,
+   "last": 3110798975235,
    "days": 2
   },
   "nvidia/nemotron-3.5-lightning-20260807": {
-   "t7": 1150524684499,
+   "t7": 1160006690110,
    "pct_4w": null,
-   "last": 1150524684499,
+   "last": 1160006690110,
    "days": 2
   },
   "upstage/solar-pro4-20260810": {
-   "t7": 268235113356,
+   "t7": 261313250077,
    "pct_4w": null,
-   "last": 268235113356,
+   "last": 261313250077,
    "days": 2
   },
   "openai/gpt-6-astra-pro-20260903": {
-   "t7": 10087889086,
+   "t7": 9594377571,
    "pct_4w": null,
-   "last": 10087889086,
+   "last": 9594377571,
    "days": 2
   },
   "jaredpalmer/kev-4b-20260924": {
-   "t7": 950920056,
+   "t7": 924144085,
    "pct_4w": null,
-   "last": 950920056,
+   "last": 924144085,
    "days": 2
   },
   "microsoft/mai-image-2.6-flash-20260904": {
-   "t7": 48182300,
+   "t7": 47950097,
    "pct_4w": null,
-   "last": 48182300,
+   "last": 47950097,
    "days": 2
   },
   "openai/gpt-6-astra-20260903": {
-   "t7": 377129704858,
+   "t7": 371737355351,
    "pct_4w": null,
-   "last": 377129704858,
+   "last": 371737355351,
    "days": 2
   },
   "qwen/qwen3.8-max-prime-20260923": {
-   "t7": 9235887349,
+   "t7": 8368305724,
    "pct_4w": null,
-   "last": 9235887349,
+   "last": 8368305724,
    "days": 2
   },
   "anthropic/claude-fable-5.1-20260831": {
-   "t7": 105282678827,
+   "t7": 103480352239,
    "pct_4w": null,
-   "last": 105282678827,
+   "last": 103480352239,
    "days": 2
   },
   "voyageai/rerank-2.5-lite-20260727": {
-   "t7": 78912447326,
+   "t7": 79169079174,
    "pct_4w": null,
-   "last": 78912447326,
+   "last": 79169079174,
    "days": 2
   },
   "minimax/speech-2.8-hd-20260716": {
-   "t7": 541760,
+   "t7": 422498,
    "pct_4w": null,
-   "last": 541760,
+   "last": 422498,
    "days": 2
   },
   "minimax/speech-2.8-turbo-20260716": {
-   "t7": 1541096,
+   "t7": 1313044,
    "pct_4w": null,
-   "last": 1541096,
+   "last": 1313044,
    "days": 2
   },
   "tencent/hy4-preview-20260827": {
-   "t7": 76914440523,
+   "t7": 70597868375,
    "pct_4w": null,
-   "last": 76914440523,
+   "last": 70597868375,
    "days": 2
   },
   "qwen/qwen3.8-omni-flash-20260918": {
-   "t7": 47976911923,
+   "t7": 47677177070,
    "pct_4w": null,
-   "last": 47976911923,
+   "last": 47677177070,
    "days": 2
   },
   "meta/muse-image-1.0-eval-20260824": {
-   "t7": 1337027613,
+   "t7": 1313071420,
    "pct_4w": null,
-   "last": 1337027613,
+   "last": 1313071420,
    "days": 2
   },
   "google/gemini-3.1-flash-lite-image-20260630": {
-   "t7": 1703050454,
+   "t7": 1705782038,
    "pct_4w": null,
-   "last": 1703050454,
+   "last": 1705782038,
    "days": 2
   },
   "openai/gpt-image-1-mini": {
-   "t7": 69460211,
+   "t7": 85578511,
    "pct_4w": null,
-   "last": 69460211,
+   "last": 85578511,
    "days": 2
   },
   "z-ai/glm-5.3-flash-20260826": {
-   "t7": 10783173152888,
+   "t7": 11630729742255,
    "pct_4w": null,
-   "last": 10783173152888,
+   "last": 11630729742255,
    "days": 2
   },
   "aion-labs/aion-3.0-mini-20260707": {
-   "t7": 514548191,
+   "t7": 592124311,
    "pct_4w": null,
-   "last": 514548191,
+   "last": 592124311,
    "days": 2
   },
   "qwen/qwen-image-3-pro-20260805": {
-   "t7": 90706883,
+   "t7": 95486728,
    "pct_4w": null,
-   "last": 90706883,
+   "last": 95486728,
    "days": 2
   },
   "poolside/laguna-s-2.1-20260720": {
@@ -3080,9 +3080,9 @@
    "days": 2
   },
   "fish-audio/s2.1-pro-20260729": {
-   "t7": 21029898,
+   "t7": 17581842,
    "pct_4w": null,
-   "last": 21029898,
+   "last": 17581842,
    "days": 2
   },
   "liquid/lfm-2.5-embedding-350m-20260818": {
@@ -3092,21 +3092,21 @@
    "days": 2
   },
   "respan/span-01-lite-20260925": {
-   "t7": 7859514227,
+   "t7": 8498035440,
    "pct_4w": null,
-   "last": 7859514227,
+   "last": 8498035440,
    "days": 2
   },
   "xiaomi/mimo-v2.6-flash-20260921": {
-   "t7": 3911309670766,
+   "t7": 3826713919620,
    "pct_4w": null,
-   "last": 3911309670766,
+   "last": 3826713919620,
    "days": 2
   },
   "google/gemini-3.1-flash-image-20260528": {
-   "t7": 5992800473,
+   "t7": 5964538466,
    "pct_4w": null,
-   "last": 5992800473,
+   "last": 5964538466,
    "days": 2
   },
   "inception/mercury-2.5-20260908": {
@@ -3116,69 +3116,69 @@
    "days": 2
   },
   "nvidia/nemotron-3-embed-1b-20260716": {
-   "t7": 568546387,
+   "t7": 527224055,
    "pct_4w": null,
-   "last": 568546387,
+   "last": 527224055,
    "days": 2
   },
   "bytedance-seed/seed-audio-1-0-20260630": {
-   "t7": 3209463,
+   "t7": 3142644,
    "pct_4w": null,
-   "last": 3209463,
+   "last": 3142644,
    "days": 2
   },
   "openai/gpt-6-luna-20260922": {
-   "t7": 8836239337641,
+   "t7": 8591188646448,
    "pct_4w": null,
-   "last": 8836239337641,
+   "last": 8591188646448,
    "days": 2
   },
   "bytedance-seed/seed-2-1-turbo-20260810": {
-   "t7": 4412244758,
+   "t7": 4661671876,
    "pct_4w": null,
-   "last": 4412244758,
+   "last": 4661671876,
    "days": 2
   },
   "google/gemini-3.5-transcribe-20260827": {
-   "t7": 164785931,
+   "t7": 160992009,
    "pct_4w": null,
-   "last": 164785931,
+   "last": 160992009,
    "days": 2
   },
   "openai/gpt-image-2": {
-   "t7": 1186478685,
+   "t7": 1165146520,
    "pct_4w": null,
-   "last": 1186478685,
+   "last": 1165146520,
    "days": 2
   },
   "typesafe/jev-1.13-20260917": {
-   "t7": 2928928802721,
+   "t7": 2912277264338,
    "pct_4w": null,
-   "last": 2928928802721,
+   "last": 2912277264338,
    "days": 2
   },
   "voyageai/voyage-4-20260727": {
-   "t7": 5385305371,
+   "t7": 5257533399,
    "pct_4w": null,
-   "last": 5385305371,
+   "last": 5257533399,
    "days": 2
   },
   "google/gemini-3.8-flash-tts-20260922": {
-   "t7": 901114572,
+   "t7": 884217696,
    "pct_4w": null,
-   "last": 901114572,
+   "last": 884217696,
    "days": 2
   },
   "z-ai/glm-5.3-flashx-20260918": {
-   "t7": 147737944357,
+   "t7": 137494252986,
    "pct_4w": null,
-   "last": 147737944357,
+   "last": 137494252986,
    "days": 2
   },
   "xiaomi/mimo-v2.6-pro-20260921": {
-   "t7": 877926953335,
+   "t7": 864462957901,
    "pct_4w": null,
-   "last": 877926953335,
+   "last": 864462957901,
    "days": 2
   },
   "liquid/lfm-2.5-2.6b-20260811": {
@@ -3188,99 +3188,99 @@
    "days": 2
   },
   "fish-audio/s2.1-pro-free-20260729": {
-   "t7": 13227424,
+   "t7": 12766426,
    "pct_4w": null,
-   "last": 13227424,
+   "last": 12766426,
    "days": 2
   },
   "bytedance-seed/seedream-5-0-pro-20260812": {
-   "t7": 848003681,
+   "t7": 787033056,
    "pct_4w": null,
-   "last": 848003681,
+   "last": 787033056,
    "days": 2
   },
   "inclusionai/ling-3.0-flash-20260723": {
-   "t7": 124569973371,
+   "t7": 126194566931,
    "pct_4w": null,
-   "last": 124569973371,
+   "last": 126194566931,
    "days": 2
   },
   "unbiased/pareto-26.10-preview-20260929": {
-   "t7": 90861929,
+   "t7": 64236131,
    "pct_4w": null,
-   "last": 90861929,
+   "last": 64236131,
    "days": 3
   },
   "openai/gpt-image-2.5-sunburst-20260908": {
-   "t7": 3333784377,
+   "t7": 3418600340,
    "pct_4w": null,
-   "last": 3333784377,
+   "last": 3418600340,
    "days": 2
   },
   "voyageai/rerank-2.5-20260727": {
-   "t7": 31713049820,
+   "t7": 30517352921,
    "pct_4w": null,
-   "last": 31713049820,
+   "last": 30517352921,
    "days": 2
   },
   "openai/gpt-image-1": {
-   "t7": 6563,
+   "t7": 6510,
    "pct_4w": null,
-   "last": 6563,
+   "last": null,
    "days": 2
   },
   "qwen/qwen3.7-flash-20260727": {
-   "t7": 397877665466,
+   "t7": 383597229143,
    "pct_4w": null,
-   "last": 397877665466,
+   "last": 383597229143,
    "days": 2
   },
   "qwen/qwen3.8-max-20260902": {
-   "t7": 146891568769,
+   "t7": 125489578810,
    "pct_4w": null,
-   "last": 146891568769,
+   "last": 125489578810,
    "days": 2
   },
   "tencent/hy-mt2-1.8b-20260521": {
-   "t7": 118227379,
+   "t7": 118440850,
    "pct_4w": null,
-   "last": 118227379,
+   "last": 118440850,
    "days": 2
   },
   "google/gemini-3.8-flash-lite-tts-20260922": {
-   "t7": 609439911,
+   "t7": 588923774,
    "pct_4w": null,
-   "last": 609439911,
+   "last": 588923774,
    "days": 2
   },
   "ibm-granite/granite-4.2-8b-20260831": {
-   "t7": 5869261957,
+   "t7": 6431662369,
    "pct_4w": null,
-   "last": 5869261957,
+   "last": 6431662369,
    "days": 2
   },
   "cohere/command-a-plus-05-2026": {
-   "t7": 1672695430,
+   "t7": 1748636790,
    "pct_4w": null,
-   "last": 1672695430,
+   "last": 1748636790,
    "days": 2
   },
   "meta/muse-spark-1.2-20260805": {
-   "t7": 2945067479,
+   "t7": 3219635345,
    "pct_4w": null,
-   "last": 2945067479,
+   "last": 3219635345,
    "days": 2
   },
   "aion-labs/aion-3.5-mini-20260923": {
-   "t7": 2049433889,
+   "t7": 2075889132,
    "pct_4w": null,
-   "last": 2049433889,
+   "last": 2075889132,
    "days": 2
   },
   "qwen/qwen3.8-flash-20260826": {
-   "t7": 1234076729849,
+   "t7": 1188967250334,
    "pct_4w": null,
-   "last": 1234076729849,
+   "last": 1188967250334,
    "days": 2
   },
   "inclusionai/ming-image-0.1-design-20260922": {
@@ -3290,159 +3290,159 @@
    "days": 2
   },
   "google/gemini-3-pro-image-20260528": {
-   "t7": 1061359954,
+   "t7": 1055807651,
    "pct_4w": null,
-   "last": 1061359954,
+   "last": 1055807651,
    "days": 2
   },
   "bytedance-seed/seedream-5-0-lite-20260812": {
-   "t7": 466967518,
+   "t7": 458019253,
    "pct_4w": null,
-   "last": 466967518,
+   "last": 458019253,
    "days": 2
   },
   "x-ai/grok-4.5-20260708": {
-   "t7": 69580856009,
+   "t7": 69249962929,
    "pct_4w": null,
-   "last": 69580856009,
+   "last": 69249962929,
    "days": 2
   },
   "meituan/longcat-2.0-20260720": {
-   "t7": 22872549383,
+   "t7": 19992806600,
    "pct_4w": null,
-   "last": 22872549383,
+   "last": 19992806600,
    "days": 2
   },
   "aion-labs/aion-3.0-20260707": {
-   "t7": 1063104479,
+   "t7": 1052778816,
    "pct_4w": null,
-   "last": 1063104479,
+   "last": 1052778816,
    "days": 2
   },
   "openai/gpt-6-luna-pro-20260922": {
-   "t7": 591971970468,
+   "t7": 593946823661,
    "pct_4w": null,
-   "last": 591971970468,
+   "last": 593946823661,
    "days": 2
   },
   "x-ai/grok-imagine-image-2.0-20260811": {
-   "t7": 499402632,
+   "t7": 486241879,
    "pct_4w": null,
-   "last": 499402632,
+   "last": 486241879,
    "days": 2
   },
   "recraft/recraft-v4-styles-20260826": {
-   "t7": 4586928,
+   "t7": 4881979,
    "pct_4w": null,
-   "last": 4586928,
+   "last": 4881979,
    "days": 2
   },
   "google/gemini-3.6-flash-20260721": {
-   "t7": 69929190682,
+   "t7": 68254998856,
    "pct_4w": null,
-   "last": 69790196801,
-   "days": 3
+   "last": 68254998856,
+   "days": 2
   },
   "qwen/qwen-audio-3.0-tts-flash-20260723": {
-   "t7": 418055,
+   "t7": 427618,
    "pct_4w": null,
-   "last": 418055,
+   "last": 427618,
    "days": 2
   },
   "voyageai/voyage-multimodal-3.5-20260727": {
-   "t7": 2541105338,
+   "t7": 2581993117,
    "pct_4w": null,
-   "last": 2541105338,
+   "last": 2581993117,
    "days": 2
   },
   "deepgram/aura-2-20260716": {
-   "t7": 741196,
+   "t7": 633100,
    "pct_4w": null,
-   "last": 741196,
+   "last": 633100,
    "days": 2
   },
   "anthropic/claude-sonnet-5-20260630": {
-   "t7": 436090494251,
+   "t7": 432250701865,
    "pct_4w": null,
-   "last": 436090494251,
+   "last": 432250701865,
    "days": 2
   },
   "krea/krea-2-large-20260720": {
-   "t7": 10697550,
+   "t7": 9837056,
    "pct_4w": null,
-   "last": 10697550,
+   "last": 9837056,
    "days": 2
   },
   "x-ai/grok-4.6-20260810": {
-   "t7": 62625853607,
+   "t7": 60391437384,
    "pct_4w": null,
-   "last": 62625853607,
+   "last": 60391437384,
    "days": 3
   },
   "upstage/solar-decide-20260928": {
-   "t7": 2157912340,
+   "t7": 1830109401,
    "pct_4w": null,
-   "last": 2157912340,
+   "last": 1830109401,
    "days": 2
   },
   "openai/gpt-6-sol-20260922": {
-   "t7": 246575965415,
+   "t7": 243132970023,
    "pct_4w": null,
-   "last": 246575965415,
+   "last": 243132970023,
    "days": 2
   },
   "openai/gpt-5.6-luna-pro-20260709": {
-   "t7": 48407884047,
+   "t7": 47765582874,
    "pct_4w": null,
-   "last": 48407884047,
+   "last": 47765582874,
    "days": 2
   },
   "meta/muse-spark-1.2-contributor-20260805": {
-   "t7": 29089883336,
+   "t7": 31471369567,
    "pct_4w": null,
-   "last": 29089883336,
+   "last": 31471369567,
    "days": 2
   },
   "fireworks/ember-1-20260923": {
-   "t7": 544938975,
+   "t7": 519967060,
    "pct_4w": null,
-   "last": 544938975,
+   "last": 519967060,
    "days": 2
   },
   "recraft/recraft-v4-styles-pro-vector-20260826": {
-   "t7": 1199450,
+   "t7": 1150203,
    "pct_4w": null,
-   "last": 1199450,
+   "last": 1150203,
    "days": 2
   },
   "openai/gpt-image-2.5-flare-20260908": {
-   "t7": 1912588300,
+   "t7": 1859949774,
    "pct_4w": null,
-   "last": 1912588300,
+   "last": 1859949774,
    "days": 2
   },
   "aion-labs/aion-3.5-20260923": {
-   "t7": 2787307423,
+   "t7": 2730297773,
    "pct_4w": null,
-   "last": 2787307423,
+   "last": 2730297773,
    "days": 2
   },
   "respan/span-01-20260925": {
-   "t7": 73047470,
+   "t7": 64213225,
    "pct_4w": null,
-   "last": 73047470,
+   "last": 64213225,
    "days": 2
   },
   "sakana/fugu-ultra-20260615": {
-   "t7": 309458501,
+   "t7": 201366583,
    "pct_4w": null,
-   "last": 309458501,
+   "last": 201366583,
    "days": 2
   },
   "qwen/qwen3-reranker-8b": {
-   "t7": 10255554977,
+   "t7": 9814520363,
    "pct_4w": null,
-   "last": 10255554977,
+   "last": 9814520363,
    "days": 2
   },
   "bytedance-seed/seed-2.0-code-20260730": {
@@ -3452,21 +3452,21 @@
    "days": 2
   },
   "fish-audio/s1-20260729": {
-   "t7": 144739,
+   "t7": 164465,
    "pct_4w": null,
-   "last": 144739,
+   "last": 164465,
    "days": 2
   },
   "prism-ml/ternary-bonsai-2-27b-20260918": {
-   "t7": 122445799,
+   "t7": 138744768,
    "pct_4w": null,
-   "last": 122445799,
+   "last": 138744768,
    "days": 2
   },
   "inference-net/schematron-v2-turbo-20260902": {
-   "t7": 65480670,
+   "t7": 70867433,
    "pct_4w": null,
-   "last": 65480670,
+   "last": 70867433,
    "days": 2
   },
   "unbiased/pareto-20260917": {
@@ -3476,9 +3476,9 @@
    "days": 2
   },
   "qwen/qwen-audio-3.0-tts-plus-20260723": {
-   "t7": 2512809,
+   "t7": 2524603,
    "pct_4w": null,
-   "last": 2512809,
+   "last": 2524603,
    "days": 2
   },
   "inclusionai/ming-image-0.1-design-layer-20260922": {
@@ -3488,63 +3488,63 @@
    "days": 2
   },
   "recraft/recraft-v4-styles-vector-20260826": {
-   "t7": 2474790,
+   "t7": 2293482,
    "pct_4w": null,
-   "last": 2474790,
+   "last": 2293482,
    "days": 2
   },
   "krea/krea-2-medium-turbo-20260720": {
-   "t7": 49616492,
+   "t7": 47769871,
    "pct_4w": null,
-   "last": 49616492,
+   "last": 47769871,
    "days": 2
   },
   "microsoft/mai-voice-2-flash-20260723": {
-   "t7": 633381,
+   "t7": 700001,
    "pct_4w": null,
-   "last": 633381,
+   "last": 700001,
    "days": 2
   },
   "fish-audio/s2-pro-20260729": {
-   "t7": 121031,
+   "t7": 101027,
    "pct_4w": null,
-   "last": 121031,
+   "last": 101027,
    "days": 2
   },
   "inference-net/schematron-v2-small-20260902": {
-   "t7": 577413471,
+   "t7": 576770921,
    "pct_4w": null,
-   "last": 577413471,
+   "last": 576770921,
    "days": 2
   },
   "recraft/recraft-v4-styles-pro-20260826": {
-   "t7": 954621,
+   "t7": 984175,
    "pct_4w": null,
-   "last": 954621,
+   "last": 984175,
    "days": 2
   },
   "meta/muse-spark-1.1-20260709": {
-   "t7": 3047528811,
+   "t7": 3036507645,
    "pct_4w": null,
-   "last": 3047528811,
+   "last": 3036507645,
    "days": 2
   },
   "voyageai/voyage-4-lite-20260727": {
-   "t7": 5693237317,
+   "t7": 8104678688,
    "pct_4w": null,
-   "last": 5693237317,
+   "last": 8104678688,
    "days": 2
   },
   "perceptron/perceptron-mk1.5-20260925": {
-   "t7": 419266964,
+   "t7": 448166913,
    "pct_4w": null,
-   "last": 419266964,
+   "last": 448166913,
    "days": 2
   },
   "tencent/hy-mt2-7b-20260521": {
-   "t7": 203668047,
+   "t7": 181723235,
    "pct_4w": null,
-   "last": 203668047,
+   "last": 181723235,
    "days": 2
   },
   "baai/bge-base-en-v1.5": {
@@ -3560,9 +3560,9 @@
    "days": 2
   },
   "minimax/minimax-m3.1-flash-20261019": {
-   "t7": 4105125988199,
-   "pct_4w": 23.1,
-   "last": 4105125988199,
+   "t7": 4200494270254,
+   "pct_4w": 26,
+   "last": 4200494270254,
    "days": 2
   },
   "voyageai/voyage-4-lite": {
@@ -3572,15 +3572,15 @@
    "days": 1
   },
   "baseten/mammoth-1-20261021": {
-   "t7": 6749765711,
+   "t7": 8322571908,
    "pct_4w": null,
-   "last": 6749765711,
+   "last": 8322571908,
    "days": 2
   },
   "baseten/elephant-1-20261021": {
-   "t7": 3032082052,
+   "t7": 3522688649,
    "pct_4w": null,
-   "last": 3032082052,
+   "last": 3522688649,
    "days": 2
   },
   "gmicloud/ripple-65b-preview-20261104": {
@@ -3590,9 +3590,9 @@
    "days": 1
   },
   "parallel/decisions-fast-20261106": {
-   "t7": 651224628,
+   "t7": 522906718,
    "pct_4w": null,
-   "last": 611539643,
+   "last": 522906718,
    "days": 3
   },
   "inception/mercury-3-20261019": {
@@ -3620,676 +3620,698 @@
    "days": 2
   },
   "thinkingmachines/inkling-2-small-20261107": {
-   "t7": 1840803997392,
+   "t7": 1646101175828,
    "pct_4w": null,
-   "last": 717147936362,
+   "last": 701958540729,
    "days": 2
   },
-  "qwen/qwen4-max-20261115": {
-   "t7": 1112343775514,
-   "pct_4w": null,
-   "last": 1112343775514,
-   "days": 1
-  },
-  "openai/gpt-6.2-sol-20261117": {
-   "t7": 446095036531,
-   "pct_4w": null,
-   "last": 446095036531,
-   "days": 1
-  },
-  "tencent/hy4-flash-20261116": {
-   "t7": 417297242086,
-   "pct_4w": null,
-   "last": 417297242086,
-   "days": 1
-  },
-  "google/gemini-4-neon-20261118": {
-   "t7": 280743425049,
-   "pct_4w": null,
-   "last": 280743425049,
-   "days": 1
-  },
-  "openai/gpt-6.2-astra-20261117": {
-   "t7": 112512175918,
-   "pct_4w": null,
-   "last": 112512175918,
-   "days": 1
-  },
-  "liquid/d1.2-ultra-20261116": {
-   "t7": 19599199230,
-   "pct_4w": null,
-   "last": 19599199230,
-   "days": 1
-  },
   "openai/gpt-6.2-sol-pro-20261117": {
-   "t7": 16792827793,
+   "t7": 18467824001,
    "pct_4w": null,
-   "last": 16792827793,
-   "days": 1
-  },
-  "openai/gpt-6.2-astra-pro-20261117": {
-   "t7": 15703350866,
-   "pct_4w": null,
-   "last": 15703350866,
-   "days": 1
-  },
-  "microsoft/microsoft-decision-1.1-20261117": {
-   "t7": 12876482257,
-   "pct_4w": null,
-   "last": 12876482257,
-   "days": 1
-  },
-  "liquid/d1.2-20261116": {
-   "t7": 9525052959,
-   "pct_4w": null,
-   "last": 9525052959,
-   "days": 1
-  },
-  "microsoft/mai-image-2.7-flash-20261117": {
-   "t7": 68519807,
-   "pct_4w": null,
-   "last": 68519807,
-   "days": 1
-  },
-  "microsoft/mai-image-2.7-20261117": {
-   "t7": 58100026,
-   "pct_4w": null,
-   "last": 58100026,
-   "days": 1
-  },
-  "mistralai/pixtral-large-2502": {
-   "t7": 23907171,
-   "pct_4w": null,
-   "last": 23907171,
-   "days": 1
-  },
-  "baseten/groundhog-1-20261120": {
-   "t7": 12418733,
-   "pct_4w": null,
-   "last": 12418733,
-   "days": 1
-  },
-  "baseten/bison-1-20261120": {
-   "t7": 10561384,
-   "pct_4w": null,
-   "last": 10561384,
-   "days": 1
-  },
-  "google/gemini-2.5-flash-tts": {
-   "t7": 656448,
-   "pct_4w": null,
-   "last": 656448,
-   "days": 1
-  },
-  "google/gemini-2.5-pro-tts": {
-   "t7": 497562,
-   "pct_4w": null,
-   "last": 497562,
-   "days": 1
-  },
-  "perplexity/pplx-embed-v2-context-9b-20261120": {
-   "t7": 128579,
-   "pct_4w": null,
-   "last": 128579,
-   "days": 1
-  },
-  "qwen/qwen3-tts-1.7b": {
-   "t7": 7294,
-   "pct_4w": null,
-   "last": 7294,
-   "days": 1
-  },
-  "perplexity/pplx-embed-v2-context-0.6b-20261120": {
-   "t7": 1030,
-   "pct_4w": null,
-   "last": 1030,
-   "days": 1
-  },
-  "recraft/recraft-v4.1-flash-v2-20261113": {
-   "t7": 1531179249,
-   "pct_4w": null,
-   "last": 1531179249,
-   "days": 1
-  },
-  "inclusionai/ling-3.2-flash-20261113": {
-   "t7": 284361336151,
-   "pct_4w": null,
-   "last": 284361336151,
-   "days": 1
-  },
-  "tencent/hy-world-2.1-panorama-20261112": {
-   "t7": 356251951,
-   "pct_4w": null,
-   "last": 356251951,
-   "days": 1
-  },
-  "moonshotai/kimi-k3.1-pro-20261023": {
-   "t7": 3540180521327,
-   "pct_4w": null,
-   "last": 3540180521327,
-   "days": 1
-  },
-  "perplexity/pplx-decider-v1.3-20261112": {
-   "t7": 232109682778,
-   "pct_4w": null,
-   "last": 232109682778,
-   "days": 1
-  },
-  "deepseek/deepseek-v4.1-flash-20261017": {
-   "t7": 62421933578171,
-   "pct_4w": null,
-   "last": 62421933578171,
-   "days": 1
-  },
-  "perplexity/pplx-decider-flash-v1.3-20261112": {
-   "t7": 60108700793,
-   "pct_4w": null,
-   "last": 60108700793,
-   "days": 1
-  },
-  "particle-ai/particle-1-20261027": {
-   "t7": 1262610422451,
-   "pct_4w": null,
-   "last": 1262610422451,
-   "days": 1
-  },
-  "motif-technologies/motif-3": {
-   "t7": 218561068,
-   "pct_4w": null,
-   "last": 218561068,
-   "days": 1
-  },
-  "speechify/simba-3.5-20261111": {
-   "t7": 1911501,
-   "pct_4w": null,
-   "last": 1911501,
-   "days": 1
-  },
-  "bytedance-seed/seedream-5-5-20261112": {
-   "t7": 2108852897,
-   "pct_4w": null,
-   "last": 2108852897,
-   "days": 1
-  },
-  "liquid/d1-ultra-20261015": {
-   "t7": 275356685190,
-   "pct_4w": null,
-   "last": 275356685190,
-   "days": 1
-  },
-  "google/gemini-4-hydrogen-20261112": {
-   "t7": 451455093361,
-   "pct_4w": null,
-   "last": 451455093361,
-   "days": 1
-  },
-  "heygen/heygen-decision-1-20261112": {
-   "t7": 2774972089,
-   "pct_4w": null,
-   "last": 2774972089,
-   "days": 1
-  },
-  "google/gemini-4-carbon-20261110": {
-   "t7": 2005897525137,
-   "pct_4w": null,
-   "last": 2005897525137,
-   "days": 1
-  },
-  "mistralai/voxtral-small-transcribe-3-0-20261020": {
-   "t7": 143306689,
-   "pct_4w": null,
-   "last": 143306689,
-   "days": 1
-  },
-  "nvidia/nemotron-3.5-embed-1b-20261021": {
-   "t7": 430129436,
-   "pct_4w": null,
-   "last": 430129436,
-   "days": 1
-  },
-  "baidu/ernie-5.5-flash-preview-20261110": {
-   "t7": 3500793416676,
-   "pct_4w": null,
-   "last": 3500793416676,
-   "days": 1
-  },
-  "heygen/heygen-voice-1-turbo-20261009": {
-   "t7": 56299718,
-   "pct_4w": null,
-   "last": 56299718,
-   "days": 1
-  },
-  "meta/muse-ember-20261109": {
-   "t7": 953183931258,
-   "pct_4w": null,
-   "last": 953183931258,
-   "days": 1
-  },
-  "heygen/heygen-decision-1-turbo-20261112": {
-   "t7": 1681844861,
-   "pct_4w": null,
-   "last": 1681844861,
-   "days": 1
-  },
-  "amazon/titan-embed-text-v2-20261026": {
-   "t7": 199784354,
-   "pct_4w": null,
-   "last": 199784354,
-   "days": 1
-  },
-  "cloudflare/clairic-20261029": {
-   "t7": 1479255801,
-   "pct_4w": null,
-   "last": 1479255801,
-   "days": 1
-  },
-  "nvidia/nemotron-3.5-embed-8b-20261021": {
-   "t7": 520482542,
-   "pct_4w": null,
-   "last": 520482542,
-   "days": 1
-  },
-  "google/gemini-decision-1-20261111": {
-   "t7": 39751518937,
-   "pct_4w": null,
-   "last": 39751518937,
-   "days": 1
-  },
-  "baidu/ernie-light-dt-1.0-intl-20261110": {
-   "t7": 1256958258,
-   "pct_4w": null,
-   "last": 1256958258,
-   "days": 1
-  },
-  "cohere/embed-5-fast-20261029": {
-   "t7": 969396559,
-   "pct_4w": null,
-   "last": 969396559,
-   "days": 1
-  },
-  "unbiased/pareto-26.10-20261015": {
-   "t7": 7832541142,
-   "pct_4w": null,
-   "last": 7832541142,
-   "days": 1
-  },
-  "amazon/titan-embed-image-v1-20261026": {
-   "t7": 1378834,
-   "pct_4w": null,
-   "last": 1378834,
-   "days": 1
-  },
-  "openai/gpt-image-2.6-flare-20261104": {
-   "t7": 993419588,
-   "pct_4w": null,
-   "last": 993419588,
-   "days": 1
-  },
-  "nvidia/nemotron-3.5-rerank-8b-20261021": {
-   "t7": 1117421026,
-   "pct_4w": null,
-   "last": 1117421026,
-   "days": 1
-  },
-  "heygen/heygen-voice-1-20261009": {
-   "t7": 1118709,
-   "pct_4w": null,
-   "last": 1118709,
-   "days": 1
+   "last": 18462004056,
+   "days": 2
   },
   "minimax/minimax-h3-image-20261110": {
-   "t7": 473468337,
+   "t7": 408353945,
    "pct_4w": null,
-   "last": 473468337,
-   "days": 1
-  },
-  "amazon/titan-embed-text-v1-20261026": {
-   "t7": 12757901,
-   "pct_4w": null,
-   "last": 12757901,
-   "days": 1
-  },
-  "moondream/moondream3-preview-20261013": {
-   "t7": 5406846,
-   "pct_4w": null,
-   "last": 5406846,
-   "days": 1
-  },
-  "black-forest-labs/flux-3-image-klein-20261015": {
-   "t7": 1164304420,
-   "pct_4w": null,
-   "last": 1164304420,
-   "days": 1
-  },
-  "reflection/beam-1.0-501b-a23b-20261016": {
-   "t7": 93467522348,
-   "pct_4w": null,
-   "last": 93467522348,
-   "days": 1
-  },
-  "openai/gpt-6.1-terra-pro-20261026": {
-   "t7": 25003166426,
-   "pct_4w": null,
-   "last": 25003166426,
-   "days": 1
-  },
-  "perplexity/pplx-decider-flash-v1.2-20261016": {
-   "t7": 16794786249,
-   "pct_4w": null,
-   "last": 16794786249,
-   "days": 1
-  },
-  "openai/gpt-image-2.6-sunburst-20261104": {
-   "t7": 1711898912,
-   "pct_4w": null,
-   "last": 1711898912,
-   "days": 1
-  },
-  "cohere/embed-5-pro-20261029": {
-   "t7": 1108726782,
-   "pct_4w": null,
-   "last": 1108726782,
-   "days": 1
-  },
-  "liquid/d1.1-20261027": {
-   "t7": 93715760755,
-   "pct_4w": null,
-   "last": 93715760755,
-   "days": 1
-  },
-  "nace-ai/drex-max-finance-20261110": {
-   "t7": 1841821538,
-   "pct_4w": null,
-   "last": 1841821538,
-   "days": 1
-  },
-  "cohere/rerank-5-fast-20261028": {
-   "t7": 4816415907,
-   "pct_4w": null,
-   "last": 4816415907,
-   "days": 1
-  },
-  "cohere/rerank-5-pro-20261028": {
-   "t7": 2542634851,
-   "pct_4w": null,
-   "last": 2542634851,
-   "days": 1
-  },
-  "anthropic/claude-fable-5.2-20261109": {
-   "t7": 714502262710,
-   "pct_4w": null,
-   "last": 714502262710,
-   "days": 1
-  },
-  "typesafe/jev-1.14-20261014": {
-   "t7": 2228772203880,
-   "pct_4w": null,
-   "last": 2228772203880,
-   "days": 1
-  },
-  "perplexity/pplx-decider-v1.2-20261016": {
-   "t7": 497458491360,
-   "pct_4w": null,
-   "last": 497458491360,
-   "days": 1
-  },
-  "nvidia/nemotron-3.5-super-vl-20261015": {
-   "t7": 3444891541940,
-   "pct_4w": null,
-   "last": 3444891541940,
-   "days": 1
-  },
-  "nace-ai/drex-max-20261016": {
-   "t7": 41326695423,
-   "pct_4w": null,
-   "last": 41326695423,
-   "days": 1
-  },
-  "nace-ai/drex-v2.0-20261009": {
-   "t7": 11706865496,
-   "pct_4w": null,
-   "last": 11706865496,
-   "days": 1
-  },
-  "assemblyai/assemblyai-tts-1-20261028": {
-   "t7": 333624,
-   "pct_4w": null,
-   "last": 333624,
-   "days": 1
-  },
-  "qwen/qwen-image-2.1-turbo-20261016": {
-   "t7": 160386703,
-   "pct_4w": null,
-   "last": 160386703,
-   "days": 1
-  },
-  "openai/gpt-6.1-terra-20261026": {
-   "t7": 950756334903,
-   "pct_4w": null,
-   "last": 950756334903,
+   "last": null,
    "days": 1
   },
   "minimax/minimax-h3-image-highspeed-20261110": {
-   "t7": 109532339,
+   "t7": 99569433,
    "pct_4w": null,
-   "last": 109532339,
+   "last": null,
    "days": 1
   },
-  "google/gemini-4-argon-20261013": {
-   "t7": 714921517959,
+  "tencent/hy4-flash-20261116": {
+   "t7": 6513057914319,
    "pct_4w": null,
-   "last": 714921517959,
+   "last": 6513057914319,
    "days": 1
   },
-  "elorian/glimpse-20261016": {
-   "t7": 521580167,
+  "qwen/qwen4-max-20261115": {
+   "t7": 1271449907450,
    "pct_4w": null,
-   "last": 521580167,
+   "last": 1271449907450,
    "days": 1
   },
-  "tencent/hy4-20261104": {
-   "t7": 587703471335,
+  "openai/gpt-6.2-sol-20261117": {
+   "t7": 578461247320,
    "pct_4w": null,
-   "last": 587703471335,
+   "last": 578461247320,
    "days": 1
   },
-  "google/gemini-omni-1.2-flash-20261105": {
-   "t7": 89084855,
+  "google/gemini-4-neon-20261118": {
+   "t7": 391911592492,
    "pct_4w": null,
-   "last": 89084855,
+   "last": 391911592492,
+   "days": 1
+  },
+  "openai/gpt-6.2-astra-20261117": {
+   "t7": 140298149695,
+   "pct_4w": null,
+   "last": 140298149695,
+   "days": 1
+  },
+  "thinkingmachines/inkling-2-mini-20261120": {
+   "t7": 41553482053,
+   "pct_4w": null,
+   "last": 41553482053,
+   "days": 1
+  },
+  "liquid/d1.2-ultra-20261116": {
+   "t7": 25078823272,
+   "pct_4w": null,
+   "last": 25078823272,
+   "days": 1
+  },
+  "openai/gpt-6.2-astra-pro-20261117": {
+   "t7": 17618821422,
+   "pct_4w": null,
+   "last": 17618821422,
+   "days": 1
+  },
+  "microsoft/microsoft-decision-1.1-20261117": {
+   "t7": 16233564056,
+   "pct_4w": null,
+   "last": 16233564056,
+   "days": 1
+  },
+  "liquid/d1.2-20261116": {
+   "t7": 11072054960,
+   "pct_4w": null,
+   "last": 11072054960,
+   "days": 1
+  },
+  "radixark/daisyrose-27b-20261120": {
+   "t7": 1157662802,
+   "pct_4w": null,
+   "last": 1157662802,
+   "days": 1
+  },
+  "perplexity/pplx-embed-v2-context-9b-20261120": {
+   "t7": 498798781,
+   "pct_4w": null,
+   "last": 498798781,
+   "days": 1
+  },
+  "baseten/bison-1-20261120": {
+   "t7": 468095268,
+   "pct_4w": null,
+   "last": 468095268,
+   "days": 1
+  },
+  "baseten/groundhog-1-20261120": {
+   "t7": 228160783,
+   "pct_4w": null,
+   "last": 228160783,
+   "days": 1
+  },
+  "perplexity/pplx-embed-v2-context-0.6b-20261120": {
+   "t7": 110627834,
+   "pct_4w": null,
+   "last": 110627834,
+   "days": 1
+  },
+  "microsoft/mai-image-2.7-flash-20261117": {
+   "t7": 85394211,
+   "pct_4w": null,
+   "last": 85394211,
+   "days": 1
+  },
+  "microsoft/mai-image-2.7-20261117": {
+   "t7": 66815038,
+   "pct_4w": null,
+   "last": 66815038,
+   "days": 1
+  },
+  "mistralai/pixtral-large-2502": {
+   "t7": 33656146,
+   "pct_4w": null,
+   "last": 33656146,
+   "days": 1
+  },
+  "google/gemini-2.5-flash-tts": {
+   "t7": 2312030,
+   "pct_4w": null,
+   "last": 2312030,
+   "days": 1
+  },
+  "google/gemini-2.5-pro-tts": {
+   "t7": 950657,
+   "pct_4w": null,
+   "last": 950657,
+   "days": 1
+  },
+  "qwen/qwen3-tts-1.7b": {
+   "t7": 65813,
+   "pct_4w": null,
+   "last": 65813,
+   "days": 1
+  },
+  "perplexity/pplx-decider-flash-v1.3-20261112": {
+   "t7": 76050964909,
+   "pct_4w": null,
+   "last": 76050964909,
+   "days": 1
+  },
+  "moonshotai/kimi-k3.1-pro-20261023": {
+   "t7": 3882026035896,
+   "pct_4w": null,
+   "last": 3882026035896,
+   "days": 1
+  },
+  "recraft/recraft-v4.1-flash-v2-20261113": {
+   "t7": 1553767761,
+   "pct_4w": null,
+   "last": 1553767761,
+   "days": 1
+  },
+  "mistralai/voxtral-small-transcribe-3-0-20261020": {
+   "t7": 198720011,
+   "pct_4w": null,
+   "last": 198720011,
+   "days": 1
+  },
+  "motif-technologies/motif-3": {
+   "t7": 217631927,
+   "pct_4w": null,
+   "last": 217631927,
+   "days": 1
+  },
+  "liquid/d1-ultra-20261015": {
+   "t7": 320839612948,
+   "pct_4w": null,
+   "last": 320839612948,
+   "days": 1
+  },
+  "speechify/simba-3.5-20261111": {
+   "t7": 1916727,
+   "pct_4w": null,
+   "last": 1916727,
+   "days": 1
+  },
+  "tencent/hy-world-2.1-panorama-20261112": {
+   "t7": 325923402,
+   "pct_4w": null,
+   "last": 325923402,
+   "days": 1
+  },
+  "bytedance-seed/seedream-5-5-20261112": {
+   "t7": 2197554553,
+   "pct_4w": null,
+   "last": 2197554553,
+   "days": 1
+  },
+  "google/gemini-4-carbon-20261110": {
+   "t7": 2170303123676,
+   "pct_4w": null,
+   "last": 2170303123676,
+   "days": 1
+  },
+  "deepseek/deepseek-v4.1-flash-20261017": {
+   "t7": 63361082326011,
+   "pct_4w": null,
+   "last": 63361082326011,
+   "days": 1
+  },
+  "particle-ai/particle-1-20261027": {
+   "t7": 1174904341875,
+   "pct_4w": null,
+   "last": 1174904341875,
+   "days": 1
+  },
+  "inclusionai/ling-3.2-flash-20261113": {
+   "t7": 241691622137,
+   "pct_4w": null,
+   "last": 241691622137,
+   "days": 1
+  },
+  "google/gemini-4-hydrogen-20261112": {
+   "t7": 450168361351,
+   "pct_4w": null,
+   "last": 450168361351,
+   "days": 1
+  },
+  "heygen/heygen-decision-1-20261112": {
+   "t7": 2640286640,
+   "pct_4w": null,
+   "last": 2640286640,
+   "days": 1
+  },
+  "amazon/titan-embed-image-v1-20261026": {
+   "t7": 1404760,
+   "pct_4w": null,
+   "last": 1404760,
+   "days": 1
+  },
+  "perplexity/pplx-decider-v1.3-20261112": {
+   "t7": 192859554327,
+   "pct_4w": null,
+   "last": 192859554327,
+   "days": 1
+  },
+  "cloudflare/clairic-20261029": {
+   "t7": 2041019680,
+   "pct_4w": null,
+   "last": 2041019680,
+   "days": 1
+  },
+  "heygen/heygen-voice-1-turbo-20261009": {
+   "t7": 57855893,
+   "pct_4w": null,
+   "last": 57855893,
+   "days": 1
+  },
+  "baidu/ernie-5.5-flash-preview-20261110": {
+   "t7": 3503336071209,
+   "pct_4w": null,
+   "last": 3503336071209,
+   "days": 1
+  },
+  "nvidia/nemotron-3.5-embed-1b-20261021": {
+   "t7": 373555163,
+   "pct_4w": null,
+   "last": 373555163,
+   "days": 1
+  },
+  "cohere/embed-5-fast-20261029": {
+   "t7": 944963704,
+   "pct_4w": null,
+   "last": 944963704,
+   "days": 1
+  },
+  "meta/muse-ember-20261109": {
+   "t7": 942504102398,
+   "pct_4w": null,
+   "last": 942504102398,
+   "days": 1
+  },
+  "reflection/beam-1.0-501b-a23b-20261016": {
+   "t7": 105599547607,
+   "pct_4w": null,
+   "last": 105599547607,
+   "days": 1
+  },
+  "amazon/titan-embed-text-v2-20261026": {
+   "t7": 191292881,
+   "pct_4w": null,
+   "last": 191292881,
+   "days": 1
+  },
+  "nvidia/nemotron-3.5-rerank-8b-20261021": {
+   "t7": 1295092941,
+   "pct_4w": null,
+   "last": 1295092941,
+   "days": 1
+  },
+  "unbiased/pareto-26.10-20261015": {
+   "t7": 6830755181,
+   "pct_4w": null,
+   "last": 6830755181,
+   "days": 1
+  },
+  "baidu/ernie-light-dt-1.0-intl-20261110": {
+   "t7": 1221063642,
+   "pct_4w": null,
+   "last": 1221063642,
+   "days": 1
+  },
+  "heygen/heygen-voice-1-20261009": {
+   "t7": 1245783,
+   "pct_4w": null,
+   "last": 1245783,
+   "days": 1
+  },
+  "google/gemini-decision-1-20261111": {
+   "t7": 37589304062,
+   "pct_4w": null,
+   "last": 37589304062,
+   "days": 1
+  },
+  "moondream/moondream3-preview-20261013": {
+   "t7": 5457237,
+   "pct_4w": null,
+   "last": 5457237,
+   "days": 1
+  },
+  "black-forest-labs/flux-3-image-klein-20261015": {
+   "t7": 1180655082,
+   "pct_4w": null,
+   "last": 1180655082,
+   "days": 1
+  },
+  "nvidia/nemotron-3.5-embed-8b-20261021": {
+   "t7": 507759514,
+   "pct_4w": null,
+   "last": 507759514,
+   "days": 1
+  },
+  "openai/gpt-image-2.6-flare-20261104": {
+   "t7": 990352123,
+   "pct_4w": null,
+   "last": 990352123,
+   "days": 1
+  },
+  "openai/gpt-6.1-terra-pro-20261026": {
+   "t7": 23028429167,
+   "pct_4w": null,
+   "last": 23028429167,
+   "days": 1
+  },
+  "cohere/rerank-5-pro-20261028": {
+   "t7": 2360441737,
+   "pct_4w": null,
+   "last": 2360441737,
+   "days": 1
+  },
+  "perplexity/pplx-decider-flash-v1.2-20261016": {
+   "t7": 17585554305,
+   "pct_4w": null,
+   "last": 17585554305,
+   "days": 1
+  },
+  "openai/gpt-image-2.6-sunburst-20261104": {
+   "t7": 1746028959,
+   "pct_4w": null,
+   "last": 1746028959,
+   "days": 1
+  },
+  "amazon/titan-embed-text-v1-20261026": {
+   "t7": 11757392,
+   "pct_4w": null,
+   "last": 11757392,
    "days": 1
   },
   "recursive/flint-v1.0-20261021": {
-   "t7": 135533809628,
+   "t7": 147189802185,
    "pct_4w": null,
-   "last": 135533809628,
+   "last": 147189802185,
    "days": 1
   },
-  "google/gemini-omni-1.1-flash-20260911": {
-   "t7": 21667120,
+  "heygen/heygen-decision-1-turbo-20261112": {
+   "t7": 1372063426,
    "pct_4w": null,
-   "last": 21667120,
+   "last": 1372063426,
    "days": 1
   },
-  "sourceful/riverflow-v2.6-pro-20261029": {
-   "t7": 35073475,
+  "typesafe/jev-1.14-20261014": {
+   "t7": 2277749646123,
    "pct_4w": null,
-   "last": 35073475,
+   "last": 2277749646123,
    "days": 1
   },
-  "meta/muse-spark-open-20261015": {
-   "t7": 76613180881,
+  "openai/gpt-6.1-terra-20261026": {
+   "t7": 922900016994,
    "pct_4w": null,
-   "last": 76613180881,
+   "last": 922900016994,
    "days": 1
   },
-  "qwen/qwen-image-2.1-pro-20261016": {
-   "t7": 42857227,
+  "cohere/rerank-5-fast-20261028": {
+   "t7": 4815508795,
    "pct_4w": null,
-   "last": 42857227,
+   "last": 4815508795,
    "days": 1
   },
-  "liquid/lfm-3-1.7b-20261106": {
-   "t7": 33910349197,
+  "cohere/embed-5-pro-20261029": {
+   "t7": 1115817778,
    "pct_4w": null,
-   "last": 33910349197,
+   "last": 1115817778,
    "days": 1
   },
-  "mistralai/voxtral-mini-tts-3-0-20261020": {
-   "t7": 1191451,
+  "nace-ai/drex-max-20261016": {
+   "t7": 41929114923,
    "pct_4w": null,
-   "last": 1191451,
+   "last": 41929114923,
+   "days": 1
+  },
+  "google/gemini-omni-1.2-flash-20261105": {
+   "t7": 97756530,
+   "pct_4w": null,
+   "last": 97756530,
    "days": 1
   },
   "liquid/lfm-2.5-24b-a2b-20261012": {
-   "t7": 657174150,
+   "t7": 719359160,
    "pct_4w": null,
-   "last": 657174150,
+   "last": 719359160,
+   "days": 1
+  },
+  "perplexity/pplx-decider-v1.2-20261016": {
+   "t7": 478998124938,
+   "pct_4w": null,
+   "last": 478998124938,
+   "days": 1
+  },
+  "nvidia/nemotron-3.5-super-vl-20261015": {
+   "t7": 3435579531106,
+   "pct_4w": null,
+   "last": 3435579531106,
+   "days": 1
+  },
+  "google/gemini-omni-1.1-flash-20260911": {
+   "t7": 22984035,
+   "pct_4w": null,
+   "last": 22984035,
+   "days": 1
+  },
+  "nace-ai/drex-v2.0-20261009": {
+   "t7": 11622518244,
+   "pct_4w": null,
+   "last": 11622518244,
+   "days": 1
+  },
+  "anthropic/claude-fable-5.2-20261109": {
+   "t7": 713803861683,
+   "pct_4w": null,
+   "last": 713803861683,
+   "days": 1
+  },
+  "google/gemini-4-argon-20261013": {
+   "t7": 695207821645,
+   "pct_4w": null,
+   "last": 695207821645,
+   "days": 1
+  },
+  "elorian/glimpse-20261016": {
+   "t7": 510411443,
+   "pct_4w": null,
+   "last": 510411443,
+   "days": 1
+  },
+  "qwen/qwen-image-2.1-pro-20261016": {
+   "t7": 46299050,
+   "pct_4w": null,
+   "last": 46299050,
+   "days": 1
+  },
+  "sourceful/riverflow-v2.6-pro-20261029": {
+   "t7": 34552604,
+   "pct_4w": null,
+   "last": 34552604,
+   "days": 1
+  },
+  "nace-ai/drex-max-finance-20261110": {
+   "t7": 1726758184,
+   "pct_4w": null,
+   "last": 1726758184,
+   "days": 1
+  },
+  "assemblyai/assemblyai-tts-1-20261028": {
+   "t7": 303404,
+   "pct_4w": null,
+   "last": 303404,
+   "days": 1
+  },
+  "meta/muse-spark-open-20261015": {
+   "t7": 65755581624,
+   "pct_4w": null,
+   "last": 65755581624,
+   "days": 1
+  },
+  "qwen/qwen-image-2.1-turbo-20261016": {
+   "t7": 145598491,
+   "pct_4w": null,
+   "last": 145598491,
    "days": 1
   },
   "kt/midm-k-3.0-pro": {
-   "t7": 504027783,
+   "t7": 529591344,
    "pct_4w": null,
-   "last": 504027783,
+   "last": 529591344,
    "days": 1
   },
-  "meta/muse-wonder-20261012": {
-   "t7": 87587450870,
+  "mistralai/voxtral-mini-tts-3-0-20261020": {
+   "t7": 1162592,
    "pct_4w": null,
-   "last": 87587450870,
+   "last": 1162592,
    "days": 1
   },
-  "nex-agi/nex-n2.6-20261110": {
-   "t7": 6350114739,
+  "liquid/lfm-3-1.7b-20261106": {
+   "t7": 31608273138,
    "pct_4w": null,
-   "last": 6350114739,
+   "last": 31608273138,
    "days": 1
   },
-  "morph/reflex-20261103": {
-   "t7": 1986513534,
+  "liquid/d1.1-20261027": {
+   "t7": 74207274686,
    "pct_4w": null,
-   "last": 1986513534,
+   "last": 74207274686,
    "days": 1
   },
   "krea/k3-edit-20260914": {
-   "t7": 25401865,
+   "t7": 25921535,
    "pct_4w": null,
-   "last": 25401865,
+   "last": 25921535,
    "days": 1
   },
-  "respan/span-02-20261015": {
-   "t7": 10858162099,
+  "morph/reflex-20261103": {
+   "t7": 1872783997,
    "pct_4w": null,
-   "last": 10858162099,
-   "days": 1
-  },
-  "moondream/moondream3.1-9b-a2b-20261013": {
-   "t7": 14350586,
-   "pct_4w": null,
-   "last": 14350586,
-   "days": 1
-  },
-  "ricursiveai/ripple-65b-preview-20261104": {
-   "t7": 10583021335,
-   "pct_4w": null,
-   "last": 10583021335,
-   "days": 1
-  },
-  "baseten/joey-1-20261029": {
-   "t7": 4704514614,
-   "pct_4w": null,
-   "last": 4704514614,
-   "days": 1
-  },
-  "unbiased/pareto-26.9-20260917": {
-   "t7": 78954243,
-   "pct_4w": null,
-   "last": 78954243,
-   "days": 1
-  },
-  "fish-audio/drama-3-20261013": {
-   "t7": 24170665,
-   "pct_4w": null,
-   "last": 24170665,
+   "last": 1872783997,
    "days": 1
   },
   "mistralai/voxtral-mini-transcribe-3-0-20261020": {
-   "t7": 11824576,
+   "t7": 16204440,
    "pct_4w": null,
-   "last": 11824576,
+   "last": 16204440,
+   "days": 1
+  },
+  "tencent/hy4-20261104": {
+   "t7": 470763207138,
+   "pct_4w": null,
+   "last": 470763207138,
+   "days": 1
+  },
+  "respan/span-02-20261015": {
+   "t7": 10957135387,
+   "pct_4w": null,
+   "last": 10957135387,
+   "days": 1
+  },
+  "moondream/moondream3.1-9b-a2b-20261013": {
+   "t7": 15151035,
+   "pct_4w": null,
+   "last": 15151035,
+   "days": 1
+  },
+  "nex-agi/nex-n2.6-20261110": {
+   "t7": 5974130191,
+   "pct_4w": null,
+   "last": 5974130191,
+   "days": 1
+  },
+  "meta/muse-wonder-20261012": {
+   "t7": 72711787299,
+   "pct_4w": null,
+   "last": 72711787299,
+   "days": 1
+  },
+  "unbiased/pareto-26.9-20260917": {
+   "t7": 77316011,
+   "pct_4w": null,
+   "last": 77316011,
+   "days": 1
+  },
+  "fish-audio/drama-3-20261013": {
+   "t7": 24472023,
+   "pct_4w": null,
+   "last": 24472023,
+   "days": 1
+  },
+  "baseten/joey-1-20261029": {
+   "t7": 4336269485,
+   "pct_4w": null,
+   "last": 4336269485,
+   "days": 1
+  },
+  "ricursiveai/ripple-65b-preview-20261104": {
+   "t7": 8211221430,
+   "pct_4w": null,
+   "last": 8211221430,
    "days": 1
   },
   "z-ai/glm-5.3-flashx-legal-20261102": {
-   "t7": 21982498268,
+   "t7": 22289225668,
    "pct_4w": null,
-   "last": 21982498268,
+   "last": 22289225668,
    "days": 1
   },
   "prism-ml/ternary-bonsai-2-9b-20261015": {
-   "t7": 182016923,
+   "t7": 166872155,
    "pct_4w": null,
-   "last": 182016923,
+   "last": 166872155,
    "days": 1
   },
   "inclusionai/ling-3.0-tiny-20260806": {
-   "t7": 1208445247,
+   "t7": 422686501,
    "pct_4w": null,
-   "last": 1208445247,
+   "last": 422686501,
    "days": 1
   }
  },
  "risers": [
   {
    "slug": "google/gemini-2.5-pro",
-   "pct_4w": 101076313.9,
-   "t7": 30496775608
+   "pct_4w": 100782067.4,
+   "t7": 30407995539
   },
   {
    "slug": "mistralai/ministral-8b-2512",
-   "pct_4w": 73787617.2,
-   "t7": 4762259269
+   "pct_4w": 77849362.4,
+   "t7": 5024404305
   },
   {
    "slug": "google/gemini-2.5-flash",
-   "pct_4w": 1510076.1,
-   "t7": 252452853342
+   "pct_4w": 1506974,
+   "t7": 251934278595
+  },
+  {
+   "slug": "mistralai/mistral-medium-3.5-20260430",
+   "pct_4w": 165792.3,
+   "t7": 3483666076
   },
   {
    "slug": "google/gemini-2.5-flash-lite",
-   "pct_4w": 9420.5,
-   "t7": 285796137817
+   "pct_4w": 9488.2,
+   "t7": 287829033430
   },
   {
    "slug": "minimax/minimax-m3.1-flash-20261019",
-   "pct_4w": 23.1,
-   "t7": 4105125988199
+   "pct_4w": 26,
+   "t7": 4200494270254
   }
  ],
  "fallers": [
   {
    "slug": "minimax/minimax-m3.1-flash-20261019",
-   "pct_4w": 23.1,
-   "t7": 4105125988199
+   "pct_4w": 26,
+   "t7": 4200494270254
   },
   {
    "slug": "google/gemini-2.5-flash-lite",
-   "pct_4w": 9420.5,
-   "t7": 285796137817
+   "pct_4w": 9488.2,
+   "t7": 287829033430
+  },
+  {
+   "slug": "mistralai/mistral-medium-3.5-20260430",
+   "pct_4w": 165792.3,
+   "t7": 3483666076
   },
   {
    "slug": "google/gemini-2.5-flash",
-   "pct_4w": 1510076.1,
-   "t7": 252452853342
+   "pct_4w": 1506974,
+   "t7": 251934278595
   },
   {
    "slug": "mistralai/ministral-8b-2512",
-   "pct_4w": 73787617.2,
-   "t7": 4762259269
+   "pct_4w": 77849362.4,
+   "t7": 5024404305
   },
   {
    "slug": "google/gemini-2.5-pro",
-   "pct_4w": 101076313.9,
-   "t7": 30496775608
+   "pct_4w": 100782067.4,
+   "t7": 30407995539
   }
  ]
 }
