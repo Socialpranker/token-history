@@ -1,23 +1,23 @@
 {
- "updated": "2026-11-28T00:40:14.304Z",
+ "updated": "2026-11-28T14:29:42.632Z",
  "date": "2026-11-28",
  "window": "day",
- "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-11-28T00:40:14.304Z.",
+ "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-11-28T14:29:42.632Z.",
  "apps": [
   {
    "slug": "hermes-agent",
    "name": "Hermes Agent",
    "url": "https://hermes-agent.nousresearch.com/",
    "rank": 4,
-   "tokens": 1852304320185,
+   "tokens": 1852304798832,
    "tokens_display": "1.85T",
-   "requests": 16659628,
+   "requests": 16659632,
    "tokens_per_request": 111185,
-   "stars": 266600,
+   "stars": 266688,
    "repo": "NousResearch/hermes-agent",
-   "week_tokens": 15054710941793,
+   "week_tokens": 14151343885999,
    "week_rank": 4,
-   "momentum": 0.86,
+   "momentum": 0.92,
    "categories": [
     "personal-agent",
     "cli-agent"
@@ -34,9 +34,9 @@
    "tokens_per_request": 120403,
    "stars": null,
    "repo": null,
-   "week_tokens": 12877776228938,
+   "week_tokens": 12494237414259,
    "week_rank": 3,
-   "momentum": 0.78,
+   "momentum": 0.8,
    "categories": [
     "cli-agent"
    ]
@@ -52,9 +52,9 @@
    "tokens_per_request": 109631,
    "stars": null,
    "repo": null,
-   "week_tokens": 9095052211259,
+   "week_tokens": 8467516975488,
    "week_rank": 5,
-   "momentum": 0.77,
+   "momentum": 0.83,
    "categories": [
     "cli-agent",
     "ide-extension"
@@ -65,15 +65,15 @@
    "name": "pi",
    "url": "https://pi.dev/",
    "rank": 6,
-   "tokens": 875411175554,
+   "tokens": 875411213260,
    "tokens_display": "875B",
-   "requests": 10842807,
+   "requests": 10842808,
    "tokens_per_request": 80737,
    "stars": null,
    "repo": null,
-   "week_tokens": 7256137245460,
+   "week_tokens": 6855776710117,
    "week_rank": 6,
-   "momentum": 0.84,
+   "momentum": 0.89,
    "categories": [
     "cli-agent"
    ]
@@ -89,9 +89,9 @@
    "tokens_per_request": 75353,
    "stars": null,
    "repo": null,
-   "week_tokens": 3697992478924,
+   "week_tokens": 3402786679688,
    "week_rank": 8,
-   "momentum": 0.72,
+   "momentum": 0.78,
    "categories": [
     "cli-agent"
    ]
@@ -107,9 +107,9 @@
    "tokens_per_request": 88577,
    "stars": null,
    "repo": null,
-   "week_tokens": 2790794820935,
+   "week_tokens": 2476808742369,
    "week_rank": 11,
-   "momentum": 0.75,
+   "momentum": 0.85,
    "categories": [
     "cli-agent"
    ]
@@ -125,9 +125,9 @@
    "tokens_per_request": 152931,
    "stars": null,
    "repo": null,
-   "week_tokens": 2886315011648,
+   "week_tokens": 2718368330289,
    "week_rank": 10,
-   "momentum": 0.68,
+   "momentum": 0.72,
    "categories": []
   },
   {
@@ -141,9 +141,9 @@
    "tokens_per_request": 103504,
    "stars": null,
    "repo": null,
-   "week_tokens": 2329855362766,
+   "week_tokens": 2182348270852,
    "week_rank": 12,
-   "momentum": 0.83,
+   "momentum": 0.89,
    "categories": [
     "cli-agent"
    ]
@@ -153,15 +153,15 @@
    "name": "OpenClaw",
    "url": "https://openclaw.ai/",
    "rank": 12,
-   "tokens": 235434801989,
+   "tokens": 235434886883,
    "tokens_display": "235B",
-   "requests": 2505813,
+   "requests": 2505814,
    "tokens_per_request": 93955,
-   "stars": 395351,
+   "stars": 395370,
    "repo": "openclaw/openclaw",
-   "week_tokens": 1952775000059,
+   "week_tokens": 1823858420751,
    "week_rank": 13,
-   "momentum": 0.84,
+   "momentum": 0.9,
    "categories": [
     "personal-agent",
     "cli-agent"
@@ -176,11 +176,11 @@
    "tokens_display": "157B",
    "requests": 1372029,
    "tokens_per_request": 114649,
-   "stars": 94468,
+   "stars": 94494,
    "repo": "All-Hands-AI/OpenHands",
-   "week_tokens": 1143517475789,
+   "week_tokens": 1100149744689,
    "week_rank": 15,
-   "momentum": 0.96,
+   "momentum": 1,
    "categories": [
     "cli-agent"
    ]
@@ -196,9 +196,9 @@
    "tokens_per_request": 78691,
    "stars": null,
    "repo": null,
-   "week_tokens": 886334570507,
+   "week_tokens": 849651473475,
    "week_rank": 17,
-   "momentum": 0.95,
+   "momentum": 0.99,
    "categories": [
     "game"
    ]
@@ -214,16 +214,16 @@
    "tokens_per_request": 10858,
    "stars": null,
    "repo": null,
-   "week_tokens": 3519204941597,
+   "week_tokens": 3377888515382,
    "week_rank": 9,
-   "momentum": 0.17,
+   "momentum": 0.18,
    "categories": [
     "programming-app"
    ]
   },
   {
-   "slug": "viga-pear-dexjoco-harness-eval",
-   "name": "viga-pear dexjoco harness eval",
+   "slug": "robosim-robodojo-config-b",
+   "name": "robosim robodojo config B",
    "url": "https://github.com/schematic-org/viga-pear",
    "rank": 19,
    "tokens": 75458944329,
@@ -248,9 +248,9 @@
    "tokens_per_request": 64319,
    "stars": null,
    "repo": null,
-   "week_tokens": 567905976130,
-   "week_rank": 20,
-   "momentum": 0.91,
+   "week_tokens": 527151293911,
+   "week_rank": 21,
+   "momentum": 0.98,
    "categories": []
   },
   {
@@ -264,9 +264,9 @@
    "tokens_per_request": 83893,
    "stars": null,
    "repo": null,
-   "week_tokens": 485312468504,
+   "week_tokens": 470401893660,
    "week_rank": 25,
-   "momentum": 1.06,
+   "momentum": 1.1,
    "categories": []
   },
   {
@@ -280,9 +280,9 @@
    "tokens_per_request": 51924,
    "stars": null,
    "repo": null,
-   "week_tokens": 544890944125,
-   "week_rank": 23,
-   "momentum": 0.82,
+   "week_tokens": 470517727350,
+   "week_rank": 24,
+   "momentum": 0.95,
    "categories": [
     "general-chat"
    ]
@@ -314,9 +314,9 @@
    "tokens_per_request": 129333,
    "stars": null,
    "repo": null,
-   "week_tokens": 550028327730,
-   "week_rank": 22,
-   "momentum": 0.7,
+   "week_tokens": 502241919130,
+   "week_rank": 23,
+   "momentum": 0.77,
    "categories": [
     "roleplay",
     "personal-agent",
@@ -334,9 +334,9 @@
    "tokens_per_request": 110841,
    "stars": null,
    "repo": null,
-   "week_tokens": 380693292056,
+   "week_tokens": 355442079313,
    "week_rank": 28,
-   "momentum": 0.92,
+   "momentum": 0.98,
    "categories": []
   },
   {
